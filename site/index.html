@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Daily Briefing</title>
+    <style>
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Georgia, 'Times New Roman', serif;
+            font-size: 17px;
+            line-height: 1.6;
+            color: #1a1a1a;
+            background-color: #f5f0e8;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .container {
+            max-width: 860px;
+            margin: 0 auto;
+            padding: 20px 16px 40px;
+        }
+
+        /* --- Masthead --- */
+        .masthead {
+            text-align: center;
+            padding-bottom: 16px;
+            border-bottom: 4px double #1a1a1a;
+            margin-bottom: 0;
+        }
+
+        .masthead-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.72em;
+            color: #888;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+        }
+
+        .masthead-title {
+            font-size: 2em;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            line-height: 1.1;
+            margin: 6px 0;
+        }
+
+        .masthead-title .accent {
+            color: #8b1a1a;
+        }
+
+        .masthead-dateline {
+            font-size: 0.82em;
+            color: #666;
+            font-style: italic;
+            margin-top: 4px;
+            letter-spacing: 0.03em;
+        }
+
+        .masthead-rule {
+            border: none;
+            border-top: 1px solid #1a1a1a;
+            margin-top: 10px;
+        }
+
+        /* --- Section Dividers --- */
+        .section-divider {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin: 28px 0 18px;
+        }
+
+        .section-divider .rule {
+            flex: 1;
+            border: none;
+            border-top: 2px solid #1a1a1a;
+        }
+
+        .section-divider .rule-light {
+            border-top: 1px solid #bbb;
+        }
+
+        .section-label {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 0.78em;
+            font-weight: 700;
+            letter-spacing: 0.12em;
+            color: #444;
+            text-transform: uppercase;
+            white-space: nowrap;
+        }
+
+        /* --- Top Story (featured) --- */
+        .top-story {
+            margin-bottom: 18px;
+            padding-bottom: 16px;
+            border-bottom: 1px dotted #ccc;
+        }
+
+        .top-story-headline-row {
+            display: block;
+            cursor: pointer;
+            user-select: none;
+            -webkit-user-select: none;
+        }
+
+        .top-story-headline-row:hover .top-story-title {
+            color: #8b1a1a;
+        }
+
+        .top-story-title {
+            font-size: 1.5em;
+            line-height: 1.25;
+            color: #1a3a6a;
+            font-weight: 700;
+            transition: color 0.15s ease;
+            display: block;
+            margin-bottom: 6px;
+        }
+
+        .top-story-deck {
+            font-size: 1.0em;
+            color: #555;
+            font-style: italic;
+            line-height: 1.5;
+            margin-bottom: 8px;
+        }
+
+        .top-story-sources {
+            font-size: 0.72em;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            color: #999;
+            text-transform: uppercase;
+        }
+
+        .top-story-updated {
+            font-size: 0.68em;
+            color: #aaa;
+            letter-spacing: 0.05em;
+            margin-top: 4px;
+        }
+
+        .top-story-body {
+            display: none;
+            margin-top: 12px;
+            font-size: 1.02em;
+            line-height: 1.8;
+            color: #222;
+            text-align: justify;
+            hyphens: auto;
+            -webkit-hyphens: auto;
+        }
+
+        .top-story.open .top-story-body {
+            display: block;
+        }
+
+        .top-story-body .drop-cap {
+            float: left;
+            font-size: 3.4em;
+            line-height: 0.8;
+            padding-right: 6px;
+            padding-top: 4px;
+            color: #8b1a1a;
+            font-weight: 700;
+        }
+
+        .top-story-body p {
+            margin-bottom: 12px;
+        }
+
+        .top-story-source-links {
+            font-size: 0.82em;
+            color: #888;
+            margin-top: 8px;
+        }
+
+        .top-story-source-links a {
+            color: #1a3a6a;
+            text-decoration: none;
+        }
+
+        .top-story-source-links a:hover {
+            text-decoration: underline;
+        }
+
+        /* --- Story items --- */
+        .story-item {
+            padding: 8px 0;
+            border-bottom: 1px dotted #ccc;
+        }
+
+        .story-item:last-child {
+            border-bottom: none;
+        }
+
+        .story-headline {
+            display: flex;
+            align-items: baseline;
+            gap: 8px;
+            padding: 4px 0;
+            cursor: pointer;
+            min-height: 44px;
+            user-select: none;
+            -webkit-user-select: none;
+        }
+
+        .story-headline:hover .story-title {
+            color: #8b1a1a;
+        }
+
+        .story-bullet {
+            color: #999;
+            font-size: 0.6em;
+            flex-shrink: 0;
+            position: relative;
+            top: -1px;
+        }
+
+        .story-title {
+            font-size: 1.05em;
+            color: #1a3a6a;
+            line-height: 1.35;
+            transition: color 0.15s ease;
+        }
+
+        .story-meta {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-top: 2px;
+            margin-left: 18px;
+        }
+
+        .story-timestamp {
+            font-size: 0.72em;
+            font-weight: 700;
+            letter-spacing: 0.06em;
+            color: #999;
+            text-transform: uppercase;
+        }
+
+        .story-category-tag {
+            font-size: 0.62em;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            color: #888;
+            text-transform: uppercase;
+            padding: 1px 6px;
+            border: 1px solid #ccc;
+            background: #f9f6ee;
+        }
+
+        .story-source-label {
+            font-size: 0.72em;
+            font-weight: 700;
+            letter-spacing: 0.06em;
+            color: #999;
+            text-transform: uppercase;
+        }
+
+        /* --- Story summary (expanded) --- */
+        .story-body {
+            display: none;
+            margin: 8px 0 4px 18px;
+            padding-left: 16px;
+            border-left: 2px solid #ddd;
+            font-size: 1.0em;
+            line-height: 1.75;
+            color: #222;
+            text-align: justify;
+            hyphens: auto;
+            -webkit-hyphens: auto;
+        }
+
+        .story-item.open > .story-body {
+            display: block;
+        }
+
+        .story-body p {
+            margin-bottom: 10px;
+        }
+
+        .end-mark {
+            color: #8b1a1a;
+            font-size: 0.7em;
+            margin-left: 4px;
+        }
+
+        /* --- Source link (inside expanded body) --- */
+        .source-link {
+            font-size: 0.88em;
+            font-style: italic;
+            color: #666;
+            margin-top: 8px;
+            padding-top: 8px;
+            border-top: 1px dotted #ddd;
+        }
+
+        .source-link a {
+            color: #1a3a6a;
+            text-decoration: none;
+            border-bottom: 1px dotted #1a3a6a;
+        }
+
+        .source-link a:hover {
+            color: #8b1a1a;
+            border-bottom-color: #8b1a1a;
+        }
+
+        /* --- Empty state --- */
+        .empty-state {
+            text-align: center;
+            padding: 60px 20px;
+            color: #666;
+            font-style: italic;
+            font-size: 1.05em;
+        }
+
+        /* --- Day sections --- */
+        .day-section {
+            margin-bottom: 28px;
+        }
+
+        .day-header {
+            display: flex;
+            align-items: baseline;
+            flex-wrap: wrap;
+            gap: 6px 10px;
+            padding: 12px 0;
+            cursor: pointer;
+            border-bottom: 1px solid #cccccc;
+            user-select: none;
+            -webkit-user-select: none;
+            min-height: 48px;
+        }
+
+        .day-header:hover {
+            opacity: 0.8;
+        }
+
+        .day-arrow {
+            font-size: 0.7em;
+            color: #888;
+            transition: transform 0.2s ease;
+            flex-shrink: 0;
+            width: 14px;
+            text-align: center;
+        }
+
+        .day-section.open > .day-header .day-arrow {
+            transform: rotate(90deg);
+        }
+
+        .day-date {
+            font-size: 1.2em;
+            font-weight: 700;
+            color: #444;
+        }
+
+        .day-section.today > .day-header .day-date {
+            color: #8b1a1a;
+        }
+
+        .day-count {
+            font-size: 0.82em;
+            color: #888;
+            font-style: italic;
+        }
+
+        .day-content {
+            display: none;
+            padding-top: 8px;
+        }
+
+        .day-section.open > .day-content {
+            display: block;
+        }
+
+        /* --- Footer --- */
+        .site-footer {
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 32px;
+            border-top: 2px double #1a1a1a;
+            font-size: 0.82em;
+            color: #888;
+            font-style: italic;
+        }
+
+        /* --- Mobile text bump (under 600px) --- */
+        @media (max-width: 599px) {
+            body {
+                font-size: 18px;
+            }
+
+            .masthead-title {
+                font-size: 2.2em;
+            }
+
+            .masthead-top {
+                font-size: 0.65em;
+            }
+
+            .top-story-title {
+                font-size: 1.3em;
+            }
+        }
+
+        /* --- Small mobile tweaks (under 400px) --- */
+        @media (max-width: 399px) {
+            .masthead-title {
+                font-size: 1.8em;
+            }
+
+            .day-date {
+                font-size: 1.05em;
+            }
+        }
+
+        /* --- Desktop styles (600px+) --- */
+        @media (min-width: 600px) {
+            .container {
+                padding: 32px 24px 60px;
+            }
+
+            .masthead-title {
+                font-size: 2.8em;
+            }
+
+            .day-section {
+                margin-bottom: 32px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="masthead">
+            <div class="masthead-top">
+                <span id="masthead-vol"></span>
+                <span>National & World News</span>
+            </div>
+            <h1 class="masthead-title">THE <span class="accent">DAILY</span> BRIEFING</h1>
+            <div class="masthead-dateline" id="masthead-date"></div>
+            <hr class="masthead-rule">
+        </header>
+
+        <main id="digest-content">
+            <div class="empty-state">Loading...</div>
+        </main>
+
+        <footer class="site-footer">
+            The Daily Briefing -- Updated throughout the day
+        </footer>
+    </div>
+
+    <script>
+        (function() {
+            'use strict';
+
+            var CATEGORY_ORDER = ['politics', 'world', 'business', 'technology', 'science_health', 'other'];
+            var CATEGORY_LABELS = {
+                politics: 'Politics & Government',
+                world: 'World News',
+                business: 'Business & Economy',
+                technology: 'Technology',
+                science_health: 'Science & Health',
+                other: 'National News'
+            };
+
+            // Issue number: Apr 4, 2026 = Issue No. 1
+            var ISSUE_START = new Date(2026, 3, 4);
+
+            // --- Masthead ---
+            function updateMasthead() {
+                var now = new Date();
+                var days = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+                var months = ['January','February','March','April','May','June',
+                              'July','August','September','October','November','December'];
+                document.getElementById('masthead-date').textContent =
+                    days[now.getDay()] + ', ' + months[now.getMonth()] + ' ' + now.getDate() + ', ' + now.getFullYear();
+                var diffDays = Math.floor((now - ISSUE_START) / (86400000));
+                var issueNum = Math.max(1, diffDays + 1);
+                document.getElementById('masthead-vol').textContent = 'Vol. 1, No. ' + issueNum;
+            }
+
+            updateMasthead();
+
+            // --- Helpers ---
+            function getLastNDates(n) {
+                var dates = [];
+                var now = new Date();
+                for (var i = 0; i < n; i++) {
+                    var d = new Date(now);
+                    d.setDate(d.getDate() - i);
+                    dates.push(d.getFullYear() + '-' + String(d.getMonth()+1).padStart(2,'0') + '-' + String(d.getDate()).padStart(2,'0'));
+                }
+                return dates;
+            }
+
+            function getTodayStr() {
+                var d = new Date();
+                return d.getFullYear() + '-' + String(d.getMonth()+1).padStart(2,'0') + '-' + String(d.getDate()).padStart(2,'0');
+            }
+
+            function escapeHTML(str) {
+                var div = document.createElement('div');
+                div.appendChild(document.createTextNode(str));
+                return div.innerHTML;
+            }
+
+            function getFirstSentence(text) {
+                if (!text) return '';
+                var idx = text.indexOf('. ');
+                if (idx === -1) idx = text.indexOf('.\n');
+                if (idx === -1) return text.split('\n\n')[0];
+                return text.substring(0, idx + 1);
+            }
+
+            function summaryToHTMLWithEndMark(summary) {
+                if (!summary) return '';
+                var paragraphs = summary.split('\n\n');
+                var html = '';
+                for (var i = 0; i < paragraphs.length; i++) {
+                    var text = paragraphs[i].trim();
+                    if (text) {
+                        if (i === paragraphs.length - 1) {
+                            html += '<p>' + escapeHTML(text) + '<span class="end-mark"> \u25AE</span></p>';
+                        } else {
+                            html += '<p>' + escapeHTML(text) + '</p>';
+                        }
+                    }
+                }
+                return html;
+            }
+
+            function summaryToHTMLWithDropCap(summary) {
+                if (!summary) return '';
+                var paragraphs = summary.split('\n\n');
+                var html = '';
+                for (var i = 0; i < paragraphs.length; i++) {
+                    var text = paragraphs[i].trim();
+                    if (text) {
+                        var inner;
+                        if (i === 0) {
+                            inner = '<span class="drop-cap">' + escapeHTML(text.charAt(0)) + '</span>' + escapeHTML(text.slice(1));
+                        } else {
+                            inner = escapeHTML(text);
+                        }
+                        if (i === paragraphs.length - 1) {
+                            inner += '<span class="end-mark"> \u25AE</span>';
+                        }
+                        html += '<p>' + inner + '</p>';
+                    }
+                }
+                return html;
+            }
+
+            // --- Top Story (National or International) ---
+            function renderTopStory(topStory, label) {
+                if (!topStory || !topStory.headline || !topStory.summary) return null;
+
+                var divider = document.createElement('div');
+                divider.className = 'section-divider';
+                divider.innerHTML = '<hr class="rule">' +
+                    '<div class="section-label">' + escapeHTML(label) + '</div>' +
+                    '<hr class="rule">';
+
+                var item = document.createElement('article');
+                item.className = 'top-story';
+
+                var headlineRow = document.createElement('div');
+                headlineRow.className = 'top-story-headline-row';
+
+                var title = document.createElement('span');
+                title.className = 'top-story-title';
+                title.textContent = topStory.headline;
+                headlineRow.appendChild(title);
+
+                var deck = document.createElement('div');
+                deck.className = 'top-story-deck';
+                deck.textContent = getFirstSentence(topStory.summary);
+                headlineRow.appendChild(deck);
+
+                // Sources byline
+                var sourcesDiv = document.createElement('div');
+                sourcesDiv.className = 'top-story-sources';
+                if (topStory.sources && topStory.sources.length > 0) {
+                    sourcesDiv.textContent = topStory.sources.map(function(s) { return s.name; }).join(' | ');
+                }
+                headlineRow.appendChild(sourcesDiv);
+
+                // Updated at timestamp
+                if (topStory.updatedAt) {
+                    var updatedDiv = document.createElement('div');
+                    updatedDiv.className = 'top-story-updated';
+                    updatedDiv.textContent = 'Updated ' + topStory.updatedAt;
+                    headlineRow.appendChild(updatedDiv);
+                }
+
+                headlineRow.addEventListener('click', function() {
+                    item.classList.toggle('open');
+                });
+
+                var body = document.createElement('div');
+                body.className = 'top-story-body';
+                body.innerHTML = summaryToHTMLWithDropCap(topStory.summary);
+
+                // Source links
+                if (topStory.sources && topStory.sources.length > 0) {
+                    var sourceLinks = document.createElement('div');
+                    sourceLinks.className = 'top-story-source-links';
+                    var linksHTML = 'Sources: ';
+                    for (var i = 0; i < topStory.sources.length; i++) {
+                        if (i > 0) linksHTML += ' &middot; ';
+                        linksHTML += '<a href="' + escapeHTML(topStory.sources[i].url) +
+                            '" target="_blank" rel="noopener noreferrer">' +
+                            escapeHTML(topStory.sources[i].name) + '</a>';
+                    }
+                    sourceLinks.innerHTML = linksHTML;
+                    body.appendChild(sourceLinks);
+                }
+
+                item.appendChild(headlineRow);
+                item.appendChild(body);
+
+                var frag = document.createDocumentFragment();
+                frag.appendChild(divider);
+                frag.appendChild(item);
+                return frag;
+            }
+
+            // --- Regular Story (with timestamp + category tag) ---
+            function renderStory(story, dateStr, idx) {
+                var item = document.createElement('div');
+                item.className = 'story-item';
+                item.id = 'story-' + dateStr + '-' + idx;
+
+                var headline = document.createElement('div');
+                headline.className = 'story-headline';
+                headline.innerHTML = '<span class="story-bullet">&#9670;</span>' +
+                    '<span class="story-title">' + escapeHTML(story.headline) + '</span>';
+
+                headline.addEventListener('click', function() {
+                    item.classList.toggle('open');
+                });
+
+                // Meta row: timestamp + category tag + source
+                var meta = document.createElement('div');
+                meta.className = 'story-meta';
+
+                if (story.addedAt) {
+                    var ts = document.createElement('span');
+                    ts.className = 'story-timestamp';
+                    ts.textContent = story.addedAt;
+                    meta.appendChild(ts);
+                }
+
+                var cat = story.category || 'other';
+                if (CATEGORY_LABELS[cat]) {
+                    var tag = document.createElement('span');
+                    tag.className = 'story-category-tag';
+                    tag.textContent = CATEGORY_LABELS[cat];
+                    meta.appendChild(tag);
+                }
+
+                var srcLabel = document.createElement('span');
+                srcLabel.className = 'story-source-label';
+                srcLabel.textContent = story.source;
+                meta.appendChild(srcLabel);
+
+                var body = document.createElement('div');
+                body.className = 'story-body';
+                body.innerHTML = summaryToHTMLWithEndMark(story.summary);
+
+                var sourceLink = document.createElement('div');
+                sourceLink.className = 'source-link';
+                sourceLink.innerHTML = 'Source: <a href="' + escapeHTML(story.url) +
+                    '" target="_blank" rel="noopener noreferrer">' +
+                    escapeHTML(story.source) + '</a>';
+                body.appendChild(sourceLink);
+
+                item.appendChild(headline);
+                item.appendChild(meta);
+                item.appendChild(body);
+                return item;
+            }
+
+            // --- Render Day ---
+            function renderDay(data, isToday) {
+                var section = document.createElement('div');
+                section.className = 'day-section' + (isToday ? ' today' : '');
+                section.setAttribute('data-date', data.date);
+
+                var header = document.createElement('div');
+                header.className = 'day-header';
+                var storyCount = (data.stories ? data.stories.length : 0);
+                if (data.topNationalStory) storyCount++;
+                if (data.topInternationalStory) storyCount++;
+                var countWord = storyCount === 1 ? 'story' : 'stories';
+                header.innerHTML = '<span class="day-arrow">&#9654;</span>' +
+                    '<span class="day-date">' + escapeHTML(data.dateFormatted) + '</span>' +
+                    '<span class="day-count">' + storyCount + ' ' + countWord + '</span>';
+
+                header.addEventListener('click', function() {
+                    section.classList.toggle('open');
+                });
+
+                var content = document.createElement('div');
+                content.className = 'day-content';
+
+                // Top National Story
+                var natStoryEl = renderTopStory(data.topNationalStory, 'Top National Story');
+                if (natStoryEl) {
+                    content.appendChild(natStoryEl);
+                }
+
+                // Top International Story
+                var intlStoryEl = renderTopStory(data.topInternationalStory, 'Top International Story');
+                if (intlStoryEl) {
+                    content.appendChild(intlStoryEl);
+                }
+
+                // News stories (chronological, newest first -- already in order from JSON)
+                if (data.stories && data.stories.length > 0) {
+                    var storiesDivider = document.createElement('div');
+                    storiesDivider.className = 'section-divider';
+                    storiesDivider.innerHTML = '<hr class="rule">' +
+                        '<div class="section-label">Latest Stories</div>' +
+                        '<hr class="rule">';
+                    content.appendChild(storiesDivider);
+
+                    for (var i = 0; i < data.stories.length; i++) {
+                        content.appendChild(renderStory(data.stories[i], data.date, i));
+                    }
+                }
+
+                section.appendChild(header);
+                section.appendChild(content);
+
+                if (isToday) {
+                    section.classList.add('open');
+                }
+
+                return section;
+            }
+
+            // --- Deep linking ---
+            function handleDeepLink() {
+                var hash = window.location.hash;
+                if (!hash || hash.length < 2) return;
+
+                var match = hash.match(/^#story-(\d{4}-\d{2}-\d{2})-(\d+)$/);
+                if (!match) return;
+
+                var targetDate = match[1];
+                var targetIdx = parseInt(match[2], 10);
+                var storyId = 'story-' + targetDate + '-' + targetIdx;
+
+                var daySection = document.querySelector('.day-section[data-date="' + targetDate + '"]');
+                if (daySection) {
+                    daySection.classList.add('open');
+                }
+
+                var storyEl = document.getElementById(storyId);
+                if (storyEl) {
+                    storyEl.classList.add('open');
+                    setTimeout(function() {
+                        storyEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }, 100);
+                }
+            }
+
+            // --- Init ---
+            function init() {
+                var dates = getLastNDates(7);
+                var todayStr = getTodayStr();
+                var container = document.getElementById('digest-content');
+                var pending = dates.length;
+                var loadedCount = 0;
+                var results = {};
+
+                dates.forEach(function(dateStr) {
+                    fetch('data/' + dateStr + '.json')
+                        .then(function(resp) {
+                            if (!resp.ok) throw new Error('Not found');
+                            return resp.json();
+                        })
+                        .then(function(data) {
+                            results[dateStr] = data;
+                            loadedCount++;
+                        })
+                        .catch(function() {})
+                        .finally(function() {
+                            pending--;
+                            if (pending === 0) {
+                                renderAll(dates, results, todayStr, container, loadedCount);
+                                handleDeepLink();
+                            }
+                        });
+                });
+            }
+
+            function renderAll(dates, results, todayStr, container, loadedCount) {
+                container.innerHTML = '';
+
+                if (loadedCount === 0) {
+                    container.innerHTML = '<div class="empty-state">No stories available yet. Check back soon.</div>';
+                    return;
+                }
+
+                for (var i = 0; i < dates.length; i++) {
+                    var dateStr = dates[i];
+                    if (!results[dateStr]) continue;
+                    var isToday = (dateStr === todayStr);
+                    container.appendChild(renderDay(results[dateStr], isToday));
+                }
+            }
+
+            window.addEventListener('hashchange', handleDeepLink);
+
+            if (document.readyState === 'loading') {
+                document.addEventListener('DOMContentLoaded', init);
+            } else {
+                init();
+            }
+        })();
+    </script>
+</body>
+</html>

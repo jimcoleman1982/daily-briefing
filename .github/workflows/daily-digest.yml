@@ -1,0 +1,64 @@
+name: The Daily Briefing
+
+on:
+  schedule:
+    # 6 runs/day at 5AM, 8AM, 11AM, 2PM, 6PM, 9PM Denver time
+    # DST-aware: script detects and skips wrong timezone cron
+    #
+    # MDT (UTC-6, March-November):
+    - cron: '7 11 * * *'    # 5:07 AM MDT
+    - cron: '7 14 * * *'    # 8:07 AM MDT
+    - cron: '7 17 * * *'    # 11:07 AM MDT
+    - cron: '7 20 * * *'    # 2:07 PM MDT
+    - cron: '7 0 * * *'     # 6:07 PM MDT
+    - cron: '7 3 * * *'     # 9:07 PM MDT
+    # MST (UTC-7, November-March):
+    - cron: '7 12 * * *'    # 5:07 AM MST
+    - cron: '7 15 * * *'    # 8:07 AM MST
+    - cron: '7 18 * * *'    # 11:07 AM MST
+    - cron: '7 21 * * *'    # 2:07 PM MST
+    - cron: '7 1 * * *'     # 6:07 PM MST
+    - cron: '7 4 * * *'     # 9:07 PM MST
+  workflow_dispatch:  # Manual trigger from GitHub UI or cron-job.org
+
+permissions:
+  contents: write  # Needed to commit and push JSON data files
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Generate digest update
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          BRAVE_SEARCH_API_KEY: ${{ secrets.BRAVE_SEARCH_API_KEY }}
+        run: |
+          ARGS="--force"
+          python scripts/generate_digest.py $ARGS
+
+      - name: Prune old data files (keep 14 days)
+        run: |
+          cd site/data
+          ls -1 *.json 2>/dev/null | sort | head -n -14 | xargs -r rm -f
+
+      - name: Commit and push
+        run: |
+          git config user.name "Daily Briefing Bot"
+          git config user.email "digest-bot@users.noreply.github.com"
+          git add site/data/
+          git diff --cached --quiet && echo "No new data" && exit 0
+          git commit -m "Update digest for $(date +%Y-%m-%d)"
+          git push
