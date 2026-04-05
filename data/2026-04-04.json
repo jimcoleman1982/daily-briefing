@@ -1,0 +1,45 @@
+{
+  "date": "2026-04-04",
+  "dateFormatted": "Saturday, April 4, 2026",
+  "stories": [
+    {
+      "category": "world",
+      "headline": "U.S. Aviator Missing in Iran After F-15E Shot Down; Second American Aircraft Also Hit",
+      "summary": "A United States Air Force F-15E Strike Eagle fighter jet was shot down over southern Iran on Friday, leaving one crew member missing and sparking an urgent two-day search. The second crew member was rescued alive near the crash site. Iranian officials and state media reported that Iranian forces were actively combing the region where the aircraft went down, and regional officials denied reports that the missing pilot had been found and arrested. Iranian social media has been flooded with images purporting to show wreckage from the aircraft.\n\nIn a separate incident on the same day, a U.S. A-10 aircraft was struck by Iranian air defenses, and a U.S. Army Black Hawk helicopter used to rescue the first crew member was also hit, though American officials confirmed the helicopter remained airworthy and its injured crew members survived. The incidents mark the first U.S. military aircraft shot down by enemy fire in more than two decades, significantly escalating the ongoing U.S.-Iran conflict.\n\nPresident Trump and Defense Secretary Pete Hegseth had previously asserted that U.S. forces had achieved 'total air dominance' and severely degraded Iranian military capabilities. The downing of two aircraft in a single day challenged those claims and raised new questions about the scope and direction of the conflict. Trump separately stated that 'time is running out' on his ultimatum demanding Iran reopen the Strait of Hormuz, while Israel struck a major petrochemical complex in southwestern Iran.\n\nThe fate of the missing aviator has become a focal point of the conflict, with the prospect of a U.S. service member alive and potentially in Iranian custody coming days after Trump threatened to bomb Iran 'back to the Stone Ages.' Critics of the administration have questioned whether clear military objectives have been defined, while the White House has indicated Trump plans to address the nation to lay out goals for the war. The Federal Reserve, citing uncertainty including the war's economic impact, left its benchmark interest rate unchanged this week.",
+      "source": "New York Times",
+      "url": "https://www.nytimes.com/live/2026/04/03/world/iran-war-trump-oil",
+      "addedAt": "6:39 PM MT",
+      "addedAtISO": "2026-04-04T18:39:30.892010-06:00"
+    }
+  ],
+  "topNationalStory": {
+    "headline": "Brush Fires Burn Thousands of Acres in Southern California as Santa Ana Winds Drive Rapid Spread",
+    "summary": "Two brush fires broke out across Southern California on Friday, driven by strong Santa Ana winds. The larger of the two, the Springs Fire, ignited around 11 a.m. near Gilman Springs Road in Moreno Valley, Riverside County, and rapidly expanded from an initial estimate of approximately 5 acres to 4,176 acres by Friday evening. A separate, smaller blaze, the Crown Fire, erupted in the Acton area of northern Los Angeles County near Crown Valley and Soledad Canyon roads, ultimately burning 345 acres.\n\nBoth fires prompted evacuation orders and warnings for nearby residents. The Springs Fire threatened homes in the Moreno Valley Ranch neighborhood, prompting officials to open an evacuation shelter at Valley View High School. A significant flare-up Friday night accelerated evacuations in the area, though as of Saturday, no injuries and no structural damage had been reported in connection with either fire.\n\nFirefighting resources deployed to combat the Springs Fire included at least three air tankers, two Type 1 helicopters, roughly 40 engines, and four water tenders, according to the Riverside County Fire Department. By Saturday, crews had achieved 75% containment of the Springs Fire, reflecting significant overnight progress. All evacuation orders for the Crown Fire were lifted Saturday, as that blaze reached a high level of containment.\n\nThe causes of both fires remain under investigation by their respective agencies, Cal Fire and the Los Angeles County Fire Department. The incidents underscore the persistent wildfire threat posed by Santa Ana wind events in Southern California, which can transform small ignitions into large, fast-moving fires within hours. Evacuation warnings and orders for the Springs Fire remained in place as of Saturday while firefighters continued operations.",
+    "sources": [
+      {
+        "name": "abc7.com",
+        "url": "https://abc7.com/live-updates/fire-erupts-riverside-county-los-angeles-amid-windy-conditions/18836025/"
+      }
+    ],
+    "updatedAt": "6:39 PM MT"
+  },
+  "topInternationalStory": {
+    "headline": "Iran Downs Two U.S. Fighter Jets in Single Day; Search Underway for Missing Crew Member as Conflict Enters Week Six",
+    "summary": "Iran shot down two U.S. military aircraft in separate incidents on Friday, April 4, marking the first time American planes have been downed since the conflict began approximately five weeks ago. An F-15E Strike Eagle was shot down over Iranian territory, with one crew member rescued and a second — believed to be a pilot or weapons systems officer — still missing as of Friday evening, with a U.S. search-and-rescue operation actively underway. Separately, an A-10 Warthog fighter jet was downed near the Strait of Hormuz, with wreckage reported to have fallen in Kuwait; the pilot of that aircraft was recovered safely.\n\nTwo U.S. Black Hawk helicopters dispatched to search for the missing F-15E crew member were also attacked by Iranian forces, though both aircraft escaped Iranian airspace without being struck. White House Press Secretary Karoline Leavitt confirmed that President Donald Trump had been briefed on the incidents. When asked whether the losses would affect ongoing diplomatic discussions with Iran, Trump said the events would not derail those talks, stating, \"This is war. We are at war,\" while reaffirming his intention to press forward militarily.\n\nThe incidents represent a significant escalation and came just two days after President Trump declared in a national address that the United States had \"beaten and completely decimated Iran\" and intended to \"finish the job very fast.\" Military analysts noted that Iran's air defense systems appear to be functioning at a higher capacity than U.S. and Israeli officials had publicly claimed, raising questions about earlier assessments that those systems had been substantially degraded. Iran's consulate general in Mumbai shared footage on social media purportedly showing the A-10 being shot down.\n\nBeyond the immediate aerial engagements, the broader conflict is generating mounting concern over global energy markets and maritime trade. Iran has already disrupted shipping through the Strait of Hormuz, which carries roughly 20 percent of global oil demand, and statements by Iranian Parliament Speaker Mohammad Bagher Ghalibaf have raised fears that Tehran may seek to extend disruptions to the Bab el-Mandeb Strait — the Red Sea chokepoint through which approximately 6.2 million barrels of crude oil and 12 percent of global trade pass daily. Analysts warn that simultaneous disruptions to both waterways could trigger a significant supply shock, sharply raising oil prices and increasing the cost of food, fuel, and other goods worldwide.",
+    "sources": [
+      {
+        "name": "thehindu.com",
+        "url": "https://www.thehindu.com/news/morning-digest-ins-aridhaman-nuclear-powered-submarine-enters-indias-naval-fleet-iran-military-says-downed-second-us-jet-in-gulf-and-more/article70821913.ece"
+      },
+      {
+        "name": "sundayguardianlive.com",
+        "url": "https://sundayguardianlive.com/world/us-israel-iran-war-day-36-latest-news-update-iran-eyes-bab-el-mandeb-after-strait-of-hormuz-blockade-top-official-signals-threat-to-global-oil-route-amid-escalating-middle-east-tensions-181270/"
+      },
+      {
+        "name": "eenadu.net",
+        "url": "https://www.eenadu.net/telugu-news/world/us-a-10-aircraft-shot-down-near-strait-of-hormuz-by-iran/0801/126058991"
+      }
+    ],
+    "updatedAt": "6:39 PM MT"
+  }
+}
