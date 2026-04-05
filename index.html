@@ -270,6 +270,16 @@
             text-transform: uppercase;
         }
 
+        .story-source-count {
+            font-size: 0.68em;
+            font-weight: 700;
+            letter-spacing: 0.04em;
+            color: #666;
+            padding: 1px 6px;
+            border: 1px solid #bbb;
+            background: #eee8d5;
+        }
+
         /* --- Story summary (expanded) --- */
         .story-body {
             display: none;
@@ -680,6 +690,14 @@
                 srcLabel.className = 'story-source-label';
                 srcLabel.textContent = story.source;
                 meta.appendChild(srcLabel);
+
+                var sc = story.sourceCount || story.source_count;
+                if (sc && sc > 1) {
+                    var scBadge = document.createElement('span');
+                    scBadge.className = 'story-source-count';
+                    scBadge.textContent = sc + ' sources';
+                    meta.appendChild(scBadge);
+                }
 
                 var body = document.createElement('div');
                 body.className = 'story-body';

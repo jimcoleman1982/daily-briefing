@@ -361,7 +361,7 @@ def brave_news_search(query, api_key, count=10, freshness="pd"):
 
 
 def gather_search_results(api_key, freshness="pd"):
-    """Run all search queries (web + news) and collect results."""
+    """Run all search queries (web + news + Google News RSS) and collect results."""
     all_results = []
 
     for query in SEARCH_QUERIES:
@@ -375,6 +375,29 @@ def gather_search_results(api_key, freshness="pd"):
         results = brave_news_search(query, api_key, freshness=freshness)
         all_results.extend(results)
         time.sleep(0.3)
+
+    # Also pull Google News RSS into the main pool -- this surfaces stories
+    # that are getting the most coverage across outlets
+    print("  Adding Google News RSS entries to main pool...")
+    rss_entries = fetch_google_news_rss()
+    rss_added = 0
+    for entry in rss_entries:
+        url = entry.get("link", "")
+        # Resolve Google News redirect URLs
+        if "news.google.com" in url:
+            url = resolve_google_news_url(url)
+            if "news.google.com" in url:
+                continue
+        if any(n in url for n in UNRELIABLE_SOURCES):
+            continue
+        all_results.append({
+            "title": entry["title"],
+            "url": url,
+            "snippet": entry.get("snippet", entry["title"]),
+            "source": entry.get("source", extract_source_name(url)),
+        })
+        rss_added += 1
+    print(f"  Added {rss_added} Google News RSS entries")
 
     print(f"  Total raw results: {len(all_results)}")
     return all_results
@@ -465,7 +488,9 @@ def deduplicate_and_rank(results, existing_headlines=None):
     for score, best, group in scored[:MAX_CANDIDATES]:
         all_snippets = " ".join(r["snippet"] for r in group if r["snippet"])
         best["combined_snippets"] = all_snippets
-        best["source_count"] = len(set(r["source"] for r in group))
+        source_names = sorted(set(r["source"] for r in group))
+        best["source_count"] = len(source_names)
+        best["covering_sources"] = source_names
         top_stories.append(best)
 
     # Filter against existing headlines (within-day dedup)
@@ -660,10 +685,14 @@ def build_prompt(stories, target_date_str, num_to_select, existing_headlines=Non
     """Build the prompt for selecting and summarizing multiple new stories."""
     story_blocks = []
     for i, story in enumerate(stories, 1):
+        source_count = story.get("source_count", 1)
+        covering = story.get("covering_sources", [story["source"]])
+        covering_str = ", ".join(covering)
         block = f"""[CANDIDATE {i}]
 Headline: {story['title']}
 Source: {story['source']}
 URL: {story['url']}
+Sources covering this story: {source_count} ({covering_str})
 Article text: {story['article_text']}"""
         story_blocks.append(block)
 
@@ -693,6 +722,7 @@ STORIES FROM PREVIOUS DAYS (avoid repeating unless major new development):
 YOUR TASK: Select the {num_to_select} most important, newsworthy stories that have NOT already been covered today. This is a breaking news wire -- we want the biggest developing stories right now.
 
 Selection criteria:
+- HEAVILY PRIORITIZE stories covered by many sources. A story reported by 6+ outlets is almost certainly more important than one reported by 1-2. The "Sources covering this story" count is a strong signal of newsworthiness.
 - Choose stories with the most national or global significance
 - Prefer breaking or developing stories over routine news
 - Aim for variety across categories (politics, world, business, technology, science/health, other)
@@ -713,6 +743,7 @@ Return a JSON array of up to {num_to_select} stories. For each story:
 - "summary": 3-4 paragraphs, each 2-4 sentences. Use \\n\\n between paragraphs. Cover what happened, who is involved, why it matters. If politically divisive, include both sides.
 - "source": publication name
 - "url": direct link to the original article
+- "sourceCount": number of outlets covering this story (copy from the candidate info above)
 
 Return ONLY the JSON array, no other text."""
 
