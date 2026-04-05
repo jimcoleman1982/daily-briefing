@@ -161,17 +161,6 @@
             text-transform: uppercase;
         }
 
-        .story-category-tag {
-            font-size: 0.55em;
-            font-weight: 700;
-            letter-spacing: 0.08em;
-            color: #888;
-            text-transform: uppercase;
-            padding: 1px 5px;
-            border: 1px solid #ccc;
-            background: #f9f6ee;
-        }
-
         .story-source-label {
             font-size: 0.62em;
             font-weight: 700;
@@ -188,19 +177,6 @@
             padding: 1px 5px;
             border: 1px solid #bbb;
             background: #eee8d5;
-        }
-
-        .story-teaser {
-            display: none;
-            margin: 6px 0 0 18px;
-            font-size: 0.88em;
-            color: #555;
-            font-style: italic;
-            line-height: 1.5;
-        }
-
-        .story-item.open > .story-teaser {
-            display: block;
         }
 
         /* --- Story summary (expanded) --- */
@@ -517,7 +493,7 @@
                     item.classList.toggle('open');
                 });
 
-                // Meta row: timestamp + category tag + source
+                // Meta row: timestamp + source + source count
                 var meta = document.createElement('div');
                 meta.className = 'story-meta';
 
@@ -526,14 +502,6 @@
                     ts.className = 'story-timestamp';
                     ts.textContent = story.addedAt;
                     meta.appendChild(ts);
-                }
-
-                var cat = story.category || 'other';
-                if (CATEGORY_LABELS[cat]) {
-                    var tag = document.createElement('span');
-                    tag.className = 'story-category-tag';
-                    tag.textContent = CATEGORY_LABELS[cat];
-                    meta.appendChild(tag);
                 }
 
                 var srcLabel = document.createElement('span');
@@ -560,14 +528,8 @@
                     escapeHTML(story.source) + '</a>';
                 body.appendChild(sourceLink);
 
-                // Teaser: first sentence of the summary
-                var teaser = document.createElement('div');
-                teaser.className = 'story-teaser';
-                teaser.textContent = getFirstSentence(story.summary);
-
                 item.appendChild(headline);
                 item.appendChild(meta);
-                item.appendChild(teaser);
                 item.appendChild(body);
                 return item;
             }
