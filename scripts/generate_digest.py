@@ -32,7 +32,7 @@ MAX_CANDIDATES = 15  # gather this many before curation (lower since we pick 1)
 ARTICLE_TEXT_LIMIT = 3000  # chars per article
 ANTHROPIC_MAX_TOKENS = 4000  # hard cap on output tokens
 ANTHROPIC_MODEL = "claude-sonnet-4-6"
-OUTPUT_DIR = os.path.join(os.path.dirname(os.path.dirname(__file__)), "site", "data")
+OUTPUT_DIR = os.path.join(os.path.dirname(os.path.dirname(__file__)), "data")
 SITE_URL = "https://jimcoleman1982.github.io/daily-briefing"
 
 # Category display order and labels (must match site JavaScript)

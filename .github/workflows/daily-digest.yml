@@ -51,14 +51,14 @@ jobs:
 
       - name: Prune old data files (keep 14 days)
         run: |
-          cd site/data
+          cd data
           ls -1 *.json 2>/dev/null | sort | head -n -14 | xargs -r rm -f
 
       - name: Commit and push
         run: |
           git config user.name "Daily Briefing Bot"
           git config user.email "digest-bot@users.noreply.github.com"
-          git add site/data/
+          git add data/
           git diff --cached --quiet && echo "No new data" && exit 0
           git commit -m "Update digest for $(date +%Y-%m-%d)"
           git push
