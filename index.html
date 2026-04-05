@@ -100,101 +100,6 @@
             white-space: nowrap;
         }
 
-        /* --- Top Story (featured) --- */
-        .top-story {
-            margin-bottom: 18px;
-            padding-bottom: 16px;
-            border-bottom: 1px dotted #ccc;
-        }
-
-        .top-story-headline-row {
-            display: block;
-            cursor: pointer;
-            user-select: none;
-            -webkit-user-select: none;
-        }
-
-        .top-story-headline-row:hover .top-story-title {
-            color: #8b1a1a;
-        }
-
-        .top-story-title {
-            font-size: 1.5em;
-            line-height: 1.25;
-            color: #1a3a6a;
-            font-weight: 700;
-            transition: color 0.15s ease;
-            display: block;
-            margin-bottom: 6px;
-        }
-
-        .top-story-deck {
-            font-size: 1.0em;
-            color: #555;
-            font-style: italic;
-            line-height: 1.5;
-            margin-bottom: 8px;
-        }
-
-        .top-story-sources {
-            font-size: 0.72em;
-            font-weight: 700;
-            letter-spacing: 0.08em;
-            color: #999;
-            text-transform: uppercase;
-        }
-
-        .top-story-updated {
-            font-size: 0.68em;
-            color: #aaa;
-            letter-spacing: 0.05em;
-            margin-top: 4px;
-        }
-
-        .top-story-body {
-            display: none;
-            margin-top: 12px;
-            font-size: 1.02em;
-            line-height: 1.8;
-            color: #222;
-            text-align: justify;
-            hyphens: auto;
-            -webkit-hyphens: auto;
-        }
-
-        .top-story.open .top-story-body {
-            display: block;
-        }
-
-        .top-story-body .drop-cap {
-            float: left;
-            font-size: 3.4em;
-            line-height: 0.8;
-            padding-right: 6px;
-            padding-top: 4px;
-            color: #8b1a1a;
-            font-weight: 700;
-        }
-
-        .top-story-body p {
-            margin-bottom: 12px;
-        }
-
-        .top-story-source-links {
-            font-size: 0.82em;
-            color: #888;
-            margin-top: 8px;
-        }
-
-        .top-story-source-links a {
-            color: #1a3a6a;
-            text-decoration: none;
-        }
-
-        .top-story-source-links a:hover {
-            text-decoration: underline;
-        }
-
         /* --- Story items --- */
         .story-item {
             padding: 8px 0;
@@ -597,80 +502,7 @@
             }
 
             // --- Top Story (National or International) ---
-            function renderTopStory(topStory, label) {
-                if (!topStory || !topStory.headline || !topStory.summary) return null;
-
-                var divider = document.createElement('div');
-                divider.className = 'section-divider';
-                divider.innerHTML = '<hr class="rule">' +
-                    '<div class="section-label">' + escapeHTML(label) + '</div>' +
-                    '<hr class="rule">';
-
-                var item = document.createElement('article');
-                item.className = 'top-story';
-
-                var headlineRow = document.createElement('div');
-                headlineRow.className = 'top-story-headline-row';
-
-                var title = document.createElement('span');
-                title.className = 'top-story-title';
-                title.textContent = topStory.headline;
-                headlineRow.appendChild(title);
-
-                var deck = document.createElement('div');
-                deck.className = 'top-story-deck';
-                deck.textContent = getFirstSentence(topStory.summary);
-                headlineRow.appendChild(deck);
-
-                // Sources byline
-                var sourcesDiv = document.createElement('div');
-                sourcesDiv.className = 'top-story-sources';
-                if (topStory.sources && topStory.sources.length > 0) {
-                    sourcesDiv.textContent = topStory.sources.map(function(s) { return s.name; }).join(' | ');
-                }
-                headlineRow.appendChild(sourcesDiv);
-
-                // Updated at timestamp
-                if (topStory.updatedAt) {
-                    var updatedDiv = document.createElement('div');
-                    updatedDiv.className = 'top-story-updated';
-                    updatedDiv.textContent = 'Updated ' + topStory.updatedAt;
-                    headlineRow.appendChild(updatedDiv);
-                }
-
-                headlineRow.addEventListener('click', function() {
-                    item.classList.toggle('open');
-                });
-
-                var body = document.createElement('div');
-                body.className = 'top-story-body';
-                body.innerHTML = summaryToHTMLWithDropCap(topStory.summary);
-
-                // Source links
-                if (topStory.sources && topStory.sources.length > 0) {
-                    var sourceLinks = document.createElement('div');
-                    sourceLinks.className = 'top-story-source-links';
-                    var linksHTML = 'Sources: ';
-                    for (var i = 0; i < topStory.sources.length; i++) {
-                        if (i > 0) linksHTML += ' &middot; ';
-                        linksHTML += '<a href="' + escapeHTML(topStory.sources[i].url) +
-                            '" target="_blank" rel="noopener noreferrer">' +
-                            escapeHTML(topStory.sources[i].name) + '</a>';
-                    }
-                    sourceLinks.innerHTML = linksHTML;
-                    body.appendChild(sourceLinks);
-                }
-
-                item.appendChild(headlineRow);
-                item.appendChild(body);
-
-                var frag = document.createDocumentFragment();
-                frag.appendChild(divider);
-                frag.appendChild(item);
-                return frag;
-            }
-
-            // --- Regular Story (with timestamp + category tag) ---
+            // --- Story (with timestamp + category tag) ---
             function renderStory(story, dateStr, idx) {
                 var item = document.createElement('div');
                 item.className = 'story-item';
@@ -748,9 +580,7 @@
 
                 var header = document.createElement('div');
                 header.className = 'day-header';
-                var storyCount = (data.stories ? data.stories.length : 0);
-                if (data.topNationalStory) storyCount++;
-                if (data.topInternationalStory) storyCount++;
+                var storyCount = data.stories ? data.stories.length : 0;
                 var countWord = storyCount === 1 ? 'story' : 'stories';
                 header.innerHTML = '<span class="day-arrow">&#9654;</span>' +
                     '<span class="day-date">' + escapeHTML(data.dateFormatted) + '</span>' +
@@ -763,27 +593,8 @@
                 var content = document.createElement('div');
                 content.className = 'day-content';
 
-                // Top National Story
-                var natStoryEl = renderTopStory(data.topNationalStory, 'Top National Story');
-                if (natStoryEl) {
-                    content.appendChild(natStoryEl);
-                }
-
-                // Top International Story
-                var intlStoryEl = renderTopStory(data.topInternationalStory, 'Top International Story');
-                if (intlStoryEl) {
-                    content.appendChild(intlStoryEl);
-                }
-
-                // News stories (chronological, newest first -- already in order from JSON)
+                // Stories (chronological, newest first)
                 if (data.stories && data.stories.length > 0) {
-                    var storiesDivider = document.createElement('div');
-                    storiesDivider.className = 'section-divider';
-                    storiesDivider.innerHTML = '<hr class="rule">' +
-                        '<div class="section-label">Latest Stories</div>' +
-                        '<hr class="rule">';
-                    content.appendChild(storiesDivider);
-
                     for (var i = 0; i < data.stories.length; i++) {
                         content.appendChild(renderStory(data.stories[i], data.date, i));
                     }

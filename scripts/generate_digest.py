@@ -29,7 +29,7 @@ from bs4 import BeautifulSoup
 # --- Configuration ---
 DENVER_TZ = ZoneInfo("America/Denver")
 MAX_CANDIDATES = 25  # gather this many before curation
-MAX_STORIES_PER_RUN = 4  # select up to this many new stories per run
+MAX_STORIES_PER_RUN = 5  # select up to this many new stories per run
 MIN_STORIES_PER_DAY = 12  # aim for at least this many stories per day
 MAX_STORIES_PER_DAY = 20  # never exceed this many stories per day
 ARTICLE_TEXT_LIMIT = 3000  # chars per article
@@ -1255,8 +1255,7 @@ def fetch_top_stories(brave_key, target_date_str):
     return national_result, intl_result
 
 
-def write_output(existing_data, new_stories, date_str, date_formatted,
-                 top_national=None, top_international=None):
+def write_output(existing_data, new_stories, date_str, date_formatted):
     """Write/update the JSON data file. Prepends new stories to existing stories."""
     if existing_data:
         output = existing_data
@@ -1266,6 +1265,10 @@ def write_output(existing_data, new_stories, date_str, date_formatted,
             "dateFormatted": date_formatted,
             "stories": [],
         }
+
+    # Remove legacy top story keys if present from older runs
+    output.pop("topNationalStory", None)
+    output.pop("topInternationalStory", None)
 
     # Add timestamps to new stories and prepend (newest first)
     now = datetime.datetime.now(DENVER_TZ)
@@ -1281,14 +1284,6 @@ def write_output(existing_data, new_stories, date_str, date_formatted,
     # Enforce max stories per day
     if len(output["stories"]) > MAX_STORIES_PER_DAY:
         output["stories"] = output["stories"][:MAX_STORIES_PER_DAY]
-
-    # Update top stories (they can change throughout the day)
-    if top_national:
-        top_national["updatedAt"] = time_label
-        output["topNationalStory"] = top_national
-    if top_international:
-        top_international["updatedAt"] = time_label
-        output["topInternationalStory"] = top_international
 
     os.makedirs(OUTPUT_DIR, exist_ok=True)
     filepath = os.path.join(OUTPUT_DIR, f"{date_str}.json")
@@ -1410,27 +1405,14 @@ def main():
         else:
             print("  No candidates after filtering")
 
-    # Step 5: Fetch top national and international stories
-    print("\n[Step 5] Fetching top national and international stories...")
-    top_national, top_international = fetch_top_stories(brave_key, target_date_str)
-    if top_national:
-        print(f"  Top national: {top_national['headline'][:70]}...")
-    else:
-        print("  Top national: skipped (failed)")
-    if top_international:
-        print(f"  Top international: {top_international['headline'][:70]}...")
-    else:
-        print("  Top international: skipped (failed)")
-
-    # Step 6: Write output
-    if not new_stories and not top_national and not top_international:
+    # Step 5: Write output
+    if not new_stories:
         print("\nNo new content to add. Exiting.")
         sys.exit(0)
 
-    print("\n[Step 6] Writing JSON output...")
+    print("\n[Step 5] Writing JSON output...")
     filepath = write_output(
         existing_data, new_stories, target_date_str, target_formatted,
-        top_national=top_national, top_international=top_international,
     )
 
     print("\nDone!")
