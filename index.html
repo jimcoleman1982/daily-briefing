@@ -485,58 +485,40 @@
                 return html;
             }
 
-            // --- Read tracking (localStorage, keyed by headline hash) ---
-            var READ_KEY = 'dailybriefing_read';
+            // --- Read tracking (localStorage, keyed by headline text) ---
+            // Uses a fresh key to avoid any conflicts with old data
+            var READ_KEY = 'db_read_v2';
 
-            function hashHeadline(headline) {
-                // Simple string hash -- stable across reloads, unique enough for headlines
-                var hash = 0;
-                for (var i = 0; i < headline.length; i++) {
-                    hash = ((hash << 5) - hash) + headline.charCodeAt(i);
-                    hash |= 0;
-                }
-                return 'h' + Math.abs(hash).toString(36);
-            }
+            // Clear old storage key from previous version
+            try { localStorage.removeItem('dailybriefing_read'); } catch(e) {}
 
             function getReadSet() {
                 try {
-                    return JSON.parse(localStorage.getItem(READ_KEY) || '{}');
-                } catch (e) { return {}; }
+                    return JSON.parse(localStorage.getItem(READ_KEY) || '[]');
+                } catch (e) { return []; }
             }
 
-            function markRead(readKey) {
-                var readSet = getReadSet();
-                readSet[readKey] = Date.now();
-                // Prune entries older than 14 days
-                var cutoff = Date.now() - (14 * 86400000);
-                var cleaned = {};
-                for (var key in readSet) {
-                    if (readSet[key] > cutoff) cleaned[key] = readSet[key];
-                }
-                localStorage.setItem(READ_KEY, JSON.stringify(cleaned));
-            }
-
-            function isRead(readKey) {
-                return !!getReadSet()[readKey];
-            }
-
-            // Migrate old index-based keys on first load (one-time cleanup)
-            (function migrateOldKeys() {
-                try {
-                    var data = JSON.parse(localStorage.getItem(READ_KEY) || '{}');
-                    var hasOld = false;
-                    for (var key in data) {
-                        if (/^\d{4}-\d{2}-\d{2}-\d+$/.test(key)) { hasOld = true; break; }
+            function markRead(headline) {
+                var readList = getReadSet();
+                if (readList.indexOf(headline) === -1) {
+                    readList.push(headline);
+                    // Keep last 200 entries max
+                    if (readList.length > 200) {
+                        readList = readList.slice(readList.length - 200);
                     }
-                    if (hasOld) { localStorage.removeItem(READ_KEY); }
-                } catch (e) {}
-            })();
+                    localStorage.setItem(READ_KEY, JSON.stringify(readList));
+                }
+            }
+
+            function isRead(headline) {
+                return getReadSet().indexOf(headline) !== -1;
+            }
 
             // --- Story ---
             function renderStory(story, dateStr, idx) {
-                var readKey = hashHeadline(story.headline);
+                var hl = story.headline;
                 var item = document.createElement('div');
-                item.className = 'story-item' + (isRead(readKey) ? ' read' : '');
+                item.className = 'story-item' + (isRead(hl) ? ' read' : '');
                 item.id = 'story-' + dateStr + '-' + idx;
 
                 var headline = document.createElement('div');
@@ -548,7 +530,7 @@
                     item.classList.toggle('open');
                     if (!item.classList.contains('read')) {
                         item.classList.add('read');
-                        markRead(readKey);
+                        markRead(hl);
                     }
                 });
 
