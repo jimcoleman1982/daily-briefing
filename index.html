@@ -140,6 +140,14 @@
             transition: color 0.15s ease;
         }
 
+        .story-item.read .story-title {
+            color: #999;
+        }
+
+        .story-item.read .story-bullet {
+            color: #ccc;
+        }
+
         .story-meta {
             display: none;
             align-items: center;
@@ -477,12 +485,40 @@
                 return html;
             }
 
-            // --- Top Story (National or International) ---
-            // --- Story (with timestamp + category tag) ---
+            // --- Read tracking (localStorage) ---
+            var READ_KEY = 'dailybriefing_read';
+
+            function getReadSet() {
+                try {
+                    return JSON.parse(localStorage.getItem(READ_KEY) || '{}');
+                } catch (e) { return {}; }
+            }
+
+            function markRead(storyId) {
+                var readSet = getReadSet();
+                readSet[storyId] = true;
+                // Prune entries older than 14 days to keep storage small
+                var cutoff = new Date();
+                cutoff.setDate(cutoff.getDate() - 14);
+                var cutoffStr = cutoff.getFullYear() + '-' + String(cutoff.getMonth()+1).padStart(2,'0') + '-' + String(cutoff.getDate()).padStart(2,'0');
+                var cleaned = {};
+                for (var key in readSet) {
+                    var datePart = key.split('-').slice(0, 3).join('-');
+                    if (datePart >= cutoffStr) cleaned[key] = true;
+                }
+                localStorage.setItem(READ_KEY, JSON.stringify(cleaned));
+            }
+
+            function isRead(storyId) {
+                return !!getReadSet()[storyId];
+            }
+
+            // --- Story ---
             function renderStory(story, dateStr, idx) {
+                var storyId = dateStr + '-' + idx;
                 var item = document.createElement('div');
-                item.className = 'story-item';
-                item.id = 'story-' + dateStr + '-' + idx;
+                item.className = 'story-item' + (isRead(storyId) ? ' read' : '');
+                item.id = 'story-' + storyId;
 
                 var headline = document.createElement('div');
                 headline.className = 'story-headline';
@@ -491,6 +527,10 @@
 
                 headline.addEventListener('click', function() {
                     item.classList.toggle('open');
+                    if (!item.classList.contains('read')) {
+                        item.classList.add('read');
+                        markRead(storyId);
+                    }
                 });
 
                 // Meta row: timestamp + source + source count
