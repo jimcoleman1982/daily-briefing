@@ -1,0 +1,46 @@
+{
+  "date": "2026-04-07",
+  "dateFormatted": "Tuesday, April 7, 2026",
+  "stories": [
+    {
+      "category": "world",
+      "headline": "Trump Details Daring Rescue of Two U.S. Airmen from Inside Iran, Warns Country Could Be 'Taken Out in One Night'",
+      "summary": "President Donald Trump held a detailed White House news conference Monday describing a multi-day rescue operation that extracted two U.S. airmen — the pilot and weapons systems officer of a downed F-15E Strike Eagle — from deep inside Iranian territory. The mission involved dozens of aircraft, hundreds of special operations personnel, CIA technology, and deliberate deception to conceal the location of the rescued airman. Trump called the operation \"historic\" while boasting of the military assets deployed.\n\nThe pilot, flying under the call sign Dude-44 Alpha, was rescued within hours of the jet going down late Thursday. The weapons systems officer was not recovered until nearly two days later. Gen. Dan Caine, Chairman of the Joint Chiefs of Staff, said rescue helicopters faced small-arms fire from Iranian forces across the country, and one trailing helicopter took multiple hits, injuring crew members who are expected to recover.\n\nAn A-10 Warthog that maintained contact with the downed pilot on the ground was struck by enemy fire and rendered unlandable, though its pilot continued fighting, flew to a friendly country, and ejected safely. Iran's state television broadcast footage it claimed showed wreckage of American transport aircraft and helicopters involved in the operation in Isfahan province, though U.S. officials did not directly address the claim.\n\nTrump used the news conference to renew threats against Iran, warning that the country could be \"taken out in one night\" and placing additional pressure ahead of his stated Tuesday deadline over the Strait of Hormuz. The unusually granular public disclosure of special operations details drew attention from military analysts, with some praising the mission's execution and others questioning the wisdom of revealing operational specifics.",
+      "source": "Associated Press",
+      "url": "https://apnews.com/article/iran-war-fighter-jet-rescue-trump-7d8cfb6d0fd400abdc71f8c9d67408fe",
+      "sourceCount": 2,
+      "addedAt": "6:01 AM MT",
+      "addedAtISO": "2026-04-07T06:01:36.790715-06:00"
+    },
+    {
+      "category": "politics",
+      "headline": "U.S. Supreme Court Clears Way for Dismissal of Contempt Case Against Trump Ally Steve Bannon",
+      "summary": "The U.S. Supreme Court issued an order Monday vacating a lower court ruling in the contempt of Congress case against former Trump strategist Steve Bannon, clearing a procedural path for the indictment to be dismissed entirely. The high court's order directs a lower court to consider dismissing the case, though it does not constitute a final ruling on the merits.\n\nBannon had been convicted of defying a subpoena issued by the House Select Committee investigating the January 6, 2021 Capitol riot. He had refused to produce documents or appear for testimony. His attorney Robert Corcoran called the court's action a vindication, stating: \"Like oil and water, politics and prosecution don't mix.\"\n\nSupporters of Bannon have long argued the prosecution was politically motivated and that the select committee itself lacked proper legal authority to enforce subpoenas. Critics and legal observers counter that the contempt referral followed established congressional procedure and that Bannon's defiance set a damaging precedent for legislative oversight powers.\n\nThe development is the latest in a years-long legal battle for one of Trump's most prominent political allies. Whether the lower court ultimately dismisses the indictment will determine the final resolution of a case that became a flashpoint in debates over congressional subpoena power and executive privilege.",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/world/us/supreme-court-clears-way-dismissal-case-against-trump-ally-steve-bannon-2026-04-06/",
+      "sourceCount": 2,
+      "addedAt": "6:01 AM MT",
+      "addedAtISO": "2026-04-07T06:01:36.790715-06:00"
+    },
+    {
+      "category": "other",
+      "headline": "Vehicle Strikes Crowd at Lao New Year Parade in Rural Louisiana, Injuring About 15",
+      "summary": "A vehicle drove into a crowd attending a Lao New Year celebration parade in rural Louisiana on Monday, injuring approximately 15 people, according to authorities. The incident occurred during a public outdoor celebration marking the traditional Lao Buddhist new year, known as Pi Mai.\n\nDetails on the severity of injuries, the identity of the driver, and any potential motive were not immediately confirmed by officials. Law enforcement was investigating the circumstances of the crash and whether it was intentional or accidental.\n\nThe incident is one of a series of vehicle-into-crowd events in recent years that have prompted renewed scrutiny of security measures at public gatherings and outdoor festivals across the United States. Authorities at the scene did not release additional information pending the investigation.",
+      "source": "Associated Press",
+      "url": "https://apnews.com/us-news",
+      "sourceCount": 1,
+      "addedAt": "6:01 AM MT",
+      "addedAtISO": "2026-04-07T06:01:36.790715-06:00"
+    },
+    {
+      "category": "technology",
+      "headline": "High-Stakes Conflict Between Pentagon and $380 Billion Tech Firm Centers on Limits of AI in Warfare",
+      "summary": "A significant dispute has emerged between the U.S. Department of Defense and a major technology company valued at approximately $380 billion, centering on how far artificial intelligence should be permitted to operate in military decision-making and combat systems. Bloomberg reported the conflict raises fundamental questions about the boundaries of autonomous AI use in warfare, a debate that has taken on greater urgency amid active U.S. military operations.\n\nThe dispute reflects a broader tension between the Pentagon's push to integrate advanced AI capabilities into weapons systems and logistics, and tech industry concerns — both ethical and legal — about the extent to which commercial AI platforms should be embedded in lethal military applications. The identity of the company involved was not specified in available reporting.\n\nDefense officials have argued that AI integration is essential to maintaining military advantage against adversaries including China and Russia, which are aggressively developing autonomous military systems. Critics, including some within the technology sector, contend that meaningful human control must be preserved over life-and-death decisions and that commercial firms bear responsibility for the end uses of their technology.\n\nThe standoff comes as Congress debates the administration's $1.5 trillion defense budget request, which includes substantial allocations for AI and autonomous systems development. The outcome could shape policy governing the use of commercial AI in U.S. military operations for years to come.",
+      "source": "Bloomberg",
+      "url": "https://www.bloomberg.com/ai",
+      "sourceCount": 1,
+      "addedAt": "6:01 AM MT",
+      "addedAtISO": "2026-04-07T06:01:36.790715-06:00"
+    }
+  ]
+}
