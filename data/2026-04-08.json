@@ -1,0 +1,26 @@
+{
+  "date": "2026-04-08",
+  "dateFormatted": "Wednesday, April 8, 2026",
+  "stories": [
+    {
+      "category": "politics",
+      "headline": "Over 85 House Democrats call for Trump's removal even after Iran ceasefire announcement",
+      "summary": "More than 85 House Democrats have formally backed measures to remove President Trump from office, including impeachment proceedings and invocation of the 25th Amendment, even following Trump's announcement of a two-week ceasefire with Iran. The push marks one of the most significant coordinated opposition efforts against the president since the Iran conflict began, with lawmakers arguing Trump's conduct during the crisis demonstrated unfitness for office.\n\nDemocrats backing the effort cited Trump's escalating threats against Iranian civilians, including warnings targeting power plants and bridges, as well as what they described as erratic decision-making throughout the conflict. More than 80 of the calls had been registered by Tuesday evening, with additional signatures expected.\n\nRepublicans and White House allies dismissed the effort as politically motivated, pointing to the ceasefire as evidence that Trump's aggressive posture produced a diplomatic result. Supporters argued the president's willingness to apply maximum pressure forced Iran to the negotiating table and protected American interests in the region.\n\nThe push is unlikely to succeed given Republican control of the House, but it signals deep divisions over the conduct of the Iran conflict and could shape Democratic messaging heading into the 2026 midterm elections. Congressional observers note that impeachment resolutions have historically served as political statements even when they lack the votes to advance.",
+      "source": "Axios",
+      "url": "https://www.axios.com/2026/04/08/trump-impeachment-25th-amendment-iran-democrats",
+      "sourceCount": 2,
+      "addedAt": "6:01 AM MT",
+      "addedAtISO": "2026-04-08T06:01:56.750151-06:00"
+    },
+    {
+      "category": "business",
+      "headline": "Physical oil prices approach $150 a barrel as Strait of Hormuz closure tightens global supply",
+      "summary": "Physical oil prices climbed to near-record highs approaching $150 per barrel on Tuesday as the ongoing closure of the Strait of Hormuz created severe tightness in the market for oil available for immediate delivery. Analysts attributed the spike to the near-complete disruption of crude flows through the strait, which under normal conditions carries roughly 20 percent of the world's oil supply.\n\nThe surge in physical prices, which reflect the cost of oil for prompt delivery rather than futures contracts, underscored the real-world supply constraints facing refiners and traders scrambling to secure cargoes from alternative routes and producers. Markets in Europe and Asia were reported to be particularly affected, with spot premiums for non-Gulf crude rising sharply.\n\nThe price spike comes despite the announcement of a two-week U.S.-Iran ceasefire, with traders and analysts noting that physical infrastructure damage and logistical disruptions mean oil flows through the Hormuz corridor are unlikely to normalize quickly even if hostilities formally pause. Restoration of full transit capacity is expected to take weeks at minimum.\n\nEnergy economists warned that sustained prices at or above $150 per barrel would accelerate inflationary pressures globally, with the heaviest impact falling on import-dependent economies in South and Southeast Asia. Several governments have already announced emergency measures to subsidize fuel costs for consumers.",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/business/energy/physical-oil-prices-hit-record-highs-near-150-barrel-hormuz-crisis-worsens-2026-04-07/",
+      "sourceCount": 1,
+      "addedAt": "6:01 AM MT",
+      "addedAtISO": "2026-04-08T06:01:56.750151-06:00"
+    }
+  ]
+}
