@@ -3,6 +3,36 @@
   "dateFormatted": "Thursday, April 9, 2026",
   "stories": [
     {
+      "category": "politics",
+      "headline": "U.S. Moves Toward Automatic Military Draft Registration for Young Men",
+      "summary": "The Selective Service System has proposed a rule that would automatically register American men for potential military service, ending decades of voluntary self-registration. Under the proposal, men would be enrolled upon turning 18 through integration with federal data sources rather than being required to register themselves within 30 days of their birthday. The change, approved by Congress in December as part of the National Defense Authorization Act, could take effect as early as December 2026.\n\nProponents, including Democratic Rep. Chrissy Houlahan of Pennsylvania who sponsored the measure, argue the change would save millions of dollars currently spent on outreach and reminder campaigns, redirecting those resources toward military readiness and mobilization. Compliance with current registration requirements fell to 81% in 2024, according to government data, and supporters say automatic enrollment would address that gap.\n\nThe proposal has prompted concern among some Americans who view it as a step toward reinstating a military draft, particularly amid the ongoing Iran conflict. White House Press Secretary Karoline Leavitt, when asked about the possibility of a draft, said it was 'not part of the current plan right now' but did not rule it out entirely, noting the president 'wisely keeps his options on the table.' The rule is still under review by the Office of Information and Regulatory Affairs and must be formally approved before implementation.\n\nThe last U.S. military draft ended in 1973 following widespread public opposition during the Vietnam War. Failure to register currently carries the theoretical penalty of up to five years in federal prison, though prosecutions are nearly nonexistent, and can result in loss of eligibility for federal student aid and federal employment.",
+      "source": "BBC News",
+      "url": "https://www.bbc.com/news/articles/cd6lx2lpl9xo",
+      "sourceCount": 1,
+      "addedAt": "3:56 PM MT",
+      "addedAtISO": "2026-04-09T15:56:14.731415-06:00"
+    },
+    {
+      "category": "science_health",
+      "headline": "Gene Variants Found to Predict Greater Weight Loss on Obesity Drugs",
+      "summary": "New research suggests that people carrying specific variations in two genes linked to appetite regulation and digestion experience significantly greater weight loss when taking obesity medications such as GLP-1 receptor agonists. The findings, reported by BBC Health, could point toward a more personalized approach to treating obesity, allowing clinicians to identify patients most likely to benefit from the drugs before prescribing them.\n\nThe discovery centers on gene variants associated with how the body processes hunger signals and metabolizes food. Researchers say the results may help explain why some patients lose substantially more weight on the drugs than others, a variability that has been a persistent question in clinical settings since the medications became widely used.\n\nThe research adds to a growing body of work exploring the genetic underpinnings of drug response and could eventually inform prescribing guidelines. However, scientists caution that the findings need to be replicated in larger, more diverse populations before routine genetic screening becomes a standard part of obesity treatment. The drugs in question have already transformed treatment for millions of patients globally and generated tens of billions of dollars in pharmaceutical revenue.",
+      "source": "BBC News",
+      "url": "https://www.bbc.com/health",
+      "sourceCount": 1,
+      "addedAt": "3:56 PM MT",
+      "addedAtISO": "2026-04-09T15:56:14.731415-06:00"
+    },
+    {
+      "category": "business",
+      "headline": "Wall Street Rises as Iran Peace Talks in Islamabad Lift Market Sentiment",
+      "summary": "U.S. stock markets closed higher Thursday as investors drew encouragement from ongoing ceasefire negotiations between the United States and Iran in Islamabad, with traders hoping the talks could lead to a more durable agreement and a reopening of the Strait of Hormuz. The Dow Jones Industrial Average and S&P 500 both posted gains, continuing a tentative recovery from the sharp losses sustained during the peak of the Iran conflict.\n\nDespite the market optimism, significant uncertainty remains. The Strait of Hormuz has not reopened to tanker traffic, and Iran's demand to collect toll payments for passage through the waterway continues to face strong opposition from oil industry groups and major trading nations. Physical oil prices have remained elevated as a result, keeping pressure on global supply chains and consumer fuel costs.\n\nAnalysts warned that the market rally could prove fragile. The ceasefire has been described by at least one major think tank as hovering 'on the verge of collapse,' and Israeli strikes on Lebanon have continued despite not being formally included in the ceasefire terms, drawing concern from diplomats that further escalation could unravel the deal. Banking sector earnings, set to be reported in coming days, are expected to reflect strong deal activity but may be clouded by war-related uncertainty in the outlook.",
+      "source": "Bloomberg",
+      "url": "https://www.bloomberg.com/ai",
+      "sourceCount": 1,
+      "addedAt": "3:56 PM MT",
+      "addedAtISO": "2026-04-09T15:56:14.731415-06:00"
+    },
+    {
       "category": "world",
       "headline": "UK Military Deployed to Deter Russian Submarines Threatening Undersea Cables in North Atlantic",
       "summary": "Britain deployed military vessels to protect undersea cables and pipelines after Russian submarines spent more than a month operating in and around British waters earlier this year, Defence Minister John Healey announced Thursday. The deployment was a direct response to the threat of deliberate attacks on critical undersea infrastructure in the North Atlantic.\n\nHealey's disclosure marks a rare public acknowledgment by the British government that Russian submarines were operating in proximity to vital communications and energy infrastructure. Undersea cables carry the vast majority of global internet traffic and financial data, making them a high-value target in any hybrid warfare scenario.\n\nThe revelation comes amid heightened tensions between NATO members and Russia, with Western governments increasingly focused on the vulnerability of undersea infrastructure following a series of incidents in recent years, including the 2022 sabotage of the Nord Stream pipelines. NATO allies have been expanding maritime patrols and surveillance capabilities in response.\n\nThe British government has not specified how long the military deployment lasted, which vessels were involved, or the exact locations where Russian submarines were tracked. The disclosure is likely to prompt calls from defense analysts for greater investment in undersea monitoring and protection capabilities across the alliance.",
