@@ -3,6 +3,46 @@
   "dateFormatted": "Saturday, April 11, 2026",
   "stories": [
     {
+      "category": "business",
+      "headline": "Meta Must Face Massachusetts Lawsuit Alleging Instagram Designed to Addict Children",
+      "summary": "Massachusetts' top court ruled Friday that Meta Platforms must face a lawsuit brought by the state's attorney general alleging the company deliberately designed its Instagram platform to addict children. The ruling allows the case to proceed, marking a significant legal development in ongoing state-level efforts to hold social media companies accountable for harms to minors.\n\nThe Massachusetts attorney general's office argues that Instagram's features — including algorithmic content feeds, notifications, and engagement mechanics — were knowingly engineered to maximize compulsive use among young users. Meta has denied that its platforms are designed to harm children, arguing it has invested heavily in safety tools and parental controls.\n\nThe ruling is one of several legal fronts Meta faces across the country over youth mental health and platform addiction claims. Dozens of states and school districts have filed similar suits, and Congress has held repeated hearings on the issue. The Massachusetts court's decision to allow the case to move forward could embolden other jurisdictions and increase pressure on the company to settle or change its practices.\n\nMeta's stock and broader Big Tech shares have been closely watched as legal liability around youth safety grows. The company has pointed to features such as default time limits for users under 16 and restrictions on certain content as evidence of good-faith efforts to protect young people on its platforms.",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/",
+      "sourceCount": 8,
+      "addedAt": "8:41 AM MT",
+      "addedAtISO": "2026-04-11T08:41:54.340682-06:00"
+    },
+    {
+      "category": "business",
+      "headline": "UniCredit Abandons Russian Unit Sale, Considers Liquidating Banking License",
+      "summary": "Italian banking giant UniCredit has scrapped its plans to sell its Russian subsidiary and is now weighing liquidating the business and surrendering its banking license in Russia, according to a report Friday by the Russian financial daily Kommersant, citing unnamed sources. The move marks a significant shift in strategy for one of Europe's largest banks, which has faced sustained pressure from European regulators and investors to exit Russia following the country's 2022 invasion of Ukraine.\n\nUniCredit had previously attempted to find a buyer for its Russian operations but reportedly struggled to complete a sale amid regulatory hurdles, Western sanctions, and Russian government restrictions on asset transfers by foreign companies. Liquidation would represent a full wind-down of the bank's Russian presence rather than a transfer of ownership.\n\nThe potential exit adds to a broader trend of European financial institutions pulling back from Russia, though many have found the process far more complicated and costly than anticipated due to Kremlin-imposed conditions on foreign asset disposals. UniCredit has previously disclosed significant exposure to Russia on its balance sheet, drawing criticism from shareholders and European Central Bank supervisors.\n\nUniCredit has not officially confirmed the report. The bank's CEO has previously said the institution was working toward an orderly exit while managing its legal and financial obligations. The final decision on liquidation versus sale has not been publicly announced.",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/",
+      "sourceCount": 8,
+      "addedAt": "8:41 AM MT",
+      "addedAtISO": "2026-04-11T08:41:54.340682-06:00"
+    },
+    {
+      "category": "world",
+      "headline": "Russian Drone Strikes Kill at Least Two in Odesa Residential Area",
+      "summary": "Russian drone strikes struck a residential area of the Ukrainian port city of Odesa overnight Saturday, killing at least two people and wounding two others, according to officials. The attack targeted civilian infrastructure in one of Ukraine's most strategically important southern cities.\n\nUkrainian emergency services responded to the scene, with rescue workers searching through damaged buildings. Odesa has been a recurring target of Russian drone and missile attacks given its role as a critical hub for Ukrainian grain and commercial shipping exports on the Black Sea.\n\nThe strikes come as international diplomatic efforts around the broader Russia-Ukraine conflict continue, with Ukraine maintaining that Russian attacks on civilian areas undermine any prospects for negotiated settlement. Kyiv has repeatedly called on Western allies for additional air defense systems to protect population centers from drone barrages.\n\nRussia has not officially commented on the specific overnight strikes. Moscow has consistently characterized its military operations as targeting military infrastructure, a claim Ukrainian authorities and Western governments dispute.",
+      "source": "ABC News",
+      "url": "https://abcnews.com/international",
+      "sourceCount": 2,
+      "addedAt": "8:41 AM MT",
+      "addedAtISO": "2026-04-11T08:41:54.340682-06:00"
+    },
+    {
+      "category": "science_health",
+      "headline": "Generative AI Outperforms Average Human on Creativity Tests in Landmark Study",
+      "summary": "A major new study comparing more than 100,000 people with today's leading generative artificial intelligence systems found that AI can now surpass the average human on certain standardized creativity tests, according to results published Friday. The research marks one of the most comprehensive head-to-head comparisons of human and machine creative performance to date.\n\nThe study tested participants and AI systems on divergent thinking tasks — measures of the ability to generate original, varied, and unexpected ideas — which are widely used in psychology as proxies for creative cognition. The AI models tested consistently scored above the human average on these benchmarks, though researchers noted that the highest-performing human participants still exceeded the AI systems at the top end of the distribution.\n\nScientists cautioned that performance on standardized creativity tests does not capture the full range of human creative experience, including emotional depth, cultural context, and intentional meaning-making. The findings nonetheless reignited debate among researchers and technologists about the nature of machine intelligence and the long-term implications for creative professions.\n\nThe results are likely to fuel ongoing policy and academic discussions about AI's role in education, the arts, and the workforce. Proponents argue the findings highlight AI's potential as a creative collaborator, while critics warn against overstating the significance of benchmark scores that may not translate to genuine originality or artistic value.",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/",
+      "sourceCount": 8,
+      "addedAt": "8:41 AM MT",
+      "addedAtISO": "2026-04-11T08:41:54.340682-06:00"
+    },
+    {
       "category": "technology",
       "headline": "FAA and Pentagon Approve Counter-Drone Lasers for Use Along Southern Border",
       "summary": "The Federal Aviation Administration and the Defense Department have signed a joint agreement authorizing the use of counter-drone laser systems along the U.S.-Mexico border, concluding that the weapons can be deployed safely without necessitating airport closures. The announcement follows a review prompted by airspace disruptions near El Paso earlier this year, when lasers were used without proper FAA notification, stranding travelers.\n\nThe FAA's decision came after a demonstration at White Sands Missile Range in New Mexico last month convinced regulators that the lasers pose an acceptable risk to civilian aviation. The agreement outlines safety precautions but has not publicly detailed their specifics, and the FAA has yet to hold a classified briefing for Congress on the matter.\n\nDrones are a persistent threat along the border, with officials reporting more than 27,000 drone detections within 1,600 feet of the southern border in the final six months of 2024 alone. The Trump administration has framed the laser program as essential to countering Mexican cartel surveillance and drug-smuggling operations.\n\nSome Democratic lawmakers expressed cautious support while pressing for more transparency. Rep. Rick Larsen, ranking Democrat on the House Transportation and Infrastructure Committee, said meaningful interagency collaboration was \"absolutely critical\" and that the FAA must be present whenever counter-drone systems are deployed in ways that could affect national airspace safety.",
