@@ -4,6 +4,46 @@
   "stories": [
     {
       "category": "world",
+      "headline": "U.S. Threatens to Block Strait of Hormuz After Iran Talks Collapse Without Nuclear Agreement",
+      "summary": "The United States is threatening to block shipping through the Strait of Hormuz and has warned it is prepared to 'end' Iran after historic face-to-face negotiations in Islamabad, Pakistan, concluded Sunday without a deal. Vice President JD Vance, who led the U.S. delegation alongside special envoy Steve Witkoff and Jared Kushner, said Tehran refused to commit to abandoning its nuclear weapons development program after more than 21 hours of talks.\n\nVance departed Islamabad Sunday morning, boarding Air Force Two after delivering a brief statement in which he said he had been in communication with President Trump and senior cabinet officials throughout the negotiations. The talks, brokered by Pakistan and held with Iranian Parliament Speaker Mohammad Bagher Qalibaf leading Tehran's delegation, represented the first direct U.S.-Iran engagement since the war began in late February.\n\nThe collapse leaves the fragile two-week ceasefire, announced April 7, in an increasingly precarious state. The United States had entered the talks demanding Iran renounce nuclear weapons development as a condition for any lasting peace agreement, while Iran had set its own preconditions before substantive negotiations could begin.\n\nThe threat to close the Strait of Hormuz — through which roughly a fifth of global oil supplies pass — raises the prospect of severe economic consequences for energy markets worldwide. The situation remains fluid, with no new round of talks announced and the ceasefire's status uncertain.",
+      "source": "Associated Press",
+      "url": "https://apnews.com/article/iran-us-israel-trump-lebanon-april-12-2026-a8a0d22918fc3fb30bc3abf1cd5c5a13",
+      "sourceCount": 2,
+      "addedAt": "7:24 AM MT",
+      "addedAtISO": "2026-04-12T07:24:13.111565-06:00"
+    },
+    {
+      "category": "politics",
+      "headline": "Trump Says U.S. 'Wins Regardless' as Iran Talks Fail, Heads to Florida",
+      "summary": "President Trump, traveling to Florida on Sunday, commented publicly for the first time on the collapse of the Islamabad negotiations, telling reporters that the outcome of talks with Iran was of little concern to him. 'We win, regardless,' Trump said, signaling a posture of strategic indifference to whether a diplomatic resolution is reached.\n\nThe remarks come as Vice President Vance concluded the U.S. delegation's 21-hour engagement in Pakistan, which ended without Iran agreeing to abandon nuclear weapons development. Trump had spoken with Vance roughly a dozen times during the talks, according to Vance's own account at a brief Islamabad press conference.\n\nThe president's comments reflect the administration's stated position that military and economic pressure on Iran remains viable should diplomacy fail. Critics have argued the administration's maximalist demands made a deal structurally difficult from the outset, while supporters contend that accepting anything less than a full nuclear commitment would be a strategic failure.\n\nWith the ceasefire now under strain and U.S. threats to blockade the Strait of Hormuz escalating tensions, the administration's next steps on Iran policy are being closely watched by allies and adversaries alike.",
+      "source": "New York Times",
+      "url": "https://www.nytimes.com/section/politics",
+      "sourceCount": 1,
+      "addedAt": "7:24 AM MT",
+      "addedAtISO": "2026-04-12T07:24:13.111565-06:00"
+    },
+    {
+      "category": "world",
+      "headline": "Hungary Goes to the Polls as Orbán Faces Strongest Electoral Challenge of His Career",
+      "summary": "Hungarian voters cast ballots Sunday in what is being described as the most consequential election in the country in a generation, with Prime Minister Viktor Orbán's Fidesz party facing a serious challenge from Péter Magyar's center-right Tisza party. Most independent polls show Tisza leading by double digits, though many analysts caution the result could be considerably closer given Fidesz's organizational strength and rural base.\n\nMagyar, a 45-year-old lawyer and former Fidesz insider, closed his campaign Saturday before thousands of supporters in Debrecen, Hungary's second-largest city, calling the vote a day of 'resurrection' for Hungary and pledging national reconciliation if elected. Orbán, concluding his campaign on Budapest's Castle Hill, warned of external dangers and told supporters that 'now is not the time to take risks.'\n\nOrbán has held power for 16 consecutive years and has reshaped Hungary's political and judicial institutions during that time, drawing sustained criticism from the European Union over rule-of-law concerns while maintaining strong domestic support among rural and conservative voters. A Tisza victory would end that era and mark a significant realignment within Central European politics.\n\nResults are expected Sunday evening. International observers and EU officials are closely monitoring the vote, which carries implications not only for Hungary's domestic governance but also for its relationships with Brussels, Washington, and Moscow.",
+      "source": "Associated Press",
+      "url": "https://apnews.com/article/hungary-election-orban-magyar-final-rallies-928262ae663d05a02879e6f2a57a2efb",
+      "sourceCount": 1,
+      "addedAt": "7:24 AM MT",
+      "addedAtISO": "2026-04-12T07:24:13.111565-06:00"
+    },
+    {
+      "category": "other",
+      "headline": "Machete Attack at Grand Central Station Injures Three; Suspect Shot and Killed by Police",
+      "summary": "A man wielding a machete attacked three people at the 42nd Street-Grand Central subway station in New York City on Saturday morning before being fatally shot by police officers. The suspect, identified by authorities as Anthony Griffin, 44, was pronounced dead at Bellevue Hospital after officers shot him twice when he advanced on them with the weapon extended.\n\nThe three victims — an 84-year-old man, a 65-year-old man, and a 70-year-old woman — sustained lacerations in what police described as random attacks. One victim suffered significant facial lacerations and an open skull fracture; none of the injuries were considered life-threatening, according to Police Commissioner Jessica Tisch.\n\nTisch said officers ordered Griffin to drop the weapon at least 20 times and attempted to de-escalate before opening fire. Griffin had three prior unsealed arrests and was reportedly claiming to be 'Lucifer' during the encounter. New York Governor Kathy Hochul praised officers for acting quickly to stop the threat.\n\nThe attack occurred at one of the busiest transit hubs in the United States during Saturday morning commuting hours. The incident reignited ongoing discussions about subway safety in New York City, where transit crime and the policing response to mentally ill individuals in public spaces remain politically contentious issues.",
+      "source": "Associated Press",
+      "url": "https://apnews.com/article/new-york-subway-station-injuries-hospital-1cd670e7b0a302e2d51f851a74247bfd",
+      "sourceCount": 1,
+      "addedAt": "7:24 AM MT",
+      "addedAtISO": "2026-04-12T07:24:13.111565-06:00"
+    },
+    {
+      "category": "world",
       "headline": "Hungary Holds Landmark Election as Orbán Faces Strongest Challenge to 16-Year Rule",
       "summary": "Hungarian voters went to the polls Sunday in what analysts describe as the most consequential election in the country's post-communist history. Prime Minister Viktor Orbán's Fidesz party faces a serious challenge from Péter Magyar's center-right Tisza party, which has led by double digits in most independent polls.\n\nOrbán and Magyar held their final campaign rallies Saturday, drawing large crowds in Budapest and Debrecen respectively. Orbán closed his campaign on Budapest's Castle Hill, warning of external dangers and urging voters not to 'take risks' during what he called 'an age of danger,' citing the ongoing conflict in neighboring Ukraine. Magyar, a 45-year-old lawyer and former Fidesz insider, struck a confident tone before thousands in Debrecen, calling the vote a 'day of resurrection' and pledging national reconciliation.\n\nIf Tisza wins, it would end Orbán's grip on power that began in 2010, a tenure marked by sweeping changes to Hungary's judicial system, media landscape, and relationship with the European Union. Many observers caution that the final result could be closer than polls suggest, as Fidesz retains strong organizational infrastructure and deep rural support.\n\nThe outcome carries broad implications for European politics, NATO cohesion, and Hungary's relationship with the Trump administration, which has maintained warmer ties with Orbán than other EU leaders. Results are expected throughout Sunday evening.",
       "source": "Associated Press",
