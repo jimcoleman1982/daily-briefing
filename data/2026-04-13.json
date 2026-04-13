@@ -3,6 +3,16 @@
   "dateFormatted": "Monday, April 13, 2026",
   "stories": [
     {
+      "category": "business",
+      "headline": "PwC Study: Top 20% of Companies Capturing Three-Quarters of AI's Economic Gains",
+      "summary": "A new global study by PwC released Monday finds that artificial intelligence's financial benefits are concentrating rapidly among a small group of companies, with the top 20 percent of AI adopters capturing approximately three-quarters of the technology's total economic gains. The study, based on analysis of companies across multiple sectors and geographies, identifies a widening performance gap between AI leaders and the rest of the corporate world.\n\nAccording to PwC, the leading companies are distinguished not merely by their use of AI for efficiency and cost-cutting, but by a strategic orientation toward growth — using AI to drive new revenues, products, and market opportunities rather than simply automating existing processes. This growth-focused approach is what separates the top performers from the broader field of AI adopters.\n\nThe findings have significant implications for business strategy and policy as governments and regulators worldwide grapple with how to ensure the benefits of AI are more broadly shared. Economists have raised concerns that concentrated AI gains could exacerbate inequality both within and across economies.\n\nThe report arrives as AI investment continues to surge globally, with technology companies, financial institutions, and manufacturers all racing to deploy large language models and related tools. PwC's findings suggest the competitive window for companies to join the leading tier may be narrowing quickly.",
+      "source": "PwC",
+      "url": "https://www.pwc.com/gx/en/news-room/press-releases/2026/pwc-2026-ai-performance-study.html",
+      "sourceCount": 1,
+      "addedAt": "11:07 AM MT",
+      "addedAtISO": "2026-04-13T11:07:47.135320-06:00"
+    },
+    {
       "category": "technology",
       "headline": "OpenAI CEO Sam Altman's Home Targeted in Second Attack in Two Days",
       "summary": "OpenAI CEO Sam Altman's residence was targeted for a second time on Sunday morning, when two suspects were arrested after allegedly attempting to shoot at the home. The incident followed a Molotov cocktail attack on Friday morning that caused a fire damaging an outer gate. No injuries were reported in either attack.\n\nAltman responded to the Friday incident in a blog post, calling for de-escalation of rhetoric surrounding artificial intelligence amid growing public anxiety about the technology's societal impact. The back-to-back attacks underscore rising tensions around prominent AI executives as debates over the technology's power and risks intensify.\n\nThe incidents come as AI infrastructure stocks climbed Monday and anticipation builds around potential IPOs from Anthropic and SpaceX. Broader market sentiment around Big Tech remains clouded by both the Iran conflict and uncertainty over AI's long-term disruption of existing business models, according to analysts at Goldman Sachs and JPMorgan.",
