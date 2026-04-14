@@ -3,6 +3,26 @@
   "dateFormatted": "Tuesday, April 14, 2026",
   "stories": [
     {
+      "category": "business",
+      "headline": "Amazon to Acquire Satellite Company Globalstar for $11.57 Billion in Challenge to SpaceX Starlink",
+      "summary": "Amazon has agreed to acquire satellite communications company Globalstar for $11.57 billion, marking a major escalation in the company's ambitions to compete directly with SpaceX's Starlink internet service. The deal signals Amazon's commitment to its Project Kuiper initiative, under which it plans to deploy roughly 3,200 satellites within the next three years and launch a broadband internet service to rival Starlink's established global network.\n\nThe acquisition would give Amazon significant existing satellite infrastructure and spectrum rights, potentially accelerating its timeline to market. SpaceX's Starlink has built a substantial lead in the low-Earth orbit satellite internet sector, serving millions of customers worldwide and playing a prominent role in conflict zones including Ukraine.\n\nThe deal represents one of the largest technology acquisitions of 2026 and underscores the intensifying competition in the commercial space and satellite connectivity industry. Analysts noted that Amazon's deep capital reserves and existing cloud and logistics infrastructure could make it a formidable long-term competitor to SpaceX, though Starlink's head start remains a significant advantage.",
+      "source": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/sectors/technology/article/tech-stocks-today-ai-infrastructure-stocks-climb-openai-ceos-home-targeted-in-alleged-second-attack-144220830.html",
+      "sourceCount": 1,
+      "addedAt": "10:14 AM MT",
+      "addedAtISO": "2026-04-14T10:14:20.467293-06:00"
+    },
+    {
+      "category": "technology",
+      "headline": "OpenAI Internal Memo Accuses Anthropic of Inflating Revenue by $8 Billion, Calls Strategy Built on 'Fear'",
+      "summary": "An internal OpenAI memo authored by Chief Revenue Officer Denise Dresser and published by The Verge accuses rival AI company Anthropic of overstating its revenue run rate by approximately $8 billion. Dresser alleged that Anthropic uses accounting treatment that grosses up revenue-sharing arrangements with Amazon and Google, inflating its recently disclosed $30 billion annual run rate figure. OpenAI, she wrote, reports its Microsoft revenue-share arrangement on a net basis, which she described as more in line with standard accounting practice.\n\nThe memo, directed at OpenAI's sales organization, also criticized Anthropic's broader competitive strategy, characterizing it as \"built on fear, restriction, and the idea that a small group of elites should control AI.\" Dresser further argued that Anthropic made a strategic error by not securing sufficient computing capacity and that its heavy focus on coding products leaves it vulnerable as AI adoption spreads across industries beyond software development.\n\nAnthropic has not publicly responded to the memo's allegations. The company disclosed the $30 billion run rate figure last week, representing roughly a tripling of its growth since the end of 2025. The public surfacing of the internal memo highlights the intensifying commercial rivalry between the two leading American AI laboratories as enterprise adoption accelerates.",
+      "source": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/sectors/technology/article/tech-stocks-today-ai-infrastructure-stocks-climb-openai-ceos-home-targeted-in-alleged-second-attack-144220830.html",
+      "sourceCount": 1,
+      "addedAt": "10:14 AM MT",
+      "addedAtISO": "2026-04-14T10:14:20.467293-06:00"
+    },
+    {
       "category": "technology",
       "headline": "Nvidia Denies Acquisition Talks with Dell After Rumor Sends PC Stocks Surging",
       "summary": "Shares of Dell Technologies jumped nearly 7% and HP climbed more than 5% on Monday following a market rumor that Nvidia was in discussions to acquire a personal computer manufacturer. The gains reversed in after-hours trading after an Nvidia spokesperson flatly denied the report, stating, \"The media report is false; Nvidia is not engaged in discussions to acquire any PC maker.\"\n\nThe episode highlights the volatile sentiment surrounding artificial intelligence infrastructure stocks, which have been whipsawed in recent weeks by both the ongoing Iran conflict and broader uncertainty about Big Tech valuations. Investors have struggled to separate war-related risk aversion from underlying shifts in sentiment toward major technology companies.\n\nSeparately, Meta is reportedly developing a photorealistic AI avatar of CEO Mark Zuckerberg, according to the Financial Times. The avatar is being trained to adopt Zuckerberg's mannerisms and tone, with the stated goal of giving employee feedback and helping staff better understand company strategy. Meta has also been building a separate \"CEO agent\" tool designed to rapidly retrieve information to assist Zuckerberg directly.\n\nMeanwhile, anticipation continues to build in markets around two high-profile potential public offerings: a possible IPO from AI company Anthropic as early as this year, and the long-awaited public debut of Elon Musk's SpaceX.",
