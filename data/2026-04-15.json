@@ -3,6 +3,36 @@
   "dateFormatted": "Wednesday, April 15, 2026",
   "stories": [
     {
+      "category": "technology",
+      "headline": "Antitrust Lawsuit Accuses Google of Monopolizing Android App Distribution and Billing",
+      "summary": "A new antitrust lawsuit filed Tuesday accuses Google of illegally shutting out rival Android app stores by monopolizing app distribution and billing systems, in alleged violation of U.S. antitrust law. The lawsuit targets Google's control over the Android app ecosystem, arguing that the company uses its dominant position to foreclose competition from alternative app marketplaces.\n\nThe case adds to a growing list of antitrust challenges facing Google, which has already faced scrutiny from regulators and courts over its search, advertising, and other businesses. Plaintiffs contend that Google's practices force developers and consumers into its ecosystem, limiting choices and inflating costs.\n\nGoogle has previously defended its app store policies as necessary to maintain security and quality standards for Android users. The company has argued that Android, as an open platform, already allows for sideloading and alternative distribution in ways that Apple's iOS does not.\n\nThe lawsuit is expected to draw significant attention from antitrust regulators and the tech industry, given the size of the Android app market and the potential implications for how major platforms govern third-party software distribution.",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/world/us/california/",
+      "sourceCount": 1,
+      "addedAt": "5:07 AM MT",
+      "addedAtISO": "2026-04-15T05:07:46.471651-06:00"
+    },
+    {
+      "category": "other",
+      "headline": "Erika Kirk Withdraws from TPUSA Event at University of Georgia After Serious Threats",
+      "summary": "Erika Kirk, widow of conservative activist Charlie Kirk, withdrew from a scheduled appearance at a Turning Point USA event at the University of Georgia on Tuesday after organizers said she received what they described as \"very serious threats.\" TPUSA spokesman Andrew Kolvet confirmed her absence, citing concerns for her safety and that of her family.\n\nVice President JD Vance, who attended the event, said he had been concerned the gathering might be canceled and spoke with the Secret Service about the situation. Vance said he told Kirk to \"do what she needs to do for her and her family,\" indicating the administration took the threat seriously. The TPUSA event proceeded despite Kirk's absence.\n\nErika Kirk has become a more prominent public figure since her husband Charlie Kirk's death, having been recognized by President Trump during his State of the Union address in February 2026. The nature and source of the threats have not been publicly detailed by organizers or law enforcement.\n\nThe incident underscores ongoing concerns about threats directed at public figures associated with conservative organizations on college campuses, a subject of recurring debate around campus free speech and political safety.",
+      "source": "Fox News",
+      "url": "https://www.foxnews.com/politics/erika-kirk-cancels-university-georgia-tpusa-event-appearance-over-serious-threats",
+      "sourceCount": 1,
+      "addedAt": "5:07 AM MT",
+      "addedAtISO": "2026-04-15T05:07:46.471651-06:00"
+    },
+    {
+      "category": "world",
+      "headline": "Woman Dies Aboard Qantas Flight from New York to New Zealand",
+      "summary": "A woman died aboard a Qantas flight traveling from New York to New Zealand, according to a police spokesperson who confirmed officers were in attendance at a \"sudden death\" that occurred on the inbound aircraft. Details regarding the woman's identity, age, and cause of death have not yet been released.\n\nQantas has not issued a detailed public statement regarding the circumstances of the death or what procedures were followed by crew members during the flight. Sudden deaths on long-haul international flights, while uncommon, occasionally occur given the duration and physical demands of extended air travel.\n\nPolice are treating the matter as a sudden death, and there is no immediate indication of foul play. An investigation into the cause of death is expected to follow standard procedures for such incidents.",
+      "source": "9news.com.au",
+      "url": "https://www.9news.com.au/world/woman-dies-on-qantas-flight-from-usa-to-new-zealand/e4d890d4-b5e2-47a9-b236-abc9dc9c383e",
+      "sourceCount": 1,
+      "addedAt": "5:07 AM MT",
+      "addedAtISO": "2026-04-15T05:07:46.471651-06:00"
+    },
+    {
       "category": "business",
       "headline": "Federal Reserve Probes Major Banks on Private Credit Exposure Amid Surge in Redemptions and Troubled Loans",
       "summary": "The Federal Reserve has asked major U.S. banks to provide detailed information about their exposure to private credit markets, according to Bloomberg News, citing people familiar with the matter. The inquiry follows a notable surge in redemptions from private credit funds and a rise in troubled loans within the industry.\n\nPrivate credit has grown into a multi-trillion-dollar asset class over the past decade, attracting significant investment from institutional and retail investors. Regulators have increasingly flagged the sector as a potential source of systemic risk given its opacity and rapid expansion relative to traditional bank lending.\n\nThe Fed's move signals heightened supervisory concern about potential contagion if private credit stress were to spill over into the broader banking system. Banks with large exposures could face pressure on capital buffers if loan quality continues to deteriorate.\n\nThe inquiry does not constitute a formal enforcement action, and the Fed has not publicly commented on the matter. Analysts say the information-gathering effort is consistent with the central bank's broader mandate to monitor emerging risks to financial stability.",
