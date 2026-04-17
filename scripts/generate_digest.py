@@ -36,6 +36,10 @@ MIN_STORIES_PER_RUN = 2  # always try to add at least this many (fresh news does
 ARTICLE_TEXT_LIMIT = 3000  # chars per article
 ANTHROPIC_MAX_TOKENS = 8000  # hard cap on output tokens (higher for multi-story output)
 ANTHROPIC_MODEL = "claude-sonnet-4-6"
+# Lighter-weight model used for batched new/update/stale classification of
+# borderline dedup cases. Haiku is fast and cheap; the classification task
+# is simple enough that a smaller model is fine.
+ANTHROPIC_CLASSIFIER_MODEL = "claude-haiku-4-5-20251001"
 OUTPUT_DIR = os.path.join(os.path.dirname(os.path.dirname(__file__)), "data")
 SITE_URL = "https://101news.org"
 
@@ -500,8 +504,12 @@ def get_queries_for_run():
         bucket = TOPIC_BUCKETS.get(bucket_name, [])
         if not bucket:
             continue
-        # Rotate: pick index based on day-of-year + bucket name hash
-        idx = (day_of_year + hash(bucket_name)) % len(bucket)
+        # Rotate: day-of-year + stable bucket offset.
+        # Python's builtin hash() is randomized per-process (unless
+        # PYTHONHASHSEED is set), which breaks deterministic rotation across
+        # cron runs. Use a stable character-sum instead.
+        stable_offset = sum(ord(c) for c in bucket_name)
+        idx = (day_of_year + stable_offset) % len(bucket)
         queries.append(bucket[idx])
 
     print(f"  Run hour {current_hour} -> snapped to {closest}: buckets {bucket_names}")
@@ -555,10 +563,18 @@ def parse_rss_feed(xml_text, source_name, lean):
         if not title or not link:
             continue
 
-        # Filter by pub_date if parseable
+        # Filter by pub_date. If pubDate is present but we can't parse it,
+        # drop the item -- better to lose one than let a stale item slip in.
+        # Also drop items dated in the future (timezone bugs, scheduled posts).
         if pub_el is not None and pub_el.text:
             pub_dt = _try_parse_date(pub_el.text)
-            if pub_dt and pub_dt < cutoff:
+            if pub_dt is None:
+                # Unparseable date on an item that has a pubDate -- be conservative
+                continue
+            if pub_dt < cutoff:
+                continue
+            if pub_dt > now + datetime.timedelta(hours=2):
+                # Future-dated item (likely TZ bug or scheduled post) -- skip
                 continue
 
         # Strip any HTML from description
@@ -586,14 +602,16 @@ def _try_parse_date(text):
         if dt.tzinfo is None:
             dt = dt.replace(tzinfo=datetime.timezone.utc)
         return dt.astimezone(datetime.timezone.utc)
-    except (TypeError, ValueError):
+    except Exception:
+        # parsedate_to_datetime has been observed to raise TypeError, ValueError,
+        # and IndexError on various malformed inputs in the wild.
         pass
     # Atom ISO format
     try:
         return datetime.datetime.fromisoformat(text.replace("Z", "+00:00")).astimezone(
             datetime.timezone.utc
         )
-    except (TypeError, ValueError):
+    except Exception:
         return None
 
 
@@ -990,34 +1008,50 @@ def _classify_borderline_stories_with_claude(borderline_cases):
 
 Return ONLY a JSON array with one string per pair in order, e.g. ["new", "update", "stale"]. No other text."""
 
-    print(f"  Classifying {len(borderline_cases)} borderline cases via Claude (haiku)...")
+    print(f"  Classifying {len(borderline_cases)} borderline cases via {ANTHROPIC_CLASSIFIER_MODEL}...")
     anthropic_call_count += 1
     client = anthropic.Anthropic()
+
+    # Safe default: "update" preserves the story with an Update: prefix rather
+    # than deleting it. Any failure path falls through to this.
+    safe_default = ["update"] * len(borderline_cases)
+
     try:
         response = client.messages.create(
-            model="claude-haiku-4-5-20251001",
+            model=ANTHROPIC_CLASSIFIER_MODEL,
             max_tokens=500,
             messages=[{"role": "user", "content": user_prompt}],
         )
         raw = response.content[0].text
         parsed = _try_parse_json(raw)
-        if isinstance(parsed, list) and all(isinstance(x, str) for x in parsed):
-            # Normalize
-            result = []
-            for c in parsed:
-                c = c.strip().lower()
-                if c not in {"new", "update", "stale"}:
-                    c = "update"
-                result.append(c)
-            # Pad or truncate to match input count
-            while len(result) < len(borderline_cases):
-                result.append("update")
-            return result[:len(borderline_cases)]
     except Exception as e:
-        print(f"  Borderline classification failed: {e}")
+        print(f"  Borderline classification API error: {e}")
+        return safe_default
 
-    # Safe fallback: treat all as updates (avoid deleting real news)
-    return ["update"] * len(borderline_cases)
+    if not isinstance(parsed, list):
+        print(f"  Borderline classification: non-list response, falling back to 'update'. Raw: {str(raw)[:200]}")
+        return safe_default
+
+    # Normalize each classification string
+    result = []
+    for c in parsed:
+        if not isinstance(c, str):
+            result.append("update")
+            continue
+        c = c.strip().lower()
+        if c not in {"new", "update", "stale"}:
+            c = "update"
+        result.append(c)
+
+    # Count mismatch: be conservative -- if Claude returned a different number
+    # of classifications than we asked for, something is off. Fall back entirely
+    # rather than silently mis-align the decisions.
+    if len(result) != len(borderline_cases):
+        print(f"  Borderline classification count mismatch "
+              f"(got {len(result)}, expected {len(borderline_cases)}) -- falling back")
+        return safe_default
+
+    return result
 
 
 def post_claude_dedup(new_stories, target_date_str):
@@ -1029,8 +1063,17 @@ def post_claude_dedup(new_stories, target_date_str):
     """
     previous_headlines = load_recent_headlines(target_date_str, days_back=3)
     if not previous_headlines:
-        # Even without previous data, honor an explicit "stale" disposition
-        return [s for s in new_stories if s.get("disposition") != "stale"]
+        # Cold start: no prior data to dedup against. Still honor Claude's
+        # explicit dispositions so the behavior is consistent with the main path.
+        out = []
+        for s in new_stories:
+            disposition = str(s.get("disposition") or "").strip().lower()
+            if disposition == "stale":
+                continue
+            if disposition == "update" and not s["headline"].startswith("Update:"):
+                s["headline"] = "Update: " + s["headline"]
+            out.append(s)
+        return out
 
     print(f"\n  Post-Claude dedup: checking {len(new_stories)} stories against {len(previous_headlines)} previous headlines")
 
@@ -1041,7 +1084,8 @@ def post_claude_dedup(new_stories, target_date_str):
 
     for story in new_stories:
         headline_lower = story["headline"].lower()
-        disposition = (story.get("disposition") or "").strip().lower()
+        # Coerce to string first -- Claude occasionally hallucinates non-string values
+        disposition = str(story.get("disposition") or "").strip().lower()
 
         # Explicit "stale" from Claude -> drop
         if disposition == "stale":
@@ -1189,13 +1233,19 @@ def build_prompt(stories, target_date_str, num_to_select, existing_headlines=Non
     for i, story in enumerate(stories, 1):
         source_count = story.get("source_count", 1)
         covering = story.get("covering_sources", [story["source"]])
-        # Tag each covering source with its political lean
+        # Tag each covering source with its political lean. get_source_lean
+        # always returns a truthy string ("?" for unknown), so use explicit
+        # fallback to the URL rather than `or`.
         covering_tagged = []
         for src in covering:
-            lean = get_source_lean(src) or get_source_lean(story.get("url", ""))
+            lean = get_source_lean(src)
+            if lean == "?":
+                lean = get_source_lean(story.get("url", ""))
             covering_tagged.append(f"{src} [{lean}]")
         covering_str = ", ".join(covering_tagged)
-        primary_lean = get_source_lean(story["source"]) or get_source_lean(story.get("url", ""))
+        primary_lean = get_source_lean(story["source"])
+        if primary_lean == "?":
+            primary_lean = get_source_lean(story.get("url", ""))
         lean_counts[primary_lean] = lean_counts.get(primary_lean, 0) + 1
         block = f"""[CANDIDATE {i}] [Primary lean: {primary_lean}]
 Headline: {story['title']}
@@ -1249,10 +1299,10 @@ Selection criteria:
 
 POLITICAL BALANCE (critical):
 - Each candidate is tagged with its primary source lean: [L] left, [C] center/wire, [R] right, [?] unclassified.
-- When a story covers a politically divisive topic, the summary MUST include perspectives from both sides -- quote or reference how the right and left are framing it if coverage differs.
-- When multiple candidates cover the same political event, PREFER a right-leaning [R] or wire [C] source unless the left source has materially better reporting. Our output has historically over-indexed on left/center sources; consciously correct for this.
-- Across your full selection, aim to avoid skewing the lean mix: if you are selecting 3+ political stories, ideally at least one should be a right-leaning [R] source angle.
-- Do not favor or suppress a story based on its political implications -- both sides deserve coverage of uncomfortable news.
+- Story-topic selection must be politically neutral: do not suppress stories that are awkward for one side. Pick stories on merit (importance, freshness, multi-source coverage).
+- WHEN MULTIPLE CANDIDATES COVER THE SAME EVENT with comparable reporting quality, prefer a right-leaning [R] or wire [C] source over a left-leaning [L] one. Our digest has historically over-indexed on left/center outlets and we want more [R] representation when quality is roughly equal.
+- Across your full selection, aim for a mix of leans. If you are selecting 3+ political stories, ideally at least one draws from a right-leaning [R] or [C] source when that coverage is available in the pool.
+- When a story covers a politically divisive topic, the summary MUST include perspectives from both sides -- reference how the right and left are framing it if coverage differs.
 
 FRESHNESS & DEDUP:
 - CRITICAL: Do NOT select stories already covered today (see list below)
