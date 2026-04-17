@@ -4,6 +4,28 @@
   "stories": [
     {
       "category": "other",
+      "headline": "FAA Orders Flight Cuts at Chicago O'Hare to Head Off Summer Delays",
+      "summary": "The Federal Aviation Administration announced Thursday it will cap daily flights at Chicago O'Hare International Airport this summer at 2,708, down from the 3,080 flights currently scheduled on peak days. The move is aimed at preventing widespread delays and congestion expected during the busy summer travel season.\n\nTransportation Secretary Sean Duffy ordered the reductions, which will take effect next month. O'Hare is the largest U.S. airport by flight volume, making the cuts among the most significant operational constraints imposed on any American airport in recent years.\n\nThe FAA said ongoing construction at the airport is a key factor driving the decision, as runway and terminal work is expected to reduce the facility's capacity to handle high traffic volumes. Airlines operating at O'Hare will be required to pare back their schedules accordingly.\n\nThe decision could affect millions of summer travelers who route through the Chicago hub, and airlines may face pressure to rebook passengers or adjust connecting flight itineraries across their networks.",
+      "source": "The Hill",
+      "url": "https://thehill.com/homenews/administration/5836601-ohare-flight-reductions-construction/",
+      "sourceCount": 2,
+      "disposition": "new",
+      "addedAt": "3:01 PM MT",
+      "addedAtISO": "2026-04-17T15:01:33.330496-06:00"
+    },
+    {
+      "category": "world",
+      "headline": "UPS Cargo Jet Aborts Landing in Near-Miss at Louisville Airport, Same Site as Deadly November Crash",
+      "summary": "A UPS Boeing 767 cargo jet aborted its landing early Tuesday at Louisville Muhammad Ali International Airport after air traffic controllers spotted a smaller aircraft on the runway in its path. Audio from the incident captured a controller shouting \"What are you doing?\" before ordering the smaller aircraft, identified as Skylab 25, to stop and directing the UPS jet to execute a go-around maneuver.\n\nFlight tracking data from FlightRadar24 showed the UPS aircraft, Flight 1303 arriving from Atlanta, descended to approximately 500 feet before climbing back to around 1,500 feet. A UPS spokesperson confirmed the aircraft \"safely conducted a go around\" and said no injuries or operational disruptions resulted. The company described the maneuver as standard procedure.\n\nThe incident occurred at the same airport where a fatal UPS MD-11 crash in November 2025 killed 15 people, including all three crew members and 12 people on the ground. National Transportation Safety Board investigators determined the plane's left engine separated shortly after takeoff and caught fire, with the aircraft reaching only about 30 feet before crashing.\n\nLouisville's UPS Worldport is the company's largest package-handling facility in the world. The back-to-back incidents at the same airport are likely to draw renewed scrutiny from federal aviation regulators and safety investigators.",
+      "source": "Fox News Latest",
+      "url": "https://www.foxnews.com/us/ups-plane-aborts-landing-near-miss-airport-november-crash-killed-15",
+      "sourceCount": 2,
+      "disposition": "new",
+      "addedAt": "3:01 PM MT",
+      "addedAtISO": "2026-04-17T15:01:33.330496-06:00"
+    },
+    {
+      "category": "other",
       "headline": "NYC Doormen and Building Workers Reach Deal to Avert Strike",
       "summary": "Negotiators for approximately 34,000 New York City apartment building workers — including doormen, porters, and superintendents — reached a tentative agreement Friday with building owners, averting a strike that had threatened to disrupt residential life across the city. The deal was announced by the union representing the workers, which had been in contract talks with the Realty Advisory Board on Labor Relations.\n\nThe last time these workers staged a walkout was in 1991, making the threat of a strike a significant moment for the city's residential real estate sector. Doormen and building staff provide essential services to hundreds of thousands of residents in co-ops, condominiums, and rental buildings across the five boroughs.\n\nDetails of the tentative agreement, including wage increases and benefit provisions, were not immediately released pending ratification by union members. Both sides indicated the deal addresses core worker demands while remaining workable for building owners navigating rising operating costs.\n\nThe agreement removes what had been a looming disruption for New York City residents heading into the spring season, and signals that labor negotiations in the city's building services sector — often a bellwether for broader municipal labor trends — concluded without the work stoppage that many had feared.",
       "source": "New York Times",
