@@ -56,29 +56,112 @@ MAX_ANTHROPIC_CALLS_PER_RUN = 5  # story selection + top national + top intl + r
 brave_query_count = 0
 anthropic_call_count = 0
 
-# Brave Search queries -- national/world focus, kept lean (~10 per run)
-SEARCH_QUERIES = [
+# --- Brave Search queries: topic-rotated by run hour ---
+# Two baseline queries always run. Topic buckets rotate by hour so different
+# angles surface across the day's 6 runs instead of hitting the same pool.
+BASELINE_QUERIES = [
     "breaking news today United States",
-    "top US news today",
-    "US politics news today Congress White House",
-    "world international news today",
-    "economy business news today",
-    "technology AI news today",
-    "science health news today",
-    "site:apnews.com news today",
-    "site:reuters.com news today",
+    "top news today",
 ]
 
-# Brave News search queries (separate news endpoint)
+TOPIC_BUCKETS = {
+    "politics_courts": [
+        "Supreme Court ruling today",
+        "White House news today",
+        "Congress vote today",
+    ],
+    "economy_markets": [
+        "Federal Reserve news today",
+        "earnings report today",
+        "stock market news today",
+    ],
+    "world_hotspots": [
+        "Israel Iran news today",
+        "Middle East news today",
+    ],
+    "world_broad": [
+        "Ukraine Russia news today",
+        "China news today",
+        "Europe news today",
+    ],
+    "tech": [
+        "artificial intelligence news today",
+        "technology news today",
+    ],
+    "science_health": [
+        "medical research news today",
+        "health news today",
+        "science news today",
+    ],
+    "culture_sports": [
+        "sports news today",
+        "cultural news today",
+        "entertainment news today",
+    ],
+    "right_angles": [
+        "site:foxnews.com news today",
+        "site:wsj.com news today",
+        "site:nationalreview.com news today",
+        "site:washingtonexaminer.com news today",
+        "site:nypost.com news today",
+    ],
+    "wire_deep": [
+        "site:apnews.com news today",
+        "site:reuters.com news today",
+        "site:bbc.com news today",
+    ],
+}
+
+# Which topic buckets run at each Denver-hour scheduled slot. Off-schedule
+# (manual / cron-job.org) runs use the closest scheduled hour.
+HOUR_BUCKETS = {
+    5:  ["politics_courts", "world_hotspots", "wire_deep"],
+    8:  ["economy_markets", "tech", "right_angles"],
+    11: ["politics_courts", "world_broad", "wire_deep"],
+    14: ["science_health", "tech", "culture_sports", "right_angles"],
+    18: ["politics_courts", "economy_markets", "world_hotspots"],
+    21: ["world_broad", "culture_sports", "right_angles"],
+}
+
+# Brave News search queries (separate news endpoint, 2 per run)
 NEWS_SEARCH_QUERIES = [
     "top news today United States",
     "breaking news today",
 ]
 
+# --- Named RSS feeds (direct from publishers, no query budget cost) ---
+# (display_name, url, lean) -- lean is L/C/R for balance tracking.
+# Failures are logged and skipped; we do not retry. URLs verified working
+# at the time of writing; if a publisher breaks their feed, gracefully drops.
+# Note: AP and Reuters have retired public RSS -- they are picked up via
+# Google News RSS and site: Brave queries instead.
+NAMED_RSS_FEEDS = [
+    # Wire / Center
+    ("BBC News", "https://feeds.bbci.co.uk/news/world/rss.xml", "C"),
+    ("Axios", "https://api.axios.com/feed/", "C"),
+    ("The Hill", "https://thehill.com/feed/", "C"),
+    ("PBS NewsHour", "https://www.pbs.org/newshour/feeds/rss/headlines", "C"),
+    ("CBS News", "https://www.cbsnews.com/latest/rss/main", "C"),
+    ("NBC Politics", "https://feeds.nbcnews.com/nbcnews/public/politics", "C"),
+    ("ABC News", "https://abcnews.go.com/abcnews/topstories", "C"),
+    ("Bloomberg Politics", "https://feeds.bloomberg.com/politics/news.rss", "C"),
+    # Left-leaning
+    ("NPR", "https://feeds.npr.org/1001/rss.xml", "L"),
+    ("Politico", "https://rss.politico.com/politics-news.xml", "L"),
+    ("The Guardian US", "https://www.theguardian.com/us-news/rss", "L"),
+    ("New York Times", "https://rss.nytimes.com/services/xml/rss/nyt/HomePage.xml", "L"),
+    ("Al Jazeera", "https://www.aljazeera.com/xml/rss/all.xml", "L"),
+    # Right-leaning
+    ("Fox News Politics", "https://moxie.foxnews.com/google-publisher/politics.xml", "R"),
+    ("Fox News Latest", "https://moxie.foxnews.com/google-publisher/latest.xml", "R"),
+    ("National Review", "https://www.nationalreview.com/feed/", "R"),
+    ("Washington Examiner", "https://www.washingtonexaminer.com/rss", "R"),
+    ("New York Post", "https://nypost.com/feed/", "R"),
+    ("Washington Times Politics", "https://www.washingtontimes.com/rss/headlines/news/politics", "R"),
+    ("Free Beacon", "https://freebeacon.com/feed/", "R"),
+]
+
 # --- Balanced source strategy ---
-# Wire/Center
-# Left-leaning
-# Right-leaning
 PREFERRED_SOURCES = [
     # Wire/Center
     "apnews.com",
@@ -102,6 +185,34 @@ PREFERRED_SOURCES = [
     "nypost.com",
     "nationalreview.com",
 ]
+
+# Political lean classification: L = left, C = center/wire, R = right.
+# Used to display lean tags to Claude and enforce source-balance on politics stories.
+SOURCE_LEAN = {
+    # Center / wire
+    "apnews.com": "C", "reuters.com": "C", "bbc.com": "C", "bbc.co.uk": "C",
+    "pbs.org": "C", "bloomberg.com": "C", "axios.com": "C", "thehill.com": "C",
+    "usatoday.com": "C", "abcnews.go.com": "C", "cbsnews.com": "C", "nbcnews.com": "C",
+    "reuters": "C", "associated press": "C", "bbc news": "C", "pbs": "C",
+    "bloomberg": "C", "axios": "C", "the hill": "C", "usa today": "C",
+    "abc news": "C", "cbs news": "C", "nbc news": "C", "sciencedaily": "C",
+    "sciencedaily.com": "C",
+    # Left-leaning
+    "npr.org": "L", "nytimes.com": "L", "washingtonpost.com": "L", "cnn.com": "L",
+    "theatlantic.com": "L", "theguardian.com": "L", "politico.com": "L",
+    "aljazeera.com": "L", "latimes.com": "L", "vox.com": "L", "motherjones.com": "L",
+    "npr": "L", "new york times": "L", "washington post": "L", "cnn": "L",
+    "the atlantic": "L", "the guardian": "L", "politico": "L",
+    "al jazeera": "L", "los angeles times": "L",
+    # Right-leaning
+    "foxnews.com": "R", "wsj.com": "R", "washingtonexaminer.com": "R",
+    "nypost.com": "R", "nationalreview.com": "R", "washingtontimes.com": "R",
+    "dailywire.com": "R", "thefederalist.com": "R", "newsmax.com": "R",
+    "freebeacon.com": "R", "theblaze.com": "R",
+    "fox news": "R", "wall street journal": "R", "washington examiner": "R",
+    "new york post": "R", "national review": "R", "washington times": "R",
+    "daily wire": "R", "free beacon": "R",
+}
 
 # Sources to exclude from results entirely
 UNRELIABLE_SOURCES = [
@@ -356,6 +467,162 @@ def extract_significant_words(text):
     return set(w for w in words if len(w) >= 3 and w not in stop_words)
 
 
+def get_source_lean(source_or_url):
+    """Return 'L', 'C', 'R', or '?' for a given source name or URL."""
+    if not source_or_url:
+        return "?"
+    s = source_or_url.lower()
+    # Try exact/substring match on the lean map
+    for key, lean in SOURCE_LEAN.items():
+        if key in s:
+            return lean
+    return "?"
+
+
+def get_queries_for_run():
+    """Return the topic-rotated Brave web queries for this run.
+
+    Uses the current Denver hour to pick a bucket set. Off-schedule runs
+    snap to the closest scheduled hour. Within each bucket, a different
+    query is picked per day-of-year so the set rotates over the week.
+    """
+    now = datetime.datetime.now(DENVER_TZ)
+    current_hour = now.hour
+    # Snap to closest scheduled hour
+    scheduled_hours = sorted(HOUR_BUCKETS.keys())
+    closest = min(scheduled_hours, key=lambda h: min(abs(h - current_hour),
+                                                      24 - abs(h - current_hour)))
+    bucket_names = HOUR_BUCKETS[closest]
+    day_of_year = now.timetuple().tm_yday
+
+    queries = list(BASELINE_QUERIES)
+    for bucket_name in bucket_names:
+        bucket = TOPIC_BUCKETS.get(bucket_name, [])
+        if not bucket:
+            continue
+        # Rotate: pick index based on day-of-year + bucket name hash
+        idx = (day_of_year + hash(bucket_name)) % len(bucket)
+        queries.append(bucket[idx])
+
+    print(f"  Run hour {current_hour} -> snapped to {closest}: buckets {bucket_names}")
+    return queries
+
+
+def parse_rss_feed(xml_text, source_name, lean):
+    """Parse an RSS XML feed into a list of entry dicts. Returns items from the last 36h."""
+    try:
+        root = ET.fromstring(xml_text)
+    except ET.ParseError:
+        return []
+
+    entries = []
+    now = datetime.datetime.now(datetime.timezone.utc)
+    cutoff = now - datetime.timedelta(hours=36)
+
+    # RSS 2.0: channel/item
+    items = root.findall(".//item")
+    # Atom fallback: entries
+    if not items:
+        items = root.findall(".//{http://www.w3.org/2005/Atom}entry")
+
+    def _find_any(parent, tags):
+        """Return the first matching Element, or None. Avoids `or` on Elements
+        (which are falsy when they have no subelements -- common for leaf text)."""
+        for t in tags:
+            el = parent.find(t)
+            if el is not None:
+                return el
+        return None
+
+    for item in items[:25]:  # cap per feed
+        title_el = _find_any(item, ["title", "{http://www.w3.org/2005/Atom}title"])
+        link_el = _find_any(item, ["link", "{http://www.w3.org/2005/Atom}link"])
+        desc_el = _find_any(item, ["description", "{http://www.w3.org/2005/Atom}summary"])
+        pub_el = _find_any(item, ["pubDate", "{http://www.w3.org/2005/Atom}published",
+                                   "{http://www.w3.org/2005/Atom}updated"])
+
+        if title_el is None:
+            continue
+
+        title = (title_el.text or "").strip()
+        # Link can be in text or href attribute (Atom)
+        if link_el is not None:
+            link = (link_el.text or link_el.get("href") or "").strip()
+        else:
+            link = ""
+        desc = ((desc_el.text if desc_el is not None else "") or "").strip()
+
+        if not title or not link:
+            continue
+
+        # Filter by pub_date if parseable
+        if pub_el is not None and pub_el.text:
+            pub_dt = _try_parse_date(pub_el.text)
+            if pub_dt and pub_dt < cutoff:
+                continue
+
+        # Strip any HTML from description
+        if desc:
+            desc = BeautifulSoup(desc, "html.parser").get_text(" ", strip=True)[:500]
+
+        entries.append({
+            "title": title,
+            "url": link,
+            "snippet": desc or title,
+            "source": source_name,
+            "lean": lean,
+        })
+
+    return entries
+
+
+def _try_parse_date(text):
+    """Best-effort parse of RSS pubDate / Atom date formats. Returns UTC datetime or None."""
+    if not text:
+        return None
+    from email.utils import parsedate_to_datetime
+    try:
+        dt = parsedate_to_datetime(text)
+        if dt.tzinfo is None:
+            dt = dt.replace(tzinfo=datetime.timezone.utc)
+        return dt.astimezone(datetime.timezone.utc)
+    except (TypeError, ValueError):
+        pass
+    # Atom ISO format
+    try:
+        return datetime.datetime.fromisoformat(text.replace("Z", "+00:00")).astimezone(
+            datetime.timezone.utc
+        )
+    except (TypeError, ValueError):
+        return None
+
+
+def fetch_named_rss_feeds():
+    """Fetch all named RSS feeds in sequence. Returns a flat list of entries."""
+    all_entries = []
+    successes = 0
+    failures = 0
+    for source_name, feed_url, lean in NAMED_RSS_FEEDS:
+        try:
+            resp = requests.get(feed_url, headers=HEADERS, timeout=8)
+            if resp.status_code != 200 or not resp.text.strip():
+                failures += 1
+                print(f"    RSS miss: {source_name} ({resp.status_code})")
+                continue
+            entries = parse_rss_feed(resp.text, source_name, lean)
+            if entries:
+                all_entries.extend(entries)
+                successes += 1
+                print(f"    RSS ok: {source_name} ({len(entries)} items)")
+            else:
+                print(f"    RSS empty: {source_name}")
+        except Exception as e:
+            failures += 1
+            print(f"    RSS error: {source_name}: {e}")
+    print(f"  Named RSS feeds: {successes} ok, {failures} failed, {len(all_entries)} total entries")
+    return all_entries
+
+
 def brave_search(query, api_key, count=10, freshness="pd"):
     """Run a single Brave Search API query. Returns list of result dicts."""
     global brave_query_count
@@ -431,29 +698,30 @@ def brave_news_search(query, api_key, count=10, freshness="pd"):
 
 
 def gather_search_results(api_key, freshness="pd"):
-    """Run all search queries (web + news + Google News RSS) and collect results."""
+    """Run all search queries (topic-rotated Brave + news + RSS feeds) and collect results."""
     all_results = []
 
-    for query in SEARCH_QUERIES:
+    # Topic-rotated Brave web queries for this run
+    web_queries = get_queries_for_run()
+    for query in web_queries:
         print(f"  Searching (web): {query}")
         results = brave_search(query, api_key, freshness=freshness)
         all_results.extend(results)
         time.sleep(0.3)
 
+    # Brave News endpoint
     for query in NEWS_SEARCH_QUERIES:
         print(f"  Searching (news): {query}")
         results = brave_news_search(query, api_key, freshness=freshness)
         all_results.extend(results)
         time.sleep(0.3)
 
-    # Also pull Google News RSS into the main pool -- this surfaces stories
-    # that are getting the most coverage across outlets
+    # Google News RSS (free, not budget-counted)
     print("  Adding Google News RSS entries to main pool...")
     rss_entries = fetch_google_news_rss()
     rss_added = 0
     for entry in rss_entries:
         url = entry.get("link", "")
-        # Resolve Google News redirect URLs
         if "news.google.com" in url:
             url = resolve_google_news_url(url)
             if "news.google.com" in url:
@@ -468,6 +736,23 @@ def gather_search_results(api_key, freshness="pd"):
         })
         rss_added += 1
     print(f"  Added {rss_added} Google News RSS entries")
+
+    # Named publisher RSS feeds (free, not budget-counted, includes right-leaning outlets)
+    print("  Fetching named publisher RSS feeds...")
+    named_rss = fetch_named_rss_feeds()
+    named_added = 0
+    for entry in named_rss:
+        url = entry.get("url", "")
+        if not url or any(n in url for n in UNRELIABLE_SOURCES):
+            continue
+        all_results.append({
+            "title": entry["title"],
+            "url": url,
+            "snippet": entry.get("snippet", entry["title"]),
+            "source": entry["source"],
+        })
+        named_added += 1
+    print(f"  Added {named_added} named RSS entries")
 
     print(f"  Total raw results: {len(all_results)}")
     return all_results
@@ -526,7 +811,9 @@ def deduplicate_and_rank(results, existing_headlines=None):
             if not merged[j]:
                 continue
             shared = group_keywords[i] & group_keywords[j]
-            if len(shared) >= 4:
+            # 2 shared significant words is enough to group -- prior threshold of 4
+            # was leaving most stories as orphaned sourceCount=1 singletons.
+            if len(shared) >= 2:
                 groups[i].extend(groups[j])
                 group_keywords[i] = group_keywords[i] | group_keywords[j]
                 merged[j] = False
@@ -667,28 +954,114 @@ def filter_cross_day_duplicates(candidates, target_date_str):
     return kept
 
 
+def _classify_borderline_stories_with_claude(borderline_cases):
+    """For each (story, matched_prev_headline) pair, ask Claude whether it's
+    'new', 'update', or 'stale'. Returns list of classifications.
+
+    One batched API call instead of a word-list heuristic. Much more reliable
+    than matching on words like "new" or "today" in the summary.
+    """
+    global anthropic_call_count
+
+    if not borderline_cases:
+        return []
+
+    if anthropic_call_count >= MAX_ANTHROPIC_CALLS_PER_RUN:
+        print(f"  Anthropic cap reached -- defaulting borderline cases to 'update'")
+        return ["update"] * len(borderline_cases)
+
+    pair_blocks = []
+    for i, (story, matched_prev) in enumerate(borderline_cases, 1):
+        summary_snip = story.get("summary", "")[:500]
+        pair_blocks.append(
+            f"[PAIR {i}]\n"
+            f"Previous headline: {matched_prev}\n"
+            f"Candidate headline: {story['headline']}\n"
+            f"Candidate summary excerpt: {summary_snip}"
+        )
+    pairs_text = "\n\n".join(pair_blocks)
+
+    user_prompt = f"""For each pair below, classify the candidate as one of:
+- "new": the candidate is about a genuinely different event, not the previous story
+- "update": the candidate is the same ongoing story, but the summary contains a concrete new development (new ruling, new action, new death, new reversal, new fact that wasn't known before)
+- "stale": the candidate is the same story as the previous headline with no material new development, just ongoing coverage
+
+{pairs_text}
+
+Return ONLY a JSON array with one string per pair in order, e.g. ["new", "update", "stale"]. No other text."""
+
+    print(f"  Classifying {len(borderline_cases)} borderline cases via Claude (haiku)...")
+    anthropic_call_count += 1
+    client = anthropic.Anthropic()
+    try:
+        response = client.messages.create(
+            model="claude-haiku-4-5-20251001",
+            max_tokens=500,
+            messages=[{"role": "user", "content": user_prompt}],
+        )
+        raw = response.content[0].text
+        parsed = _try_parse_json(raw)
+        if isinstance(parsed, list) and all(isinstance(x, str) for x in parsed):
+            # Normalize
+            result = []
+            for c in parsed:
+                c = c.strip().lower()
+                if c not in {"new", "update", "stale"}:
+                    c = "update"
+                result.append(c)
+            # Pad or truncate to match input count
+            while len(result) < len(borderline_cases):
+                result.append("update")
+            return result[:len(borderline_cases)]
+    except Exception as e:
+        print(f"  Borderline classification failed: {e}")
+
+    # Safe fallback: treat all as updates (avoid deleting real news)
+    return ["update"] * len(borderline_cases)
+
+
 def post_claude_dedup(new_stories, target_date_str):
     """Final dedup pass on Claude's generated headlines against previous days.
 
-    This is critical because Claude may generate headlines about old stories
-    that slipped through pre-Claude filtering (e.g. from homepage text).
-    Stories that are genuine updates get their headline prefixed with 'Update:'.
-    Stale stories with no new angle are removed entirely.
+    Uses Claude's own disposition field when present, then a semantic
+    classification via Claude for borderline cases (previously a word-list
+    heuristic that was too lenient).
     """
     previous_headlines = load_recent_headlines(target_date_str, days_back=3)
     if not previous_headlines:
-        return new_stories
+        # Even without previous data, honor an explicit "stale" disposition
+        return [s for s in new_stories if s.get("disposition") != "stale"]
 
     print(f"\n  Post-Claude dedup: checking {len(new_stories)} stories against {len(previous_headlines)} previous headlines")
+
+    # First pass: trust Claude's disposition when present
     kept = []
+    borderline = []  # (index_in_kept, story, matched_prev) for Claude classification
     removed = 0
+
     for story in new_stories:
         headline_lower = story["headline"].lower()
-        # Skip if already prefixed with Update:
+        disposition = (story.get("disposition") or "").strip().lower()
+
+        # Explicit "stale" from Claude -> drop
+        if disposition == "stale":
+            removed += 1
+            print(f"  Post-Claude: Claude marked stale, dropping: '{story['headline'][:65]}...'")
+            continue
+
+        # Already prefixed "Update:" -> keep as-is
         if headline_lower.startswith("update:"):
             kept.append(story)
             continue
 
+        # Explicit "update" disposition -> add prefix and keep
+        if disposition == "update":
+            if not story["headline"].startswith("Update:"):
+                story["headline"] = "Update: " + story["headline"]
+            kept.append(story)
+            continue
+
+        # Otherwise (disposition == "new" or missing): check for similarity to previous headlines
         is_repeat = False
         matched_prev = None
         for prev_headline in previous_headlines:
@@ -706,30 +1079,32 @@ def post_claude_dedup(new_stories, target_date_str):
                 break
 
         if is_repeat:
-            # Check if the summary indicates a genuinely new development
-            summary_lower = story.get("summary", "").lower()
-            headline_and_summary = headline_lower + " " + summary_lower
-            new_development_signals = {
-                "update", "new", "latest", "just", "now", "breaking",
-                "today", "this morning", "this afternoon", "overnight",
-                "hours ago", "minutes ago", "reversal", "shifts",
-                "changed", "reversed", "overturned", "escalat",
-            }
-            has_new_angle = any(signal in headline_and_summary for signal in new_development_signals)
-
-            if has_new_angle:
-                # Keep it but prefix with Update: if not already
-                if not story["headline"].startswith("Update:"):
-                    story["headline"] = "Update: " + story["headline"]
-                kept.append(story)
-                print(f"  Post-Claude: kept as update: '{story['headline'][:65]}...'")
-            else:
-                removed += 1
-                print(f"  Post-Claude: REMOVED stale story: '{story['headline'][:65]}...'")
-                if matched_prev:
-                    print(f"    Matched previous: '{matched_prev[:65]}...'")
+            # Defer to Claude classification (batched below)
+            borderline.append((len(kept), story, matched_prev))
+            kept.append(story)  # tentative; may be modified or removed after classification
         else:
             kept.append(story)
+
+    # Batch-classify borderline cases with Claude
+    if borderline:
+        classifications = _classify_borderline_stories_with_claude(
+            [(s, m) for _, s, m in borderline]
+        )
+        # Apply decisions (reverse order to preserve indices when removing)
+        to_remove = set()
+        for (idx, story, matched_prev), decision in zip(borderline, classifications):
+            if decision == "stale":
+                to_remove.add(idx)
+                removed += 1
+                print(f"  Post-Claude: Claude classified stale, dropping: '{story['headline'][:65]}...'")
+                print(f"    Matched previous: '{matched_prev[:65]}...'")
+            elif decision == "update":
+                if not kept[idx]["headline"].startswith("Update:"):
+                    kept[idx]["headline"] = "Update: " + kept[idx]["headline"]
+                print(f"  Post-Claude: Claude classified update: '{kept[idx]['headline'][:65]}...'")
+            # "new" -> leave as-is
+        if to_remove:
+            kept = [s for i, s in enumerate(kept) if i not in to_remove]
 
     if removed > 0:
         print(f"  Post-Claude dedup: removed {removed} stale stories, {len(kept)} remain")
@@ -788,20 +1163,6 @@ def fetch_article_text(url):
         return None
 
 
-def fetch_article_text_cached(url):
-    """Try fetching article text via Google's web cache as a paywall fallback."""
-    try:
-        from urllib.parse import quote
-        cache_url = f"https://webcache.googleusercontent.com/search?q=cache:{quote(url, safe='')}"
-        cache_headers = {**HEADERS, "Referer": "https://www.google.com/"}
-        resp = requests.get(cache_url, headers=cache_headers, timeout=10)
-        if resp.status_code != 200:
-            return None
-        return _extract_article_text(resp.text)
-    except Exception:
-        return None
-
-
 def fetch_articles(stories):
     """Fetch article text for each story. Falls back to snippets."""
     for story in stories:
@@ -824,13 +1185,21 @@ SYSTEM_PROMPT = """You are the editor-in-chief of The Daily Briefing, a national
 def build_prompt(stories, target_date_str, num_to_select, existing_headlines=None, is_first_run=False):
     """Build the prompt for selecting and summarizing multiple new stories."""
     story_blocks = []
+    lean_counts = {"L": 0, "C": 0, "R": 0, "?": 0}
     for i, story in enumerate(stories, 1):
         source_count = story.get("source_count", 1)
         covering = story.get("covering_sources", [story["source"]])
-        covering_str = ", ".join(covering)
-        block = f"""[CANDIDATE {i}]
+        # Tag each covering source with its political lean
+        covering_tagged = []
+        for src in covering:
+            lean = get_source_lean(src) or get_source_lean(story.get("url", ""))
+            covering_tagged.append(f"{src} [{lean}]")
+        covering_str = ", ".join(covering_tagged)
+        primary_lean = get_source_lean(story["source"]) or get_source_lean(story.get("url", ""))
+        lean_counts[primary_lean] = lean_counts.get(primary_lean, 0) + 1
+        block = f"""[CANDIDATE {i}] [Primary lean: {primary_lean}]
 Headline: {story['title']}
-Source: {story['source']}
+Source: {story['source']} [{primary_lean}]
 URL: {story['url']}
 Sources covering this story: {source_count} ({covering_str})
 Article text: {story['article_text']}"""
@@ -861,7 +1230,13 @@ CRITICAL RULE: If a story covers the SAME event as any headline above and there 
 
 If a story IS a genuine update on a previously covered event, you MUST prefix the headline with "Update: " (e.g. "Update: Iran Talks Resume After Ceasefire Extension"). The update must be clearly described in the summary."""
 
+    lean_summary = (f"Candidate pool lean mix: {lean_counts['L']} left, "
+                    f"{lean_counts['C']} center/wire, {lean_counts['R']} right, "
+                    f"{lean_counts['?']} unclassified.")
+
     return f"""Date: {target_date_str}. Below are {len(stories)} candidate national/world news stories.
+
+{lean_summary}
 
 YOUR TASK: Select the {num_to_select} most important, newsworthy stories that have NOT already been covered today. This is a breaking news wire -- we want the biggest developing stories right now.
 
@@ -871,8 +1246,15 @@ Selection criteria:
 - Choose stories with the most national or global significance
 - Prefer breaking or developing stories over routine news
 - Aim for variety across categories (politics, world, business, technology, science/health, other)
-- Ensure political neutrality: do not favor stories from one political perspective
-- When a story involves a politically divisive topic, the summary MUST include perspectives from both sides
+
+POLITICAL BALANCE (critical):
+- Each candidate is tagged with its primary source lean: [L] left, [C] center/wire, [R] right, [?] unclassified.
+- When a story covers a politically divisive topic, the summary MUST include perspectives from both sides -- quote or reference how the right and left are framing it if coverage differs.
+- When multiple candidates cover the same political event, PREFER a right-leaning [R] or wire [C] source unless the left source has materially better reporting. Our output has historically over-indexed on left/center sources; consciously correct for this.
+- Across your full selection, aim to avoid skewing the lean mix: if you are selecting 3+ political stories, ideally at least one should be a right-leaning [R] source angle.
+- Do not favor or suppress a story based on its political implications -- both sides deserve coverage of uncomfortable news.
+
+FRESHNESS & DEDUP:
 - CRITICAL: Do NOT select stories already covered today (see list below)
 - If two candidates cover the same event, pick the one with better sourcing -- do not include both
 - FRESHNESS CHECK: Before selecting any story, ask yourself "did this event FIRST happen today?" If the answer is no, skip it unless there is a concrete new development since the last time we covered it.
@@ -890,6 +1272,7 @@ Return a JSON array of up to {num_to_select} stories. For each story:
 - "source": publication name
 - "url": direct link to the original article
 - "sourceCount": number of outlets covering this story (copy from the candidate info above)
+- "disposition": "new" if this is a fresh story with no prior coverage, or "update" if it's a genuinely new development on a story we already covered (something materially changed -- new ruling, new death, new reversal, new concrete fact).
 
 Return ONLY the JSON array, no other text."""
 
@@ -1016,21 +1399,6 @@ def call_anthropic_stories(stories, target_date_str, num_to_select, existing_hea
 
 GOOGLE_NEWS_RSS_URL = "https://news.google.com/rss"
 
-WORLD_NEWS_PREFERRED = [
-    "apnews.com", "reuters.com", "bbc.com", "bbc.co.uk",
-    "nytimes.com", "washingtonpost.com", "theguardian.com",
-    "cbsnews.com", "nbcnews.com", "abcnews.go.com",
-    "aljazeera.com", "npr.org", "politico.com", "bloomberg.com",
-    "foxnews.com", "wsj.com",
-]
-
-WORLD_NEWS_NOISE = [
-    "tmz.com", "eonline.com", "people.com", "usmagazine.com",
-    "buzzfeed.com", "dailymail.co.uk", "pagesix.com",
-]
-
-TOP_STORY_SYSTEM_PROMPT = """You are the editor-in-chief of The Daily Briefing, a national and world news digest. You write detailed, factual summaries of major news stories. Present all topics with political neutrality. When covering politically divisive topics, include perspectives from both sides. Clean newspaper style. No editorializing, no emojis."""
-
 
 def fetch_google_news_rss():
     """Fetch and parse Google News RSS feed."""
@@ -1101,301 +1469,6 @@ def resolve_google_news_url(google_url):
         return final_url
     except Exception:
         return google_url
-
-
-def cluster_headlines(entries):
-    """Group RSS entries by topic similarity."""
-    clusters = []
-    used = set()
-
-    for i, entry in enumerate(entries):
-        if i in used:
-            continue
-        cluster = [entry]
-        used.add(i)
-        for j, other in enumerate(entries):
-            if j in used:
-                continue
-            sim = SequenceMatcher(
-                None, entry["title"].lower(), other["title"].lower()
-            ).ratio()
-            if sim > 0.35:
-                cluster.append(other)
-                used.add(j)
-                continue
-            words_a = extract_significant_words(entry["title"])
-            words_b = extract_significant_words(other["title"])
-            shared = words_a & words_b
-            if len(shared) >= 3:
-                cluster.append(other)
-                used.add(j)
-        clusters.append(cluster)
-
-    return clusters
-
-
-def score_cluster(cluster):
-    """Score a cluster by source diversity and news quality."""
-    sources = set(e["source"] for e in cluster)
-    preferred_count = sum(
-        1 for s in sources
-        if any(p in s.lower() for p in ["ap ", "reuters", "bbc", "nyt", "washington post",
-                                         "cbs", "nbc", "abc", "guardian", "npr", "bloomberg",
-                                         "fox news", "wall street"])
-    )
-    noise_count = sum(
-        1 for e in cluster
-        if any(n in e.get("link", "").lower() for n in WORLD_NEWS_NOISE)
-    )
-    return len(sources) * 2 + preferred_count - noise_count * 3
-
-
-def _summarize_top_story(article_texts, top_cluster, story_type="national", using_snippet_fallback=False):
-    """Summarize a top story cluster via Claude. Returns dict or None."""
-    global anthropic_call_count
-
-    anthropic_call_count += 1
-    if anthropic_call_count > MAX_ANTHROPIC_CALLS_PER_RUN:
-        print(f"  LIMIT: Anthropic call cap reached. Skipping {story_type} top story.")
-        return None
-
-    source_blocks = []
-    for i, at in enumerate(article_texts, 1):
-        source_blocks.append(f"[SOURCE {i}: {at['source']}]\n{at['text']}")
-    sources_text = "\n\n".join(source_blocks)
-
-    representative_headline = top_cluster[0]["title"]
-
-    bias_instruction = "Present the story with political neutrality. If the topic is politically divisive, include perspectives from both sides."
-
-    if using_snippet_fallback:
-        user_prompt = f"""Below are headlines and descriptions about the top {story_type} news story.
-
-Topic: {representative_headline}
-
-{sources_text}
-
----
-
-Write a summary of this story. 2-3 paragraphs, each 2-4 sentences. Cover what happened, who is involved, why it matters. {bias_instruction}
-
-Also write a clear, factual headline.
-
-Return ONLY a JSON object with "headline" and "summary" (with \\n\\n between paragraphs). No other text."""
-    else:
-        user_prompt = f"""Below are {len(article_texts)} articles about the top {story_type} news story.
-
-Topic: {representative_headline}
-
-{sources_text}
-
----
-
-Write a detailed summary. 3-4 paragraphs, each 2-4 sentences. Cover what happened, who is involved, the broader context, why it matters. {bias_instruction}
-
-Also write a clear, factual headline.
-
-Return ONLY a JSON object with "headline" and "summary" (with \\n\\n between paragraphs). No other text."""
-
-    client = anthropic.Anthropic()
-    try:
-        response = client.messages.create(
-            model=ANTHROPIC_MODEL,
-            max_tokens=2000,
-            system=TOP_STORY_SYSTEM_PROMPT,
-            messages=[{"role": "user", "content": user_prompt}],
-        )
-        raw_text = response.content[0].text
-        usage = response.usage
-        cost = (usage.input_tokens * 3 + usage.output_tokens * 15) / 1_000_000
-        print(f"  Top {story_type} story: {usage.input_tokens + usage.output_tokens} tokens, ${cost:.4f}")
-
-        result = _try_parse_json(raw_text)
-        if result and "headline" in result and "summary" in result:
-            return result
-
-        print(f"  Failed to parse top {story_type} story JSON")
-        return None
-    except Exception as e:
-        print(f"  Top {story_type} story summarization failed: {e}")
-        return None
-
-
-def _fetch_cluster_articles(sorted_entries, max_articles=3):
-    """Fetch article text from entries in a cluster. Returns (article_texts, sources_used, using_fallback)."""
-    article_texts = []
-    sources_used = []
-
-    for entry in sorted_entries[:8]:
-        url = entry["link"]
-        if "news.google.com" in url:
-            url = resolve_google_news_url(url)
-            if "news.google.com" in url:
-                continue
-        text = fetch_article_text(url)
-        via_cache = False
-        if not text or len(text) <= 200:
-            text = fetch_article_text_cached(url)
-            via_cache = True
-        if text and len(text) > 200:
-            article_texts.append({"source": entry["source"], "url": url, "text": text})
-            sources_used.append({"name": entry["source"], "url": url})
-            label = " (via cache)" if via_cache else ""
-            print(f"    Fetched {len(text)} chars from {entry['source']}{label}")
-            if len(article_texts) >= max_articles:
-                break
-        time.sleep(0.3)
-
-    # Fallback to headlines + snippets
-    using_fallback = False
-    if not article_texts:
-        print("  Could not fetch article text -- falling back to headlines + snippets")
-        using_fallback = True
-        for entry in sorted_entries[:8]:
-            snippet = entry.get("snippet", "")
-            url = entry["link"]
-            if "news.google.com" in url:
-                url = resolve_google_news_url(url)
-            if snippet and len(snippet) > 30:
-                article_texts.append({
-                    "source": entry["source"],
-                    "url": url if "news.google.com" not in url else entry["link"],
-                    "text": f"Headline: {entry['title']}\n{snippet}",
-                })
-                if url and "news.google.com" not in url:
-                    sources_used.append({"name": entry["source"], "url": url})
-            elif entry["title"]:
-                article_texts.append({
-                    "source": entry["source"],
-                    "url": url if "news.google.com" not in url else entry["link"],
-                    "text": f"Headline: {entry['title']}",
-                })
-                if url and "news.google.com" not in url:
-                    sources_used.append({"name": entry["source"], "url": url})
-        if not sources_used:
-            for entry in sorted_entries[:3]:
-                sources_used.append({"name": entry["source"], "url": entry["link"]})
-
-    return article_texts, sources_used, using_fallback
-
-
-def fetch_top_stories(brave_key, target_date_str):
-    """Identify and summarize the top national AND top international stories."""
-    global brave_query_count
-
-    # Step 1: Get Google News RSS entries
-    entries = fetch_google_news_rss()
-    if not entries:
-        entries = []
-
-    # Step 2: Supplement with Brave
-    if brave_query_count < MAX_BRAVE_QUERIES_PER_RUN:
-        brave_results = brave_news_search("top news today", brave_key, count=10, freshness="pd")
-        time.sleep(0.3)
-        for br in brave_results:
-            if any(n in br["url"] for n in WORLD_NEWS_NOISE):
-                continue
-            entries.append({
-                "title": br["title"],
-                "link": br["url"],
-                "source": br["source"],
-                "pub_date": "",
-                "snippet": br.get("snippet", ""),
-            })
-
-    if brave_query_count < MAX_BRAVE_QUERIES_PER_RUN:
-        brave_intl = brave_news_search("world international news today", brave_key, count=10, freshness="pd")
-        time.sleep(0.3)
-        for br in brave_intl:
-            if any(n in br["url"] for n in WORLD_NEWS_NOISE):
-                continue
-            entries.append({
-                "title": br["title"],
-                "link": br["url"],
-                "source": br["source"],
-                "pub_date": "",
-                "snippet": br.get("snippet", ""),
-            })
-
-    # Step 3: Cluster
-    clusters = cluster_headlines(entries)
-    if not clusters:
-        print("  No clusters found")
-        return None, None
-
-    scored = [(score_cluster(c), c) for c in clusters]
-    scored.sort(key=lambda x: x[0], reverse=True)
-
-    # Keywords suggesting US domestic vs international
-    US_KEYWORDS = {
-        "congress", "senate", "house", "president", "white house", "biden", "trump",
-        "supreme court", "fbi", "doj", "pentagon", "capitol", "democrat", "republican",
-        "governor", "federal", "american", "united states", "u.s.",
-    }
-    INTL_KEYWORDS = {
-        "ukraine", "russia", "china", "europe", "nato", "un", "united nations",
-        "middle east", "gaza", "israel", "iran", "india", "africa", "asia",
-        "eu", "european", "putin", "zelensky", "minister", "prime minister",
-        "bbc", "reuters", "guardian", "international",
-    }
-
-    def is_international(cluster):
-        """Check if a cluster is about international (non-US) news."""
-        text = " ".join(e["title"].lower() for e in cluster)
-        intl_score = sum(1 for kw in INTL_KEYWORDS if kw in text)
-        us_score = sum(1 for kw in US_KEYWORDS if kw in text)
-        return intl_score > us_score
-
-    # Find top national (US-focused) and top international clusters
-    top_national_cluster = None
-    top_intl_cluster = None
-
-    for score, cluster in scored:
-        if is_international(cluster):
-            if top_intl_cluster is None:
-                top_intl_cluster = cluster
-                print(f"  Top international cluster ({len(cluster)} articles, score {score}):")
-                for e in cluster[:3]:
-                    print(f"    - [{e['source']}] {e['title'][:80]}")
-        else:
-            if top_national_cluster is None:
-                top_national_cluster = cluster
-                print(f"  Top national cluster ({len(cluster)} articles, score {score}):")
-                for e in cluster[:3]:
-                    print(f"    - [{e['source']}] {e['title'][:80]}")
-
-        if top_national_cluster and top_intl_cluster:
-            break
-
-    # Summarize national story
-    national_result = None
-    if top_national_cluster:
-        sorted_nat = sorted(
-            top_national_cluster,
-            key=lambda e: 1 if any(p in e.get("link", "").lower() for p in WORLD_NEWS_PREFERRED) else 0,
-            reverse=True,
-        )
-        article_texts, sources_used, using_fallback = _fetch_cluster_articles(sorted_nat)
-        if article_texts:
-            national_result = _summarize_top_story(article_texts, top_national_cluster, "national", using_fallback)
-            if national_result:
-                national_result["sources"] = sources_used
-
-    # Summarize international story
-    intl_result = None
-    if top_intl_cluster:
-        sorted_intl = sorted(
-            top_intl_cluster,
-            key=lambda e: 1 if any(p in e.get("link", "").lower() for p in WORLD_NEWS_PREFERRED) else 0,
-            reverse=True,
-        )
-        article_texts, sources_used, using_fallback = _fetch_cluster_articles(sorted_intl)
-        if article_texts:
-            intl_result = _summarize_top_story(article_texts, top_intl_cluster, "international", using_fallback)
-            if intl_result:
-                intl_result["sources"] = sources_used
-
-    return national_result, intl_result
 
 
 def write_output(existing_data, new_stories, date_str, date_formatted):
