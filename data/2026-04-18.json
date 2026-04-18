@@ -4,6 +4,39 @@
   "stories": [
     {
       "category": "world",
+      "headline": "Car Strikes Pedestrians Outside Melbourne Comic Con, Killing One",
+      "summary": "A grey Toyota mounted a kerb and drove into pedestrians on Langs Road in the Ascot Vale suburb of Melbourne on Saturday, killing one person and leaving a second with life-threatening injuries, Victoria Police said. The incident occurred just before 5:00 p.m. local time outside the Melbourne Showgrounds, which was hosting the two-day Supanova Comic Con & Gaming event. A man was arrested at the scene by an off-duty police officer who received assistance from members of the public.\n\nDetective Inspector Craig McEvoy told local media that the circumstances surrounding the collision had not yet been established and that police would investigate all avenues, including whether drugs or alcohol were involved. It remains unclear whether the incident was intentional. An eyewitness described hearing a screech before the car mounted the kerb at erratic speed and struck multiple people, then U-turned back down the street before stalling.\n\nThousands of attendees had been expected at the Supanova event, which bills itself as Australia's premier pop culture convention. Celebrities including Lord of the Rings actor Andy Serkis and Harry Potter actress Bonnie Wright had been announced as guests. The area around the vehicle was cordoned off as investigators processed the scene.",
+      "source": "BBC News",
+      "url": "https://www.bbc.com/news/articles/c20dy511v3lo",
+      "sourceCount": 1,
+      "disposition": "new",
+      "addedAt": "8:08 AM MT",
+      "addedAtISO": "2026-04-18T08:08:04.967846-06:00"
+    },
+    {
+      "category": "world",
+      "headline": "Update: Orbán Breaks Silence After Landslide Defeat as Hungary's Magyar Moves to Consolidate Power",
+      "summary": "Viktor Orbán broke a days-long silence late Thursday following his party's historic defeat in Hungary's elections, saying in a YouTube interview that the result marked 'the end of an era' and that he would bear the loss 'with dignity.' Orbán took full personal responsibility for the defeat and spoke of feeling 'pain and emptiness,' though he offered limited analysis of campaign missteps beyond delays to the Russian-designed Paks 2 nuclear power station, which is running six years behind schedule. He said he would continue to lead Fidesz if re-elected by the party but acknowledged the need for 'a complete renewal,' with a leadership meeting scheduled for April 28.\n\nMeanwhile, incoming Prime Minister Péter Magyar and his Tisza party, which won 52 percent of the vote and 141 of 199 parliamentary seats, have moved rapidly to prepare the transfer of power. Magyar secured a pledge from President Tamás Sulyok to bring forward the formation of the new parliament to the week beginning May 4. Armed with a super-majority of more than two-thirds of seats, Magyar has signaled plans to retroactively limit prime ministerial terms to two — a measure that would foreclose any potential Orbán comeback, as Orbán has already served five terms.\n\nMagyar also gave combative interviews to Hungarian public broadcasters that had largely ignored or attacked him for years, promising legislation to suspend their news programming until impartial editors are appointed. The vote count is set to be finalized on Saturday, including recounts in closely contested constituencies and votes cast abroad. Fidesz, which held 135 seats, has been reduced to 52.",
+      "source": "BBC News",
+      "url": "https://www.bbc.com/news/articles/c4g40npz37lo",
+      "sourceCount": 1,
+      "disposition": "update",
+      "addedAt": "8:08 AM MT",
+      "addedAtISO": "2026-04-18T08:08:04.967846-06:00"
+    },
+    {
+      "category": "other",
+      "headline": "Two U.S. Army Soldiers Injured in Brown Bear Attack During Alaska Training Exercise",
+      "summary": "Two soldiers from the 11th Airborne Division were injured Thursday after being attacked by a brown bear during a land navigation training exercise at Joint Base Elmendorf-Richardson's Arctic Valley training area near Anchorage, Alaska. Lt. Col. Jo Nederhoed, a division spokesperson, confirmed the incident and said both soldiers were receiving appropriate medical care as of Friday morning. Their identities were being withheld pending notification of next of kin.\n\nAlaska Department of Fish and Game officials told the Anchorage Daily News the attack appeared to be defensive in nature, likely triggered after the bear recently emerged from its den. Both soldiers were carrying bear spray and deployed it during the encounter. Regional Supervisor Cyndi Wardlow said the bear spray 'may have saved their lives.' Wildlife authorities are coordinating with the military to ensure the safety of other personnel in the area.\n\nThe 11th Airborne Division, nicknamed the 'Arctic Angels,' specializes in expeditionary and cold-weather operations. The incident is under investigation by military authorities.",
+      "source": "Fox News Latest",
+      "url": "https://www.foxnews.com/us/2-us-army-soldiers-alaska-injured-bear-attack-training-exercise",
+      "sourceCount": 2,
+      "disposition": "new",
+      "addedAt": "8:08 AM MT",
+      "addedAtISO": "2026-04-18T08:08:04.967846-06:00"
+    },
+    {
+      "category": "world",
       "headline": "Update: Hungary's Prime Minister-Elect Magyar Moves Quickly to Consolidate Power After Orbán's Defeat",
       "summary": "Péter Magyar and his Tisza party are wasting no time preparing for the transfer of power in Hungary following their landslide victory over Viktor Orbán last Sunday, in which they won 52% of the vote and secured 141 of 199 parliamentary seats. Magyar has secured a pledge from President Tamás Sulyok to bring forward the formation of the new parliament to the week of May 4, accelerating the timeline for a new government.\n\nArmed with a supermajority of more than two-thirds of seats, Magyar plans to retroactively limit prime ministerial terms to two — a measure that would effectively bar Orbán, who has served five terms, from ever returning to power. He also pledged to suspend public service news programs until impartial editors are appointed, citing years of coverage he characterized as biased against his movement.\n\nOrbán broke his silence Thursday in a YouTube interview, saying 'this is the end of an era' and accepting personal responsibility for the defeat, though he offered little analysis of specific campaign mistakes. He indicated he would continue to lead Fidesz if re-elected party leader, calling for 'complete renewal' ahead of a party congress scheduled for June.\n\nThe political transition carries significant implications for Europe, as Orbán had been a key dissident voice within the EU on issues including Ukraine aid and relations with Russia. Magyar's government is widely expected to realign Hungary more closely with Brussels, potentially unlocking €17 billion in frozen EU funds.",
       "source": "BBC News",
