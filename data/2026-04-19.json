@@ -4,6 +4,39 @@
   "stories": [
     {
       "category": "world",
+      "headline": "Beijing Robot Half Marathon: Winning Machine Posts Faster-Than-Human Record Time",
+      "summary": "A robot named Lightning, developed by Chinese smartphone maker Honor, won a half marathon race in Beijing on Sunday, completing the course in 50 minutes and 26 seconds. That time would surpass the current men's human world record of 57 minutes and 20 seconds, set by Uganda's Jacob Kiplimo in Lisbon in March.\n\nThe event featured dozens of robots competing alongside human runners, with approximately 40 percent racing autonomously and the remainder remotely controlled. The race drew significant international attention as a showcase of China's advances in robotics and artificial intelligence-driven mobility.\n\nThe competition raises broader questions about the trajectory of humanoid robotics, particularly as Chinese technology firms accelerate investment in the sector. Honor's achievement in fielding a competitive bipedal robot capable of sustained endurance performance at this level is being viewed as a milestone in applied robotics.\n\nThe event was covered by five major outlets spanning the political spectrum, reflecting its significance as both a technology and geopolitical story. China has made robotics a national strategic priority, and demonstrations like this half marathon are seen as deliberate signals of technical capability on the world stage.",
+      "source": "BBC News",
+      "url": "https://www.bbc.com/news/videos/cz0e54yrppno?at_medium=RSS&at_campaign=rss",
+      "sourceCount": 5,
+      "disposition": "new",
+      "addedAt": "8:48 AM MT",
+      "addedAtISO": "2026-04-19T08:48:58.968683-06:00"
+    },
+    {
+      "category": "politics",
+      "headline": "NYC Mayor Mamdani Calls Relationship With Trump 'Productive' One Day Before Trump Slams Him",
+      "summary": "New York City Mayor Zohran Mamdani (D) described his working relationship with President Trump as \"honest, direct, and productive\" during an appearance Sunday on NBC's Meet the Press, hosted by Kristen Welker. The characterization stands out given the sharp rhetorical clashes the two have engaged in since Mamdani emerged as a national political figure.\n\nThe conciliatory framing came just one day before Trump publicly stated that Mamdani is \"destroying New York,\" underscoring the tension between behind-the-scenes dealings and public political posturing. Mamdani, a democratic socialist who has been sharply critical of Trump administration policies, appeared to be signaling a pragmatic approach to governing the nation's largest city despite ideological differences.\n\nThe exchange illustrates a recurring dynamic in which mayors of large Democratic cities must balance partisan opposition with the practical need to secure federal resources and cooperation. Mamdani's willingness to characterize the relationship positively may reflect New York City's significant reliance on federal funding for transit, housing, and emergency services.\n\nThe story was covered by two outlets. Trump's subsequent public attack on Mamdani suggests the détente, if any existed, may be short-lived, and the back-and-forth is likely to continue as a flashpoint in the broader national debate over urban governance, immigration policy, and federal-city relations.",
+      "source": "The Hill",
+      "url": "https://thehill.com/homenews/state-watch/5838382-mamdani-trump-productive-relationship/",
+      "sourceCount": 2,
+      "disposition": "new",
+      "addedAt": "8:48 AM MT",
+      "addedAtISO": "2026-04-19T08:48:58.968683-06:00"
+    },
+    {
+      "category": "other",
+      "headline": "School Choice Programs Expand Rapidly in Iowa; Outcomes Remain Contested",
+      "summary": "School choice programs have expanded dramatically in Iowa, with Cedar Rapids serving as a case study for how market-based education reforms play out at the local level. The state's universal school choice law, which allows families to use public funds for private schooling, has reshaped enrollment patterns across public, charter, and private institutions.\n\nProponents of school choice argue that competition forces all schools to improve and that families — particularly lower-income families — gain access to options previously available only to the wealthy. Supporters point to rising enrollment in alternative schools as evidence that families value the expanded freedom to choose the setting that best fits their children's needs.\n\nCritics counter that choice programs drain funding from traditional public schools that serve the most vulnerable students, including those with disabilities or from low-income households who may not have the resources or information to navigate the new landscape effectively. Research on academic outcomes from school choice programs nationally has shown mixed results, with some studies showing modest gains and others showing neutral or negative effects.\n\nThe story was reported by NPR and ABC News and reflects a nationally significant policy debate as similar laws have passed in more than a dozen states. Iowa's experience is being watched closely by policymakers on both sides of the issue as an early indicator of the real-world consequences of universal school choice at scale.",
+      "source": "NPR",
+      "url": "https://www.npr.org/2026/04/19/nx-s1-5683199/education-school-choice-iowa-students-charter-school-cedar-rapids",
+      "sourceCount": 2,
+      "disposition": "new",
+      "addedAt": "8:48 AM MT",
+      "addedAtISO": "2026-04-19T08:48:58.968683-06:00"
+    },
+    {
+      "category": "world",
       "headline": "North Korea Fires Multiple Short-Range Ballistic Missiles Toward Eastern Sea",
       "summary": "North Korea launched multiple short-range ballistic missiles from its Sinpo coastal area on Sunday, with each projectile traveling approximately 140 kilometers toward the country's eastern waters, according to South Korea's Joint Chiefs of Staff. The launches came days after the United Nations' nuclear watchdog warned that North Korea was making \"very serious\" advances in its nuclear weapons development efforts.\n\nSouth Korea convened an emergency National Security Council meeting following the launches, with senior officials urging Pyongyang to immediately halt its ballistic missile tests. South Korean President Lee Jae Myung departed for state visits to India and Vietnam hours after the launches. The U.S. Indo-Pacific Command and Japan's Defense Ministry both confirmed they detected the missiles, with Japan lodging a formal protest with Pyongyang and calling the launches a violation of United Nations Security Council resolutions.\n\nMilitary analysts are examining whether the missiles were fired from a submarine based at the Sinpo shipyard, where North Korea maintains a major submarine construction facility. If confirmed as submarine-launched, it would mark North Korea's first such test in four years — a significant development given the difficulty of detecting undersea launches in advance. North Korea unveiled a nuclear-powered submarine under construction for the first time last year.\n\nSunday's test is the latest in a sustained series of North Korean weapons tests in 2026. Last week, leader Kim Jong Un was reported to have personally supervised missile tests launched from a destroyer, and the country conducted three days of separate weapons tests the week before that.",
       "source": "PBS NewsHour",
