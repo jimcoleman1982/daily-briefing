@@ -3,6 +3,39 @@
   "dateFormatted": "Monday, April 20, 2026",
   "stories": [
     {
+      "category": "politics",
+      "headline": "DOJ Demands 865,000 Detroit Ballots, Threatens Court Action if Wayne County Does Not Comply",
+      "summary": "The Justice Department has demanded roughly 865,000 ballots and hundreds of thousands of related election records from Wayne County, Michigan — which includes Detroit — stemming from the November 2024 federal election. In an April 14 letter to Wayne County Clerk Cathy Garrett, Assistant Attorney General for Civil Rights Harmeet Dhillon requested all ballots, including absentee and provisional, along with ballot receipts and envelopes, citing federal records-retention law and a stated intent to investigate whether election laws were followed. The department warned that failure to comply within 14 days may result in the United States seeking a court order.\n\nDhillon cited a 'history of fraud convictions and other allegations' in Wayne County as justification for the demand. The move is part of a broader Trump administration effort to scrutinize election procedures in key swing states, following earlier actions involving 2020 ballots in Georgia and election records in Arizona.\n\nDemocrat officials in Michigan sharply rejected the request as politically motivated. Michigan Attorney General Dana Nessel said her office was 'prepared to protect the people's right to vote,' calling the effort a 'circus.' A federal judge has previously rejected a separate Trump administration lawsuit seeking Michigan voter rolls.\n\nSupporters of the investigation argue that ensuring only eligible citizens vote is a legitimate and paramount government duty. Critics contend the demand is an unprecedented intrusion into state election administration with no credible evidentiary basis, and that it is designed to cast doubt on the outcome of a certified election.",
+      "source": "Fox News Politics",
+      "url": "https://www.foxnews.com/politics/doj-demands-865k-detroit-ballots-threatening-possible-legal-action",
+      "sourceCount": 2,
+      "disposition": "new",
+      "addedAt": "10:16 AM MT",
+      "addedAtISO": "2026-04-20T10:16:47.811231-06:00"
+    },
+    {
+      "category": "world",
+      "headline": "U.S. Forces Kill Three in Strike on Alleged Drug Boat in Caribbean",
+      "summary": "Three individuals were killed Sunday when U.S. forces struck an alleged narco-trafficking vessel in the Caribbean, according to U.S. Southern Command. The military posted video of the attack and stated the boat was traveling along known drug-trafficking routes. Southern Command did not immediately provide further details on the identities of those aboard or the specific location of the strike.\n\nThe operation is part of an ongoing U.S. military effort to interdict drug shipments in the Caribbean and Eastern Pacific under authorities expanded by the Trump administration, which has increasingly directed military assets toward counter-narcotics missions. The use of lethal force against boats on suspected trafficking routes has drawn scrutiny from human rights advocates who question verification procedures before strikes are carried out.\n\nThe incident comes amid heightened U.S. military activity in the region and follows a series of counter-narcotics operations in recent months. Officials have not confirmed the nationality of those killed or the type or quantity of drugs, if any, recovered from the vessel.",
+      "source": "The Hill",
+      "url": "https://thehill.com/homenews/administration/5839177-us-forces-kill-three-caribbean/",
+      "sourceCount": 3,
+      "disposition": "new",
+      "addedAt": "10:16 AM MT",
+      "addedAtISO": "2026-04-20T10:16:47.811231-06:00"
+    },
+    {
+      "category": "other",
+      "headline": "Sen. Mark Warner Announces Death of 36-Year-Old Daughter After Decades-Long Battle With Juvenile Diabetes",
+      "summary": "Sen. Mark Warner (D-Va.) announced Monday the death of his daughter Madison, age 36, following a lifelong struggle with juvenile diabetes and related health complications. In a joint statement with his wife, Lisa Collis, Warner said the family was 'heartbroken beyond words,' describing Madison as someone who 'filled our lives with love and laughter.'\n\nMadison Warner's death draws attention to the ongoing challenges faced by individuals living with Type 1 diabetes, a condition that can involve serious long-term complications affecting the kidneys, heart, and other organ systems despite advances in insulin therapy and glucose monitoring. Sen. Warner has been a prominent figure in the Senate, serving on the Intelligence and Finance committees, and has previously spoken about his family's personal experiences with chronic illness.\n\nCondolences from colleagues across party lines were expected in the coming days. No details regarding memorial arrangements were immediately announced by the family.",
+      "source": "The Hill",
+      "url": "https://thehill.com/homenews/senate/5839462-sen-mark-warner-daughter-death/",
+      "sourceCount": 2,
+      "disposition": "new",
+      "addedAt": "10:16 AM MT",
+      "addedAtISO": "2026-04-20T10:16:47.811231-06:00"
+    },
+    {
       "category": "world",
       "headline": "Update: Vance Heads to Pakistan for Iran Ceasefire Talks as Tehran Signals It May Boycott Negotiations",
       "summary": "President Trump announced Monday that a U.S. delegation including Vice President JD Vance, special envoy Steve Witkoff, and Jared Kushner is en route to Pakistan for a new round of peace talks with Iran, as the current 10-day ceasefire approaches its expiration in roughly 48 hours. Pakistan has moved ahead with preparations in Islamabad, where security is on lockdown, though Iran has publicly stated it has \"no plans\" for negotiations with the United States, creating significant uncertainty about whether talks will proceed.\n\nTensions have risen sharply over the weekend after the U.S. Navy seized an Iranian-flagged container ship that attempted to evade the American naval blockade near the Strait of Hormuz — the first such interception since the blockade was imposed. Iran condemned the seizure as an act of piracy, and Chinese President Xi Jinping called for an immediate ceasefire and restoration of normal transit through the strait. Trump said it is \"highly unlikely\" he would extend the ceasefire if no deal is reached before it expires.\n\nThe administration faces divergent pressures heading into the talks. Trump has insisted the Strait of Hormuz will remain blocked until an agreement is finalized, while his energy secretary has cautioned that gas prices may not fall below $3 before 2027. Iran, for its part, has characterized U.S. demands as \"maximalist\" and a barrier to progress, while continued naval incidents have dimmed prospects for a breakthrough.\n\nThe geopolitical stakes are considerable. China has positioned itself as a beneficiary of the standoff without direct military involvement, and energy markets in Asia and Europe are showing signs of stress from restricted transit. Vance's role is under heightened scrutiny after he left the first round of high-level talks without an agreement, and his relationship with Trump and the trajectory of negotiations are being closely watched in both capitals.",
