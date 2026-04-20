@@ -3,6 +3,61 @@
   "dateFormatted": "Monday, April 20, 2026",
   "stories": [
     {
+      "category": "politics",
+      "headline": "Democrats Win Georgia Special Runoff but Fall Short in Marjorie Taylor Greene's Former District",
+      "summary": "Democrat Shawn Harris lost the special runoff election for Georgia's 14th Congressional District — the seat previously held by Marjorie Taylor Greene — but the relatively narrow margin in a deeply Republican district drew attention from both parties. The Associated Press called the race for the Republican candidate, but Harris declared the result a moral victory, telling supporters: \"If Democrats, independents and Republicans can do this in a ruby-red district, the Democrats can\" compete broadly.\n\nThe Georgia race was one of several contests being watched as an early indicator of the 2026 political landscape. Democrats argued the tightened margins in reliably Republican territory reflected voter disillusionment with rising costs, including gasoline and fertilizer prices. A Democratic Party official in Chattooga County, one of Georgia's most conservative, said she had spoken with voters who said they had never previously voted Democratic but were doing so this cycle.\n\nSeparately, in Wisconsin, a liberal candidate for the state Supreme Court was projected to win by approximately 17 percentage points — the third consecutive spring Wisconsin Supreme Court election resulting in a liberal victory. Analysts noted that Democratic voters have shown sustained turnout advantages in off-cycle elections, consolidating a liberal majority on the court.\n\nRepublicans pointed to the Georgia seat being retained as confirmation of their structural advantage in rural and exurban districts, while Democrats argued the national environment — driven by economic concerns tied to the Trump administration — was shifting voters in their direction ahead of the midterms.",
+      "source": "New York Times",
+      "url": "https://www.nytimes.com/interactive/2026/us/elections/results-georgia-us-house-14-special-runoff.html",
+      "sourceCount": 9,
+      "disposition": "new",
+      "addedAt": "5:08 AM MT",
+      "addedAtISO": "2026-04-20T05:08:59.468391-06:00"
+    },
+    {
+      "category": "world",
+      "headline": "Update: U.S.-Iran Ceasefire Takes Effect; 10-Day Truce Holds as Diplomacy Intensifies",
+      "summary": "A 10-day ceasefire between the United States and Iran is now in effect, with Iran-backed Hezbollah voicing support for the truce as negotiations between the two countries continue. The halt to weeks of fighting is being marked cautiously by diplomats and regional observers, with the BBC's chief international correspondent reporting from Iran that diplomatic efforts to prevent a return to war are intensifying but remain fragile.\n\nThe ceasefire follows weeks of escalating conflict that included the U.S. Navy's interception of Iranian cargo vessels in the Strait of Hormuz and an attack on the Iranian ship Iris Dena, which killed 104 people. President Trump has confirmed U.S. forces \"blew a hole\" in the vessel's engine room and released footage of the strike. Survivors of the Iris Dena were among personnel repatriated as part of early diplomatic gestures.\n\nIranian officials have signaled they want a resolution to the long-running hostility with the United States but are unwilling to accept what they describe as maximalist American demands. BBC reporting noted that 21 hours of direct talks were insufficient to resolve 47 years of antagonism, and questions remain about whether the truce can hold.\n\nA separate development in Lebanon saw a ceasefire between Israel and Hezbollah enter its second day, with BBC correspondents reporting from the border town of Khiam. President Macron blamed a recent attack in the region on Hezbollah, which denied any connection. More than 1,400 buildings have been destroyed in Lebanon since early March, according to BBC Verify analysis.",
+      "source": "BBC News",
+      "url": "https://www.bbc.com/news/world/middle_east",
+      "sourceCount": 20,
+      "disposition": "update",
+      "addedAt": "5:08 AM MT",
+      "addedAtISO": "2026-04-20T05:08:59.468391-06:00"
+    },
+    {
+      "category": "world",
+      "headline": "New Zealand Declares State of Emergency in Wellington After Record Flash Flooding",
+      "summary": "New Zealand declared a state of emergency in its capital city Wellington on Monday after torrential rain caused severe flash flooding across the North Island. Wellington received a record 77 millimeters of rain in under an hour, according to Mayor Andrew Little, submerging vehicles, uprooting trees, and triggering landslides that struck residential neighborhoods.\n\nAuthorities advised residents to remain indoors, with rain forecast to continue for the next day and a half. More than a dozen people have been evacuated, several schools have closed, and some flights at Wellington Airport have been cancelled. A 60-year-old man in the Karori suburb was reported missing, though no fatalities have been confirmed as of Monday.\n\nMinister for Emergency Management Mark Mitchell warned that the worst of the weather was expected Monday evening and urged residents in low-lying or flood-prone areas to relocate to family or friends as a precaution. The Wellington City Mission has been opened as a shelter for displaced residents.\n\nThe flooding comes less than a week after Cyclone Vaianu swept through the North Island, compounding damage to infrastructure and communities still recovering. Scientists have noted that climate change has increased both the frequency and intensity of extreme weather events globally.",
+      "source": "BBC News",
+      "url": "https://www.bbc.com/news/articles/cly75d9zvj3o",
+      "sourceCount": 1,
+      "disposition": "new",
+      "addedAt": "5:08 AM MT",
+      "addedAtISO": "2026-04-20T05:08:59.468391-06:00"
+    },
+    {
+      "category": "other",
+      "headline": "DNA and Legal Process Identifies British Soldier Fathers of Dozens of Children Born Near Kenya Army Base",
+      "summary": "A BBC World Service investigation has revealed that a ground-breaking DNA and legal process has identified 20 British military personnel — including soldiers and contractors — as the fathers of children born near a British Army base in Kenya. Paternity has been legally confirmed in 12 cases by a UK Family Court judge, with most of those children now eligible to register for British citizenship and, where applicable, child support payments.\n\nThe British Army Training Unit Kenya (Batuk), established in 1964 in Nanyuki, sees more than 5,000 British personnel pass through annually. UK solicitor James Netto and Kenyan lawyer Kelvin Kubai say they have documented nearly 100 such cases and believe many more exist. The process used commercial genealogy databases containing nearly 30 million genetic profiles to cross-reference DNA samples collected in Kenya.\n\nA two-year Kenyan parliamentary inquiry published last December accused British soldiers of operating within \"a culture of impunity\" at the base, citing sexual abuse, two allegations of murder, rights violations, environmental destruction, and the abandonment of local children. The UK Ministry of Defence said it \"deeply regrets those issues and challenges\" arising from its defence presence in Kenya and stated it continues to take action to address them.\n\nThe affected children range in age from three to 70 years old. Some were told their fathers had died; others did not know their fathers' identities. Many have faced financial hardship and, in some cases, family ostracism.",
+      "source": "BBC News",
+      "url": "https://www.bbc.com/news/articles/c895k3537kgo",
+      "sourceCount": 1,
+      "disposition": "new",
+      "addedAt": "5:08 AM MT",
+      "addedAtISO": "2026-04-20T05:08:59.468391-06:00"
+    },
+    {
+      "category": "politics",
+      "headline": "Senate Republicans Eye Potential Alito Retirement as Possible Midterm Boost",
+      "summary": "Senate Republicans concerned about their three-seat majority heading into the 2026 midterms are privately discussing the potential retirement of Supreme Court Justice Samuel Alito as a development that could energize conservative voters, according to reporting from The Hill. GOP senators are being careful not to publicly pressure Alito, a leading conservative voice on the court, but view a vacancy as an \"October surprise\" that could shift the political dynamic in their favor.\n\nThe prospect reflects broader Republican anxiety about the midterm environment. Recent generic ballot polling shows Democrats with a modest advantage in congressional races, consistent with historical patterns in which the party out of power gains ground during midterm cycles. Democrats lead in the majority of recent surveys, though by single-digit margins.\n\nRepublicans argue that a Supreme Court vacancy would rally their base by highlighting the long-term stakes of Senate control, a dynamic that has historically driven conservative turnout. Democrats have countered that court-related messaging has become less effective for Republicans following the overturning of Roe v. Wade, and that economic concerns — including tariffs and cost-of-living pressures — are dominating voter priorities.\n\nRedistricting efforts currently underway in several states add another variable to the 2026 landscape, with analysts noting that the national vote share Democrats would need to retake the House depends significantly on the outcome of those map-drawing processes.",
+      "source": "The Hill",
+      "url": "https://thehill.com/homenews/senate/5837188-alito-retirement-gop-midterms/",
+      "sourceCount": 3,
+      "disposition": "new",
+      "addedAt": "5:08 AM MT",
+      "addedAtISO": "2026-04-20T05:08:59.468391-06:00"
+    },
+    {
       "category": "business",
       "headline": "Update: Tariff Refund Portal Opens Monday for U.S. Importers Seeking $127 Billion in Repayments",
       "summary": "U.S. Customs and Border Protection is set to launch an online refund portal at 8 a.m. Monday, allowing importers and their brokers to begin claiming refunds on tariffs the Supreme Court ruled President Trump imposed without constitutional authority. The court's 6-3 February ruling found Trump exceeded his powers when he cited the U.S. trade deficit as a national emergency to set new import tax rates on goods from nearly every country under a 1977 emergency powers law. A subsequent ruling by the U.S. Court of International Trade determined affected companies were entitled to reimbursement.\n\nAs of April 14, more than 56,000 importers had completed registration with CBP's electronic payment system, making them eligible for refunds totaling approximately $127 billion including interest. The agency said over 330,000 importers collectively paid roughly $166 billion on more than 53 million shipments, though not all qualify for the initial phase of the rollout, which is limited to tariffs that were estimated but not finalized or within 80 days of a final accounting.\n\nOnce CBP approves a claim, refunds are expected to take 60 to 90 days to be issued, and the government plans to process them in phases, starting with more recent payments. Legal experts advising importers are urging clients to carefully document all relevant forms submitted to CBP, warning that a single ineligible entry could cause an entire claim to be rejected.\n\nAny refunds that trickle down to consumers who were billed for tariff costs would likely arrive slowly given the layered process. Attorneys familiar with the portal caution that technical issues are possible at launch given the high volume of expected activity.",
