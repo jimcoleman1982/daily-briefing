@@ -1,0 +1,28 @@
+{
+  "date": "2026-04-20",
+  "dateFormatted": "Monday, April 20, 2026",
+  "stories": [
+    {
+      "category": "business",
+      "headline": "Update: Tariff Refund Portal Opens Monday for U.S. Importers Seeking $127 Billion in Repayments",
+      "summary": "U.S. Customs and Border Protection is set to launch an online refund portal at 8 a.m. Monday, allowing importers and their brokers to begin claiming refunds on tariffs the Supreme Court ruled President Trump imposed without constitutional authority. The court's 6-3 February ruling found Trump exceeded his powers when he cited the U.S. trade deficit as a national emergency to set new import tax rates on goods from nearly every country under a 1977 emergency powers law. A subsequent ruling by the U.S. Court of International Trade determined affected companies were entitled to reimbursement.\n\nAs of April 14, more than 56,000 importers had completed registration with CBP's electronic payment system, making them eligible for refunds totaling approximately $127 billion including interest. The agency said over 330,000 importers collectively paid roughly $166 billion on more than 53 million shipments, though not all qualify for the initial phase of the rollout, which is limited to tariffs that were estimated but not finalized or within 80 days of a final accounting.\n\nOnce CBP approves a claim, refunds are expected to take 60 to 90 days to be issued, and the government plans to process them in phases, starting with more recent payments. Legal experts advising importers are urging clients to carefully document all relevant forms submitted to CBP, warning that a single ineligible entry could cause an entire claim to be rejected.\n\nAny refunds that trickle down to consumers who were billed for tariff costs would likely arrive slowly given the layered process. Attorneys familiar with the portal caution that technical issues are possible at launch given the high volume of expected activity.",
+      "source": "Associated Press",
+      "url": "https://apnews.com/article/tariff-refund-trump-customs-08861f153801156d213c30c4e2f6a683",
+      "sourceCount": 1,
+      "disposition": "update",
+      "addedAt": "12:26 AM MT",
+      "addedAtISO": "2026-04-20T00:26:06.184669-06:00"
+    },
+    {
+      "category": "world",
+      "headline": "India's $26 Billion Metro Expansion Falls Far Short of Ridership Projections",
+      "summary": "India has invested more than $26 billion since 2014 to expand its metro rail network from under 300 kilometers to more than 1,000 kilometers across nearly two dozen cities, but most systems are carrying a fraction of the passengers planners projected. A 2023 Indian Institute of Technology Delhi report found ridership running at just 25 to 35 percent of projected figures across corridors, a figure experts say has not significantly improved since. In some tier-3 cities such as Kanpur, actual ridership was as low as 2 percent of estimates.\n\nMumbai's new Aqua Line, a fully underground corridor that opened last year and was projected to carry nearly 1.5 million passengers daily, is currently seeing about a tenth of that figure. Commuters and station staff cite high ticket prices as a primary deterrent in a city where other public transit options, while crowded, are significantly cheaper. Only Delhi's metro network, India's largest, has approached its ridership targets — though transport experts say that is partly a result of the system counting interchanges as separate trips.\n\nExperts point to a confluence of factors behind the shortfall, including consultants overstating projected demand to secure project approvals, poor last-mile connectivity, and fares set too high for the majority of urban commuters. Cities that built metro lines without integrating them into broader transit networks have seen particularly poor results.\n\nThe underperformance raises questions about the return on investment for one of the Modi government's signature infrastructure initiatives, and analysts say future expansion plans may need to be reassessed in light of actual usage data.",
+      "source": "BBC News",
+      "url": "https://www.bbc.com/news/articles/c4g833128vlo?at_medium=RSS&at_campaign=rss",
+      "sourceCount": 1,
+      "disposition": "new",
+      "addedAt": "12:26 AM MT",
+      "addedAtISO": "2026-04-20T00:26:06.184669-06:00"
+    }
+  ]
+}
