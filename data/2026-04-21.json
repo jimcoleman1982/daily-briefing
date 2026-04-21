@@ -4,6 +4,50 @@
   "stories": [
     {
       "category": "politics",
+      "headline": "Update: Supreme Court Rules Trump Tariffs Unconstitutional; Refund Portal Opens for Importers",
+      "summary": "The U.S. Supreme Court's ruling striking down the Trump administration's broad tariff regime has taken on new practical significance as U.S. Customs and Border Protection launched a web portal Monday allowing importers to file refund claims. More than 330,000 businesses that paid an estimated $166 billion in tariffs are now eligible to submit requests, with approved refunds expected to take 60 to 90 days to be issued.\n\nThe portal represents the government's formal mechanism for complying with the court's order, arriving roughly two months after the ruling that invalidated tariffs central to the president's trade policy. Businesses can file claims through the CBP system, which will process each request before disbursing payments with interest.\n\nNotably, individual consumers who paid higher prices as a result of the tariffs do not qualify for refunds under the current framework — only the importing businesses that directly remitted duties to the government are eligible. The distinction has drawn criticism from consumer advocates who argue the economic burden was ultimately passed downstream to households.\n\nThe tariff ruling has been a flashpoint in the broader debate over executive trade authority. Supporters of the tariffs had argued the president held broad statutory power to impose them in the interest of national security and economic leverage; opponents contended Congress had not delegated that authority and that the scope of the levies exceeded any reasonable reading of existing law.",
+      "source": "PBS NewsHour",
+      "url": "https://www.pbs.org/newshour/show/news-wrap-patel-sues-the-atlantic-over-story-alleging-excessive-drinking-and-absences",
+      "sourceCount": 28,
+      "disposition": "new",
+      "addedAt": "6:09 AM MT",
+      "addedAtISO": "2026-04-21T06:09:00.379176-06:00"
+    },
+    {
+      "category": "world",
+      "headline": "Zelensky Calls U.S. Envoys' Visits to Moscow but Not Kyiv 'Disrespectful'",
+      "summary": "Ukrainian President Volodymyr Zelensky publicly criticized U.S. special envoy Steve Witkoff and presidential adviser Jared Kushner on Monday, calling it 'disrespectful' that the two officials have traveled to Moscow on multiple occasions without visiting Kyiv in an official capacity. Witkoff has met with Russian President Vladimir Putin at least eight times, while neither he nor Kushner has made a formal visit to the Ukrainian capital.\n\n'It's disrespectful to come to Moscow and not Kyiv, it's just disrespectful,' Zelensky said in an interview with a Ukrainian outlet, adding that if logistics were an obstacle, meetings could be arranged in third countries. Zelensky acknowledged that U.S. diplomatic attention has shifted toward the Middle East and the ongoing Iran ceasefire negotiations, in which Witkoff and Kushner are participating.\n\nThe criticism highlights a deepening sense in Kyiv that Ukraine has been sidelined in U.S. diplomatic efforts. Ukraine-Russia ceasefire talks, which gained momentum last autumn, have stalled over core issues including the status of the Donbas region and Russia's insistence on a change of government in Kyiv — demands Ukraine has rejected outright.\n\nDespite the frustration, Zelensky stopped short of rupturing ties with Washington, saying it remains important for Ukraine to continue cooperating with the United States. The war, now in its fifth year following Russia's full-scale invasion in 2022, continues with no resolution in sight on the fundamental territorial disputes separating the two sides.",
+      "source": "BBC News",
+      "url": "https://www.bbc.com/news/articles/cd9v420y190o",
+      "sourceCount": 1,
+      "disposition": "new",
+      "addedAt": "6:09 AM MT",
+      "addedAtISO": "2026-04-21T06:09:00.379176-06:00"
+    },
+    {
+      "category": "technology",
+      "headline": "UK Regulator Ofcom Launches Investigation into Telegram Over Child Sexual Abuse Material",
+      "summary": "Britain's media regulator Ofcom announced Tuesday it has opened a formal investigation into the messaging platform Telegram over concerns the company may be failing to prevent child sexual abuse material from being shared on its service. The probe was triggered after Ofcom received information from the Canadian Centre for Child Protection alleging the presence and active sharing of such material on Telegram.\n\nUnder the UK's Online Safety Act, user-to-user platforms operating in Britain are legally required to maintain systems that prevent people from encountering child sexual abuse material and other illegal content. Violations can result in significant financial penalties. Ofcom also announced parallel investigations into services Teen Chat and Chat Avenue over potential grooming risks.\n\nTelegram categorically denied the allegations, stating it has 'virtually eliminated the public spread of CSAM on its platform through world-class detection algorithms' since 2018, and expressing concern that the investigation 'may be part of a broader attack on online platforms that defend freedom of speech and the right to privacy.' The Internet Watch Foundation, which works to remove such material online, said Telegram has taken some steps but that more action is needed, particularly in end-to-end encrypted chats.\n\nChildren's charity the NSPCC welcomed the investigation, noting that recent research found approximately 100 child sexual abuse image offences are recorded by UK police every day. The Ofcom probe marks an escalation of regulatory pressure on major tech platforms in Britain and comes as European and British authorities have moved more aggressively to enforce online safety obligations.",
+      "source": "BBC News",
+      "url": "https://www.bbc.com/news/articles/c4gxj049wljo",
+      "sourceCount": 1,
+      "disposition": "new",
+      "addedAt": "6:09 AM MT",
+      "addedAtISO": "2026-04-21T06:09:00.379176-06:00"
+    },
+    {
+      "category": "other",
+      "headline": "NBA Playoffs: Hawks Stun Knicks on Late Rally; Timberwolves Even Series with Nuggets",
+      "summary": "The Atlanta Hawks erased a 12-point third-quarter deficit Monday night to defeat the New York Knicks 107-106 at Madison Square Garden, tying their first-round playoff series at one game apiece. CJ McCollum, acquired from Washington in a January trade, scored 32 points and delivered the decisive baskets down the stretch in what became one of the more dramatic comebacks of the early postseason.\n\nMcCollum gave Atlanta its first second-half lead of the series with a basket at the 2:09 mark, then made two more clutch shots to push the lead to four with 33 seconds remaining. He missed two free throws that could have sealed the game with 5.6 seconds left, but Mikal Bridges missed a last-second jumper for New York as time expired. The Knicks, who entered the night 40-1 in the postseason since 1954 when holding a 12-point lead after three quarters, will host Game 3 on Thursday.\n\nIn the other Monday playoff contest, Anthony Edwards scored 30 points and Julius Randle added 24 as the Minnesota Timberwolves rallied to defeat the Denver Nuggets, evening that Western Conference first-round series at 1-1 as well.\n\nThe Knicks were seeking to reach the second round for a fourth consecutive season, their longest such stretch since a nine-year run ending in 2000. New York's Josh Hart acknowledged the loss was self-inflicted: 'This is a game we should have won. In the playoffs you can't give away games.'",
+      "source": "The Guardian US",
+      "url": "https://www.theguardian.com/sport/2026/apr/21/nba-playoffs-new-msg-villain-mccollum-leads-hawks-back-from-12-down-to-stun-knicks",
+      "sourceCount": 2,
+      "disposition": "new",
+      "addedAt": "6:09 AM MT",
+      "addedAtISO": "2026-04-21T06:09:00.379176-06:00"
+    },
+    {
+      "category": "politics",
       "headline": "House Democrats Prepare to Abandon Rep. Cherfilus-McCormick in Expected Expulsion Vote",
       "summary": "More than 30 House Democrats told Axios they are prepared to vote to expel Rep. Sheila Cherfilus-McCormick (D-Fla.) from Congress as the House Ethics Committee is set to meet Tuesday to decide her fate. Republicans are expected to force an expulsion vote but require roughly 80 Democratic votes to reach the two-thirds threshold needed for removal. House Minority Leader Hakeem Jeffries has declined to publicly advise members how to vote.\n\nCherfilus-McCormick was found guilty by the Ethics Committee on multiple charges, most notably for allegedly funneling $5 million in COVID-19 relief funds to her congressional campaign. She has denied wrongdoing and refused to resign. Fellow Florida congressman Rep. Cory Mills (R-Fla.) also faces a potential expulsion vote this week over separate financial misconduct allegations.\n\nIf expelled, Cherfilus-McCormick and Mills would become among the very few members ever removed from Congress in its history. The proceedings underscore ongoing tensions within the House over ethics enforcement and could further narrow the already slim Republican majority depending on how any subsequent special elections unfold.\n\nThe bipartisan willingness to remove a sitting Democratic member signals the severity of the Ethics Committee's findings in the eyes of many lawmakers across the aisle. The case has drawn attention to broader questions about accountability mechanisms in Congress and the role of party leadership in guiding members on expulsion votes.",
       "source": "Axios",
