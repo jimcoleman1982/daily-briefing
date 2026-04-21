@@ -4,6 +4,39 @@
   "stories": [
     {
       "category": "world",
+      "headline": "Eleven U.S. Scientists Dead or Missing: Are the Cases Connected?",
+      "summary": "At least eleven American scientists have died or gone missing in recent months, prompting questions from investigators, lawmakers, and media outlets about whether the cases are linked. The story has drawn coverage from eight major outlets spanning the political spectrum, reflecting widespread public and official concern.\n\nThe circumstances of the deaths and disappearances vary, and authorities have not publicly established a definitive connection between the cases. Some analysts caution against drawing premature conclusions, noting that coincidental clustering of unrelated incidents can appear meaningful without constituting a pattern.\n\nThe story has taken on national security dimensions given the scientific fields involved, with some commentators raising the possibility of foreign intelligence activity. Federal investigators have not confirmed any such link publicly, and officials urge restraint pending further review.\n\nThe breadth of media attention — from Al Jazeera and the New York Times on the left to Fox News and National Review on the right — suggests the story has transcended partisan framing and is being treated primarily as a national security and public safety matter.",
+      "source": "National Review",
+      "url": "https://www.nationalreview.com/news/are-the-eleven-dead-or-missing-u-s-scientists-really-connected/",
+      "sourceCount": 8,
+      "disposition": "new",
+      "addedAt": "9:20 AM MT",
+      "addedAtISO": "2026-04-21T09:20:25.116401-06:00"
+    },
+    {
+      "category": "world",
+      "headline": "NATO Scrambles Jets to Intercept Russian Bombers and Fighters Over Baltic Sea",
+      "summary": "NATO fighter aircraft from six countries intercepted a Russian formation of two Tu-22M3 strategic bombers and approximately ten fighter jets — including Su-30s and Su-35s — as they flew over the Baltic Sea on Monday. French Rafale jets launched from Šiauliai Air Base in Lithuania led the response, joining aircraft from Sweden, Finland, Poland, Denmark, and Romania.\n\nThe Russian Defense Ministry said the flight was scheduled and conducted in neutral airspace in compliance with international rules, noting that long-range bomber flights over the Baltic are routine. NATO regularly scrambles jets to intercept Russian aircraft that approach alliance airspace, citing concerns that Russian planes often fly without transponders and do not communicate with air traffic control.\n\nThe interception comes as European security attention remains focused primarily on the Middle East and the ongoing situation in Ukraine, making the Baltic demonstration a notable signal of continued Russian military activity on NATO's eastern flank. NATO has maintained continuous air-policing missions over the Baltic states since Lithuania, Latvia, and Estonia joined the alliance in 2004.\n\nBefore the war in Ukraine, NATO was intercepting Russian aircraft roughly 300 times per year, mostly over northern European waters. Alliance officials did not immediately comment on the specific mission.",
+      "source": "CBS News",
+      "url": "https://www.cbsnews.com/news/nato-intercepts-russian-bombers-fighter-jets-baltic-sea/",
+      "sourceCount": 2,
+      "disposition": "new",
+      "addedAt": "9:20 AM MT",
+      "addedAtISO": "2026-04-21T09:20:25.116401-06:00"
+    },
+    {
+      "category": "business",
+      "headline": "Purdue Pharma Sentenced to Forfeit $225 Million, Clearing Path to Final Opioid Settlement",
+      "summary": "A federal judge is expected Tuesday to formally sentence OxyContin maker Purdue Pharma to forfeit $225 million to the Justice Department, fulfilling the criminal component of a 2020 plea agreement and clearing the final legal hurdle for the company's broader opioid settlement to take effect May 1.\n\nPurdue pleaded guilty in November 2020 to three federal criminal charges, admitting it lacked effective controls to prevent its painkillers from being diverted to the black market, paid physicians through a speakers program to prescribe opioids, and used an electronic medical records company to steer additional prescriptions. The government agreed not to collect an additional $8.1 billion in fines and civil liabilities in exchange for the broader settlement framework.\n\nUnder the settlement — approved by a judge last year — members of the Sackler family, who own Purdue, must contribute up to $7 billion over 15 years to state, local, and Native American tribal governments, as well as some individual victims. Purdue itself will cease to exist and be replaced by a new entity called Knoa Pharma. The deal is the only major opioid settlement to include direct payments to some individual victims or their survivors.\n\nThe resolution is part of a broader wave of opioid-related settlements totaling more than $50 billion from drugmakers, wholesalers, and pharmacies. Advocates have long viewed Purdue's aggressive marketing of OxyContin — exemplified by a 1996 internal rally in which executive Richard Sackler called for a 'blizzard of prescriptions' — as a catalyst for the opioid crisis that has claimed hundreds of thousands of American lives.",
+      "source": "PBS NewsHour",
+      "url": "https://www.pbs.org/newshour/nation/a-criminal-sentence-for-oxycontin-maker-purdue-pharma-clears-the-way-for-finalizing-its-settlement",
+      "sourceCount": 2,
+      "disposition": "new",
+      "addedAt": "9:20 AM MT",
+      "addedAtISO": "2026-04-21T09:20:25.116401-06:00"
+    },
+    {
+      "category": "world",
       "headline": "EU's Top Court Rules Hungary's Anti-LGBTQ Laws Breach Founding Treaty Values in Unprecedented Ruling",
       "summary": "The European Court of Justice ruled Tuesday that Hungarian laws banning the so-called promotion of homosexuality or gender change to minors violate EU rules and, in an unprecedented finding, breach the founding values enshrined in Article 2 of the EU Treaty. The 2021 legislation, enacted under Viktor Orbán's government, had drawn comparisons to Russia's anti-gay propaganda laws and faced years of legal challenge from EU institutions.\n\nThe court found the laws infringed protections against discrimination based on sex and sexual orientation, rights to private and family life, and freedom of expression. Significantly, the ECJ held that the laws stigmatized and marginalized LGBTQ people by associating them with those convicted of paedophilia — a characterization the court said was contrary to the very identity of the European Union.\n\nThe ruling arrives nine days after Hungarian voters ended Orbán's 16-year continuous rule, with opposition leader Péter Magyar's Tisza party winning a two-thirds parliamentary majority. The European Commission said Hungary's anti-LGBTQ legislation would be among the issues it raises with the incoming government, which has pledged a more pro-European orientation and aims to unlock billions in previously frozen EU funding.\n\nLegal scholars described the Article 2 finding as historically significant because it means the rights of a minority group cannot be bargained away through democratic majority rule. Magyar has not made specific commitments on repealing the LGBTQ laws but said in his victory speech that Hungary should be a country where no one is stigmatized for loving differently than the majority.",
       "source": "BBC News",
