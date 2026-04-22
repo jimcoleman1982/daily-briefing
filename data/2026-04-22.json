@@ -4,6 +4,39 @@
   "stories": [
     {
       "category": "politics",
+      "headline": "Longtime Georgia Democratic Rep. David Scott Dies at 80",
+      "summary": "Rep. David Scott (D-Ga.) has died at age 80, House Minority Leader Hakeem Jeffries confirmed Wednesday. Scott represented Georgia's 13th Congressional District for more than two decades, making him one of the longest-serving members of the current Democratic caucus. His death was first reported by the Atlanta Journal-Constitution, citing confirmation from his office.\n\nScott's passing further narrows the already razor-thin House majority held by Republicans. His seat in Georgia's 13th District, centered in suburban Atlanta, is considered a safe Democratic district, meaning a special election is expected to result in Democratic retention, though the timing of that election remains to be determined by Georgia's governor.\n\nScott was known during his tenure for his work on the House Agriculture Committee and the House Financial Services Committee. He had faced questions about his health in recent years, and his office had not yet issued a formal statement at the time of initial reports.\n\nThe death marks the second vacancy in recent months for House Democrats, continuing to test the caucus's ability to maintain its numbers in a closely divided chamber as the 2026 midterm elections approach.",
+      "source": "Axios",
+      "url": "https://www.axios.com/2026/04/22/david-scott-death-georgia-democrat-house-congress",
+      "sourceCount": 3,
+      "disposition": "new",
+      "addedAt": "11:08 AM MT",
+      "addedAtISO": "2026-04-22T11:08:12.819987-06:00"
+    },
+    {
+      "category": "science_health",
+      "headline": "Earth Day Report: Nearly Half of Americans Breathing Unhealthy Air, Lung Association Finds",
+      "summary": "The American Lung Association released its annual 'State of the Air' report on Wednesday, coinciding with Earth Day, finding that 44 percent of Americans — more than 152 million people — live in areas with unhealthy levels of air pollution. The 27th annual report evaluates ground-level ozone and particle pollution across the country, grading localities on air quality metrics.\n\nHealth advocates and environmental groups warned that the findings come at a particularly precarious moment, as the Trump administration has undertaken an expansive rollback of Environmental Protection Agency regulations and pollution standards. Critics argue the deregulatory push will worsen air quality outcomes, particularly for children, the elderly, and those with respiratory conditions.\n\nSupporters of the administration's regulatory approach contend that many of the EPA rules being revised were economically burdensome, and that air quality in the United States has improved dramatically over recent decades under existing frameworks. They argue that targeted, cost-effective measures rather than broad federal mandates are the appropriate response.\n\nThe report's release on Earth Day amplifies its visibility within ongoing policy debates over federal environmental authority. The ALA has historically used the annual report to press Congress and regulators for stronger air quality enforcement under the Clean Air Act.",
+      "source": "The Hill",
+      "url": "https://thehill.com/policy/energy-environment/5843173-air-pollution-state-of-the-air/",
+      "sourceCount": 2,
+      "disposition": "new",
+      "addedAt": "11:08 AM MT",
+      "addedAtISO": "2026-04-22T11:08:12.819987-06:00"
+    },
+    {
+      "category": "politics",
+      "headline": "Virginia Redistricting Victory Shifts Nationwide Map Fight Toward Democrats",
+      "summary": "Virginia voters narrowly approved a Democratic-drawn congressional redistricting plan Tuesday, a result that could yield Democrats as many as four additional U.S. House seats in the November midterm elections. Four Republican incumbents now face the prospect of competing in redrawn districts designed to favor Democratic candidates, according to multiple projections following the vote's certification.\n\nThe outcome represents a significant payoff from a calculated Democratic gamble to aggressively redraw maps in a competitive purple state. The nationwide redistricting battle was partly triggered by moves from President Trump and congressional Republicans to pursue favorable map changes in states they control, prompting Democratic-led states and coalitions to respond in kind.\n\nRepublicans have criticized the Democratic-drawn Virginia maps as partisan gerrymandering designed to disenfranchise Republican voters and manipulate electoral outcomes, arguments similar to those Democrats have leveled against Republican-controlled redistricting efforts in other states. Legal challenges to the new maps are considered possible, though the timeline for any such action relative to November elections remains uncertain.\n\nThe Virginia result is being watched closely by both parties as a bellwether for the broader redistricting fight heading into the midterms. With control of the House potentially at stake, even a net gain of two or three seats from Virginia could prove decisive in determining which party holds the majority in the next Congress.",
+      "source": "Axios",
+      "url": "https://www.axios.com/2026/04/22/virginia-democrats-redraw-maps-vote",
+      "sourceCount": 3,
+      "disposition": "new",
+      "addedAt": "11:08 AM MT",
+      "addedAtISO": "2026-04-22T11:08:12.819987-06:00"
+    },
+    {
+      "category": "politics",
       "headline": "Bipartisan Hearing Erupts Over California Hospice Fraud as Trump and Newsom Trade Blame",
       "summary": "A contentious bipartisan hearing on Capitol Hill Tuesday put Medicare hospice fraud under the microscope, with lawmakers from both parties demanding accountability for what they described as widespread theft of taxpayer dollars. House Ways and Means Committee Chairman Jason Smith (R-MO) opened the session with sharp language: \"To the fraudsters: your time operating in the dark is way over.\"\n\nCalifornia has emerged as the epicenter of the hospice fraud problem, with federal investigators and watchdogs documenting schemes in which operators bill Medicare for patients who are not terminally ill or do not require hospice-level care. The fraud has cost the Medicare program billions of dollars and, critics argue, has deprived genuinely dying patients of proper care.\n\nThe hearing quickly became politically charged, with the Trump administration pointing to California's regulatory failures and singling out Gov. Gavin Newsom for particular criticism. Democratic state leaders, in turn, argued that federal oversight gaps and underfunding of enforcement have allowed bad actors to proliferate. Both sides agreed the problem is severe but differed sharply on where responsibility lies.\n\nThe hearing reflects broader concerns about hospice industry expansion and lax oversight that have been documented by federal inspectors general for years. Legislators on both sides of the aisle signaled interest in tightening Medicare eligibility standards and increasing penalties for fraudulent operators, though specific legislative proposals have yet to be advanced.",
       "source": "New York Times",
