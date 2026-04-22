@@ -3,6 +3,28 @@
   "dateFormatted": "Tuesday, April 21, 2026",
   "stories": [
     {
+      "category": "technology",
+      "headline": "Top U.S. Cyber Agency Lacks Access to Anthropic's Powerful Hacking-Capable AI Model",
+      "summary": "The Cybersecurity and Infrastructure Security Agency (CISA) does not have access to Anthropic's Mythos Preview model, even as other government agencies have been granted use of the powerful artificial intelligence system, according to two sources who spoke with Axios. CISA is the federal agency primarily responsible for defending critical national infrastructure — including banks, power grids, and communications systems — from cyberattacks.\n\nThe disclosure raises concerns among security professionals at a time when industries overseen by CISA are increasingly worried about AI-enabled cyberattacks overwhelming their defenses. Anthropic has described Mythos as sufficiently powerful to enable dangerous offensive cyber operations, which is why access has been tightly restricted.\n\nSeparately, Bloomberg News reported that a small group of unauthorized users has already accessed the Mythos model, citing a person familiar with the matter and internal documentation. The dual revelations — CISA locked out while unauthorized parties reportedly got in — highlight the complex and unresolved questions surrounding the governance of highly capable AI systems.\n\nThe situation puts Anthropic in a difficult position as the company navigates federal relationships and attempts to balance expanding government use of its technology against preventing misuse of its most capable models. Neither CISA nor Anthropic has issued a public statement on the access gap.",
+      "source": "Axios",
+      "url": "https://www.axios.com/2026/04/21/cisa-anthropic-mythos-ai-security",
+      "sourceCount": 2,
+      "disposition": "new",
+      "addedAt": "10:12 PM MT",
+      "addedAtISO": "2026-04-21T22:12:55.523494-06:00"
+    },
+    {
+      "category": "world",
+      "headline": "Indonesia Passes Landmark Domestic Workers Protection Law After 22-Year Campaign",
+      "summary": "Indonesia's parliament has enacted a law granting legal protections to the country's approximately 4.2 million domestic workers, the vast majority of whom are women, after more than two decades of advocacy and legislative setbacks. Under the new Domestic Workers Protection Law, workers will be entitled to health insurance, rest days, and pension benefits for the first time. Placement agencies will be barred from deducting wages, and it will be illegal to employ children under 18 in domestic roles.\n\nThe bill was first introduced in 2004 but repeatedly stalled in parliament, with substantive discussions suspended for years before being revived in 2020. Workers and rights advocates wept upon hearing of its passage, with some describing it as the culmination of a generational struggle. \"It feels like a dream,\" said Ajeng Astuti, a domestic worker who spoke with BBC Indonesian.\n\nDespite their economic importance, domestic workers in Indonesia were previously employed informally without legal contracts, with some beginning work as young as 12 years old. Rights group Jala PRT documented more than 3,300 cases of violence against domestic workers between 2021 and 2024, including physical and psychological abuse.\n\nRegulators will have one year to draft detailed implementation policies. Advocacy groups welcomed the law but cautioned that enforcement will require a broad public education campaign to inform employers of their new obligations and that further work remains to be done to protect workers in practice.",
+      "source": "BBC News",
+      "url": "https://www.bbc.com/news/articles/c1mkvjkg10no",
+      "sourceCount": 1,
+      "disposition": "new",
+      "addedAt": "10:12 PM MT",
+      "addedAtISO": "2026-04-21T22:12:55.523494-06:00"
+    },
+    {
       "category": "politics",
       "headline": "Illegal Immigrant Sentenced to 360 Days for Groping Fairfax County High School Students",
       "summary": "Israel Flores Ortiz, an 18-year-old Salvadoran national in the country illegally, was sentenced Tuesday to 360 days in prison after being convicted of groping multiple female students at a Fairfax County, Virginia high school. The case drew national attention given Ortiz's immigration status and the setting of the offenses at a public school.\n\nThe sentencing has reignited debate over local and federal immigration enforcement policies. Critics on the right, including conservative media outlets, have pointed to the case as evidence that sanctuary-style policies and inadequate immigration enforcement endanger communities. Advocates on the left have cautioned against conflating immigration status with criminality, arguing the broader data does not show immigrants commit crimes at higher rates than citizens.\n\nFairfax County has been a flashpoint in national immigration discussions, with local officials historically resistant to full cooperation with federal Immigration and Customs Enforcement detainer requests. The case is likely to fuel further legislative and political debate in Virginia, which has seen its congressional delegation increasingly concentrate around the Washington suburbs.\n\nThe story was reported by 12 outlets across the political spectrum, reflecting its broad national significance at the intersection of immigration enforcement, public school safety, and local governance.",
