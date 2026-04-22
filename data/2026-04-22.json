@@ -4,6 +4,50 @@
   "stories": [
     {
       "category": "world",
+      "headline": "EU Approves €90 Billion Loan for Ukraine After Hungary Lifts Veto as Oil Pipeline Resumes",
+      "summary": "The European Union gave preliminary approval Wednesday to a €90 billion loan package for Ukraine after months of deadlock ended when Ukraine resumed pumping Russian oil through the Druzhba pipeline into Hungary and Slovakia. EU ambassadors meeting in Cyprus signed off on the loan along with a 20th package of sanctions against Russia, with EU leaders expected to formally approve the measures at an informal summit Thursday.\n\nHungarian Prime Minister Viktor Orbán had vetoed the loan in February, demanding oil deliveries be restored before the funds could be released. Ukrainian energy operator Ukrtransnaft confirmed pumping restarted Wednesday morning, with Slovak authorities saying crude oil would begin flowing into Slovakia by Thursday — the first time since January 27.\n\nOrbán's political standing has weakened following his defeat in Hungary's election last Sunday, with incoming Prime Minister Péter Magyar having prioritized restoring relations with Brussels. EU foreign policy chief Kaja Kallas said the loan approval was 'a sign that Russia cannot outlast Ukraine.'\n\nUkrainian Deputy Prime Minister Taras Kachka had described the funding as 'a matter of life and death' for Kyiv, noting that two-thirds of the loan will go toward defense needs while the remainder covers broader financial assistance. Ukraine has simultaneously continued offensive operations inside Russia, including striking a pumping station in the Samara region linked to the Druzhba pipeline.",
+      "source": "BBC News",
+      "url": "https://www.bbc.com/news/articles/cnv8l99r3yyo?at_medium=RSS&at_campaign=rss",
+      "sourceCount": 1,
+      "disposition": "new",
+      "addedAt": "6:08 AM MT",
+      "addedAtISO": "2026-04-22T06:08:01.245933-06:00"
+    },
+    {
+      "category": "business",
+      "headline": "Lufthansa Cuts 20,000 Summer Flights as Jet Fuel Costs Double Amid Middle East Conflict",
+      "summary": "German airline Lufthansa announced Tuesday it will cut 20,000 short-haul flights this summer, citing a doubling of jet fuel prices since the start of the U.S.-Israel war with Iran. The airline said the routes, including flights from Frankfurt to Poland and Norway, had become 'unprofitable,' and that the first 120 cancellations were implemented Tuesday.\n\nJet fuel prices have surged sharply as the conflict has disrupted production and transportation across the Middle East. The Gulf region accounts for roughly 50 percent of Europe's aviation fuel imports, with the bulk transiting the Strait of Hormuz, which Iran has effectively closed. Kuwait's Al-Zour refinery alone supplies approximately 10 percent of Europe's jet fuel imports.\n\nLufthansa is not alone: KLM-France, Delta, and other carriers have also temporarily cut flights, while many airlines have raised ticket prices to pass on higher fuel costs to travelers. The International Energy Agency warned last week that Europe could run out of jet fuel within weeks, though UK authorities and airlines said they had not yet observed supply disruptions.\n\nAnalysts cautioned that travelers should expect further price increases and additional flight cancellations if the conflict continues. Lufthansa said passengers would retain access to its long-haul global network and that the cuts would save approximately 40,000 metric tons of fuel.",
+      "source": "BBC News",
+      "url": "https://www.bbc.com/news/articles/cre1r4n5j5wo?at_medium=RSS&at_campaign=rss",
+      "sourceCount": 1,
+      "disposition": "new",
+      "addedAt": "6:08 AM MT",
+      "addedAtISO": "2026-04-22T06:08:01.245933-06:00"
+    },
+    {
+      "category": "politics",
+      "headline": "Trump Calls on Congress to Pass College Sports Legislation at White House Champions Event",
+      "summary": "President Donald Trump used a White House ceremony honoring NCAA national champions Tuesday to renew his push for federal legislation reforming college athletics. The event brought together roughly 100 athletes from seven championship teams, including Oklahoma State in men's golf, Texas A&M in women's volleyball, Florida State in women's soccer, and West Virginia in mixed rifle.\n\nTrump this month signed an executive order aimed at stabilizing college sports by limiting athlete eligibility to five years, allowing one penalty-free transfer for undergraduates, curbing pay-for-play arrangements, and adding protections for women's and Olympic sports programs. However, administration officials and college sports stakeholders have acknowledged that aspects of the executive order may not survive legal challenges.\n\nTrump and his allies are therefore pressing Congress to codify the restrictions through legislation and to grant the NCAA an antitrust exemption to enforce its rules. Trump argued at the event that it is unfair for 18-year-old athletes to compete against players in their late 20s, and that the current transfer portal and name, image and likeness landscape has put athletic department finances under serious strain.\n\nCollege sports reform has attracted bipartisan interest in Congress, though the specifics of any legislation remain contested. Critics of the executive order, including some athlete advocacy groups, have raised concerns that restricting eligibility and transfer rights could limit earning opportunities for players who had little recourse before recent reforms.",
+      "source": "PBS NewsHour",
+      "url": "https://www.pbs.org/newshour/politics/watch-trump-addresses-ncaa-collegiate-national-champions-at-white-house",
+      "sourceCount": 3,
+      "disposition": "new",
+      "addedAt": "6:08 AM MT",
+      "addedAtISO": "2026-04-22T06:08:01.245933-06:00"
+    },
+    {
+      "category": "world",
+      "headline": "One Year After Pahalgam Massacre, Kashmir Attack Victims' Families Speak of Enduring Grief",
+      "summary": "One year after militants killed 26 tourists near Pahalgam in Indian-administered Kashmir on April 22, 2025, families of the victims described lives permanently altered by the attack. The massacre, one of the deadliest targeting civilians in Kashmir in decades, struck mostly Hindu men, including several newlyweds and young travelers.\n\nIndia blamed Pakistan-based militant groups for the attack, a charge Islamabad denied. Two weeks after the killings, India launched air strikes at what it described as militant bases, triggering four days of shelling and aerial exchanges between the two nuclear-armed neighbors before a surprise ceasefire was announced.\n\nAmong those killed was Shubham Dwivedi, who had married just two months before the attack. His widow, Aishanya Dwivedi, told BBC Hindi she has kept their shared bedroom exactly as it was, preserving the mirror he bought for her after she once asked why there was none. 'I did not get enough time to make a lot of memories,' she said. 'Yet, Shubham gave me so many memories to live with.'\n\nThe anniversary falls as the region remains under tightened security restrictions. Indian authorities have conducted extensive security reviews since the attack, but the consequences of the massacre, families say, are felt most acutely in private, in homes where grief has not diminished with time.",
+      "source": "BBC News",
+      "url": "https://www.bbc.com/news/articles/c8ej3wl130yo?at_medium=RSS&at_campaign=rss",
+      "sourceCount": 1,
+      "disposition": "new",
+      "addedAt": "6:08 AM MT",
+      "addedAtISO": "2026-04-22T06:08:01.245933-06:00"
+    },
+    {
+      "category": "world",
       "headline": "Taiwan President Cancels Africa Trip After China Pressures Nations to Revoke Flight Permits",
       "summary": "Taiwan President Lai Ching-te has cancelled a planned visit to Eswatini, the only African nation that maintains formal diplomatic ties with Taipei, after Seychelles, Mauritius, and Madagascar revoked his aircraft's flight permits. Taiwanese officials said the reversals came after \"intense pressure\" and economic coercion from Beijing, marking the first publicly known instance of a Taiwanese leader being forced to cancel a foreign trip due to denied overflight rights. Lai had been scheduled to attend celebrations marking the 40th anniversary of Eswatini's King Mswati III's accession from April 22–26.\n\nChina denied coercing the three Indian Ocean nations, while its Foreign Ministry praised them for upholding the \"one China\" principle and declared that \"the so-called 'President of the Republic of China' no longer exists in the world.\" Seychelles and Madagascar stated they acted because they do not recognize Taiwan. Taiwan will send a special envoy in Lai's place to the Eswatini celebrations.\n\nLai condemned Beijing's \"coercive actions\" in a post on X, saying they \"exposed the risks authoritarian regimes pose to the international order\" and pledging that no amount of threats would shake Taiwan's resolve. The episode drew criticism from U.S. lawmakers, with the House Foreign Affairs Committee Majority and Senator Ted Cruz both publicly siding with Taiwan against what they called blatant Chinese coercion.\n\nThe incident underscores Beijing's ongoing campaign to isolate Taiwan diplomatically as tensions over the island's status remain elevated. Taiwan currently retains formal diplomatic recognition from only 12 nations globally, a number that has steadily eroded as China leverages economic ties to peel away Taipei's remaining allies.",
       "source": "BBC News",
