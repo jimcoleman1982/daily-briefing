@@ -3,6 +3,39 @@
   "dateFormatted": "Wednesday, April 22, 2026",
   "stories": [
     {
+      "category": "politics",
+      "headline": "Update: Trump Approval Rating Drops to 32 Percent, Matching Carter-Era Lows Amid Economic Strain",
+      "summary": "New polling released Wednesday shows President Trump's approval rating has fallen to 32 percent, according to an American Research Group survey highlighted by the Drudge Report, which drew comparisons to former President Jimmy Carter's historically low ratings in the late 1970s and early 1980s. A separate AP-NORC survey found Trump's economic approval rating dropped to 30 percent this month, an 8-point decrease from March and a 9-point fall from February.\n\nThe polling decline is broadly attributed to economic pressures stemming from the ongoing U.S.-Iran war, which has driven up fuel costs and contributed to broader inflation concerns. Bloomberg Opinion analysts noted that Trump's struggle with affordability issues is likely to define the 2026 midterm elections.\n\nSupporters of the president argue that wartime conditions inevitably suppress presidential approval and that economic fundamentals may improve once a ceasefire agreement is reached. Critics contend the ratings reflect genuine public discontent with the administration's handling of both the conflict and domestic economic policy.\n\nThe polls add pressure on Republican lawmakers already uneasy about the political costs of the Iran war and tariff-related economic disruptions heading into a midterm cycle where the House majority is increasingly at risk.",
+      "source": "The Hill",
+      "url": "https://thehill.com/homenews/media/5842863-matt-drudge-donald-trump-jimmy-carter-approval-ratings/",
+      "sourceCount": 2,
+      "disposition": "update",
+      "addedAt": "9:20 AM MT",
+      "addedAtISO": "2026-04-22T09:20:43.017623-06:00"
+    },
+    {
+      "category": "other",
+      "headline": "5th Circuit Allows Texas Ten Commandments Displays in Public School Classrooms",
+      "summary": "The 5th U.S. Circuit Court of Appeals ruled Tuesday in a 9-8 decision to allow Texas to require posters of the Ten Commandments in public school classrooms, overturning a lower court ruling that had blocked the law. The Texas statute mandates that schools display the Ten Commandments if posters are donated to the district.\n\nConservatives hailed the ruling as a significant victory in a long-running effort to allow greater expression of religion in public institutions. Supporters argue the displays are a historical and moral reference, not an unconstitutional government endorsement of religion.\n\nOpponents, including civil liberties groups, contend the requirement violates the First Amendment's Establishment Clause, which prohibits government from promoting a specific religion. The closely divided 9-8 ruling signals deep disagreement among appellate judges and sets the stage for a likely appeal to the U.S. Supreme Court.\n\nThe decision comes amid a broader national debate over the role of religion in public schools and could have implications for similar laws in other states.",
+      "source": "The Hill",
+      "url": "https://thehill.com/homenews/education/5842840-texas-ten-commandments/",
+      "sourceCount": 2,
+      "disposition": "new",
+      "addedAt": "9:20 AM MT",
+      "addedAtISO": "2026-04-22T09:20:43.017623-06:00"
+    },
+    {
+      "category": "science_health",
+      "headline": "Los Angeles Becomes First Major U.S. School District to Limit Classroom Screen Time",
+      "summary": "The Los Angeles Unified School District's board voted Tuesday to restrict student screen time in classrooms, making it the largest U.S. school system to adopt such a policy. The resolution bans first-graders and younger students from using devices entirely and requires staff to develop grade-level screen-time policies across the district, which serves approximately half a million students.\n\nThe new rules, expected to take effect in the next school year, will also ban YouTube and other video-streaming platforms on school-issued devices and allow parents to opt their children out of specific digital tools. The move follows a 2024 district measure banning mobile phones and social media in classrooms.\n\nBoard member Nick Melvoin, who introduced the resolution, acknowledged that student devices were essential during the COVID-19 pandemic but argued it is now time to recalibrate. The resolution cited research linking excessive screen time in children aged 8 to 11 to higher risks of obesity, depressive symptoms, and lower cognitive assessment scores.\n\nAdvocates for the policy say they hope Los Angeles's action will prompt other districts nationwide to follow suit, describing it as a significant cultural shift in how schools approach technology and student well-being.",
+      "source": "BBC News",
+      "url": "https://www.bbc.com/news/articles/c15d888ww39o?at_medium=RSS&at_campaign=rss",
+      "sourceCount": 2,
+      "disposition": "new",
+      "addedAt": "9:20 AM MT",
+      "addedAtISO": "2026-04-22T09:20:43.017623-06:00"
+    },
+    {
       "category": "world",
       "headline": "Update: Iran Fires on Commercial Ships in Strait of Hormuz After Trump Extends Ceasefire Indefinitely",
       "summary": "Iranian Revolutionary Guard Corps gunboats attacked multiple commercial vessels in the Strait of Hormuz on Wednesday, hours after President Trump announced he was extending the U.S.-Iran ceasefire indefinitely. The British military's trade operations unit confirmed at least two vessels were fired upon, with Iran seizing two cargo ships and bringing them to Iranian ports. The attacks came as U.S.-Iran peace talks in Islamabad collapsed before they began, leaving the broader conflict unresolved.\n\nTrump had initially told CNBC on Tuesday that he had no interest in extending the ceasefire, before reversing course and announcing an indefinite extension until Iran agrees to negotiate a new deal. The ceasefire extension did not lift the U.S. naval blockade of the Strait of Hormuz, a critical chokepoint through which a significant portion of global oil flows. The International Maritime Organization said nearly 20,000 people aboard roughly 2,000 vessels remain trapped in the Persian Gulf.\n\nThe Iranian government framed Wednesday's ship seizures as a response to what it described as the U.S. capture of an Iranian commercial vessel. Iran's position, according to analysts, is that it can outlast American pressure in an extended standoff, even at severe economic cost to its own population. The U.S. and Israel launched major strikes against Iran on February 28, and the conflict has killed more than 3,300 Iranians, according to Iranian authorities.\n\nThe renewed hostilities at sea underscore the fragility of the ceasefire arrangement and the difficulty of reaching a negotiated settlement. Global commodity traders and tanker operators have warned that prolonged closure of the strait could trigger a wave of supply disputes and further price increases. Federal Reserve Governor Christopher Waller said Friday that while the conflict will likely drive near-term inflation higher, a swift end could keep the door open to interest rate cuts later this year.",
