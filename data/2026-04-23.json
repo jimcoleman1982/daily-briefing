@@ -3,6 +3,50 @@
   "dateFormatted": "Thursday, April 23, 2026",
   "stories": [
     {
+      "category": "politics",
+      "headline": "Johnson Faces Pressure From Both Parties as DHS Funding Deadline Looms",
+      "summary": "Speaker Mike Johnson is under intensifying pressure from Republicans and Democrats alike as the Department of Homeland Security approaches a deadline at which it would lack funds to pay employees. Johnson is insisting on passing a GOP-only bill to fund immigration enforcement before taking up broader, bipartisan legislation to fund the rest of DHS — a sequencing that has put him at odds with Senate Republicans who want a more sweeping election-year affordability package.\n\nSenate Republicans and House Republicans are on a collision course over whether to use a budget vehicle that Democrats cannot block to narrowly fund DHS immigration operations or to pursue a larger legislative push. Senate Republicans posted on social media that 'Democrats voted to defund law enforcement 16+ times in the last 68 days,' while Democrats have said they will not approve a DHS budget without accompanying reforms.\n\nThe standoff reflects broader tensions within the Republican conference over immigration strategy heading into the 2026 midterm elections. Democrats argue that Republicans are manufacturing a funding crisis to score political points on border security, while Republicans contend that Democrats are blocking essential funding for immigration enforcement officers.",
+      "source": "The Hill",
+      "url": "https://thehill.com/homenews/house/5843852-mike-johnson-pressure-dhs-funding/",
+      "sourceCount": 3,
+      "disposition": "new",
+      "addedAt": "5:08 AM MT",
+      "addedAtISO": "2026-04-23T05:08:08.633461-06:00"
+    },
+    {
+      "category": "world",
+      "headline": "South African Court Orders Zambia to Return Former President Lungu's Body Hours After Transfer",
+      "summary": "A South African court has ordered Zambia's government to return the remains of former President Edgar Lungu just hours after Zambia announced it had taken formal possession of the body following a court transfer. The reversal adds a new legal twist to a months-long dispute over the remains of Lungu, who died aged 68 at a clinic in Pretoria from an undisclosed illness.\n\nZambia's government had stated late Wednesday that Lungu's remains were 'formally transferred' to the state after his family was reportedly unable to proceed with an appeals case. But a South African court subsequently ordered the body returned, and the funeral home where the remains had been kept said it would no longer accept them, leaving the situation in legal limbo.\n\nThe dispute is rooted in a long-standing feud between Lungu, who led Zambia from 2015 to 2021, and his successor President Hakainde Hichilema. Lungu's family had sought a private burial and said the former president did not want Hichilema present at any funeral proceedings. Zambia's government maintained that, as a former head of state, Lungu was entitled to a state burial alongside predecessors in Lusaka.",
+      "source": "BBC News",
+      "url": "https://www.bbc.com/news/articles/cdj7vgwwzgdo",
+      "sourceCount": 1,
+      "disposition": "new",
+      "addedAt": "5:08 AM MT",
+      "addedAtISO": "2026-04-23T05:08:08.633461-06:00"
+    },
+    {
+      "category": "business",
+      "headline": "Sri Lanka Investigates $2.5 Million Hack of Finance Ministry Computer Systems",
+      "summary": "Sri Lanka is investigating the theft of $2.5 million from government accounts after hackers breached the Finance Ministry's computer systems, Treasury Secretary Harshana Suriyapperuma confirmed Thursday. The breach represents a significant cybersecurity failure for a country that has only recently emerged from a severe economic crisis that required an IMF bailout.\n\nFew additional details about the attackers or the methods used have been publicly disclosed, and the investigation is ongoing. The incident raises questions about the security of government financial infrastructure in developing economies that are undergoing rapid digital transformation.\n\nSri Lanka's vulnerability to such attacks comes as the country continues efforts to rebuild fiscal credibility with international creditors and restructure its sovereign debt following its 2022 default. A breach of Finance Ministry systems could undermine confidence in the country's financial governance at a critical juncture.",
+      "source": "Bloomberg Politics",
+      "url": "https://www.bloomberg.com/news/articles/2026-04-23/sri-lanka-probes-2-5-million-hack-of-finance-ministry-funds",
+      "sourceCount": 1,
+      "disposition": "new",
+      "addedAt": "5:08 AM MT",
+      "addedAtISO": "2026-04-23T05:08:08.633461-06:00"
+    },
+    {
+      "category": "business",
+      "headline": "UK Chancellor Reeves Posts Lowest Deficit Since Labour Took Power on Surge in Wealth Tax Revenue",
+      "summary": "British Chancellor Rachel Reeves has recorded the United Kingdom's lowest budget deficit since Labour came to power in 2024, driven in large part by revenue from higher wealth taxes that the government introduced after taking office. The tax increases, which targeted Britain's more affluent population, generated more than £30 billion, according to new figures.\n\nReeves and the Labour government had pledged a clampdown on wealth and capital at the upper end of the income scale as a central plank of their fiscal strategy. Critics, including business groups and Conservative opponents, had warned that higher wealth taxes could prompt capital flight or dampen investment, arguments the new revenue figures will complicate.\n\nThe deficit figures provide political ammunition for the government ahead of ongoing debates about the UK's fiscal trajectory. However, economists caution that a single year of stronger-than-expected tax receipts does not necessarily resolve the longer-term structural pressures on public finances, including rising debt service costs and health and pension spending.",
+      "source": "Bloomberg Politics",
+      "url": "https://www.bloomberg.com/news/articles/2026-04-23/reeves-reaps-more-than-30-billion-from-higher-uk-wealth-taxes",
+      "sourceCount": 1,
+      "disposition": "new",
+      "addedAt": "5:08 AM MT",
+      "addedAtISO": "2026-04-23T05:08:08.633461-06:00"
+    },
+    {
       "category": "other",
       "headline": "Human Remains of Three Young Children Discovered in Memphis Woods",
       "summary": "The remains of three children, estimated to be between the ages of 3 and 7, have been found in a heavily wooded area in the Hickory Hill neighborhood of southwest Memphis, Tennessee. The investigation began March 8 after an anonymous caller reported finding a human skull near the woods. Cadaver dogs and a subsequent drainage system search led to the discovery of additional skulls and 14 bones consistent with human remains.\n\nMemphis Police Chief Cerelyn Davis announced the findings at a press conference Wednesday, confirming that initial medical examiner analysis identified the remains as belonging to three children. Approximately 170 personnel, including FBI agents, are involved in the ongoing search of the crime scene. Investigators have not yet determined the identities of the children or the cause of death.\n\nAuthorities are urging anyone with information to contact police, noting that the case is deeply concerning to the community. Chief Davis stressed there is no indication of an active public threat but called on the public for help, saying: 'Somebody knows where these children have come from. Someone knows the missing children that we have discovered in this area.'",
