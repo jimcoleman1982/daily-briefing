@@ -3,6 +3,39 @@
   "dateFormatted": "Thursday, April 23, 2026",
   "stories": [
     {
+      "category": "other",
+      "headline": "Kalshi Suspends Three Political Candidates for Betting on Their Own Races",
+      "summary": "Prediction market platform Kalshi announced Thursday that it had fined and suspended three political candidates after discovering they had placed bets on their own primary races. The platform, which operates legally in the United States, said the candidates violated its terms of service by trading on inside knowledge of their own electoral prospects.\n\nThe announcement raises fresh questions about the intersection of political campaigns and the fast-growing prediction market industry, which has expanded significantly in recent election cycles. Kalshi did not publicly identify the three candidates involved.\n\nThe incident highlights regulatory gaps around prediction markets and political participation. Critics have argued that allowing candidates to wager on their own outcomes creates obvious conflicts of interest, while supporters of prediction markets contend that existing platform rules and market mechanisms can self-police such behavior.\n\nThe story was reported by both CBS News and NBC News, drawing mainstream attention to what advocates and critics alike see as an emerging governance challenge as prediction markets become more prominent in U.S. political culture.",
+      "source": "CBS News",
+      "url": "https://www.cbsnews.com/video/3-political-candidates-bet-on-their-own-races-kalshi-says/",
+      "sourceCount": 2,
+      "disposition": "new",
+      "addedAt": "11:08 AM MT",
+      "addedAtISO": "2026-04-23T11:08:20.731427-06:00"
+    },
+    {
+      "category": "world",
+      "headline": "Iran's Exiled Crown Prince Reza Pahlavi Doused with Red Liquid at Berlin Press Conference",
+      "summary": "Exiled Iranian Crown Prince Reza Pahlavi was struck with a red liquid Thursday as he departed a press conference in Berlin, Germany. Video footage of the incident circulated widely online, showing security personnel moving to restrain what appeared to be the protester responsible while others escorted Pahlavi away from the crowd.\n\nPahlavi, son of the late Shah Mohammad Reza Pahlavi who was deposed in the 1979 Islamic Revolution, has lived in exile and has been increasingly vocal in opposition to the current Iranian government, particularly as the country navigates a ceasefire following recent military conflict with the United States and Israel.\n\nThe attack comes at a sensitive moment for Iranian opposition figures abroad, as diplomatic negotiations over Iran's nuclear and military posture continue. Pahlavi has positioned himself as a potential leader for a post-Islamic Republic Iran, drawing both support from some Iranian diaspora communities and criticism from others who oppose monarchist restoration.\n\nThe identity and motive of the protester had not been confirmed in initial reports. The incident was covered by Bloomberg and The Hill.",
+      "source": "The Hill",
+      "url": "https://thehill.com/policy/international/5845303-exiled-crown-prince-reza-pahlavi-berlin/",
+      "sourceCount": 2,
+      "disposition": "new",
+      "addedAt": "11:08 AM MT",
+      "addedAtISO": "2026-04-23T11:08:20.731427-06:00"
+    },
+    {
+      "category": "other",
+      "headline": "MrBeast's Company Sued by Former Executive Over Sexual Harassment and Gender Bias Claims",
+      "summary": "Beast Industries, the media company owned by YouTube star Jimmy Donaldson — known online as MrBeast — has been sued by a former senior employee who alleges widespread sexual harassment and gender discrimination at the firm. Lorrayne Mavromatis, who served as head of Instagram and later held a more senior role at the company from 2022 to 2025, claims in court documents that harassment of female employees was \"condoned and/or perpetuated\" by supervisors and that complaints were not taken seriously.\n\nAmong the specific allegations, Mavromatis claims a former Beast Industries CEO told her that her appearance had \"a certain sexual effect on Jimmy\" when she asked why Donaldson would not work with her on certain projects. She also alleges she was demoted after raising concerns, then fired less than three weeks after returning from pregnancy-related leave and told she was \"too high-calibre\" for her then-current role. She is seeking lost wages, lost benefits, reinstatement, and damages for emotional distress.\n\nA representative for Beast Industries called the lawsuit a \"clout-chasing complaint\" built on \"deliberate misrepresentations and categorically false statements,\" saying the company has messages, documents, and witness testimony to refute the claims. The company said the elimination of Mavromatis's role was part of a broader reorganization that affected both men and women.\n\nDonaldson, who has more than 470 million YouTube subscribers and is the platform's most-followed creator, has previously faced legal challenges including allegations related to his reality show Beast Games. The lawsuit adds to scrutiny of the workplace culture inside one of the internet's largest media operations.",
+      "source": "BBC News",
+      "url": "https://www.bbc.com/news/articles/c937z1nxze8o",
+      "sourceCount": 2,
+      "disposition": "new",
+      "addedAt": "11:08 AM MT",
+      "addedAtISO": "2026-04-23T11:08:20.731427-06:00"
+    },
+    {
       "category": "technology",
       "headline": "White House Accuses China of 'Industrial-Scale' Campaigns to Steal U.S. AI Secrets",
       "summary": "The Trump administration on Thursday formally accused China-backed actors of conducting \"deliberate, industrial-scale campaigns\" to distill and copy American frontier artificial intelligence models. White House Office of Science and Technology Policy Director Michael Kratsios issued a memo to federal agency heads outlining the accusation, escalating the rhetorical and policy confrontation between Washington and Beijing over AI dominance.\n\nThe memo marks one of the most direct government statements yet on Chinese efforts to acquire U.S. AI technology through illicit means, including through techniques such as model distillation, which involves training a smaller AI system using outputs from a more powerful one. The accusation comes as a former Google engineer was recently convicted of stealing AI trade secrets for China, a case cited by national security officials as emblematic of a broader threat.\n\nThe timing is notable: President Trump is expected to visit Beijing in the coming weeks, and the public accusation could complicate diplomatic preparations. The administration has not detailed specific remedies or sanctions tied to the memo, but the document signals that AI security will be a central friction point in U.S.-China relations going forward.\n\nChina has consistently denied accusations of state-sponsored intellectual property theft. The accusation adds to existing export controls on advanced semiconductors and AI chips that the U.S. has imposed on China, as both nations compete to lead in the development of next-generation AI systems.",
