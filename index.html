@@ -133,6 +133,27 @@
             top: -1px;
         }
 
+        .story-siren {
+            font-size: 1.1em;
+            flex-shrink: 0;
+            display: inline-block;
+            line-height: 1;
+            position: relative;
+            top: 1px;
+            animation: siren-pulse 1.2s ease-in-out infinite;
+            filter: drop-shadow(0 0 3px rgba(220, 30, 30, 0.55));
+        }
+
+        @keyframes siren-pulse {
+            0%, 100% { transform: scale(1); opacity: 1; }
+            50% { transform: scale(1.15); opacity: 0.82; }
+        }
+
+        .story-headline.breaking .story-title {
+            color: #8b1a1a;
+            font-weight: 600;
+        }
+
         .story-title {
             font-size: 1.05em;
             color: #1a3a6a;
@@ -144,8 +165,17 @@
             color: #999;
         }
 
+        .story-item.read .story-headline.breaking .story-title {
+            color: #b06a6a;
+        }
+
         .story-item.read .story-bullet {
             color: #ccc;
+        }
+
+        .story-item.read .story-siren {
+            animation: none;
+            opacity: 0.55;
         }
 
         .story-posted-at {
@@ -550,8 +580,11 @@
                 item.id = 'story-' + dateStr + '-' + idx;
 
                 var headline = document.createElement('div');
-                headline.className = 'story-headline';
-                headline.innerHTML = '<span class="story-bullet">&#9670;</span>' +
+                headline.className = 'story-headline' + (story.breaking ? ' breaking' : '');
+                var sirenHTML = story.breaking
+                    ? '<span class="story-siren" title="Breaking / urgent" aria-label="Breaking">&#128680;</span>'
+                    : '<span class="story-bullet">&#9670;</span>';
+                headline.innerHTML = sirenHTML +
                     '<span class="story-title">' + escapeHTML(story.headline) + '</span>';
 
                 headline.addEventListener('click', function() {

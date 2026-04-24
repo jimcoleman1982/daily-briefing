@@ -29,9 +29,10 @@ from bs4 import BeautifulSoup
 # --- Configuration ---
 DENVER_TZ = ZoneInfo("America/Denver")
 MAX_CANDIDATES = 25  # gather this many before curation
-MAX_STORIES_PER_RUN = 5  # select up to this many new stories per run
+MAX_STORIES_PER_RUN = 6  # select up to this many new stories per run
+MAX_STORIES_PER_DAY = 36  # HARD cap -- once hit, no more stories added that day
 MIN_STORIES_PER_DAY = 12  # aim for at least this many stories per day
-STORIES_SOFT_CAP = 25    # slow down after this many, but don't stop
+STORIES_SOFT_CAP = 30    # slow down after this many, but don't stop
 MIN_STORIES_PER_RUN = 2  # always try to add at least this many (fresh news doesn't stop)
 ARTICLE_TEXT_LIMIT = 3000  # chars per article
 ANTHROPIC_MAX_TOKENS = 8000  # hard cap on output tokens (higher for multi-story output)
@@ -1054,14 +1055,24 @@ Return ONLY a JSON array with one string per pair in order, e.g. ["new", "update
     return result
 
 
-def post_claude_dedup(new_stories, target_date_str):
-    """Final dedup pass on Claude's generated headlines against previous days.
+def post_claude_dedup(new_stories, target_date_str, existing_today_headlines=None):
+    """Final dedup pass on Claude's generated headlines.
+
+    Checks against BOTH:
+    - today's already-published stories (within-day dedup -- catches the case where
+      Brave returns a raw title that doesn't match Claude's earlier rewritten headline,
+      but Claude then writes a near-duplicate of the earlier headline)
+    - the last 3 days of previous headlines (cross-day dedup)
 
     Uses Claude's own disposition field when present, then a semantic
-    classification via Claude for borderline cases (previously a word-list
-    heuristic that was too lenient).
+    classification via Claude for borderline cases.
     """
-    previous_headlines = load_recent_headlines(target_date_str, days_back=3)
+    prior_days = load_recent_headlines(target_date_str, days_back=3)
+    today_existing = [h for h in (existing_today_headlines or []) if h]
+    # Combined list for similarity checking. Today's list is authoritative for
+    # "stale == dupe within today" -- we always drop those, never mark as Update:.
+    previous_headlines = today_existing + prior_days
+
     if not previous_headlines:
         # Cold start: no prior data to dedup against. Still honor Claude's
         # explicit dispositions so the behavior is consistent with the main path.
@@ -1075,7 +1086,8 @@ def post_claude_dedup(new_stories, target_date_str):
             out.append(s)
         return out
 
-    print(f"\n  Post-Claude dedup: checking {len(new_stories)} stories against {len(previous_headlines)} previous headlines")
+    print(f"\n  Post-Claude dedup: checking {len(new_stories)} stories against "
+          f"{len(today_existing)} same-day + {len(prior_days)} prior-day headlines")
 
     # First pass: trust Claude's disposition when present
     kept = []
@@ -1086,45 +1098,65 @@ def post_claude_dedup(new_stories, target_date_str):
         headline_lower = story["headline"].lower()
         # Coerce to string first -- Claude occasionally hallucinates non-string values
         disposition = str(story.get("disposition") or "").strip().lower()
+        story_words = extract_significant_words(headline_lower)
 
-        # Explicit "stale" from Claude -> drop
+        # STEP 1: Same-day duplicate check runs FIRST, regardless of disposition.
+        # The story is already in today's digest -- don't add it again whether
+        # Claude labeled it new, update, or already-prefixed Update:. Compare
+        # on the version WITHOUT the "Update:" prefix so we match more reliably.
+        compare_headline = re.sub(r"^update:\s*", "", headline_lower)
+        compare_words = extract_significant_words(compare_headline)
+        matched_today = None
+        for prev_headline in today_existing:
+            prev_compare = re.sub(r"^update:\s*", "", prev_headline)
+            similarity = SequenceMatcher(None, compare_headline, prev_compare).ratio()
+            if similarity > 0.45:
+                matched_today = prev_headline
+                break
+            prev_words = extract_significant_words(prev_compare)
+            if len(compare_words & prev_words) >= 3:
+                matched_today = prev_headline
+                break
+
+        if matched_today:
+            removed += 1
+            print(f"  Post-Claude: SAME-DAY duplicate, dropping: '{story['headline'][:65]}...'")
+            print(f"    Matched existing today: '{matched_today[:65]}...'")
+            continue
+
+        # STEP 2: Honor Claude's explicit "stale" disposition
         if disposition == "stale":
             removed += 1
             print(f"  Post-Claude: Claude marked stale, dropping: '{story['headline'][:65]}...'")
             continue
 
-        # Already prefixed "Update:" -> keep as-is
+        # STEP 3: Already prefixed "Update:" (and not a same-day dup) -> keep as-is
         if headline_lower.startswith("update:"):
             kept.append(story)
             continue
 
-        # Explicit "update" disposition -> add prefix and keep
+        # STEP 4: Explicit "update" disposition (against prior days) -> add prefix and keep
         if disposition == "update":
             if not story["headline"].startswith("Update:"):
                 story["headline"] = "Update: " + story["headline"]
             kept.append(story)
             continue
 
-        # Otherwise (disposition == "new" or missing): check for similarity to previous headlines
-        is_repeat = False
-        matched_prev = None
-        for prev_headline in previous_headlines:
+        # STEP 5: disposition == "new" or missing: check for similarity to PRIOR days
+        matched_prior = None
+        for prev_headline in prior_days:
             similarity = SequenceMatcher(None, headline_lower, prev_headline).ratio()
             if similarity > 0.45:
-                is_repeat = True
-                matched_prev = prev_headline
+                matched_prior = prev_headline
                 break
-            story_words = extract_significant_words(headline_lower)
             prev_words = extract_significant_words(prev_headline)
-            shared = story_words & prev_words
-            if len(shared) >= 3:
-                is_repeat = True
-                matched_prev = prev_headline
+            if len(story_words & prev_words) >= 3:
+                matched_prior = prev_headline
                 break
 
-        if is_repeat:
+        if matched_prior:
             # Defer to Claude classification (batched below)
-            borderline.append((len(kept), story, matched_prev))
+            borderline.append((len(kept), story, matched_prior))
             kept.append(story)  # tentative; may be modified or removed after classification
         else:
             kept.append(story)
@@ -1323,6 +1355,7 @@ Return a JSON array of up to {num_to_select} stories. For each story:
 - "url": direct link to the original article
 - "sourceCount": number of outlets covering this story (copy from the candidate info above)
 - "disposition": "new" if this is a fresh story with no prior coverage, or "update" if it's a genuinely new development on a story we already covered (something materially changed -- new ruling, new death, new reversal, new concrete fact).
+- "breaking": true or false. Set true ONLY for urgent, high-stakes developing stories -- Drudge Report "red siren" territory. Examples: mass casualty events, active shooters, major terrorist attacks, assassinations, coups, declarations of war, natural disasters with major loss of life, pivotal political events (impeachment, resignation of a major head of state), or a fast-moving crisis where the situation is changing hour to hour. DO NOT set true for routine news, policy announcements, earnings reports, sports, court rulings, political disagreements, or ongoing stories that are simply continuing. Be VERY selective -- typically zero or one story per day qualifies. When in doubt, mark false.
 
 Return ONLY the JSON array, no other text."""
 
@@ -1367,17 +1400,26 @@ def _try_parse_json(text):
 
 def determine_stories_needed(existing_count):
     """Decide how many new stories to select based on how many we already have today.
-    Always returns at least MIN_STORIES_PER_RUN -- breaking news doesn't stop."""
-    # Early in the day or behind pace: be aggressive
-    if existing_count < 4:
-        return MAX_STORIES_PER_RUN
+
+    Respects MAX_STORIES_PER_DAY as a hard cap -- returns 0 once hit.
+    With 6 runs/day and cap 36, the target is ~6 per run. Pacing scales down
+    as we approach the cap so the last few runs can still surface breaking news
+    without overshooting.
+    """
+    remaining = MAX_STORIES_PER_DAY - existing_count
+    if remaining <= 0:
+        return 0  # hard cap hit -- stop pulling new stories today
+
+    # Early in the day or behind pace: pick as many as we can, up to per-run max
+    if existing_count < 6:
+        return min(MAX_STORIES_PER_RUN, remaining)
     if existing_count < MIN_STORIES_PER_DAY:
-        return max(MIN_STORIES_PER_RUN, MAX_STORIES_PER_RUN - 1)
-    # Past the soft cap: still add fresh stories, just fewer
+        return min(MAX_STORIES_PER_RUN, remaining)
+    # Past the soft cap: slow down but keep breaking news flowing
     if existing_count >= STORIES_SOFT_CAP:
-        return MIN_STORIES_PER_RUN
-    # Normal pace
-    return max(MIN_STORIES_PER_RUN, 3)
+        return min(MIN_STORIES_PER_RUN, remaining)  # usually 2
+    # Normal middle-of-day pace
+    return min(max(MIN_STORIES_PER_RUN, 4), remaining)
 
 
 def call_anthropic_stories(stories, target_date_str, num_to_select, existing_headlines=None, is_first_run=False):
@@ -1610,6 +1652,13 @@ def main():
     else:
         print("  No existing digest for today -- fresh start")
 
+    # Short-circuit if daily cap already reached
+    existing_story_count = len(existing_data.get("stories", [])) if existing_data else 0
+    if existing_story_count >= MAX_STORIES_PER_DAY:
+        print(f"\nDaily story cap ({MAX_STORIES_PER_DAY}) already reached "
+              f"({existing_story_count} stories). Skipping this run.")
+        sys.exit(0)
+
     # Verify API keys
     brave_key = os.environ.get("BRAVE_SEARCH_API_KEY")
     if not brave_key:
@@ -1670,8 +1719,14 @@ def main():
                 is_first_run=first_run,
             )
             if new_stories:
-                # Step 4b: Post-Claude dedup -- catch stale stories Claude generated
-                new_stories = post_claude_dedup(new_stories, target_date_str)
+                # Step 4b: Post-Claude dedup -- catch stale stories Claude generated.
+                # Pass today's existing headlines so we catch within-day duplicates
+                # (the case where Brave's raw title didn't match but Claude wrote a
+                # near-duplicate headline to something already in today's digest).
+                new_stories = post_claude_dedup(
+                    new_stories, target_date_str,
+                    existing_today_headlines=existing_headlines,
+                )
 
                 for s in new_stories:
                     print(f"  Selected: [{s.get('category', '?')}] {s['headline'][:70]}")

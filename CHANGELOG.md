@@ -1,5 +1,19 @@
 # Changelog
 
+## v2026.4.24
+
+Fix within-day duplicate stories, add daily cap, and introduce a "breaking news" urgency flag with a siren icon on the site.
+
+**Context:** On 2026-04-24 the digest showed the Supreme Court military contractors ruling 4 times and the Iran leadership vacuum story twice within a single day's output. Root cause was a gap in the dedup logic: pre-Claude dedup compared Brave's raw titles against existing headlines, but raw titles differ enough from Claude's rewritten headlines that similarity matching missed re-emerging stories. post_claude_dedup then only checked against PRIOR days, not within-day, so Claude-written near-duplicates slipped through.
+
+**Changes:**
+
+- **Within-day dedup fix in post_claude_dedup.** The function now accepts `existing_today_headlines` and checks candidates against them FIRST, before any other branching. Same-day matches are always dropped regardless of Claude's `disposition` (an update to a story already in today's digest is still a duplicate). The "Update:" prefix is stripped before comparison so prefixed stories still match their unprefixed predecessors.
+- **MAX_STORIES_PER_DAY = 36 hard cap.** The pipeline short-circuits out of main() before any API calls once today's JSON has 36+ stories. `determine_stories_needed` rewritten to respect the cap: returns 0 at/above cap, scales down pacing as the cap approaches so the day doesn't all cluster into the first few runs. Bumped MAX_STORIES_PER_RUN from 5 to 6 and STORIES_SOFT_CAP from 25 to 30 to fit the new daily budget cleanly across 6 runs.
+- **Breaking-news flag.** Added a `breaking: true/false` field to Claude's selection schema with strict criteria: only urgent, high-stakes developing stories qualify (mass casualty events, active shooters, major attacks, assassinations, coups, declarations of war, major natural disasters with loss of life, pivotal political events). Explicitly NOT for routine news, policy announcements, or court rulings. The prompt instructs Claude to be very selective, typically zero or one story per day.
+- **Siren icon on the site.** `index.html` renders a 🚨 emoji (with a CSS pulse animation and red drop-shadow glow) in place of the normal diamond bullet when `story.breaking === true`. The headline text turns dark red with 600-weight when breaking. Read stories dim the siren and stop its animation.
+- **Manual cleanup of today's JSON.** Removed 4 existing duplicates from data/2026-04-24.json (3 SCOTUS copies + 1 Iran copy) so the live site stops showing them immediately.
+
 ## v2026.4.16
 
 Major overhaul of story sourcing and dedup logic. The digest had drifted toward a narrow pool of wire-service and center/left sources (5.6% right-leaning vs 20.5% left across 13 days), and the aggressive cross-day dedup was labeling 61% of stories "Update:" on multi-day news cycles.
