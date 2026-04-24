@@ -3,6 +3,39 @@
   "dateFormatted": "Friday, April 24, 2026",
   "stories": [
     {
+      "category": "business",
+      "headline": "Update: Trump Administration in Talks for $500 Million Spirit Airlines Bailout, Critics Warn Against Government Intervention",
+      "summary": "The Trump administration is reportedly negotiating a roughly $500 million rescue package for Spirit Airlines that could leave the federal government owning up to 90 percent of the bankrupt carrier. Spirit has filed for bankruptcy twice and has been unable to stabilize its finances amid intense low-cost competition and rising operational costs.\n\nPresident Trump floated the possibility of a bailout in recent remarks, signaling the administration's willingness to intervene in the struggling airline's fate. The deal, if finalized, would mark one of the more significant instances of direct federal equity ownership in a private company in recent years.\n\nCritics across the political spectrum have pushed back. Millionaire investor Kevin O'Leary called the plan a \"really bad idea,\" arguing that capitalism depends on failing businesses being allowed to fail and warning against rewarding what he described as bad management. Washington Examiner economics columnist Tiana Lowe Doescher similarly argued there is no good way to rescue Spirit without problematic government intervention.\n\nThe debate highlights a tension within conservative economic philosophy, as a Republican administration considers a substantial nationalization-style stake in a private airline. No final deal has been announced, and terms remain under negotiation.",
+      "source": "The Hill",
+      "url": "https://thehill.com/policy/transportation/5847323-millionaire-investor-kevin-oleary-slams-trump-administration-spirit-airlines-bailout-idea/",
+      "sourceCount": 4,
+      "disposition": "new",
+      "addedAt": "9:14 AM MT",
+      "addedAtISO": "2026-04-24T09:14:26.762923-06:00"
+    },
+    {
+      "category": "politics",
+      "headline": "New York Democrats Launch Ad Targeting GOP Gubernatorial Candidate Blakeman Over Trump Ties, Health Care",
+      "summary": "New York Democrats released a new digital ad Friday attacking Nassau County Executive Bruce Blakeman, the Republican candidate for governor, over his ties to President Trump and his stance on health care. The 15-second spot, titled \"Won't Change,\" signals an early and aggressive Democratic effort to nationalize the November gubernatorial race.\n\nBlakeman is seeking to unseat incumbent Democratic Gov. Kathy Hochul. Democrats are betting that associating Blakeman with Trump and health care cuts will resonate in a state where Trump remains broadly unpopular in major population centers.\n\nRepublicans have not yet responded publicly to the specific ad, but the broader national context includes ongoing GOP debates over Medicaid and federal spending cuts tied to the reconciliation process, which Democrats are seeking to leverage at the state level as well.\n\nThe New York governor's race is considered one of the more competitive statewide contests of the 2026 cycle, with Republicans hoping that concerns over crime and cost of living could make the state more competitive than in recent cycles.",
+      "source": "The Hill",
+      "url": "https://thehill.com/homenews/campaign/5847023-new-york-democrats-attack-ad-bruce-blakeman-donald-trump-health-care/",
+      "sourceCount": 5,
+      "disposition": "new",
+      "addedAt": "9:14 AM MT",
+      "addedAtISO": "2026-04-24T09:14:26.762923-06:00"
+    },
+    {
+      "category": "technology",
+      "headline": "FCC Adds Foreign-Made Routers to National Security Covered List, Raising Questions About Future Software Support",
+      "summary": "The Federal Communications Commission has updated its \"Covered List\" to include routers produced in foreign countries, blocking new models of that equipment from receiving FCC approval for sale in the United States. The move is framed as a supply chain national security measure, with particular concern directed at Chinese-manufactured networking equipment.\n\nThe rule does not immediately affect routers already owned by consumers or models previously approved for sale, meaning no existing devices are banned or disabled. However, the FCC simultaneously issued a temporary waiver allowing existing covered routers to continue receiving security and firmware updates through at least March 1, 2027, with a commitment to re-evaluate the policy before that date.\n\nCybersecurity experts note the longer-term concern: if update support is curtailed or not extended after 2027, home and business routers could become increasingly vulnerable to exploitation of known flaws. The FCC acknowledged this risk in its waiver language, noting that continued updates are essential to consumer protection.\n\nThe policy adds to a broader U.S. government effort to limit the presence of Chinese and other foreign-manufactured technology in critical communications infrastructure, following prior actions targeting Huawei, ZTE, and other firms.",
+      "source": "Fox News",
+      "url": "https://www.foxnews.com/tech/fcc-router-rule-raises-questions-future-updates",
+      "sourceCount": 1,
+      "disposition": "new",
+      "addedAt": "9:14 AM MT",
+      "addedAtISO": "2026-04-24T09:14:26.762923-06:00"
+    },
+    {
       "category": "other",
       "headline": "2026 NFL Draft Opens in Pittsburgh With Shocking Rams QB Pick, ESPN Coverage Draws Criticism",
       "summary": "Pittsburgh hosted the first round of the 2026 NFL Draft on Thursday night, marking the city's first time holding the event in nearly 80 years. Large crowds gathered at Acrisure Stadium as teams made their selections in what organizers described as a faster-paced format than previous years.\n\nThe Los Angeles Rams delivered the night's biggest surprise, staying at pick No. 13 to select Alabama quarterback Ty Simpson — a move that appeared to catch even head coach Sean McVay off guard. McVay was notably subdued at the post-pick press conference, and Simpson acknowledged he had never met McVay prior to being drafted. The New York Giants selected offensive lineman Francis Mauigoa at No. 10 overall, with Mauigoa pledging fierce loyalty to starting quarterback Jaxson Dart.\n\nThe Dallas Cowboys used their pick to address a defense that struggled badly in the previous season. Pittsburgh residents and local officials expressed pride in hosting the draft, citing the city's storied sports culture and its history of championship franchises across multiple leagues.\n\nESPN's broadcast coverage drew sharp criticism from viewers and commentators who said the network fell behind on announcing picks, aired excessive commercials, and failed to keep pace with the draft's accelerated format — a logistical challenge the league had promoted as an improvement to the event.",
