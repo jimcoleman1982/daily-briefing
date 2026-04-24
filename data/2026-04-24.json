@@ -3,6 +3,39 @@
   "dateFormatted": "Friday, April 24, 2026",
   "stories": [
     {
+      "category": "world",
+      "headline": "Netanyahu Discloses Early-Stage Prostate Cancer Treatment, Says He Is Cancer-Free",
+      "summary": "Israeli Prime Minister Benjamin Netanyahu revealed Friday that doctors discovered and removed a small malignant tumor during routine monitoring following surgery for an enlarged benign prostate in 2024. Netanyahu, 76, said the treatment \"removed the problem and left no trace of it\" and that he is in \"excellent physical condition.\"\n\nNetanyahu said he deliberately delayed public disclosure to prevent Tehran from using the information for propaganda during the height of the U.S.-Israel conflict with Iran. He said the tumor was \"a tiny spot of less than a centimetre\" and described his decision to treat it promptly as consistent with his broader approach to addressing dangers early.\n\nThe disclosure comes as Netanyahu is preparing for a visit to the White House in the coming weeks, where the U.S. is seeking to broker a lasting peace agreement following the Iran conflict. Israel's ceasefire with Lebanon, reached after fighting with Iran-backed Hezbollah, has also been extended by three weeks.\n\nThe revelation has drawn attention both to Netanyahu's health and to his management of the timing of the announcement. Israeli media and political observers noted the sensitivity of releasing such information during an active military conflict, while supporters said his swift treatment and transparency demonstrated responsible leadership.",
+      "source": "BBC News",
+      "url": "https://www.bbc.com/news/articles/ckgw72lrvn3o?at_medium=RSS&at_campaign=rss",
+      "sourceCount": 5,
+      "disposition": "new",
+      "addedAt": "8:03 AM MT",
+      "addedAtISO": "2026-04-24T08:03:32.973471-06:00"
+    },
+    {
+      "category": "politics",
+      "headline": "DeSantis Launches Three-Part Strategy to Circumvent Florida's Anti-Gerrymandering Law and Create More GOP House Seats",
+      "summary": "Florida Governor Ron DeSantis has quietly initiated a multi-tiered effort to evade the state's constitutional ban on partisan gerrymandering and redraw U.S. House district maps in ways that favor Republicans, according to reporting by Axios. DeSantis has called a special session of the state legislature for next Tuesday in Tallahassee to consider new congressional maps.\n\nFlorida law explicitly prohibits lawmakers from intentionally drawing congressional districts to give one party a political advantage. Critics say DeSantis's proposed approach is designed to sidestep that prohibition through procedural maneuvers, though the governor's office argues its redistricting goals are legally defensible and tied to broader nationwide redistricting activity.\n\nThe stakes are significant: partisan control of the U.S. House of Representatives could hinge on how Florida's congressional map is redrawn. Republicans currently hold a narrow House majority, and favorable Florida districts could prove pivotal in the 2026 midterm elections.\n\nDemocrats and redistricting reform advocates are expected to challenge any new map in court, arguing it violates the state's Fair Districts Amendment passed by voters in 2010. Republicans counter that the current maps underrepresent GOP voters and that a redraw is legally and politically justified given the national redistricting landscape.",
+      "source": "Axios",
+      "url": "https://www.axios.com/2026/04/24/desantis-florida-redistricting-gop-house",
+      "sourceCount": 2,
+      "disposition": "new",
+      "addedAt": "8:03 AM MT",
+      "addedAtISO": "2026-04-24T08:03:32.973471-06:00"
+    },
+    {
+      "category": "world",
+      "headline": "Kenyan President Ruto Sparks African Diplomatic Uproar With Mockery of Nigerian English",
+      "summary": "Kenyan President William Ruto has ignited a wave of online condemnation across Africa after publicly mocking Nigerian-accented English at a diaspora gathering in Italy earlier this week. Ruto told Kenyans in attendance that when Nigerians speak English, \"you don't know what they are saying — you need a translator,\" while boasting that Kenyans speak \"some of the best English in the world.\"\n\nThe remarks triggered fierce backlash from Nigerian officials, journalists, and public figures, who accused Ruto of colonial-minded thinking and demeaning a fellow African nation. Former Nigerian senator Shehu Sani noted on X that Nigeria is home to Nobel Prize-winning author Wole Soyinka as well as globally acclaimed writers Chinua Achebe and Chimamanda Ngozi Adichie.\n\nCritics across the continent argued that judging nations by proximity to colonial English standards reflects a \"deep inferiority complex rooted in colonial conditioning,\" as one widely shared post put it. Zimbabwean journalist Hopewell Chin'ono wrote that \"English is a colonial language, not a measure of intelligence, capability, or national progress.\"\n\nThe incident follows a reciprocal pattern of online friction between Kenya and Nigeria, which escalated earlier this month when Nigerian President Bola Tinubu claimed Nigerians were \"better off\" than Kenyans despite domestic economic pressures. Both nations are major African economies and former British colonies with distinct English dialects shaped by hundreds of indigenous languages.",
+      "source": "BBC News",
+      "url": "https://www.bbc.com/news/articles/c0ledd82ed0o?at_medium=RSS&at_campaign=rss",
+      "sourceCount": 1,
+      "disposition": "new",
+      "addedAt": "8:03 AM MT",
+      "addedAtISO": "2026-04-24T08:03:32.973471-06:00"
+    },
+    {
       "category": "politics",
       "headline": "Supreme Court Rules Military Contractors Can Face Lawsuits Over Unauthorized Combat Conduct",
       "summary": "The Supreme Court ruled 6-3 Wednesday that military contractors are not automatically shielded from civil liability for conduct that was not authorized by the U.S. military, even when that conduct occurs in a war zone. The case was brought by Winston Tyler Hencely, a former Army specialist who suffered a fractured skull and permanent brain injuries when a Taliban operative employed by contractor Fluor Corporation detonated a suicide vest at Bagram Airfield in Afghanistan in 2016. The majority opinion, written by Justice Clarence Thomas, vacated a Fourth Circuit ruling that had dismissed the suit.\n\nThe decision produced an unusual ideological alignment: Thomas was joined by the court's three liberal justices — Sonia Sotomayor, Elena Kagan, and Ketanji Brown Jackson — as well as Neil Gorsuch and Amy Coney Barrett. The majority rejected a broad 'battlefield preemption' doctrine that would have barred state-law tort claims tied to combat activities, holding instead that such preemption does not apply when a contractor's conduct violates explicit military instructions.\n\nChief Justice John Roberts, along with Justices Samuel Alito and Brett Kavanaugh, dissented. The dissenters had supported the broader preemption doctrine, which would have insulated contractors from liability for actions taken in combat zones regardless of authorization.\n\nThe ruling has significant implications for the defense contracting industry, which employs tens of thousands of personnel in active conflict zones. It opens the door for injured service members and others to pursue state-law negligence claims against contractors whose conduct was not sanctioned by the military, potentially reshaping legal accountability standards for the private sector in wartime operations.",
