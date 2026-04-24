@@ -3,6 +3,54 @@
   "dateFormatted": "Friday, April 24, 2026",
   "stories": [
     {
+      "category": "world",
+      "headline": "Update: U.S. Economic Pressure on Iran Reaches Critical Point as Oil Storage May Run Out Within Weeks",
+      "summary": "U.S. economic pressure on Iran has reached what analysts describe as its most potent level since the 1979 Islamic Revolution, with a convergence of sanctions, naval blockade enforcement, and tighter oil export restrictions being applied simultaneously. Miad Maleki, a former Treasury Department sanctions expert now at the Foundation for Defense of Democracies, says Iran may exhaust its oil storage capacity within two to three weeks, forcing production cuts, while gasoline shortages could emerge on a similar timeline. He estimates current conditions are costing Iran approximately $435 million per day in combined economic damage.\n\nPresident Trump escalated pressure Thursday, posting on Truth Social that the United States has 'total control over the Strait of Hormuz' and that it is 'sealed up tight' until Iran agrees to a deal. Maleki says the dynamic around the Strait has shifted significantly, with Iran's traditional leverage in global energy markets now being countered by U.S. naval positioning.\n\nThe economic strain is compounded by triple-digit food inflation, a sharply devalued currency, and a roughly 90% collapse in purchasing power within Iran, according to Maleki. He warned that if the financial squeeze deepens, the regime could struggle to pay government salaries, raising the risk of renewed domestic unrest.\n\nMeanwhile, questions persist about who is actually making decisions in Tehran. New Supreme Leader Mojtaba Khamenei has not appeared publicly since assuming power, with Iranian officials acknowledging he was injured in initial strikes. Foreign Minister Araghchi's brief reversal over whether the Strait of Hormuz was open or closed exposed significant disconnects between Iran's diplomatic and military tracks, complicating any path toward a negotiated agreement.",
+      "source": "Fox News",
+      "url": "https://www.foxnews.com/world/us-economic-chokehold-iran-reaches-peak-leverage-collapse-risks-emerge",
+      "sourceCount": 19,
+      "disposition": "update",
+      "breaking": false,
+      "addedAt": "3:59 PM MT",
+      "addedAtISO": "2026-04-24T15:59:13.376404-06:00"
+    },
+    {
+      "category": "other",
+      "headline": "Update: Tornadoes Cause Widespread Destruction Across Northern Oklahoma, at Least 10 Injured",
+      "summary": "Multiple powerful tornadoes struck northern Oklahoma on Friday, causing significant destruction and injuring at least 10 people, according to local reports. Emergency crews conducted search and rescue operations in the aftermath, with videos showing debris flying into the air as the storms damaged properties and infrastructure across the region.\n\nThe city of Enid was among the hardest hit areas. Earlier coverage noted that Vance Air Force Base in Enid was forced to close following storm damage. Officials have not yet provided a full damage assessment as rescue operations remain ongoing.\n\nThe storm system represents a significant severe weather event for the central United States as spring tornado season intensifies. Emergency management officials have urged residents in affected areas to remain cautious as crews continue assessing structural damage.",
+      "source": "BBC News",
+      "url": "https://www.bbc.com/news/videos/c30re0j9q7jo",
+      "sourceCount": 4,
+      "disposition": "update",
+      "breaking": false,
+      "addedAt": "3:59 PM MT",
+      "addedAtISO": "2026-04-24T15:59:13.376404-06:00"
+    },
+    {
+      "category": "world",
+      "headline": "China Announces Giant Pandas to Return to Atlanta Zoo Ahead of Trump's Planned Beijing Visit",
+      "summary": "China announced Friday it will send two giant pandas — male Ping Ping and female Fu Shuang — to Zoo Atlanta in what Beijing framed as a new decade-long conservation partnership. The announcement comes less than a month before President Trump's planned visit to China in mid-May, where he is expected to discuss trade and other issues with President Xi Jinping, giving the panda transfer clear diplomatic overtones.\n\nThe China Wildlife Conservation Association said the U.S. side is currently carrying out facility upgrades at Zoo Atlanta to prepare for the pandas' arrival. The zoo's president, Raymond B. King, called it an honor, saying the institution 'can't wait to meet Ping Ping and Fu Shuang.' Chinese Foreign Ministry spokesperson Guo Jiakun said the cooperation would 'strengthen the friendship between the Chinese and American people.'\n\nGiant pandas have long served as a symbol of U.S.-China relations since Beijing gifted a pair to the National Zoo in Washington in 1972, and China has routinely used the loan program as a soft-power diplomatic tool. The gesture is notable given the currently strained trade relationship between Washington and Beijing, with analysts viewing it as a goodwill signal ahead of the Trump-Xi summit. In 2024, the National Zoo in Washington and the San Diego Zoo also received pandas from China.",
+      "source": "PBS NewsHour",
+      "url": "https://www.pbs.org/newshour/world/china-says-it-will-send-giant-pandas-to-atlanta-again-in-new-round-of-cooperation",
+      "sourceCount": 2,
+      "disposition": "new",
+      "breaking": false,
+      "addedAt": "3:59 PM MT",
+      "addedAtISO": "2026-04-24T15:59:13.376404-06:00"
+    },
+    {
+      "category": "technology",
+      "headline": "Maine Governor Vetoes Nation's First Proposed Statewide Data Center Moratorium",
+      "summary": "Maine Governor Janet Mills, a Democrat, vetoed a bill Friday that would have made the state the first in the nation to impose a moratorium on large new data center construction. Mills said the freeze would have been appropriate in principle but could not support it because it would have interfered with an ongoing data center project in a part of Maine that needs economic development.\n\nThe vetoed legislation, L.D. 307, would have established a Maine Data Center Coordination Council and placed a temporary limit on certain new large-scale facilities. Growing local opposition to data centers has been driven by concerns over their heavy electricity consumption and impact on household energy bills, creating difficult trade-offs for elected officials weighing economic development against environmental and utility costs.\n\nThe decision reflects a broader national debate about how states should manage the rapid proliferation of AI-driven data infrastructure. Supporters of the moratorium argued that unchecked data center expansion strains power grids and drives up energy costs for residents, while opponents contended that the facilities bring jobs and investment. Mills's veto aligns her with economic development interests even as she acknowledged the underlying concerns motivating the legislation.",
+      "source": "Bloomberg Politics",
+      "url": "https://www.bloomberg.com/news/articles/2026-04-24/maine-governor-mills-vetoes-statewide-data-center-moratorium",
+      "sourceCount": 3,
+      "disposition": "new",
+      "breaking": false,
+      "addedAt": "3:59 PM MT",
+      "addedAtISO": "2026-04-24T15:59:13.376404-06:00"
+    },
+    {
       "category": "technology",
       "headline": "Anthropic's New AI Model Mythos Can Exploit 'Zero-Day' Security Flaws, Rattling Washington",
       "summary": "Anthropic has unveiled a new AI model called Claude Mythos that the company says is capable of identifying previously unknown cybersecurity vulnerabilities — so-called zero-day flaws — exploiting them, and chaining weaknesses together to potentially take over major operating systems and web browsers. Because of those capabilities, Anthropic said it will not release Mythos publicly, marking a significant departure from how AI labs have typically handled new model launches.\n\nThe announcement has alarmed U.S. officials and prompted the Trump administration to examine the cybersecurity risks posed by frontier AI systems. The development highlights a growing tension in the AI industry between advancing capability and ensuring public safety, as models become powerful enough to serve both defensive and offensive hacking purposes at scale.\n\nExperts note that AI of this caliber could dramatically lower the barrier for sophisticated cyberattacks, enabling actors with limited technical expertise to carry out operations that previously required teams of skilled hackers. At the same time, proponents argue such systems could be deployed defensively to find and patch vulnerabilities before malicious actors exploit them.\n\nThe episode raises broader questions about how much control private companies should have over dual-use technologies with potential national security implications, and whether existing regulatory frameworks are adequate to govern AI systems that can function as autonomous hacking tools.",
