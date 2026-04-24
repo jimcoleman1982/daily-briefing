@@ -3,6 +3,39 @@
   "dateFormatted": "Friday, April 24, 2026",
   "stories": [
     {
+      "category": "politics",
+      "headline": "Supreme Court Rules Military Contractors Can Be Sued Over Unauthorized Combat Conduct",
+      "summary": "The Supreme Court ruled 6-3 Wednesday that military contractors are not automatically shielded from civil liability for actions in war zones when their conduct was not authorized by the U.S. military. The majority opinion, written by Justice Clarence Thomas and joined by an unusual cross-ideological coalition including Justices Sotomayor, Kagan, Gorsuch, Barrett, and Jackson, vacated a Fourth Circuit ruling that had dismissed a lawsuit brought by Army veteran Winston Tyler Hencely.\n\nHencely suffered a fractured skull and permanent brain injuries in 2016 when a Taliban operative employed by contractor Fluor Corporation detonated a suicide vest at Bagram Airfield in Afghanistan. The court found that Fluor's conduct in retaining and supervising the attacker violated military instructions and therefore could not be shielded under a broad 'battlefield preemption' doctrine.\n\nThe decision rejects the argument that all contractor conduct in combat zones is immune from state-law tort claims, holding instead that the key question is whether the military authorized the specific conduct at issue. Chief Justice Roberts, Justice Alito, and Justice Kavanaugh dissented, suggesting concern about the breadth of litigation this ruling could invite against defense contractors operating in conflict zones.\n\nThe case now returns to lower courts for further proceedings. The ruling has significant implications for the defense contracting industry, which employs tens of thousands of personnel in support of U.S. military operations worldwide.",
+      "source": "Fox News",
+      "url": "https://www.foxnews.com/politics/supreme-court-liberals-side-clarence-thomas-taliban-suicide-bomber-lawsuit-3-others-dissent",
+      "sourceCount": 29,
+      "disposition": "new",
+      "addedAt": "10:09 AM MT",
+      "addedAtISO": "2026-04-24T10:09:47.436871-06:00"
+    },
+    {
+      "category": "business",
+      "headline": "DOJ Drops Criminal Probe Into Fed Chair Jerome Powell, Refers Matter to Inspector General",
+      "summary": "The U.S. Justice Department announced it is dropping its criminal investigation into Federal Reserve Chairman Jerome Powell over alleged cost overruns in the renovation of Fed buildings, instead referring the matter to the Fed's internal inspector general. U.S. Attorney Jeanine Pirro announced the shift, with the White House framing the move as allowing the inspector general's 'more powerful authorities' to examine what it called the Fed's 'fiscal mismanagement.'\n\nPowell had publicly disclosed in January that the DOJ had served the Fed with subpoenas and threatened a criminal indictment related to his Senate testimony about the renovations. He called the investigation 'unprecedented' and said it was tied to President Trump's anger over the Fed's refusal to cut interest rates, warning that central bank independence was at stake. Trump said at the time he knew nothing about the investigation.\n\nThe decision to drop the probe comes amid Senate consideration of Trump's nominee to replace Powell, Kevin Warsh. Senator Thom Tillis, a key Republican on the Senate Banking Committee, had withheld support for Warsh unless the administration dropped its probe of Powell — suggesting the move may be linked to securing confirmation votes. Powell's term expires May 15.\n\nThe episode has drawn broad attention as an example of the friction between the Trump White House and the Fed over monetary policy. Critics argued the criminal investigation was political intimidation; supporters of the inquiry said it represented legitimate oversight of billions in taxpayer-funded construction costs.",
+      "source": "BBC News",
+      "url": "https://www.bbc.com/news/articles/cdxd1v0028vo",
+      "sourceCount": 9,
+      "disposition": "new",
+      "addedAt": "10:09 AM MT",
+      "addedAtISO": "2026-04-24T10:09:47.436871-06:00"
+    },
+    {
+      "category": "other",
+      "headline": "Tornado Strikes Enid, Oklahoma, Destroying Homes and Forcing Air Force Base Closure",
+      "summary": "A powerful tornado struck Enid, Oklahoma on Thursday, tearing roofs from buildings, leveling homes in at least one neighborhood, knocking down utility poles, and forcing Vance Air Force Base to close until further notice. The confirmed tornado moved across Garfield County near Oklahoma's northern border, affecting a city of roughly 50,000 residents. Oklahoma emergency management officials reported 10 to 15 injuries as of Friday morning, with no deaths confirmed.\n\nAmong the hardest-hit areas was the Gray Ridge neighborhood on Enid's south side, where multiple homes were knocked completely off their foundations. Commercial buildings south of the city were reduced to twisted metal and splintered wood. Some residents were trapped by debris and required rescue by local police, the Enid Fire Department, and the Oklahoma Highway Patrol.\n\nVance Air Force Base, located in Enid, announced it was closed due to ongoing power and water restoration efforts, directing only mission-essential personnel to report. All base personnel were accounted for and no military injuries were reported. Portions of U.S. Interstate 81 and several local roads were closed due to storm damage.\n\nEnid Mayor David Mason praised the community response, noting local businesses and residents had immediately mobilized to offer equipment, labor, and supplies to those affected. The National Weather Service confirmed the tornado's track, and damage assessments were continuing Friday.",
+      "source": "CBS News",
+      "url": "https://www.cbsnews.com/news/tornado-roars-through-parts-of-oklahoma/",
+      "sourceCount": 3,
+      "disposition": "new",
+      "addedAt": "10:09 AM MT",
+      "addedAtISO": "2026-04-24T10:09:47.436871-06:00"
+    },
+    {
       "category": "business",
       "headline": "Update: Trump Administration in Talks for $500 Million Spirit Airlines Bailout, Critics Warn Against Government Intervention",
       "summary": "The Trump administration is reportedly negotiating a roughly $500 million rescue package for Spirit Airlines that could leave the federal government owning up to 90 percent of the bankrupt carrier. Spirit has filed for bankruptcy twice and has been unable to stabilize its finances amid intense low-cost competition and rising operational costs.\n\nPresident Trump floated the possibility of a bailout in recent remarks, signaling the administration's willingness to intervene in the struggling airline's fate. The deal, if finalized, would mark one of the more significant instances of direct federal equity ownership in a private company in recent years.\n\nCritics across the political spectrum have pushed back. Millionaire investor Kevin O'Leary called the plan a \"really bad idea,\" arguing that capitalism depends on failing businesses being allowed to fail and warning against rewarding what he described as bad management. Washington Examiner economics columnist Tiana Lowe Doescher similarly argued there is no good way to rescue Spirit without problematic government intervention.\n\nThe debate highlights a tension within conservative economic philosophy, as a Republican administration considers a substantial nationalization-style stake in a private airline. No final deal has been announced, and terms remain under negotiation.",
