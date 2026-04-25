@@ -3,6 +3,30 @@
   "dateFormatted": "Saturday, April 25, 2026",
   "stories": [
     {
+      "category": "politics",
+      "headline": "Fox News Poll Shows Democrats Leading GOP on Economy for First Time as Trump Approval Hits Second-Term Low",
+      "summary": "President Trump's approval rating has fallen to its lowest point of his second term, with a new Fox News poll showing Democrats leading Republicans by four percentage points on the economy — the first time the GOP has trailed on that metric in recent memory, according to Axios and The Hill. The decline comes as Trump's major policy bets, including sweeping tariffs, military engagement in Iran, and aggressive congressional redistricting efforts, face mounting public skepticism.\n\nAnalysts note that Trump, as a term-limited president, is insulated from personal electoral consequences but that his party is not. Republican lawmakers facing 2026 midterm races are increasingly exposed to the fallout from policies they backed at the administration's urging. Redistricting efforts promoted by the White House have drawn particular criticism after some GOP members expressed concern that the strategy could backfire in competitive districts.\n\nThe economic approval gap is seen as especially significant because Republicans have long held a structural advantage on fiscal and economic issues. The shift comes amid public concerns about tariff-driven price increases and uncertainty over the administration's trade posture.\n\nThe White House has not publicly responded to the Fox News poll figures. Administration allies argue that short-term polling volatility is not predictive of midterm outcomes and that the economic fundamentals — including employment levels — remain a strong baseline for Republican candidates to run on.",
+      "source": "Axios",
+      "url": "https://www.axios.com/2026/04/25/trump-republicans-polls-midterms-approval",
+      "sourceCount": 2,
+      "disposition": "new",
+      "breaking": false,
+      "addedAt": "7:40 AM MT",
+      "addedAtISO": "2026-04-25T07:40:17.216677-06:00"
+    },
+    {
+      "category": "world",
+      "headline": "Update: Key Suspect in Syria's 2013 Tadamon Massacre Arrested in Hama Province",
+      "summary": "Syrian authorities have arrested Amjad Youssef, identified by the interior ministry as the primary perpetrator of the April 2013 Tadamon massacre in Damascus, in which soldiers executed bound and blindfolded civilians by shooting them into a pit. Interior Minister Anas Khattab announced the arrest, describing it as the result of a \"well-executed\" security operation. Footage from the Syrian Observatory for Human Rights appeared to show Youssef in custody, his face bloodied, in a police vehicle in Hama province.\n\nThe Tadamon killings gained wide international attention in 2022 when video filmed by the perpetrators themselves was leaked, showing soldiers leading victims one by one to a mass grave before shooting them. Human Rights Watch documented evidence of 288 deaths in Tadamon overall, with 41 killed in the specific April 2013 incident captured on video. HRW described the site as \"a huge crime scene\" and called the footage evidence of apparent war crimes by the Assad government.\n\nThe arrest marks one of the most significant judicial accountability steps since the fall of Bashar al-Assad's government in December 2024, when rebel forces toppled his administration after more than 13 years of civil war that killed over half a million people. Syria's new governing authorities have signaled intent to pursue figures implicated in atrocities committed by the former regime.\n\nHuman rights organizations have welcomed the arrest while cautioning that accountability efforts must extend broadly. HRW senior researcher Hiba Zayadin described the leaked video as evidence of the former government's \"callous disregard for people's lives\" and called the Tadamon massacre one incident in a larger pattern of state violence.",
+      "source": "BBC News",
+      "url": "https://www.bbc.com/news/articles/cvglxgq1p2jo?at_medium=RSS&at_campaign=rss",
+      "sourceCount": 1,
+      "disposition": "update",
+      "breaking": false,
+      "addedAt": "7:40 AM MT",
+      "addedAtISO": "2026-04-25T07:40:17.216677-06:00"
+    },
+    {
       "category": "other",
       "headline": "Update: Arrest Made in Mall of Louisiana Shooting; One Suspect Still at Large",
       "summary": "A 17-year-old suspect, Markel Lee, turned himself in to Baton Rouge police Friday in connection with a shooting at the Mall of Louisiana. Lee was charged with first-degree murder, five counts of attempted first-degree murder, and illegal use of a weapon. A 43-year-old man injured in the shooting remains hospitalized in critical condition, according to Baton Rouge Police Chief T.J. Morse.\n\nAuthorities said a second suspect remains at large. The shooting drew significant law enforcement attention and prompted a large police response at one of Louisiana's major retail destinations. Officials have not yet disclosed the circumstances or motive behind the attack.\n\nThe arrest comes as investigators continue to piece together the sequence of events. The case has attracted coverage from multiple national outlets as authorities work to bring all parties involved to justice.",
