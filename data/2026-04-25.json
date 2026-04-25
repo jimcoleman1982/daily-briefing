@@ -3,6 +3,78 @@
   "dateFormatted": "Saturday, April 25, 2026",
   "stories": [
     {
+      "category": "other",
+      "headline": "Update: Arrest Made in Mall of Louisiana Shooting; One Suspect Still at Large",
+      "summary": "A 17-year-old suspect, Markel Lee, turned himself in to Baton Rouge police Friday in connection with a shooting at the Mall of Louisiana. Lee was charged with first-degree murder, five counts of attempted first-degree murder, and illegal use of a weapon. A 43-year-old man injured in the shooting remains hospitalized in critical condition, according to Baton Rouge Police Chief T.J. Morse.\n\nAuthorities said a second suspect remains at large. The shooting drew significant law enforcement attention and prompted a large police response at one of Louisiana's major retail destinations. Officials have not yet disclosed the circumstances or motive behind the attack.\n\nThe arrest comes as investigators continue to piece together the sequence of events. The case has attracted coverage from multiple national outlets as authorities work to bring all parties involved to justice.",
+      "source": "The Hill",
+      "url": "https://thehill.com/homenews/state-watch/5848361-louisiana-mall-shooting-suspect-arrested-another-at-large/",
+      "sourceCount": 4,
+      "disposition": "new",
+      "breaking": false,
+      "addedAt": "5:51 AM MT",
+      "addedAtISO": "2026-04-25T05:51:01.078317-06:00"
+    },
+    {
+      "category": "world",
+      "headline": "Israeli Police Under Investigation After Officers Reportedly Cut Palestinian Flag from Jewish Skullcap",
+      "summary": "British-Israeli academic Alex Sinclair, 53, was detained by Israeli police near his home in Modiin, central Israel, on Monday after a complaint was filed about his Jewish kippah, which bore both an Israeli and a Palestinian flag. Sinclair said he was held in a cell and when his kippah was returned, the portion displaying the Palestinian flag had been cut off. The incident has attracted domestic and international attention after Sinclair shared the account on social media.\n\nIsraeli police confirmed in a statement that officers responded to a hotline complaint and brought the individual to a police station for 'clarification,' after which he was released. The force said a complaint has been filed with its internal investigations division and declined to provide further details. There is no explicit Israeli law banning public display of the Palestinian flag, though courts have allowed police to remove such symbols if deemed a threat to public order.\n\nThe case highlights tensions surrounding far-right National Security Minister Itamar Ben-Gvir's standing instruction to police to clamp down on Palestinian flag displays, a policy Israeli rights groups have described as legally questionable. Critics argue the incident illustrates a chilling effect on free expression within Israel, while supporters of the crackdown contend the flag can be associated with designated terrorist organizations. Sinclair, who had worn the kippah without incident for roughly two decades, called the episode 'surreal.'",
+      "source": "BBC News",
+      "url": "https://www.bbc.com/news/articles/cz67qjn48eqo",
+      "sourceCount": 1,
+      "disposition": "new",
+      "breaking": false,
+      "addedAt": "5:51 AM MT",
+      "addedAtISO": "2026-04-25T05:51:01.078317-06:00"
+    },
+    {
+      "category": "science_health",
+      "headline": "Everest Flood Warning System Left to Rust, Leaving Thousands at Risk",
+      "summary": "A UN-supported early warning system designed to protect thousands of people living downstream of the Imja glacial lake in Nepal's Everest region may no longer be functional, Nepalese officials have admitted to the BBC. Siren towers have been left to rust for years with no maintenance, some have had their batteries stolen, and satellite data transmissions relaying the lake's water level have been unreliable. No inspection of the $3.5 million system has been carried out since the lake was partially drained in 2016.\n\nLocal Sherpa community leaders told the BBC they have repeatedly traveled to Kathmandu to petition Nepal's Department of Hydrology and Meteorology for repairs, without result. Scientists warn that accelerating glacier melt driven by climate change is causing Himalayan glacial lakes to expand dangerously, raising the risk of sudden and catastrophic outburst floods. Ice loss rates in the Hindu Khush Himalaya region have doubled since 2000, according to the Kathmandu-based International Centre for Integrated Mountain Development.\n\nThe Imja lake sits at more than 5,000 meters above sea level, and a burst could sweep away villages, trekking routes, and bridges. Spring is peak climbing and trekking season, meaning the population at risk currently includes not only permanent residents but large numbers of visitors to the region. Officials have not announced plans for emergency repairs.",
+      "source": "BBC News",
+      "url": "https://www.bbc.com/news/articles/czjwr93vrrzo",
+      "sourceCount": 1,
+      "disposition": "new",
+      "breaking": false,
+      "addedAt": "5:51 AM MT",
+      "addedAtISO": "2026-04-25T05:51:01.078317-06:00"
+    },
+    {
+      "category": "technology",
+      "headline": "Palantir CEO's 'Anti-Woke' Manifesto Goes Viral as Firm Holds Major NHS and UK Defence Contracts",
+      "summary": "A 22-point social media post by Palantir co-founder and CEO Alex Karp has surpassed 30 million views on X, drawing renewed scrutiny to the data analytics company and its expanding role in British and American public institutions. Karp criticized the view that all cultures are equal, backed AI-enabled weapons systems, called postwar disarmament of Germany and Japan an 'overcorrection,' and condemned what he described as 'ruthless exposure' of the private lives of public figures. The post is drawn from a 2025 book co-authored by Karp titled 'The Technological Republic.'\n\nPalantir holds a £300 million contract to build a data platform for the NHS, a £240 million Ministry of Defence contract for AI-enabled targeting technology described as supporting the 'kill-chain,' and deals with the Financial Conduct Authority and 11 UK police forces. The company employs approximately 950 people in the UK, about 17 percent of its global workforce, and has multimillion-dollar contracts with the U.S. government and NATO allies, including use of its systems in the conflict with Iran.\n\nCritics, including academic ethicists and the British Medical Association, have raised concerns about the concentration of sensitive data — including NHS patient records — within a firm whose leadership holds controversial political views. Palantir insiders describe the company's role as 'plumbing,' connecting incompatible data systems for analysis. Supporters argue the firm is uniquely equipped to manage complex data challenges, while opponents cite its work with U.S. immigration enforcement and Israel's military as disqualifying factors.",
+      "source": "BBC News",
+      "url": "https://www.bbc.com/news/articles/c4gjkj7975po",
+      "sourceCount": 1,
+      "disposition": "new",
+      "breaking": false,
+      "addedAt": "5:51 AM MT",
+      "addedAtISO": "2026-04-25T05:51:01.078317-06:00"
+    },
+    {
+      "category": "other",
+      "headline": "LeBron James Forces Overtime with Late Three-Pointer as Lakers Take 3-0 Series Lead Over Rockets",
+      "summary": "LeBron James scored 29 points, including a tying three-pointer with 13 seconds remaining in regulation, to rally the Los Angeles Lakers from a six-point deficit in the final 30 seconds and force overtime in a 112-108 win over the Houston Rockets on Friday night. The victory gives the Lakers a 3-0 lead in the Western Conference first-round playoff series, leaving them one win from a sweep. Game 4 is scheduled for Sunday in Houston.\n\nMarcus Smart contributed 21 points, 10 assists, and key overtime plays, while Rui Hachimura added 22 points. The Lakers played without injured starters Luka Dončić and Austin Reaves, placing additional burden on the 41-year-old James, who logged more than 45 minutes. Houston played without Kevin Durant for the second consecutive game — this time due to a sprained ankle — and the Rockets' inability to close out games in the fourth quarter proved decisive again.\n\nAlperen Sengun led Houston with 33 points and 16 rebounds, and Amen Thompson added 26 points and 11 rebounds. Rockets coach Ime Udoka acknowledged a recurring problem with late-game execution, calling certain mistakes 'egregious.' James also recorded an assist on an alley-oop to his son Bronny earlier in the game.",
+      "source": "The Guardian US",
+      "url": "https://www.theguardian.com/sport/2026/apr/25/lebron-james-lakers-rockets-game-3-nba-playoffs",
+      "sourceCount": 2,
+      "disposition": "new",
+      "breaking": false,
+      "addedAt": "5:51 AM MT",
+      "addedAtISO": "2026-04-25T05:51:01.078317-06:00"
+    },
+    {
+      "category": "politics",
+      "headline": "DOJ Moves to Reclassify Marijuana as Less Dangerous Drug in Major Policy Shift",
+      "summary": "The Department of Justice announced it would immediately loosen restrictions on certain marijuana products and move to reclassify cannabis as a less dangerous controlled substance, representing one of the most significant changes to federal drug policy in decades. The move would affect the $47 billion legal marijuana industry, which currently operates in a legal gray zone where state-licensed businesses cannot access standard federal banking services or tax deductions due to the drug's Schedule I classification.\n\nRescheduling cannabis to a lower schedule would not fully legalize it at the federal level but would reduce criminal penalties and regulatory burdens associated with the drug's current status. Proponents of reclassification argue it aligns federal policy more closely with scientific consensus and the reality of widespread state-level legalization. Critics, including some law enforcement groups and social conservatives, have historically argued that loosening federal restrictions sends the wrong message and could increase youth use.\n\nThe announcement had been anticipated following years of advocacy from the cannabis industry, public health researchers, and bipartisan lawmakers. The formal rulemaking process is expected to take additional steps before reclassification is finalized.",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/legal/litigation/doj-reclassifies-fda-approved-state-licensed-marijuana-less-dangerous-drug-2026-04-23/",
+      "sourceCount": 1,
+      "disposition": "new",
+      "breaking": false,
+      "addedAt": "5:51 AM MT",
+      "addedAtISO": "2026-04-25T05:51:01.078317-06:00"
+    },
+    {
       "category": "world",
       "headline": "Armed Groups Launch Coordinated Attacks Across Mali, Including Near Capital",
       "summary": "Armed groups launched coordinated attacks across Mali early Saturday, including near the capital Bamako, the country's military confirmed. The army said fighting was ongoing and that defense and security forces were engaged in repelling attackers. Witnesses reported explosions and sustained gunfire near the Kati military base, a major installation outside Bamako, with soldiers deployed to block roads in the area.\n\nAttacks were also reported in Gao in the east and Sevare in central Mali. Flights into Bamako were cancelled, though it remained unclear whether the airport itself had been targeted. The U.S. Embassy in Mali issued a shelter-in-place advisory for American citizens, citing explosions and gunfire near Modibo Keita International Airport and the Kati base.\n\nNo group has claimed responsibility. Mali has been governed by a military junta since a 2020 coup led by Gen. Assimi Goïta, who came to power promising to restore security but has presided over a continuing jihadist insurgency. The junta expelled French forces and a UN peacekeeping mission and replaced them with Russian mercenaries, yet large portions of northern and eastern Mali remain outside government control.",
