@@ -3,6 +3,54 @@
   "dateFormatted": "Saturday, April 25, 2026",
   "stories": [
     {
+      "category": "politics",
+      "headline": "Trump Attends White House Correspondents' Dinner for First Time as President",
+      "summary": "President Donald Trump attended the White House Correspondents' Association Dinner on Saturday, marking his first appearance at the event as president. Trump boycotted the annual celebration of the press throughout his first term, and the dinner was canceled or held in reduced form during parts of his absence.\n\nTrump has maintained an adversarial relationship with much of the national press corps throughout his political career, routinely denouncing mainstream outlets as purveyors of 'fake news' and at times labeling the media an 'enemy of the people.' His decision to attend this year's dinner was seen as a notable departure from that posture.\n\nThe annual dinner, hosted by the White House Correspondents' Association, traditionally brings together journalists, White House officials, and celebrities for an evening that includes a presidential address and a comedic roast. Trump's presence was expected to draw significant attention given the tension between his administration and the press.\n\nSupporters of Trump framed his attendance as a gesture of confidence, while critics in media circles noted the irony of a president who has taken aggressive steps against press freedoms — including revoking credentials and pursuing legal action against outlets — appearing at journalism's marquee social event.",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/legal/government/trump-critic-press-attends-its-annual-celebration-after-years-boycotts-2026-04-25/",
+      "sourceCount": 1,
+      "disposition": "new",
+      "breaking": false,
+      "addedAt": "6:08 PM MT",
+      "addedAtISO": "2026-04-25T18:08:30.418394-06:00"
+    },
+    {
+      "category": "business",
+      "headline": "BYD Says It Can Thrive Without U.S. Market as Global EV Demand Surges",
+      "summary": "Chinese electric vehicle giant BYD told the BBC at the Beijing Auto Show that it does not need access to the U.S. market to succeed, citing surging demand across Asia, Europe, and Latin America. BYD executive vice president Stella Li said the company is currently supply-constrained rather than demand-constrained, with orders outpacing its manufacturing capacity.\n\nThe comments come amid heightened U.S.-China trade tensions, with American tariffs and regulatory scrutiny effectively blocking most Chinese EVs from the U.S. market. Washington has cited concerns about Chinese government subsidies, data security, and national security risks posed by connected vehicles from Chinese manufacturers.\n\nBYD is betting on a new 'flash charging' technology capable of adding hundreds of kilometers of range in minutes, which Li described as a potential game-changer for overcoming consumer hesitation around charging speeds. The company, which overtook Tesla as the world's largest EV seller last year, is positioning itself as a broad technology ecosystem encompassing batteries, solar panels, and vehicle software.\n\nThe Beijing Auto Show, now the world's largest automotive industry event, highlighted the growing dominance of Chinese carmakers as foreign firms including Volkswagen, Toyota, and Ford struggle to keep pace in China. Some foreign manufacturers are opting to partner with Chinese companies rather than compete directly, a structural shift that analysts say reflects the rapid maturation of China's domestic auto industry.",
+      "source": "BBC News",
+      "url": "https://www.bbc.com/news/articles/cy01ele412yo?at_medium=RSS&at_campaign=rss",
+      "sourceCount": 1,
+      "disposition": "new",
+      "breaking": false,
+      "addedAt": "6:08 PM MT",
+      "addedAtISO": "2026-04-25T18:08:30.418394-06:00"
+    },
+    {
+      "category": "science_health",
+      "headline": "AI Data Center Boom Driving Skyrocketing Utility Bills for Americans in 13 States",
+      "summary": "A surge in artificial intelligence-driven data center construction is contributing to sharply higher electricity bills for residential customers in at least 13 states, according to analysis by the Institute for Energy Economics and Financial Analysis. A CBS News investigation found that Georgia Power, the state's largest utility, imposed six rate hikes over three years as data centers proliferated, with some residential customers seeing bills nearly double.\n\nGeorgia attracted a wave of data centers partly through discounted power rates offered to large commercial customers, a practice critics say effectively shifts infrastructure costs onto ordinary ratepayers. Georgia Power denies that residential customers bear the cost of data center expansion, and the company recently announced a rate freeze along with a commitment to use revenue from large customers to offset residential costs.\n\nA Bloomberg analysis found Americans living near data centers are paying as much as 267 percent more per month for electricity than they were five years ago. The trend is unfolding as Maine's governor this week vetoed a bill that would have made the state the first to ban construction of new data centers, citing the need for further study rather than an outright prohibition.\n\nThe issue has become a flashpoint in broader debates about who bears the societal costs of the AI infrastructure build-out. Consumer advocates argue that regulatory frameworks have not kept pace with the speed and scale of data center development, while industry representatives and state economic officials contend the facilities bring jobs and tax revenue that benefit communities over the long term.",
+      "source": "CBS News",
+      "url": "https://www.cbsnews.com/news/how-ai-driven-data-center-boom-leading-to-skyrocketing-energy-bills/",
+      "sourceCount": 2,
+      "disposition": "new",
+      "breaking": false,
+      "addedAt": "6:08 PM MT",
+      "addedAtISO": "2026-04-25T18:08:30.418394-06:00"
+    },
+    {
+      "category": "other",
+      "headline": "Dirk Kempthorne, Republican Former Idaho Governor and Interior Secretary, Dies at 74",
+      "summary": "Dirk Kempthorne, a Republican politician who served as mayor of Boise, a U.S. senator, governor of Idaho, and Secretary of the Interior under President George W. Bush, has died at age 74. Kempthorne had been diagnosed with colon cancer last year.\n\nKempthorne was first elected mayor of Boise in 1985 at age 34, serving seven years before winning a U.S. Senate seat. He subsequently served one term as Idaho's governor before Bush appointed him to lead the Interior Department in 2006, a post he held until the end of the Bush administration in January 2009.\n\nAs Interior Secretary, Kempthorne oversaw the management of federal lands, natural resources, and relations with Native American tribes. His tenure included decisions on endangered species listings and energy development on public lands that drew both praise from development advocates and criticism from environmental groups.\n\nKempthorne was widely regarded as a pragmatic figure within the Republican Party who cultivated a reputation for bipartisan cooperation during his time in the Senate. He later served as president and chief executive of the American Council of Life Insurers after leaving federal service.",
+      "source": "NPR",
+      "url": "https://www.npr.org/2026/04/25/nx-s1-5799519/dirk-kempthorne-obit",
+      "sourceCount": 2,
+      "disposition": "new",
+      "breaking": false,
+      "addedAt": "6:08 PM MT",
+      "addedAtISO": "2026-04-25T18:08:30.418394-06:00"
+    },
+    {
       "category": "other",
       "headline": "Update: Roommate Charged with Two Counts of First-Degree Murder in Deaths of USF Doctoral Students",
       "summary": "Hisham Abugharbieh, 26, has been charged with two counts of premeditated first-degree murder with a weapon in the deaths of University of South Florida doctoral students Zamil Limon and Nahida Bristy, the Hillsborough County Sheriff's Office announced Saturday. Abugharbieh was Limon's roommate and was arrested following a standoff with police earlier in the week after the two Bangladeshi students, both 27, were reported missing.\n\nAuthorities found Limon dead and, as of the announcement, continued searching for Bristy. The case drew national attention after the students' disappearance was reported earlier this week. Abugharbieh faces the most serious homicide charges available under Florida law.\n\nThe University of South Florida and the Bangladeshi-American community have expressed grief over the killings. The circumstances and motive behind the alleged murders have not been fully disclosed by authorities. Investigators have not said publicly whether Bristy has been located or what evidence led to the double murder charges.",
