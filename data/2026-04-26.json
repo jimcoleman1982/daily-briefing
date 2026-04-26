@@ -4,6 +4,42 @@
   "stories": [
     {
       "category": "other",
+      "headline": "Shots Fired at White House Correspondents' Dinner, Trump Evacuated by Secret Service",
+      "summary": "Gunshots rang out at the White House Correspondents' Association dinner Saturday night at the Washington Hilton in Washington, D.C., prompting Secret Service agents to evacuate President Trump from the ballroom. The incident marks the latest in a documented series of security threats against Trump stretching back to his first presidential campaign.\n\nThe pattern of threats against Trump includes lone gunmen at campaign rallies, Iranian state-backed murder-for-hire plots, and multiple security breaches at his properties and events. No immediate details were available on casualties or the identity of the shooter, but the evacuation was described as swift.\n\nThe dinner, an annual gathering of journalists and political figures, has historically been a high-profile and heavily secured event. The incident is expected to intensify scrutiny of Secret Service protective protocols around the president at large public gatherings.",
+      "source": "Axios",
+      "url": "https://www.axios.com/2026/04/26/trump-assassination-attempts-plots-timeline-whcd",
+      "sourceCount": 2,
+      "disposition": "new",
+      "breaking": true,
+      "addedAt": "8:08 AM MT",
+      "addedAtISO": "2026-04-26T08:08:05.873378-06:00"
+    },
+    {
+      "category": "other",
+      "headline": "Nuggets' Jokić Ejected After Timberwolves' McDaniels Scores Meaningless Late Layup in Game 4 Blowout",
+      "summary": "Nikola Jokić and Julius Randle were ejected from Game 4 of the NBA playoff series between the Denver Nuggets and Minnesota Timberwolves on Saturday after Jaden McDaniels scored a layup with 2.1 seconds remaining in a 112-96 Minnesota victory, a gesture widely seen as unsportsmanlike given the game was already decided. Jokić jogged the length of the court to confront McDaniels, sparking a shoving match that drew in multiple players.\n\nMinnesota reserve Ayo Dosunmu was the unlikely hero of the game, scoring 43 points on 13-of-17 shooting — the highest-scoring playoff performance by a reserve in 50 years — after Anthony Edwards and Donte DiVincenzo both left with injuries. Edwards, the Timberwolves' leading scorer, hobbled off the court in the second quarter after an apparent knee injury and placed little weight on his left leg.\n\nThe Timberwolves now lead the series 3-1 and can close it out in Game 5 on Monday in Denver. The injuries to Edwards and DiVincenzo cast a shadow over Minnesota's dominant run, raising questions about the team's durability deep into the postseason.",
+      "source": "The Guardian US",
+      "url": "https://www.theguardian.com/sport/2026/apr/26/nikol-jokic-boils-over-after-mcdanielss-mocking-layup-in-nuggets-loss-to-timberwolves",
+      "sourceCount": 2,
+      "disposition": "new",
+      "breaking": false,
+      "addedAt": "8:08 AM MT",
+      "addedAtISO": "2026-04-26T08:08:05.873378-06:00"
+    },
+    {
+      "category": "world",
+      "headline": "Starmer Holds Firm Amid Mandelson Controversy as Labour Faces Historic Wales Losses Ahead of May Elections",
+      "summary": "British Prime Minister Keir Starmer declared on Sunday that he intends to remain in office and lead Labour into the next general election, even as controversy over his appointment of Peter Mandelson as ambassador to the United States continues to generate political turbulence. An EU anti-fraud office investigation into Mandelson over his ties to Jeffrey Epstein has kept the story alive despite Starmer's repeated defenses of the appointment.\n\nThe timing is particularly difficult for Starmer ahead of UK local and regional elections on May 7, where Labour is projected to lose seats nationwide. The damage is expected to be sharpest in Wales, where the party faces its worst electoral position in a century in the race for the Welsh Senedd — a historically Labour-dominated body.\n\nOpposition parties have seized on the Mandelson affair and Labour's economic record to press Starmer at a vulnerable moment. The combination of the ambassador controversy and anticipated local election losses is testing Starmer's authority within his own party, though he has so far resisted internal pressure to make personnel changes.",
+      "source": "Bloomberg Politics",
+      "url": "https://www.bloomberg.com/news/articles/2026-04-26/starmer-stays-defiant-as-mandelson-saga-continues-to-swirl",
+      "sourceCount": 1,
+      "disposition": "new",
+      "breaking": false,
+      "addedAt": "8:08 AM MT",
+      "addedAtISO": "2026-04-26T08:08:05.873378-06:00"
+    },
+    {
+      "category": "other",
       "headline": "Kenya's Sabastian Sawe Becomes First Person to Win Major Marathon in Under Two Hours",
       "summary": "Kenyan runner Sabastian Sawe made history Sunday at the London Marathon, crossing the finish line in 1 hour, 59 minutes and 30 seconds — the first sub-two-hour marathon time ever recorded in a major race. The performance shattered the previous men's world record of 2:00:35 set by Kelvin Kiptum, improving upon it by 65 seconds.\n\nSawe's achievement is considered a landmark moment in athletics, as the two-hour barrier had long been regarded as the sport's most elusive threshold. Unlike Eliud Kipchoge's 2019 sub-two-hour exhibition run — which was conducted under controlled conditions with pacers and was not ratified as an official world record — Sawe's time was set in a competitive open race and is expected to receive full world record recognition.\n\nIn the women's race, Ethiopia's Tigst Assefa retained her London Marathon crown. The event drew global attention as one of the sport's most prestigious annual competitions.",
       "source": "NPR",
