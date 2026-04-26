@@ -4,6 +4,30 @@
   "stories": [
     {
       "category": "politics",
+      "headline": "California Voter ID Initiative Clears Signature Threshold, Heads to November Ballot",
+      "summary": "A Republican-backed ballot initiative requiring voters to show identification at the polls has gathered enough signatures to appear on California's November 2026 ballot, marking a significant development in one of the country's most reliably Democratic states. The measure would mandate proof of citizenship or government-issued ID as a condition of voting, a requirement supporters argue is necessary to ensure election integrity.\n\nProponents of the measure, including national Republican groups that have championed voter ID laws across multiple states, contend that such requirements are a common-sense safeguard broadly supported by the public. They point to polling showing majority support for voter ID laws nationally and argue that California's existing mail-ballot and same-day registration systems leave the process vulnerable to fraud.\n\nCritics, including voting rights organizations and Democratic officials, argue the measure would disproportionately burden low-income voters, elderly residents, and communities of color who are less likely to possess qualifying identification. They contend that documented voter fraud in California is negligible and that the initiative is designed to suppress turnout among Democratic-leaning constituencies.\n\nThe initiative's qualification for the ballot represents a rare instance of a Republican-led electoral reform effort gaining traction in California, where Democrats hold a commanding registration advantage. The measure is expected to generate significant national attention and fundraising on both sides heading into the fall election.",
+      "source": "New York Times",
+      "url": "https://www.nytimes.com/2026/04/25/us/politics/california-voter-id-citizenship-ballot.html",
+      "sourceCount": 7,
+      "disposition": "new",
+      "breaking": false,
+      "addedAt": "9:08 PM MT",
+      "addedAtISO": "2026-04-25T21:08:03.245176-06:00"
+    },
+    {
+      "category": "science_health",
+      "headline": "Trump Administration Dismisses Multiple Members of National Science Foundation's Independent Board",
+      "summary": "The Trump White House on Friday issued termination notices to several members of the National Science Board, the independent body that oversees the National Science Foundation and sets broad policy for federally funded scientific research. Board members said they received messages from the White House Presidential Personnel Office thanking them for their service and informing them their positions were being terminated, according to screenshots shared with The Washington Post.\n\nThe National Science Foundation distributes approximately $9 billion annually in research grants across universities and institutions nationwide, funding work in fields ranging from physics and engineering to social sciences and biology. The National Science Board, composed of 25 presidentially appointed scientists and engineers, is designed by statute to function as an independent check on the agency's direction and priorities.\n\nThe dismissals are the latest in a series of Trump administration actions affecting scientific advisory bodies and federal research institutions. Critics, including former board members and scientific organizations, argue the firings politicize what is meant to be an expert, nonpartisan oversight structure and could chill federally funded research. Supporters of the administration's approach contend that appointed advisory board members serve at the president's pleasure and that restructuring such bodies reflects legitimate executive authority to align agencies with administration priorities.\n\nThe move drew concern from the broader scientific community, which has been watching the administration's approach to federal research funding closely amid broader budget pressures and debates over the direction of U.S. science policy.",
+      "source": "Washington Post",
+      "url": "https://www.washingtonpost.com/science/2026/04/25/national-science-board-members-dismissed/",
+      "sourceCount": 4,
+      "disposition": "new",
+      "breaking": false,
+      "addedAt": "9:08 PM MT",
+      "addedAtISO": "2026-04-25T21:08:03.245176-06:00"
+    },
+    {
+      "category": "politics",
       "headline": "Trump Attends White House Correspondents' Dinner for First Time as President",
       "summary": "President Donald Trump attended the White House Correspondents' Association Dinner on Saturday, marking his first appearance at the event as president. Trump boycotted the annual celebration of the press throughout his first term, and the dinner was canceled or held in reduced form during parts of his absence.\n\nTrump has maintained an adversarial relationship with much of the national press corps throughout his political career, routinely denouncing mainstream outlets as purveyors of 'fake news' and at times labeling the media an 'enemy of the people.' His decision to attend this year's dinner was seen as a notable departure from that posture.\n\nThe annual dinner, hosted by the White House Correspondents' Association, traditionally brings together journalists, White House officials, and celebrities for an evening that includes a presidential address and a comedic roast. Trump's presence was expected to draw significant attention given the tension between his administration and the press.\n\nSupporters of Trump framed his attendance as a gesture of confidence, while critics in media circles noted the irony of a president who has taken aggressive steps against press freedoms — including revoking credentials and pursuing legal action against outlets — appearing at journalism's marquee social event.",
       "source": "Reuters",
