@@ -3,6 +3,42 @@
   "dateFormatted": "Sunday, April 26, 2026",
   "stories": [
     {
+      "category": "politics",
+      "headline": "Wyoming Court Blocks Fetal Heartbeat Abortion Law",
+      "summary": "A Wyoming district judge on Friday granted a temporary injunction blocking enforcement of the state's Human Heartbeat Act, which bars most abortions after detection of fetal cardiac activity, typically around six weeks of pregnancy. Natrona County District Judge Dan Forgey ruled that plaintiffs demonstrated sufficient probability of success under Article 1, Section 38 of the Wyoming Constitution, which protects individuals' rights to make their own healthcare decisions.\n\nThe ruling is the latest legal setback for Wyoming's abortion restrictions. The Wyoming Supreme Court struck down two earlier abortion bans in January, also citing the state constitution's healthcare autonomy clause. Lawmakers responded with the narrower Human Heartbeat Act, signed by Republican Gov. Mark Gordon on March 9. Gordon himself expressed reservations at signing, writing that the law lacked adequate protections for 'specific vulnerable populations' such as victims of rape or incest, and predicted the measure would face legal jeopardy.\n\nProponents of the law argue it reflects the state's strong pro-life values and is a legitimate legislative effort to protect unborn life following the Supreme Court's Dobbs decision returning abortion regulation to the states. Opponents, including the plaintiffs in this case, contend that Wyoming's own constitution independently protects abortion access and that a six-week ban effectively eliminates the right before many women know they are pregnant.\n\nWyoming had become the fifth state to ban most abortions at roughly the six-week mark, joining Florida, Georgia, Iowa, and South Carolina. The temporary block will remain in place while the constitutional challenge proceeds through state courts, setting up another potential clash at the Wyoming Supreme Court.",
+      "source": "Fox News Politics",
+      "url": "https://www.foxnews.com/politics/wyoming-court-blocks-fetal-heartbeat-abortion-law",
+      "sourceCount": 1,
+      "disposition": "new",
+      "breaking": false,
+      "addedAt": "9:51 AM MT",
+      "addedAtISO": "2026-04-26T09:51:27.837536-06:00"
+    },
+    {
+      "category": "world",
+      "headline": "Israel Appoints First-Ever Ambassador to Somaliland",
+      "summary": "Israel's cabinet on Sunday approved the appointment of its first-ever ambassador to Somaliland, the self-declared breakaway republic in the Horn of Africa that has sought international recognition since declaring independence from Somalia in 1991. Israel's Foreign Ministry confirmed the decision in a statement, marking a significant diplomatic step for both nations.\n\nSomaliland has long pursued formal recognition from the international community without success, as most countries defer to Somali sovereignty. An Israeli ambassadorial appointment, while short of full diplomatic recognition, signals a meaningful upgrade in bilateral ties and could encourage other nations to deepen engagement with Hargeisa. Israel has been expanding its diplomatic footprint in Africa in recent years as part of a broader foreign policy strategy.\n\nThe move comes amid ongoing tensions in the Horn of Africa, where Somalia's federal government has clashed with Somaliland over sovereignty, and where regional powers including Ethiopia and the United Arab Emirates have pursued strategic port and military access agreements with Somaliland. Israel's step is likely to be welcomed by Somaliland officials who have long sought to leverage such relationships to bolster their case for independence.\n\nThe timing is also notable given broader Israeli diplomatic activity: Israel has been cultivating ties across sub-Saharan Africa and the Gulf while managing its ongoing military campaigns in Gaza and against Hezbollah in Lebanon. Critics may argue the appointment is partly a strategic move to shore up Israeli influence in a geopolitically sensitive maritime corridor near the Gulf of Aden.",
+      "source": "Bloomberg Politics",
+      "url": "https://www.bloomberg.com/news/articles/2026-04-26/israeli-cabinet-approves-appointment-of-ambassador-to-somaliland",
+      "sourceCount": 1,
+      "disposition": "new",
+      "breaking": false,
+      "addedAt": "9:51 AM MT",
+      "addedAtISO": "2026-04-26T09:51:27.837536-06:00"
+    },
+    {
+      "category": "science_health",
+      "headline": "Special Education's 'Emotional Disturbance' Label: Protective Tool or Pathway to Segregation?",
+      "summary": "A growing debate in American education centers on the 'emotional disturbance' designation within the special education system, a federally recognized disability category that qualifies students for individualized education programs but also frequently results in their separation from mainstream classrooms. Critics argue the label can stigmatize students and funnel them into more restrictive settings with fewer academic opportunities, while proponents say it provides access to critical behavioral and mental health supports that general education cannot offer.\n\nStudents classified as emotionally disturbed are among the most likely to be educated in separate classrooms or schools, according to federal data. The category disproportionately includes Black male students, raising concerns among civil rights advocates that the label is applied inconsistently and reflects implicit bias in disciplinary and referral processes rather than clinical need.\n\nAdvocates for the designation argue that without it, students with serious emotional and behavioral disorders would be left in classrooms without adequate support, potentially harming both themselves and peers. They contend that properly resourced programs built around the ED classification provide therapeutic environments essential for students who cannot access their education in traditional settings.\n\nThe debate reflects broader tensions in special education policy between the legal mandate for students to be educated in the 'least restrictive environment' and the practical realities of serving students with complex behavioral and mental health needs. As schools face growing rates of youth mental health challenges, pressure is mounting on districts to find approaches that neither exclude students nor leave them without adequate intervention.",
+      "source": "NPR",
+      "url": "https://www.npr.org/2026/04/26/g-s1-117447/school-disability-emotional-behavioral-disorder-special-education",
+      "sourceCount": 1,
+      "disposition": "new",
+      "breaking": false,
+      "addedAt": "9:51 AM MT",
+      "addedAtISO": "2026-04-26T09:51:27.837536-06:00"
+    },
+    {
       "category": "sports",
       "headline": "Anthony Edwards Out Weeks With Knee Injury, Casting Shadow Over Timberwolves' Playoff Run",
       "summary": "Minnesota Timberwolves star guard Anthony Edwards will miss multiple weeks due to a bone bruise and hyperextension in his left knee, ESPN's Shams Charania reported Sunday. Edwards was injured late in the first half of Game 4 against the Denver Nuggets on Saturday after landing awkwardly while attempting to block a layup. He was helped to the locker room and did not return, finishing with five points on 1-of-8 shooting in 18 minutes.\n\nMedical evaluations confirmed Edwards avoided ligament damage, but he is expected to miss the remainder of Minnesota's first-round series against Denver. The injury compounds an already difficult situation for the Timberwolves, who also lost guard Donte DiVincenzo for the season to a torn Achilles less than two minutes into Saturday's game.\n\nDespite the injuries, Minnesota leads the series 3-1 after winning Game 4, 112-96, and needs just one more victory to advance. Game 5 is scheduled for Monday night at 10:30 p.m. ET in Denver. Denver must win three straight to survive, making Edwards' absence significant but potentially not series-deciding.\n\nShould Minnesota advance, Edwards would likely miss at least the start of the second round, where the Timberwolves would face the winner of the San Antonio Spurs-Portland Trail Blazers series. The Spurs, seeded second, lead that series 2-1 heading into Sunday's Game 4.",
