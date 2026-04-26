@@ -3,6 +3,66 @@
   "dateFormatted": "Sunday, April 26, 2026",
   "stories": [
     {
+      "category": "world",
+      "headline": "Update: Roommate Charged with Two Counts of First-Degree Murder in Deaths of USF Doctoral Students",
+      "summary": "Hisham Abugharbieh, the off-campus roommate of University of South Florida doctoral student Zamil Limon, has been formally charged with two counts of premeditated first-degree murder in connection with the deaths of Limon and his girlfriend, Nahida Bristy. Abugharbieh was ordered held without bond at a Saturday court appearance in Tampa, with a hearing tentatively set for April 28.\n\nLimon's remains were discovered Friday on the Howard Frankland Bridge over Tampa Bay. Bristy, 27, remained missing as of Saturday, though the Hillsborough County Sheriff's Office said unspecified evidence presented to the state attorney's office supported charging Abugharbieh with her murder as well. Authorities said they would not comment further on investigative findings to protect the integrity of the case.\n\nAbugharbieh had initially been arrested Friday on preliminary charges including unlawfully moving a dead body, evidence tampering, false imprisonment, and battery after officers responded to a domestic violence report at his family's home near campus. He barricaded himself inside before surrendering to a special tactical team. An autopsy on Limon was underway, with results possible by Saturday.\n\nThe two victims, both 27-year-old Bangladeshi nationals pursuing graduate degrees at USF, disappeared on April 16 and were considered a couple who had been discussing marriage. The case drew national attention after a family friend reported them missing the following day.",
+      "source": "The Guardian",
+      "url": "https://www.theguardian.com/us-news/2026/apr/25/university-of-south-florida-doctoral-students-suspect-charged-murder",
+      "sourceCount": 2,
+      "disposition": "update",
+      "breaking": false,
+      "addedAt": "5:52 AM MT",
+      "addedAtISO": "2026-04-26T05:52:34.433723-06:00"
+    },
+    {
+      "category": "world",
+      "headline": "Inside Khartoum One Year After Sudan's Army Retook Capital as Civil War Enters Fourth Year",
+      "summary": "One year after the Sudanese Armed Forces recaptured Khartoum from the paramilitary Rapid Support Forces, large swaths of the capital remain a ghost town. The grand presidential palace is charred and partially collapsed, and neighborhoods that were once bustling commercial centers sit largely empty, a testament to the scale of destruction wrought by more than three years of civil war.\n\nThe conflict, which began in April 2023 as a power struggle between SAF commander Gen. Abdel Fattah al-Burhan and RSF leader Gen. Mohamed Hamdan Dagalo, has produced one of the world's worst humanitarian crises. Millions have been displaced internally and across borders, and international aid organizations have repeatedly warned of famine conditions in multiple regions.\n\nDespite the army's retaking of the capital, the RSF continues to hold significant territory in Darfur and other parts of Sudan, and fighting persists across the country. International diplomatic efforts to broker a ceasefire have repeatedly stalled, with both sides accused of targeting civilians and committing atrocities.\n\nThe fourth anniversary of the conflict underscores how little progress has been made toward a political resolution. Humanitarian organizations say access to affected populations remains severely restricted, and reconstruction of destroyed urban infrastructure has barely begun.",
+      "source": "The Hill",
+      "url": "https://thehill.com/policy/international/5845486-sudan-civil-war-inside-khartoum/",
+      "sourceCount": 2,
+      "disposition": "new",
+      "breaking": false,
+      "addedAt": "5:52 AM MT",
+      "addedAtISO": "2026-04-26T05:52:34.433723-06:00"
+    },
+    {
+      "category": "world",
+      "headline": "Ukrainian Drones Strike Russian Fertilizer Plant and Oil Refinery",
+      "summary": "Ukrainian drones struck a fertilizer plant owned by Russian chemicals giant PhosAgro PJSC as well as a major oil refinery on Sunday, according to Bloomberg, in what Kyiv describes as a campaign to disrupt Russian commodity exports that have been buoyed by elevated global prices stemming from the Iran war.\n\nThe attack on the PhosAgro facility marks the second drone strike against the plant this month alone, suggesting a deliberate and escalating Ukrainian strategy to degrade Russia's industrial and export capacity. Fertilizer and energy exports have remained critical revenue streams for Moscow despite Western sanctions.\n\nUkraine has increasingly employed long-range drone strikes deep inside Russian territory as a means of applying economic and military pressure, particularly targeting energy infrastructure, refineries, and industrial sites. Russian officials have repeatedly condemned such strikes as terrorism against civilian infrastructure.\n\nThe strikes come as diplomatic efforts to negotiate a ceasefire in the broader Russia-Ukraine conflict remain unresolved, with both sides continuing offensive and retaliatory operations across the front lines and beyond.",
+      "source": "Bloomberg Politics",
+      "url": "https://www.bloomberg.com/news/articles/2026-04-26/ukraine-attacks-russia-fertilizer-plant-for-second-time-in-april",
+      "sourceCount": 1,
+      "disposition": "new",
+      "breaking": false,
+      "addedAt": "5:52 AM MT",
+      "addedAtISO": "2026-04-26T05:52:34.433723-06:00"
+    },
+    {
+      "category": "world",
+      "headline": "King Charles III Visits U.S. as UK-American 'Special Relationship' Faces Serious Strain",
+      "summary": "King Charles III is undertaking a visit to the United States at a moment of notable tension in the Anglo-American relationship, with trade disputes, disagreements over foreign policy, and friction over the Trump administration's tariff regime straining ties between London and Washington. The visit, described by Bloomberg as an attempt by the British monarch to prevent another historic rupture with America, carries significant diplomatic weight.\n\nThe UK and U.S. have historically maintained one of the closest bilateral relationships among Western allies, sharing intelligence, military cooperation, and deep economic links. However, President Trump's second term has introduced renewed uncertainty about that relationship, as his administration has pursued tariff policies and adopted foreign policy stances that have at times diverged sharply from British government positions.\n\nKing Charles, as a constitutional monarch, operates in a largely ceremonial diplomatic role, but royal visits have historically served as a tool to reinforce ties at moments of political stress. British officials have been seeking a trade deal framework that would exempt the UK from the harshest U.S. tariff measures.\n\nThe visit underscores the broader realignment of transatlantic relationships that has accompanied the Trump administration's second term, with multiple European governments reassessing their diplomatic and economic dependencies on Washington.",
+      "source": "Bloomberg Politics",
+      "url": "https://www.bloomberg.com/news/articles/2026-04-26/king-charles-us-visit-uk-monarch-tries-to-stop-another-split-with-america",
+      "sourceCount": 1,
+      "disposition": "new",
+      "breaking": false,
+      "addedAt": "5:52 AM MT",
+      "addedAtISO": "2026-04-26T05:52:34.433723-06:00"
+    },
+    {
+      "category": "world",
+      "headline": "Australia's Foreign Minister Heads to Japan, China and South Korea for Energy Talks",
+      "summary": "Australian Foreign Minister Penny Wong will travel to Japan, China, and South Korea this week for a series of meetings focused on energy supply, according to Bloomberg. The diplomatic tour comes ahead of Japanese Prime Minister Sanae Takaichi's expected visit to Australia in early May.\n\nAustralia is one of the world's largest exporters of liquefied natural gas and coal, making it a critical energy partner for all three nations, which are major importers of fossil fuels. The talks are expected to address supply security and the terms of long-term energy arrangements as global energy markets remain volatile.\n\nThe visit reflects Canberra's effort to actively manage its relationships with its three largest trading partners simultaneously, a balancing act that has grown more complex amid ongoing U.S.-China trade tensions and uncertainty about the reliability of global supply chains.\n\nWong's trip also signals Australia's intent to deepen engagement with Northeast Asia on energy transition issues, including the potential for hydrogen exports and cooperation on cleaner energy alternatives, even as near-term discussions center on conventional fuel supplies.",
+      "source": "Bloomberg Politics",
+      "url": "https://www.bloomberg.com/news/articles/2026-04-26/australia-s-wong-heads-to-japan-china-and-korea-to-talk-energy",
+      "sourceCount": 1,
+      "disposition": "new",
+      "breaking": false,
+      "addedAt": "5:52 AM MT",
+      "addedAtISO": "2026-04-26T05:52:34.433723-06:00"
+    },
+    {
       "category": "politics",
       "headline": "Democrats Hold Modest Lead on 2026 Congressional Generic Ballot as Redistricting Complicates Map",
       "summary": "New polling aggregated by The New York Times shows Democrats holding a consistent but narrow single-digit advantage on the congressional generic ballot heading into the 2026 midterm cycle. The pattern aligns with historical trends in which the party out of power tends to gain ground during midterm elections, a dynamic that previously helped Democrats in 2018 and Republicans in 2022.\n\nHowever, analysts caution that national vote share alone may not translate into House seat gains. Redistricting efforts currently underway in several states could alter district boundaries in ways that raise the vote threshold Democrats would need to retake the chamber, depending on the scope and outcome of those map changes.\n\nThe generic ballot is considered an early indicator of partisan enthusiasm and electoral environment, though individual district competitiveness, candidate quality, and late-breaking issues can significantly shift final outcomes. Republicans, for their part, point to structural advantages in the current map and argue that economic messaging will narrow the gap as the election approaches.\n\nThe polling is drawn from a broad range of outlets across the political spectrum, including Fox News, Reuters, ABC News, and The Guardian, lending the findings cross-ideological credibility as a baseline measure of the national political environment roughly 18 months before Election Day.",
