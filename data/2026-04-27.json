@@ -4,6 +4,54 @@
   "stories": [
     {
       "category": "world",
+      "headline": "Update: Iran Offers U.S. Deal to Reopen Strait of Hormuz Without Nuclear Terms; Israel Deploys Iron Dome to UAE",
+      "summary": "Iran has passed a new proposal to the United States through Pakistan that would reopen the Strait of Hormuz and end the two-month-old war without addressing Tehran's nuclear program, according to a U.S. official and two sources with knowledge of the offer. The proposal would bypass the deeply divisive question of nuclear concessions, which has been the central sticking point in diplomacy, in exchange for the U.S. lifting its own blockade and halting military operations against Iran.\n\nPresident Trump appears unlikely to accept the offer, as doing so would remove his primary leverage over Iran's nuclear ambitions — the very issue that prompted the U.S. and Israel to launch military operations on February 28. The Strait of Hormuz blockade has driven oil prices sharply higher and rattled global markets, with the Chevron CEO warning of continued \"upward pressure\" on energy prices. German Chancellor Friedrich Merz warned publicly that the U.S. risks becoming bogged down in a quagmire similar to Iraq and Afghanistan.\n\nIn a significant new military development first reported Monday, Israel has deployed an Iron Dome air defense system, along with troops to operate it, to the United Arab Emirates early in the war — an unprecedented step reflecting deepening Israel-UAE security cooperation as both countries face Iranian threats. The deployment had not been previously made public.\n\nIran's Foreign Minister Abbas Araghchi traveled to Moscow to meet with Russian President Vladimir Putin, seeking political backing as peace talks with Washington remain on hold. Pakistan and Oman are continuing backchannel efforts to prevent a return to open hostilities, while analysts say both sides remain unlikely to resume large-scale fighting in the near term despite the diplomatic deadlock.",
+      "source": "Axios",
+      "url": "https://www.axios.com/2026/04/27/iran-us-hormuz-strait-nuclear-talks-proposal-pakistan",
+      "sourceCount": 17,
+      "disposition": "update",
+      "breaking": false,
+      "addedAt": "8:08 AM MT",
+      "addedAtISO": "2026-04-27T08:08:28.254001-06:00"
+    },
+    {
+      "category": "business",
+      "headline": "United Airlines CEO Formally Withdraws Proposed Merger With American Airlines",
+      "summary": "United Airlines CEO Scott Kirby officially took a proposed merger with American Airlines off the table Monday, after the deal was rejected by American and met with broad opposition from antitrust experts, lawmakers, and President Trump. Kirby had floated the combination during a private meeting with Trump in late February, but the proposal quickly generated criticism that it would further consolidate an already highly concentrated industry, reduce flight routes, and raise ticket prices for consumers.\n\nAmerican Airlines CEO Robert Isom had called the merger \"a nonstarter from the get-go\" on antitrust grounds, and the airline said it was \"not engaged with or interested in any discussions\" about the deal. Trump, despite his administration's generally business-friendly posture, expressed concern that a combined United-American would become \"lazy\" and said he would be open to other configurations.\n\nKirby defended the concept in his statement, arguing the combination would have expanded the global footprint of U.S. carriers and helped close a competitive gap with foreign airlines, which he said fly roughly 65 percent of long-haul seats into the U.S. even though only 40 percent of passengers are foreign citizens. He maintained that federal regulators would have approved the deal had American been a willing partner.\n\nThe collapse of the proposed merger leaves open the question of whether the current tariff and trade environment — which has disrupted international aviation demand — will prompt further consolidation talks elsewhere in the airline industry.",
+      "source": "Washington Examiner",
+      "url": "https://www.washingtonexaminer.com/news/business/4544016/united-ceo-merger-american-airlines/",
+      "sourceCount": 2,
+      "disposition": "new",
+      "breaking": false,
+      "addedAt": "8:08 AM MT",
+      "addedAtISO": "2026-04-27T08:08:28.254001-06:00"
+    },
+    {
+      "category": "technology",
+      "headline": "China Blocks Meta From Acquiring Chinese AI Startup Manus",
+      "summary": "Chinese regulators have blocked Meta from acquiring Manus, a Chinese artificial intelligence startup, in a decision that could send a significant warning signal to Chinese tech founders considering partnerships or sales to foreign companies. Meta said the transaction \"complied fully with applicable law\" and expressed confidence it would reach \"an appropriate resolution to the inquiry.\"\n\nThe ruling comes amid heightened geopolitical tensions between the U.S. and China, and as both governments have increasingly scrutinized cross-border technology deals involving artificial intelligence. The full impact of the decision was not immediately clear, but analysts say it could chill future deals between Chinese AI firms and Western acquirers at a moment when AI competition between the two countries is intensifying.\n\nManus had attracted attention as a capable AI agent system developed in China, and its potential acquisition by Meta would have represented a significant cross-border AI technology transaction. The blocking of the deal reflects Beijing's growing assertiveness in controlling the flow of advanced technology assets to foreign entities.",
+      "source": "NPR",
+      "url": "https://www.npr.org/2026/04/27/g-s1-118892/china-blocks-meta-from-acquiring-ai-startup-manus",
+      "sourceCount": 2,
+      "disposition": "new",
+      "breaking": false,
+      "addedAt": "8:08 AM MT",
+      "addedAtISO": "2026-04-27T08:08:28.254001-06:00"
+    },
+    {
+      "category": "world",
+      "headline": "Update: UK's Starmer to Face Parliamentary Vote on Investigation Into Mandelson Misleading-Parliament Claims",
+      "summary": "British Prime Minister Keir Starmer is facing a parliamentary vote on whether to launch a formal investigation into allegations that he misled Parliament, setting up a high-stakes loyalty test for his Labour Party just days before crucial local elections across England. The controversy centers on claims related to Peter Mandelson, the veteran Labour figure appointed as UK ambassador to Washington, whose conduct has drawn sustained scrutiny.\n\nThe vote represents a significant political test for Starmer, who has already faced questions about his handling of the Mandelson appointment and is navigating a difficult period for Labour ahead of May local elections where the party is expected to suffer historic losses in Wales, according to earlier coverage. A formal investigation finding that a prime minister misled Parliament would be a serious constitutional and political matter under Westminster conventions.\n\nThe development adds pressure to a Labour government already managing tensions over its relationship with the Trump administration in Washington and domestic dissatisfaction with its economic record. Opposition parties are expected to unite behind the motion calling for an inquiry, making the outcome dependent on Labour backbench discipline at a vulnerable moment for the party.",
+      "source": "Bloomberg Politics",
+      "url": "https://www.bloomberg.com/news/articles/2026-04-27/uk-s-starmer-to-face-vote-on-probe-into-mandelson-claims",
+      "sourceCount": 1,
+      "disposition": "new",
+      "breaking": false,
+      "addedAt": "8:08 AM MT",
+      "addedAtISO": "2026-04-27T08:08:28.254001-06:00"
+    },
+    {
+      "category": "world",
       "headline": "Update: Iran Nuclear Talks at Impasse as Araghchi Flies to Moscow; Pakistan Lifts Security Lockdown",
       "summary": "Iran-U.S. peace talks collapsed over the weekend after a planned second round of direct negotiations in Islamabad failed to materialize. Iranian Foreign Minister Abbas Araghchi made a brief return visit to Pakistan before departing for Moscow to meet with President Vladimir Putin, seeking to build diplomatic leverage as the conflict stretches into its third month. Pakistan's foreign minister lifted the security lockdown around the Islamabad high-security zone, signaling no imminent resumption of direct talks.\n\nPresident Trump, speaking on Fox News, dismissed the need to send envoys on a 17-hour flight, saying: 'We have all the cards. If they want to talk, they can come to us, or they can call us.' Iran's foreign ministry blamed Washington for the breakdown. Indirect back-channel efforts continue, with Pakistani and Omani officials conveying messages between the two sides.\n\nAraghchi's meeting with Putin is aimed at coordinating strategy and securing Russian backing at a moment when U.S.-Iran negotiations are effectively frozen. Iran has separately proposed a deal to reopen the Strait of Hormuz without addressing its nuclear program — a framework the U.S. has not publicly accepted. Oil prices have risen sharply in response to the diplomatic impasse.\n\nTrump also expressed sharp disappointment with NATO, saying member nations failed to assist when Iran restricted the Strait of Hormuz. Energy analysts warn that jet fuel inventories in several regions remain at critically low levels, with Chevron's CEO publicly warning of continued upward pressure on oil prices.",
       "source": "Associated Press",
