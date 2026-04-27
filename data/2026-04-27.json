@@ -4,6 +4,30 @@
   "stories": [
     {
       "category": "world",
+      "headline": "Pakistan Accused of Striking Afghan University in Kunar, Killing Seven and Wounding Dozens of Students",
+      "summary": "Pakistani jet and drone strikes on Afghanistan's eastern Kunar province killed at least seven people and injured 75 on Monday, according to multiple sources who told BBC News. Among the wounded were students and a professor at Kunar University, with Afghanistan's Taliban government saying 30 of the injured are university students. A professor who was teaching at the time described hearing terrifying explosions across the campus, and Afghanistan's higher education ministry said the university's buildings and surroundings suffered extensive damage.\n\nPakistan's information ministry denied targeting the university or residential areas, calling the reports fake and maintaining that its cross-border strikes target militant hideouts. The strikes come weeks after a Pakistani air strike on a drug rehabilitation centre in Kabul that the United Nations confirmed killed 269 people, a toll that drew significant international condemnation.\n\nThe attacks threaten a fragile ceasefire that had largely held following Chinese-mediated talks between Pakistan and Afghanistan in Urumqi earlier this month. Hundreds of people have been killed or injured in cross-border fighting between the two countries in recent months, straining regional stability at a moment when Pakistan is simultaneously attempting to mediate the U.S.-Iran conflict.\n\nThe incident underscores the volatile security environment along the Pakistan-Afghanistan border and raises questions about Islamabad's ability to play a neutral diplomatic role internationally while conducting controversial military operations at home. No international mediator has yet publicly called for an investigation into the Kunar strikes.",
+      "source": "BBC News",
+      "url": "https://www.bbc.com/news/articles/cvg0gxrgklro?at_medium=RSS&at_campaign=rss",
+      "sourceCount": 1,
+      "disposition": "new",
+      "breaking": false,
+      "addedAt": "10:47 AM MT",
+      "addedAtISO": "2026-04-27T10:47:18.392169-06:00"
+    },
+    {
+      "category": "technology",
+      "headline": "EU Targets Google's AI Dominance Over Android Ecosystem With New Proposals",
+      "summary": "European Union regulators on Monday unveiled a set of proposals aimed at forcing open Google's Android ecosystem to competing artificial intelligence services, marking a significant new front in Brussels' long-running effort to curtail the tech giant's market power. The proposals focus on Google's ability to preferentially promote its own AI tools — including Gemini — across the Android platform, which runs on the vast majority of smartphones globally.\n\nThe EU action follows years of antitrust enforcement against Google over search and app store dominance. Regulators appear concerned that as AI becomes central to how users interact with mobile devices, Google's integrated position across search, the Android operating system, and AI assistants could lock out rivals before the market fully develops.\n\nThe move adds to a growing global regulatory focus on whether dominant technology platforms can leverage existing ecosystems to entrench new AI advantages. Similar concerns have been raised by regulators in the United Kingdom and United States, though the EU has historically moved faster and more aggressively on platform competition cases.\n\nGoogle has not yet publicly responded to Monday's proposals. The company has previously argued that its Android platform is open and that consumers benefit from the integration of its services. The proposals are at an early stage and would likely face a lengthy regulatory and legal process before any remedies take effect.",
+      "source": "Bloomberg Politics",
+      "url": "https://www.bloomberg.com/news/articles/2026-04-27/google-s-ai-power-over-android-ecosystem-targeted-by-eu",
+      "sourceCount": 1,
+      "disposition": "new",
+      "breaking": false,
+      "addedAt": "10:47 AM MT",
+      "addedAtISO": "2026-04-27T10:47:18.392169-06:00"
+    },
+    {
+      "category": "world",
       "headline": "Plane Crash in South Sudan Kills All 14 on Board",
       "summary": "A small passenger aircraft crashed approximately 20 kilometers southwest of Juba, South Sudan's capital, on Monday morning, killing all 14 people aboard. The Cessna 208 Caravan, operated by CityLink Aviation Ltd., had departed from Yei at 09:15 local time before authorities lost contact roughly 30 minutes into the flight. Among the dead were 12 South Sudanese nationals and two Kenyans, including the pilot.\n\nThe South Sudan Civil Aviation Authority (SSCAA) said initial reports suggest the aircraft may have come down due to adverse weather conditions, particularly low visibility. A team has been dispatched to the crash site to conduct a full investigation.\n\nSouth Sudan has a poor aviation safety record, with accidents frequently attributed to overloading and hazardous weather. In January 2025, 20 oil workers died when their aircraft went down near oil fields in Unity State. The country's aviation infrastructure remains underdeveloped, and the government has faced ongoing pressure to improve safety standards.",
       "source": "BBC News",
