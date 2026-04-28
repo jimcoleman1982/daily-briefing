@@ -3,6 +3,54 @@
   "dateFormatted": "Tuesday, April 28, 2026",
   "stories": [
     {
+      "category": "business",
+      "headline": "Update: Fed Expected to Hold Rates Steady at Powell's Likely Final Meeting as Chair",
+      "summary": "The Federal Reserve is widely expected to leave interest rates unchanged at the conclusion of its two-day meeting on April 29, as policymakers weigh persistent inflation risks from the ongoing U.S.-Iran war alongside lingering concerns about the labor market. The decision itself is considered a foregone conclusion, with Wall Street's attention focused instead on Federal Reserve Chair Jerome Powell's post-meeting press conference, which may be his last in that role.\n\nThe meeting comes after Sen. Thom Tillis (R-NC) said Sunday he had received assurances from the Justice Department that it would close its criminal investigation into Powell and the Fed's $2.5 billion Washington headquarters renovation project. Tillis said those assurances cleared the way for him to support the confirmation of Kevin Warsh, Trump's nominee to succeed Powell, who has been described by analysts as more amenable to rate cuts.\n\nThe backdrop to the meeting is the two-month-old U.S.-Iran conflict, which has driven energy prices sharply higher, contributing to inflationary pressure while simultaneously clouding the economic outlook. Analysts say the Fed faces an unusually difficult dual mandate challenge, with price stability and maximum employment potentially pulling in opposite directions.\n\nThe story has drawn coverage from 28 outlets across the political spectrum. Supporters of the administration argue that replacing Powell with Warsh would allow for more flexible monetary policy; critics warn that political pressure on the Fed risks undermining the institutional independence that anchors market confidence in U.S. monetary policy.",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/business/fed-likely-hold-rates-steady-powell-prepares-possible-swan-song-2026-04-27/",
+      "sourceCount": 28,
+      "disposition": "update",
+      "breaking": false,
+      "addedAt": "8:08 AM MT",
+      "addedAtISO": "2026-04-28T08:08:34.994642-06:00"
+    },
+    {
+      "category": "politics",
+      "headline": "FBI Raids More Than 20 Minneapolis Childcare Facilities in Sweeping Fraud Investigation",
+      "summary": "Federal Bureau of Investigation agents and law enforcement partners executed 22 federal search warrants across Minneapolis on Tuesday morning, targeting childcare facilities and other locations as part of a large-scale fraud investigation, the Department of Justice confirmed. The DOJ specified that the operation is not immigration-related.\n\nThe businesses raided are described as largely Somali-owned. Authorities have not publicly detailed the specific nature of the alleged fraud, but the scale of simultaneous warrants — more than 20 locations in a single morning — indicates a significant federal operation that has been in development for some time.\n\nMinneapolis has previously been the center of major federal fraud investigations involving childcare subsidy programs. In recent years, prosecutors secured convictions in a large scheme involving the federal Child and Adult Care Food Program, in which tens of millions of dollars in pandemic-era subsidies were allegedly stolen and funneled overseas.\n\nThe story is still developing, with few details yet confirmed by authorities. Coverage has so far appeared in three outlets including Fox News and CBS News.",
+      "source": "Fox News Politics",
+      "url": "https://www.foxnews.com/politics/fbi-raids-minneapolis-childcare-facilities-part-sweeping-fraud-investigation",
+      "sourceCount": 3,
+      "disposition": "new",
+      "breaking": false,
+      "addedAt": "8:08 AM MT",
+      "addedAtISO": "2026-04-28T08:08:34.994642-06:00"
+    },
+    {
+      "category": "world",
+      "headline": "Manhunt Underway in Athens After 89-Year-Old Gunman Wounds Five in Two Separate Shootings",
+      "summary": "Greek authorities launched a manhunt in Athens on Tuesday after a suspected 89-year-old gunman opened fire at two separate locations — a social security agency and a courthouse — wounding five people, none with life-threatening injuries. Police say the attacker concealed a shotgun beneath his coat before shooting an employee in the leg at the social security office in the Kerameikos district, then traveled roughly five kilometers to a courthouse in Ambelokipi where he wounded four more people before fleeing.\n\nSurveillance footage broadcast by state broadcaster ERT showed the suspect calmly leaving the courthouse on foot. Authorities are investigating the possibility he then hailed a taxi. The attacker left a shotgun at the second scene before disappearing. A heavy police presence has been established at both locations.\n\nThe motive for the attack remains unclear. One eyewitness told state news agency ANA that the gunman appeared to fire at the ground rather than directly at individuals. The four women injured at the courthouse were employees of the small claims court, according to the head of the judiciary employees' union.\n\nGun violence is relatively rare in Greece, where firearm ownership is permitted but heavily regulated. The incident comes as authorities work to piece together a motive and locate the suspect, who remains at large.",
+      "source": "BBC News",
+      "url": "https://www.bbc.com/news/articles/cyv2pmz2v86o?at_medium=RSS&at_campaign=rss",
+      "sourceCount": 1,
+      "disposition": "new",
+      "breaking": false,
+      "addedAt": "8:08 AM MT",
+      "addedAtISO": "2026-04-28T08:08:34.994642-06:00"
+    },
+    {
+      "category": "technology",
+      "headline": "Japan Airlines to Deploy Humanoid Robots for Cargo Handling at Tokyo's Haneda Airport",
+      "summary": "Japan Airlines announced it will begin a two-year trial of humanoid robots for ground handling operations at Tokyo's Haneda Airport starting in May, marking one of the most prominent deployments of humanoid robotics in commercial aviation. The Chinese-made robots, developed in partnership with GMO AI & Robotics, will initially be used to load and unload cargo containers, with potential expansion to cabin cleaning and ground support equipment operation.\n\nJAL, which employs roughly 4,000 ground handling staff, cited a worsening labor shortage driven by a surge in inbound tourism and Japan's shrinking working-age population as the primary motivation. Japan welcomed more than seven million foreign visitors in just the first two months of this year. GMO AI & Robotics president Tomohiro Uchida noted that airport back-end operations remain heavily reliant on human labor despite front-end automation.\n\nThe airline stressed that certain duties, particularly safety management, will remain exclusively in human hands. The trial is being watched closely by the aviation industry as airlines globally grapple with labor costs and staffing shortfalls in ground operations.\n\nThe deployment reflects a broader push across Japan's transportation and service sectors to integrate robotics into roles traditionally performed by humans, as demographic pressures continue to squeeze the country's workforce.",
+      "source": "BBC News",
+      "url": "https://www.bbc.com/news/articles/cpwp87j1llvo?at_medium=RSS&at_campaign=rss",
+      "sourceCount": 1,
+      "disposition": "new",
+      "breaking": false,
+      "addedAt": "8:08 AM MT",
+      "addedAtISO": "2026-04-28T08:08:34.994642-06:00"
+    },
+    {
       "category": "world",
       "headline": "UAE Announces It Will Leave OPEC Effective May 1",
       "summary": "The United Arab Emirates announced Tuesday that it is withdrawing from OPEC and the broader OPEC+ alliance, effective May 1, in a significant blow to the oil-producing bloc. UAE officials have long complained that the cartel's production quotas unfairly constrained their export capacity, limiting the country's ability to capitalize on its substantial oil reserves.\n\nThe announcement comes as global energy markets remain unsettled amid the ongoing Iran war, which has already disrupted regional supply chains and kept prices elevated. The UAE is one of OPEC's largest producers, and its departure could meaningfully reduce the organization's collective ability to coordinate output and influence global crude prices.\n\nThe move marks a culmination of years of tension between Abu Dhabi and other OPEC members, particularly Saudi Arabia, over quota allocations. Analysts say the UAE's exit could accelerate a broader fragmentation of OPEC+ as member states increasingly pursue independent energy strategies in a volatile geopolitical environment.",
