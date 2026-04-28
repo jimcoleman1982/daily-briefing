@@ -3,6 +3,54 @@
   "dateFormatted": "Tuesday, April 28, 2026",
   "stories": [
     {
+      "category": "technology",
+      "headline": "Google Signs AI Deal With Pentagon for Classified Projects",
+      "summary": "Google has reached an agreement with the U.S. Department of Defense to provide its artificial intelligence models for classified government work, according to reporting by The Information. The deal permits the Pentagon to use Google's AI for \"any lawful government purpose,\" placing Google alongside OpenAI and Elon Musk's xAI as companies with active agreements to supply AI to the military on classified networks.\n\nThe Pentagon has been aggressively expanding its AI partnerships amid what officials describe as an imperative to modernize military capabilities and maintain a competitive edge over adversaries, particularly China. The move comes as the Defense Department has also been navigating a separate dispute with AI safety-focused startup Anthropic over the terms of potential collaboration.\n\nThe deal marks a significant shift for Google, which faced intense internal employee protests in 2018 when it participated in Project Maven, a Pentagon drone imagery analysis program, ultimately declining to renew that contract. The company has since revised its AI ethics guidelines and has gradually re-engaged with defense and intelligence community clients.\n\nThe agreement raises ongoing questions about the role of commercial AI firms in national security applications, the transparency of such arrangements, and the ethical frameworks governing AI use in military contexts — debates that are expected to intensify as the technology becomes more capable.",
+      "source": "New York Times",
+      "url": "https://www.nytimes.com/2026/04/28/technology/google-ai-deal-pentagon.html",
+      "sourceCount": 2,
+      "disposition": "new",
+      "breaking": false,
+      "addedAt": "10:58 AM MT",
+      "addedAtISO": "2026-04-28T10:58:46.415202-06:00"
+    },
+    {
+      "category": "science_health",
+      "headline": "Texas Lawmakers Hear Camp Mystic Had No Flood Emergency Training Before Disaster That Killed 27",
+      "summary": "A special legislative committee in Texas heard testimony Monday from an investigator who concluded that Camp Mystic's young, inexperienced counselors received no emergency training for floods or other disasters prior to the July Fourth flood that killed 27 campers and counselors on the Guadalupe River. Investigator Casey Garrett told lawmakers that there were \"no drills of any kind\" and that counselors feared making independent decisions during the crisis.\n\nThe investigator described a camp culture of \"obedience\" that paired the youngest and least experienced teenage counselors with the youngest campers, compounded by complacency about flood warnings and poor communications that critically delayed evacuation. Most of the 25 camper victims were under age 10, and Garrett stated that an earlier evacuation call and basic training would likely have saved every girl, some of whom were just 20 steps from a two-story building that could have provided safety.\n\nCamp owner Richard Eastland was also killed during the disaster while attempting to evacuate campers to higher ground. The hearing, attended by dozens of grieving family members, presented a minute-by-minute account of flood warnings and communications failures. A formal written report is expected later this year as Texas considers whether to renew the camp's operating license.\n\n\"The fate of those girls was set before any drop of rain fell,\" said state Sen. Charles Perry during the hearing. The testimony is expected to fuel legislative action on camp safety regulations, with parents of victims also pushing for stronger oversight standards in other states.",
+      "source": "PBS NewsHour",
+      "url": "https://www.pbs.org/newshour/nation/camp-mystic-relied-on-teen-counselors-with-no-emergency-training-before-flood-investigator-says",
+      "sourceCount": 2,
+      "disposition": "new",
+      "breaking": false,
+      "addedAt": "10:58 AM MT",
+      "addedAtISO": "2026-04-28T10:58:46.415202-06:00"
+    },
+    {
+      "category": "politics",
+      "headline": "Texas Senate Poll Shows Democrat Talarico Leading Cornyn and Paxton in Hypothetical Matchups",
+      "summary": "A new Texas Public Opinion Research survey of 1,018 likely general election voters shows Democratic state legislator James Talarico leading both of his potential Republican opponents in the 2026 U.S. Senate race. Talarico leads incumbent Sen. John Cornyn by three percentage points and former Attorney General Ken Paxton by five points in hypothetical head-to-head matchups, according to the mid-April poll.\n\nThe results have energized Democrats who see Texas as a potential pickup opportunity as the party seeks to regain control of the U.S. Senate in the November midterms. Texas has not elected a Democrat to statewide office since 1994, and any Democratic victory there would represent a major political realignment.\n\nRepublican strategists have cautioned that a single poll — particularly one conducted by an outlet with ties to Democratic-leaning data firms — should not be taken as definitive, noting that Cornyn has significant name recognition, fundraising advantages, and that Texas remains structurally favorable to Republicans. The primary on the Republican side has not yet been decided, with Cornyn and Paxton both still in contention.\n\nThe polling comes as national Democrats point to broader signs of Republican vulnerability heading into the midterms, including consumer confidence data and ongoing policy disputes. Republicans counter that historical patterns favor the party in power in off-year Senate races when their candidate is an incumbent, and that Texas's electoral map has consistently resisted Democratic inroads despite years of predictions of a coming realignment.",
+      "source": "The Hill",
+      "url": "https://thehill.com/homenews/campaign/5852845-texas-poll-talarico-advantage",
+      "sourceCount": 2,
+      "disposition": "new",
+      "breaking": false,
+      "addedAt": "10:58 AM MT",
+      "addedAtISO": "2026-04-28T10:58:46.415202-06:00"
+    },
+    {
+      "category": "world",
+      "headline": "California Wealth Tax Proposal Advances as Billionaires Flee State, Dividing Democrats",
+      "summary": "A proposed wealth tax in California is inching closer to the ballot, with backers pushing a measure that would impose a one-time tax on the state's wealthiest residents. The proposal has sparked significant controversy, dividing Democrats in the state even as its architects, including Sen. Elizabeth Warren's allies, argue it is necessary to address inequality and fund public services.\n\nProponents of the measure say the tax would generate substantial revenue at a time when California faces persistent budget pressures. Supporters argue that the wealthiest Californians have accumulated unprecedented fortunes while working- and middle-class residents struggle with the cost of living, and that a one-time levy on extreme wealth is a reasonable policy response.\n\nCritics, including many centrist Democrats and virtually all Republicans, contend the proposal would accelerate an already-visible flight of wealthy residents and businesses from the state. Billionaires with a combined net worth estimated at $1 trillion, including Google co-founder Sergey Brin, have reportedly left California in recent years amid rising taxes and regulatory pressures. Opponents argue the tax would reduce investment, shrink the state's tax base, and ultimately harm the workers and public programs it claims to help.\n\nThe proposal must still qualify for the ballot before it can go before voters in the fall. Its fate is being watched nationally as a test case for progressive wealth tax proposals that have repeatedly gained traction in Democratic circles but faced steep legal and political obstacles at the federal level.",
+      "source": "National Review",
+      "url": "https://www.nationalreview.com/2026/04/warrens-wealth-tax-and-the-return-of-feudalism-2/",
+      "sourceCount": 3,
+      "disposition": "new",
+      "breaking": false,
+      "addedAt": "10:58 AM MT",
+      "addedAtISO": "2026-04-28T10:58:46.415202-06:00"
+    },
+    {
       "category": "world",
       "headline": "Mexico City's Benito Juárez Airport Races to Complete World Cup Renovations Amid Delays and Budget Pressures",
       "summary": "With the 2026 FIFA World Cup just months away, Mexico City's Benito Juárez International Airport is in the midst of significant renovations aimed at modernizing aging infrastructure and expanding passenger capacity ahead of the tournament. Construction crews are working under intense pressure after logistical challenges and budget constraints caused delays in completing the upgrades.\n\nMexico is one of three host nations for the 2026 World Cup, alongside the United States and Canada, and Mexico City's stadium and transport infrastructure are central to the country's hosting obligations. Benito Juárez is Latin America's busiest airport, and officials are concerned that incomplete upgrades could disrupt the large influx of international visitors expected for matches in the capital.\n\nThe renovation push comes amid broader scrutiny of World Cup preparations across all three host nations, including criticism over skyrocketing ticket prices and political tensions between the co-hosts. The tournament is scheduled to begin in June 2026, leaving a narrow window for the airport work to be finished and tested before the opening matches.",
