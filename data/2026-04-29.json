@@ -1,0 +1,66 @@
+{
+  "date": "2026-04-29",
+  "dateFormatted": "Wednesday, April 29, 2026",
+  "stories": [
+    {
+      "category": "world",
+      "headline": "Update: Trump Rejects Iran Peace Proposal as Tehran Seeks Russian Backing, Hardliners Urge Unconditional Surrender",
+      "summary": "President Trump has publicly rebuffed Iran's latest proposal to reopen the Strait of Hormuz and defer nuclear talks, as Tehran simultaneously sought diplomatic backing from Moscow. The rejection marks a significant hardening of the U.S. position following weeks of stop-and-start negotiations.\n\nFormer White House economic adviser Larry Kudlow said on Fox Business that Iran should surrender unconditionally, warning that additional military action may be forthcoming. 'Iran is hanging on by a thread. Their oil infrastructure may be forced to shut down from storage limits in the next couple of weeks. There is a shortage of gasoline. Reportedly, there is triple-digit inflation,' Kudlow said, adding that 'President Trump is not Biden or Obama; he will not permit endless phony negotiations.'\n\nIran's outreach to Russia for support signals a diplomatic pivot as economic pressure from U.S. sanctions and a naval blockade intensifies. Analysts are watching closely whether Moscow's involvement complicates Washington's leverage or provides Tehran with a lifeline to prolong negotiations.\n\nThe standoff is being closely watched in global energy markets, given Iran's threats to restrict Strait of Hormuz shipping lanes, through which roughly 20 percent of the world's oil transits. Supporters of the diplomatic track argue that a negotiated settlement remains preferable to military escalation, while hawks in Washington contend that Iran is using talks as a delay tactic.",
+      "source": "Fox News",
+      "url": "https://www.foxnews.com/live-news/trump-iran-nuclear-program-hormuz-blockade-april-28",
+      "sourceCount": 26,
+      "disposition": "update",
+      "breaking": false,
+      "addedAt": "12:08 AM MT",
+      "addedAtISO": "2026-04-29T00:08:14.031723-06:00"
+    },
+    {
+      "category": "business",
+      "headline": "Purdue Pharma Sentenced to $5.5 Billion in Penalties, Company to Dissolve and Be Replaced by New Opioid Relief Firm",
+      "summary": "A federal judge on Tuesday sentenced OxyContin manufacturer Purdue Pharma, ordering the company to pay more than $5.5 billion in criminal penalties related to fraud and kickback conspiracy charges. The sentencing is the final legal step before Purdue Pharma begins the process of formally dissolving.\n\nThe company will be replaced by a new entity called Knoa Pharma, which is intended to focus on addressing the opioid crisis rather than manufacturing addictive painkillers. Acting Attorney General Todd Blanche said the case was 'a prime example of the Department's effort to redress past wrongs,' adding that 'Purdue Pharma put profits over patient health and safety.'\n\nOf the total penalties, $225 million will be paid directly to the Department of Justice, with the remainder allocated to settlement payments stemming from thousands of individual opioid-related lawsuits. The Sackler family, which owned Purdue Pharma, is separately required to contribute $6.5 billion to those settlements, with individual claimants receiving approximately $865 million each.\n\nNot all parties are satisfied with the outcome. Roughly 200 individual claimants opposed the settlement, with some victim families calling for criminal charges against the Sackler family personally. More than 50,000 claimants accepted the agreement. The resolution closes the DOJ's criminal fraud case against the company, which pleaded guilty in 2020, and marks a major milestone in the long legal reckoning over the opioid epidemic.",
+      "source": "Washington Examiner",
+      "url": "https://www.washingtonexaminer.com/news/justice/4547143/oxycontin-purdue-pharma-dissolve-settlement/",
+      "sourceCount": 2,
+      "disposition": "new",
+      "breaking": false,
+      "addedAt": "12:08 AM MT",
+      "addedAtISO": "2026-04-29T00:08:14.031723-06:00"
+    },
+    {
+      "category": "politics",
+      "headline": "Update: FBI Director Patel Rebukes Minnesota Gov. Walz for Claiming Credit for Minneapolis Fraud Raids",
+      "summary": "FBI Director Kash Patel publicly dressed down Minnesota Governor Tim Walz on Tuesday after Walz posted on social media claiming that state agencies had identified the fraud that led to sweeping federal raids on 22 Minneapolis businesses. 'Come again?' Patel wrote on X, asserting that 'this FBI and DOJ with our DHS partners drafted and executed every search warrant today.'\n\nPatel's rebuke accused Walz of taking credit for work done by federal law enforcement while fraud of this scale developed under his governorship. The raids are connected in part to a December 2024 YouTube video by Nick Shirley that exposed alleged childcare funding fraud, and follow the Trump administration's earlier freeze on certain childcare funding and demands for a full audit of specific daycare centers.\n\nWalz's post was viewed more than a million times within hours and drew sharp criticism from Republican lawmakers and conservative commentators, many of whom pointed out that the fraud investigation centers on events that occurred while Walz was governor. The Republican-led House Oversight Committee announced it would advance legislation the following day aimed at preventing similar fraud schemes.\n\nThe episode reflects broader partisan tension over accountability for what federal authorities describe as widespread abuse of childcare subsidy programs in Minnesota. Democrats have not broadly rallied to Walz's framing of events, and the political fallout has contributed to Walz's decision not to seek re-election as governor.",
+      "source": "Fox News",
+      "url": "https://www.foxnews.com/politics/patel-turns-tables-walz-response-viral-tweet-minnesota-fraud-raids-come",
+      "sourceCount": 1,
+      "disposition": "update",
+      "breaking": false,
+      "addedAt": "12:08 AM MT",
+      "addedAtISO": "2026-04-29T00:08:14.031723-06:00"
+    },
+    {
+      "category": "world",
+      "headline": "Route Past Massive Ice Block on Everest Reopens After Two-Week Delay, Raising Congestion Concerns",
+      "summary": "Nepali mountaineers have cleared a new route past a 100-foot-high ice block on Mount Everest's Khumbu Icefall that had halted climbers' progress above Base Camp for approximately two weeks. Nepal's Director General of Tourism Ram Krishna Lamichhane told the BBC that icefall doctors have fixed ropes up to Camp 2 at roughly 6,400 to 6,500 meters, with acclimatization rotations set to begin immediately.\n\nThe massive serac, a type of unstable ice formation, forced a significant delay in preparations for the spring climbing season, when weather conditions are typically most favorable for summit attempts. Veteran climber and expedition operator Lakpa Sherpa warned that the serac remains unstable and may collapse within four to five days, urging climbers to avoid carrying heavy loads through the affected section.\n\nModern technology played a role in the route-fixing effort, with teams deploying drone surveys and 3D photogrammetry to assess hazards and airlift supplies to rope-fixing crews during critical phases. Some 425 climbers hold permits to attempt the summit this year, generating roughly $6.1 million in revenue for the Nepali government.\n\nThe delay has heightened fears of dangerous overcrowding near the summit, a recurring problem on Everest in recent years. Officials urged patience and caution as teams begin moving upward behind schedule.",
+      "source": "BBC News",
+      "url": "https://www.bbc.com/news/articles/cn0p2xp18yko?at_medium=RSS&at_campaign=rss",
+      "sourceCount": 1,
+      "disposition": "new",
+      "breaking": false,
+      "addedAt": "12:08 AM MT",
+      "addedAtISO": "2026-04-29T00:08:14.031723-06:00"
+    },
+    {
+      "category": "business",
+      "headline": "Spirit Airlines Rescue Talks Hit Impasse as Lender Group Resists U.S. Government Bailout Terms",
+      "summary": "Negotiations over a potential $500 million U.S. government rescue financing package for Spirit Aviation Holdings have stalled, with a lender group that includes Citadel balking at terms they say would severely impair their claims and recovery prospects. The impasse threatens to derail a deal that Spirit needs to emerge from bankruptcy and continue operations.\n\nSpirit, once one of the country's largest ultra-low-cost carriers, filed for bankruptcy protection in late 2025 after a series of failed merger attempts and sustained financial losses. The airline has been in talks with government-linked financing sources in an effort to restructure and survive as an independent carrier.\n\nThe dispute centers on the priority and valuation of existing lender claims under the proposed rescue structure. Lenders who believe they hold senior or secured positions are resisting terms that would subordinate their interests to new rescue financing, a common flashpoint in distressed debt negotiations.\n\nThe outcome of the talks has broader implications for budget air travel competition in the United States. Spirit's collapse or deep restructuring would reduce low-fare options on numerous domestic routes, potentially pushing passengers toward larger legacy carriers. No timeline for a resolution has been publicly established.",
+      "source": "Bloomberg Politics",
+      "url": "https://www.bloomberg.com/news/articles/2026-04-29/some-spirit-lenders-balk-as-us-rescue-talks-hit-impasse",
+      "sourceCount": 1,
+      "disposition": "new",
+      "breaking": false,
+      "addedAt": "12:08 AM MT",
+      "addedAtISO": "2026-04-29T00:08:14.031723-06:00"
+    }
+  ]
+}
