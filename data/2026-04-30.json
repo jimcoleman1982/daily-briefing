@@ -3,6 +3,54 @@
   "dateFormatted": "Thursday, April 30, 2026",
   "stories": [
     {
+      "category": "politics",
+      "headline": "Maine Gov. Janet Mills Suspends Senate Campaign, Clearing Path for Platner",
+      "summary": "Maine Governor Janet Mills suspended her U.S. Senate campaign on Thursday, citing a lack of financial resources and ending a bid that Senate Minority Leader Chuck Schumer had worked hard to encourage. Her exit, coming five weeks before the June 9 Democratic primary, all but guarantees that progressive challenger Graham Platner — a military veteran and oyster farmer — will be the Democratic nominee.\n\nMills had struggled to outpace Platner in both fundraising and polling, reflecting broader Democratic Party energy behind younger, more progressive candidates. Her withdrawal is considered a significant blow to Schumer's recruitment efforts and the party's establishment wing, which had viewed Mills as a more electable general-election candidate.\n\nThe race to unseat five-term Republican Senator Susan Collins is considered one of the most consequential Senate contests of the 2026 cycle. Collins has long been regarded as one of the most vulnerable Republican incumbents, and Democrats had hoped Mills' name recognition as a two-term governor would give them the strongest possible challenger.\n\nMills' exit reshapes the race considerably. Platner now faces Collins in November, and Republicans will argue that a first-time, left-leaning candidate is easier to defeat in a competitive state. Democrats counter that Platner's outsider energy and grassroots fundraising demonstrate genuine voter enthusiasm heading into a pivotal midterm cycle.",
+      "source": "Axios",
+      "url": "https://www.axios.com/2026/04/30/janet-mills-maine-senate-platner",
+      "sourceCount": 9,
+      "disposition": "new",
+      "breaking": false,
+      "addedAt": "9:49 AM MT",
+      "addedAtISO": "2026-04-30T09:49:50.145585-06:00"
+    },
+    {
+      "category": "world",
+      "headline": "Update: King Charles and Queen Camilla Visit 9/11 Memorial in New York on Third Day of U.S. State Visit",
+      "summary": "King Charles III and Queen Camilla laid a bouquet of white roses at the September 11 Memorial in New York City on Thursday, marking the third day of their U.S. state visit. The couple met with families of victims and first responders, accompanied by New York Mayor Zohran Mamdani and former Mayor Michael Bloomberg, under heavy security including road closures, checkpoints, and police helicopters.\n\nA handwritten note left by the royals read: 'We honour the memory of those who so tragically lost their lives on 11th September 2001. We stand in enduring solidarity with the American people.' It was the first visit by the royal couple to the memorial site, which commemorates nearly 3,000 lives lost in the attacks.\n\nThe visit follows King Charles's address to a joint session of Congress on Tuesday, where he invoked the 9/11 attacks to urge continued U.S. support for NATO and Ukraine. A diplomatic complication arose when President Trump suggested the King would have backed his approach to Iran, a claim on which Buckingham Palace declined to comment.\n\nQueen Camilla separately visited the New York Public Library to promote literacy, reading to children and donating a literary figure to the collection. The royal state visit has been conducted under heightened security arrangements following the recent attempted assassination of President Trump at the White House Correspondents' Dinner.",
+      "source": "BBC News",
+      "url": "https://www.bbc.com/news/articles/cd7pxnv4j7ro",
+      "sourceCount": 3,
+      "disposition": "update",
+      "breaking": false,
+      "addedAt": "9:49 AM MT",
+      "addedAtISO": "2026-04-30T09:49:50.145585-06:00"
+    },
+    {
+      "category": "business",
+      "headline": "USDA Crop Undercount Raises Reliability Questions After Corn Estimates Off by 4.5 Million Acres",
+      "summary": "The U.S. Department of Agriculture acknowledged that its corn acreage estimates for last year were off by 4.5 million acres, a significant discrepancy that has prompted questions about the reliability of federal agricultural data. The department attributed the undercount to a lack of survey responses rather than workforce reductions.\n\nThe USDA's crop surveys are foundational to commodity markets, farm policy decisions, and food supply planning. Errors of this scale can affect futures pricing, federal subsidy calculations, and international trade negotiations, making data accuracy a matter of broad economic consequence.\n\nThe acknowledgment comes as the USDA has faced scrutiny over staffing and operational changes in recent months. Officials were careful to draw a distinction between data quality problems and any personnel or budget decisions, insisting the survey response rate — not job cuts — was the proximate cause of the miss.\n\nAgricultural analysts and farm groups are expected to press for reforms to survey methodology and response rate incentives. The episode adds to a broader debate about the robustness of federal statistical agencies and their capacity to gather timely, accurate data in a changing landscape.",
+      "source": "New York Times",
+      "url": "https://www.nytimes.com/2026/04/30/business/usda-farmers-crops-data.html",
+      "sourceCount": 2,
+      "disposition": "new",
+      "breaking": false,
+      "addedAt": "9:49 AM MT",
+      "addedAtISO": "2026-04-30T09:49:50.145585-06:00"
+    },
+    {
+      "category": "other",
+      "headline": "Trainee Bus Driver Plunges Vehicle into River Seine Near Paris; All Four Aboard Rescued",
+      "summary": "A trainee bus driver crashed her vehicle into the River Seine in Juvisy-sur-Orge, roughly 20 kilometers south of Paris, on Thursday morning after the bus veered off the road following a collision with a parked car. All four people aboard — the trainee driver, a supervising lead driver, and two passengers — were rescued from the water.\n\nMore than 90 firefighters, divers, and police participated in the recovery operation, deploying rescue boats, drones, and helicopters. Drug and alcohol tests on the driver returned negative results, and the cause of the incident remains under investigation. Local authorities said the bus missed a right turn near a riverside station before plunging in and dragging a parked car with it.\n\nÎle-de-France Mobilités, the regional transport authority, said its president has ordered an internal investigation. Video shared by local government showed the bus being pulled from the river by early afternoon. Mayor Lamia Bensara Reda confirmed all aboard were safe and thanked emergency responders for their rapid reaction.\n\nBystanders at the scene described throwing life rings into the water before firefighters arrived, and witnesses said emergency services responded in large numbers. No serious injuries were reported, though authorities said the final casualty count was still being confirmed.",
+      "source": "BBC News",
+      "url": "https://www.bbc.com/news/articles/cm2pyxpwmdro",
+      "sourceCount": 1,
+      "disposition": "new",
+      "breaking": false,
+      "addedAt": "9:49 AM MT",
+      "addedAtISO": "2026-04-30T09:49:50.145585-06:00"
+    },
+    {
       "category": "world",
       "headline": "Israel Intercepts Gaza Flotilla Near Crete, Detains 175 Activists in International Waters",
       "summary": "Israeli naval forces intercepted and boarded vessels from the Global Sumud Flotilla approximately 965 kilometers from Gaza in international waters west of Crete overnight, detaining roughly 175 activists from more than 20 boats. The flotilla, comprising 58 vessels that departed from Spain, France, and Italy two weeks ago, was attempting to break Israel's naval blockade of Gaza. Organizers accused Israeli forces of \"piracy,\" alleging they smashed engines, jammed communications, and left some vessels stranded in the path of an approaching storm.\n\nThe Israeli Foreign Ministry defended the operation as lawful, saying it was conducted \"peacefully and without any casualties\" and that an initial inspection revealed what appeared to be drugs and contraband. Israel accused flotilla organizers of coordinating with Hamas to undermine President Trump's Gaza peace plan and distract from Hamas's refusal to disarm.\n\nItalian Prime Minister Giorgia Meloni condemned the seizure and demanded the immediate release of 24 detained Italian nationals, calling for \"full respect of international law.\" The European Union echoed those demands, urging Israel to comply with international humanitarian and maritime law.\n\nThe incident threatens to escalate diplomatic tensions between Israel and several European Union member states. Greece has not publicly commented, though opposition politicians called on the government to explain its response to what they characterized as an illegal act.",
