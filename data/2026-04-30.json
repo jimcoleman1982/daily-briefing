@@ -4,6 +4,54 @@
   "stories": [
     {
       "category": "world",
+      "headline": "Israel Intercepts Gaza Flotilla Near Crete, Detains 175 Activists in International Waters",
+      "summary": "Israeli naval forces intercepted and boarded vessels from the Global Sumud Flotilla approximately 965 kilometers from Gaza in international waters west of Crete overnight, detaining roughly 175 activists from more than 20 boats. The flotilla, comprising 58 vessels that departed from Spain, France, and Italy two weeks ago, was attempting to break Israel's naval blockade of Gaza. Organizers accused Israeli forces of \"piracy,\" alleging they smashed engines, jammed communications, and left some vessels stranded in the path of an approaching storm.\n\nThe Israeli Foreign Ministry defended the operation as lawful, saying it was conducted \"peacefully and without any casualties\" and that an initial inspection revealed what appeared to be drugs and contraband. Israel accused flotilla organizers of coordinating with Hamas to undermine President Trump's Gaza peace plan and distract from Hamas's refusal to disarm.\n\nItalian Prime Minister Giorgia Meloni condemned the seizure and demanded the immediate release of 24 detained Italian nationals, calling for \"full respect of international law.\" The European Union echoed those demands, urging Israel to comply with international humanitarian and maritime law.\n\nThe incident threatens to escalate diplomatic tensions between Israel and several European Union member states. Greece has not publicly commented, though opposition politicians called on the government to explain its response to what they characterized as an illegal act.",
+      "source": "BBC News",
+      "url": "https://www.bbc.com/news/articles/c4g4lk9m77vo?at_medium=RSS&at_campaign=rss",
+      "sourceCount": 4,
+      "disposition": "new",
+      "breaking": true,
+      "addedAt": "8:22 AM MT",
+      "addedAtISO": "2026-04-30T08:22:40.631777-06:00"
+    },
+    {
+      "category": "world",
+      "headline": "India's Digital Fraud Crisis: $2.5 Billion Lost in 2025 as Central Bank Proposes Countermeasures",
+      "summary": "India's Reserve Bank has released a discussion paper proposing new measures to combat a dramatic surge in digital payment fraud, after nearly 2.5 million Indians lost an estimated $2.5 billion in 2025 — a 4,300 percent increase since 2021. The explosive growth in fraud has accompanied India's rapid adoption of digital payments over the past five years, with scammers employing increasingly sophisticated \"social engineering\" tactics to drain bank accounts.\n\nProposed RBI measures include a one-hour delay on account-to-account transactions, additional authentication by a trusted third party for high-value payments by vulnerable populations such as the elderly, and new controls allowing users to switch digital payment capabilities on and off. The paper will be finalized after a public comment period.\n\nExperts are cautiously skeptical. Rajesh Bansal, former CEO of the RBI's Innovation Hub, said OTP-based scams — the type the proposals primarily address — now represent a \"minuscule proportion\" of total fraud in value terms, as criminal tactics have evolved to more sophisticated methods. Implementation of transaction lags would also require significant changes to the existing payment architecture involving multiple parties.\n\nThe scale of the problem underscores broader risks accompanying the rapid digitization of financial services in large emerging economies, where consumer protections and fraud prevention infrastructure have struggled to keep pace with adoption rates.",
+      "source": "BBC News",
+      "url": "https://www.bbc.com/news/articles/cp3l3p7lzppo?at_medium=RSS&at_campaign=rss",
+      "sourceCount": 1,
+      "disposition": "new",
+      "breaking": false,
+      "addedAt": "8:22 AM MT",
+      "addedAtISO": "2026-04-30T08:22:40.631777-06:00"
+    },
+    {
+      "category": "business",
+      "headline": "Samsung's Succession Drama: Jailed Heir, Family Intrigue, and South Korea's Corporate Monarchy",
+      "summary": "A detailed account of the Samsung conglomerate's complex dynastic succession struggle has drawn renewed attention to the case of Lee Jae-yong, the grandson of Samsung's founder who was jailed in 2017 for bribery in a scandal that also led to the impeachment of South Korean President Park Geun-hye. Lee, described by one analyst as \"one of the most powerful people in the history of technology,\" had been consolidating family control over the conglomerate when prosecutors alleged he paid bribes in exchange for political support for a key merger.\n\nThe corruption case stemmed from a merger between Samsung C&T and Cheil Industries, which prosecutors argued was engineered through stock and accounting fraud to maximize Lee's control over Samsung Electronics. Lee has consistently denied the fraud charges, though he was found guilty of bribery. The 2016 scandal sparked weeks of mass protests in Seoul involving millions of citizens.\n\nSamsung's governance structure reflects a broader pattern in South Korean chaebol — large family-controlled conglomerates — where intricate webs of cross-shareholdings and mergers are used to maintain dynastic control. The company comprises dozens of subsidiaries spanning electronics, construction, insurance, and retail, making succession both financially and legally complicated.\n\nThe case highlights ongoing questions about corporate governance, accountability, and the outsized influence of family-controlled conglomerates in South Korea's economy, where Samsung alone accounts for a significant share of the country's GDP and exports.",
+      "source": "BBC News",
+      "url": "https://www.bbc.com/news/articles/c9d313g91g4o?at_medium=RSS&at_campaign=rss",
+      "sourceCount": 1,
+      "disposition": "new",
+      "breaking": false,
+      "addedAt": "8:22 AM MT",
+      "addedAtISO": "2026-04-30T08:22:40.631777-06:00"
+    },
+    {
+      "category": "other",
+      "headline": "Scientists Race to Engineer Perfect Turf for 2026 FIFA World Cup Across 16 North American Venues",
+      "summary": "With the FIFA Men's World Cup set to kick off across 16 venues in Canada, Mexico, and the United States this summer, sports turf scientists are working to ensure consistent playing surfaces across wildly different climates and stadium types. University of Tennessee turf specialist John Sorochan is leading the effort, which must reconcile natural grass requirements in open-air tropical stadiums with indoor domed venues and high-altitude sites.\n\nThe challenge is compounded by the fact that eight of the 16 host stadiums use artificial turf and must be temporarily converted to natural grass for the tournament. Five of those are indoor domes, requiring specially engineered grass installations. Sorochan's team has developed specialized testing equipment — including a \"flex machine\" with a 3D-printed foot — to measure how playing surfaces interact with athletes' bodies and standardize bounce characteristics across all venues.\n\nFIFA requires balls dropped from two meters to bounce back between 0.6 and one meter, and surface compliance must be uniform enough to prevent injury differences between venues. The grass varieties differ significantly: warm-season Bermuda grass suited to Miami's sea-level heat versus cool-season varieties appropriate for Vancouver's climate.\n\nThe World Cup final is expected to draw roughly 20 percent of the global population as viewers, placing enormous pressure on every logistical detail, including the playing surface itself.",
+      "source": "PBS NewsHour",
+      "url": "https://www.pbs.org/newshour/show/what-it-takes-to-create-the-perfect-pitch-for-the-world-cup",
+      "sourceCount": 2,
+      "disposition": "new",
+      "breaking": false,
+      "addedAt": "8:22 AM MT",
+      "addedAtISO": "2026-04-30T08:22:40.631777-06:00"
+    },
+    {
+      "category": "world",
       "headline": "Update: Islamist Militants Tighten Total Blockade on Mali's Capital Bamako",
       "summary": "Islamist fighters from Jama'at Nusrat al-Islam wal-Muslimin (JNIM) have imposed a near-total blockade on Bamako, Mali's capital of more than three million people, closing at least three of the city's six main entry routes for extended periods. The blockade follows a Wednesday warning by JNIM that 'no-one will be allowed in any more,' leaving residents stranded on highways and cutting off food and fuel supplies. A total blockade has also been imposed on Ségou, a town roughly 50 miles from the capital, where hundreds of vehicles and passengers have been stuck for days without adequate access to food or water.\n\nThe crisis escalated after last weekend's coordinated nationwide attacks by an alliance of jihadists and the separatist Azawad Liberation Front (FLA), which seeks to overthrow the military regime of Gen. Assimi Goïta. The FLA has seized the northern city of Kidal, forcing Russian Africa Corps fighters — successors to the Wagner Group who have backed the junta — to withdraw from the area. The FLA has since demanded a full withdrawal of Russian forces from Mali and vowed to march on additional northern cities.\n\nJunta leader Goïta convened an emergency security council meeting Wednesday and claimed armed forces had inflicted 'heavy losses' on rebels, while vowing tough action. A Kremlin spokesperson countered that Russian forces would remain in Mali 'to combat extremism, terrorism and other harmful phenomena.' Analysts warn the blockade signals significant regime weakness, with one French foreign affairs think-tank director telling the BBC the moves show 'the regime is weak and can't restore security.'\n\nThis story builds on earlier coverage of last weekend's coordinated rebel and jihadist attacks that seized key cities. The new development is the imposition of a near-total blockade on Bamako itself, marking a significant escalation that directly threatens the capital's civilian population and exposes the limits of both the Malian military and its Russian backers.",
       "source": "BBC News",
