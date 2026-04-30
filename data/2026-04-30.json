@@ -4,6 +4,30 @@
   "stories": [
     {
       "category": "world",
+      "headline": "Man Sentenced to Death for Murder of Four Toddlers at Ugandan Nursery School",
+      "summary": "A Ugandan court sentenced Christopher Okello Onyum, 38, to death by hanging Thursday for the murder of four toddlers at the Ggaba Early Childhood Development Program in Kampala earlier this month. The victims — Eteku Gideon, Keisha Agenorwoth, Sseruyange Ignatius, and Odeke Ryan — were all between one and two years old when Onyum fatally stabbed them on April 2. The verdict was delivered at a makeshift High Court set up in the community where the killings occurred, prompting cheers from the crowd gathered outside.\n\nJustice Alice Komuhangi Khauka ruled that Onyum, who holds both Ugandan and U.S. citizenship, was 'very sane' at the time of the attack, rejecting his defense of mental illness. Prosecutors said Onyum had initially admitted to the crime and described it as a 'human sacrifice' he believed would make him wealthy, though he later pleaded not guilty and claimed he lacked the intent to kill. The judge noted he had 'no fear, no shame, no consideration for human life' and had shown no remorse.\n\nThe prosecution built its case on 18 witnesses and a combination of forensic, digital, and eyewitness evidence, including DNA linking Onyum to the murder weapon's handle, CCTV footage of his movements, and testimony from two nursery staff members who witnessed the attack. Onyum has 14 days to appeal the sentence.\n\nWhile capital punishment remains on the books in Uganda, it is rarely carried out; the last recorded execution took place in 2005. The case drew widespread attention in Uganda and internationally given the ages of the victims and the nature of the crime.",
+      "source": "BBC News",
+      "url": "https://www.bbc.com/news/articles/c3d2vzmgekjo?at_medium=RSS&at_campaign=rss",
+      "sourceCount": 1,
+      "disposition": "new",
+      "breaking": false,
+      "addedAt": "11:08 AM MT",
+      "addedAtISO": "2026-04-30T11:08:14.975038-06:00"
+    },
+    {
+      "category": "technology",
+      "headline": "Update: Musk Takes Stand for Second Day in OpenAI Trial, Portrays Himself as AI Safety Champion",
+      "summary": "Elon Musk testified for a second consecutive day Thursday in his landmark lawsuit against OpenAI and CEO Sam Altman in an Oakland federal court, casting himself as a principled advocate for artificial intelligence safety who helped found OpenAI to keep advanced AI out of corporate hands. Musk argued that Altman betrayed the organization's founding nonprofit mission by steering it toward profit-driven operations, a shift he contends undermines the safety-first principles that justified OpenAI's original charitable status and the donations it received.\n\nOpenAI's defense pushed back directly on Musk's self-portrait, arguing that Musk was supportive of a for-profit restructuring at OpenAI when he believed he would control the company himself. Attorneys for Altman contended that Musk's motivations are less about safety than about competitive advantage — pointing to his own for-profit AI venture, xAI, and its Grok chatbot as evidence that he sought to dominate the field rather than protect it. The dueling characterizations of Musk's intent are expected to be central to the court's eventual ruling.\n\nThe trial, which opened earlier this week, represents one of the most closely watched legal clashes in the technology sector in years, with implications for how AI companies structure themselves and what obligations nonprofit founders retain over successor entities. Musk is seeking to block or reverse OpenAI's planned conversion to a fully for-profit company.\n\nThe case is being watched by regulators, investors, and AI researchers alike, as a ruling against OpenAI could set precedent for accountability in nonprofit-to-for-profit corporate conversions in the technology industry more broadly.",
+      "source": "Axios",
+      "url": "https://www.axios.com/2026/04/30/musk-openai-safety-grok",
+      "sourceCount": 2,
+      "disposition": "update",
+      "breaking": false,
+      "addedAt": "11:08 AM MT",
+      "addedAtISO": "2026-04-30T11:08:14.975038-06:00"
+    },
+    {
+      "category": "world",
       "headline": "Update: Suspect Arrested After Stabbing Two Jewish Men in London's Golders Green in Antisemitic Terror Attack",
       "summary": "A 45-year-old man was arrested on suspicion of attempted murder after stabbing two Jewish men, aged 34 and 76, on a street in London's Golders Green neighborhood on Wednesday. Metropolitan Police classified the attack as an act of terrorism. Officers deployed a stun gun to subdue the suspect, who was detained in part by members of Shomrim, a Jewish community security organization, before police arrived.\n\nCounterterrorism investigators are examining whether the stabbing is linked to a series of recent arson attacks on synagogues and Jewish sites across London. Detectives have been probing a potential Iranian connection to those earlier incidents, though police said it is too early to determine whether Wednesday's stabbing is part of the same pattern.\n\nPrime Minister Keir Starmer convened a meeting of the government's emergency committee and pledged to address 'the roots of antisemitism and extremism.' Buckingham Palace said King Charles III was 'deeply concerned.' Metropolitan Police Commissioner Mark Rowley, who called it 'another horrendous act of violence directed against our Jewish communities,' faced shouts of 'shame on you' and 'resign' from bystanders at the scene, reflecting anger among British Jews over what many describe as inadequate protection.\n\nThe attack comes amid a broader rise in antisemitic incidents in Britain and heightened communal anxiety. Jewish community leaders have called on the government to take more decisive action to protect Jewish residents, while authorities have sought to reassure the public that security resources are being increased in affected areas.",
       "source": "Associated Press",
