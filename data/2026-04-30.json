@@ -3,6 +3,54 @@
   "dateFormatted": "Thursday, April 30, 2026",
   "stories": [
     {
+      "category": "business",
+      "headline": "U.S. Sanctions Major Chinese Refinery and 40 Shippers Over Iranian Oil Trade",
+      "summary": "The Trump administration announced sweeping secondary sanctions Wednesday targeting a major China-based oil refinery and approximately 40 shipping companies and tankers involved in transporting Iranian crude oil. The centerpiece of the action is Hengli Petrochemical's facility in Dalian, one of China's largest independent refineries with a processing capacity of roughly 400,000 barrels per day, which Treasury says has received Iranian oil since 2023 and generated hundreds of millions of dollars in revenue for the Iranian military.\n\nTreasury Secretary Scott Bessent said the department 'will continue to constrict the network of vessels, intermediaries and buyers Iran relies on to move its oil to global markets.' The move follows letters sent earlier this month to financial institutions in China, Hong Kong, the UAE and Oman warning of secondary sanctions for facilitating Iranian transactions. China is the destination for an estimated 80–90 percent of Iranian oil exports, often with origin obscured through a shadow fleet.\n\nThe sanctions arrive weeks before a scheduled meeting between President Trump and Chinese President Xi Jinping, adding economic pressure to an already strained bilateral relationship. They also coincide with a U.S. physical blockade of the Strait of Hormuz, which has sent global oil prices sharply higher. Iran has previously said lifting sanctions is a precondition for ending the war with the U.S. and Israel.\n\nThe action marks an escalation in the administration's 'maximum pressure' campaign against Tehran and directly implicates Beijing's state-adjacent energy sector. Analysts note the timing — just before the Trump-Xi summit — suggests Washington is willing to use the Iran conflict as leverage in broader trade and geopolitical negotiations with China.",
+      "source": "Associated Press",
+      "url": "https://apnews.com/article/treasury-bessent-sanctions-china-iran-oil-12a02b5ba394cbcab355d645bfe9cdf7",
+      "sourceCount": 1,
+      "disposition": "new",
+      "breaking": false,
+      "addedAt": "5:08 AM MT",
+      "addedAtISO": "2026-04-30T05:08:39.053389-06:00"
+    },
+    {
+      "category": "technology",
+      "headline": "NHTSA Bans Chinese Airbag Inflators Linked to at Least 10 Deaths",
+      "summary": "The National Highway Traffic Safety Administration on Wednesday banned Chinese-made airbag inflators tied to at least 10 fatalities and two serious injuries in the United States. NHTSA's investigation found that the frontal driver airbags exploded upon deployment, sending large metal fragments into drivers' chests, necks, eyes and faces. All documented fatal incidents involved General Motors or Hyundai vehicles.\n\nThe ban prohibits the import and sale of the affected Chinese-manufactured inflators and is part of a broader federal scrutiny of Chinese automotive components. The action comes amid heightened concerns over supply chain safety and national security in the auto sector. A bipartisan Senate bill to ban the importation of Chinese-made vehicles and auto parts was introduced separately in recent weeks.\n\nThe defect draws parallels to the Takata airbag scandal, which led to the largest automotive recall in U.S. history and multiple deaths from rupturing inflators. Safety advocates say the NHTSA action underscores the risks of relying on foreign-manufactured safety-critical components. The agency did not immediately specify how many vehicles on U.S. roads contain the banned inflators or whether a recall would follow.",
+      "source": "The Hill",
+      "url": "https://thehill.com/homenews/administration/5856177-nhtsa-bans-chinese-airbag-inflators-car-crash-deaths/",
+      "sourceCount": 2,
+      "disposition": "new",
+      "breaking": false,
+      "addedAt": "5:08 AM MT",
+      "addedAtISO": "2026-04-30T05:08:39.053389-06:00"
+    },
+    {
+      "category": "world",
+      "headline": "Press Freedom Falls to 25-Year Low, With U.S. Dropping Seven Places, Watchdog Says",
+      "summary": "Press freedom worldwide has reached its lowest point in a quarter century, Reporters Without Borders (RSF) warned Thursday in its annual index. For the first time in the index's 25-year history, more than half of the 180 countries surveyed now fall into the 'difficult' or 'very serious' categories, and the share of the global population living in a country with 'good' press freedom has plummeted from 20 percent to less than 1 percent, with only seven Northern European nations — led by Norway — qualifying.\n\nThe United States dropped seven additional places to 64th, having already fallen from a 'fairly good' to a 'problematic' rating in 2024. RSF cited what it described as President Trump's 'systematic' attacks on journalists, the detention and expulsion of Salvadoran journalist Mario Guevara, and drastic cuts to funding for U.S. international broadcasting as key factors driving the decline. The White House has not formally responded to the rankings.\n\nThe steepest single-country decline was recorded in junta-led Niger, which fell 37 places to 120th, reflecting a broader deterioration across the Sahel region. Russia ranked 172nd, with RSF noting Moscow holds 48 journalists behind bars and has weaponized anti-terrorism and extremism laws to suppress independent reporting. Saudi Arabia was also cited after executing a journalist in 2025.\n\nAmong the few bright spots, post-Assad Syria recorded the index's largest improvement, climbing 36 places as restrictions eased following the fall of the previous government. China, North Korea and Eritrea — ranked last for the third consecutive year — showed virtually no change, reflecting entrenched state control over information.",
+      "source": "CBS News",
+      "url": "https://www.cbsnews.com/news/press-freedom-lowest-level-25-years-watchdog-group/",
+      "sourceCount": 2,
+      "disposition": "new",
+      "breaking": false,
+      "addedAt": "5:08 AM MT",
+      "addedAtISO": "2026-04-30T05:08:39.053389-06:00"
+    },
+    {
+      "category": "other",
+      "headline": "Outlaw Country Pioneer David Allan Coe Dies at 86",
+      "summary": "David Allan Coe, a foundational figure in outlaw country music known as the 'outlaw's outlaw,' died Wednesday at age 86 in intensive care, according to his representative. His widow, Kimberly, confirmed the death to Rolling Stone, calling him 'one of the best singers, songwriters, and performers of our time.' No cause of death was immediately released.\n\nCoe was born in Akron, Ohio, in 1939 and spent part of his youth in correctional facilities before moving to Nashville to pursue music. He released his debut album, 'Penitentiary Blues,' in 1970 and went on to write Tanya Tucker's No. 1 hit 'Would You Lay With Me (In a Field of Stone)' in 1973 and scored a top-10 hit of his own with 'You Never Even Called Me By My Name' in 1975. Later career highlights included 'The Ride' and 'Mona Lisa Lost Her Smile' in the 1980s, as well as an unlikely collaboration with members of heavy metal band Pantera.\n\nCoe was known for controversial material involving drug use and explicit content, and faced legal troubles in the 2010s, pleading guilty in 2015 to tax-related charges and being ordered to pay nearly $1 million in back taxes. He had also experienced significant health issues in recent years, including a bout with COVID-19 in 2021. He is survived by his widow.",
+      "source": "Fox News Latest",
+      "url": "https://www.foxnews.com/entertainment/outlaw-country-singer-david-allan-coe-dead-86",
+      "sourceCount": 2,
+      "disposition": "new",
+      "breaking": false,
+      "addedAt": "5:08 AM MT",
+      "addedAtISO": "2026-04-30T05:08:39.053389-06:00"
+    },
+    {
       "category": "other",
       "headline": "LAPD Chief Warns Los Angeles Not Prepared to Secure 2028 Olympics Due to Staffing Shortages",
       "summary": "Los Angeles Police Chief Jim McDonnell told the City Council Budget and Finance Committee on Wednesday that the LAPD lacks the resources and dedicated funding necessary to properly secure the 2028 Olympic Games. McDonnell said organizer LA28 has \"zero police or other safety budgets,\" with existing security funding shared across multiple agencies and restricted primarily to officer overtime rather than covering full law enforcement needs.\n\nThe department's Olympic Special Events Unit has determined roughly 6,700 officers will be needed across eight venues during the Games, along with 700 to 800 additional patrol vehicles — costs that are not fully funded. The LAPD is already losing more than 500 officers per year to attrition and expects to log approximately 1.4 million overtime hours this year, contributing to a projected $16.5 million deficit.\n\nOlympic organizers have maintained that federal involvement, given the Games' designation as a National Special Security Event, will address security gaps. LAPD officials pushed back on that claim, calling it \"inaccurate.\" City Council member Eunisses Hernandez questioned whether the full scale of police deployment was necessary, asking whether school buses could substitute for police vehicles.\n\nThe warnings come amid heightened national concern over security at large public events following recent incidents. The 2028 Los Angeles Olympics are expected to draw athletes and visitors from around the world, making security planning a matter of both local budget politics and national preparedness.",
