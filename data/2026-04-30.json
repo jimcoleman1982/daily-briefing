@@ -3,6 +3,18 @@
   "dateFormatted": "Thursday, April 30, 2026",
   "stories": [
     {
+      "category": "politics",
+      "headline": "Congress Passes 45-Day FISA Extension, Averting Lapse of Warrantless Surveillance Authority",
+      "summary": "The House and Senate passed a 45-day clean extension of Section 702 of the Foreign Intelligence Surveillance Act on Thursday, preventing the warrantless surveillance authority from expiring at midnight. The House voted 261-111 in favor of the measure, while the Senate approved it by unanimous consent. The extension buys lawmakers additional time to negotiate a longer-term reauthorization.\n\nSection 702 allows U.S. intelligence agencies to collect communications of foreign nationals overseas without a warrant, and is considered one of the government's most significant national security tools. The program has repeatedly drawn scrutiny from civil liberties advocates who argue it can sweep up communications of American citizens.\n\nThe short-term extension reflects ongoing divisions within Congress, particularly among Republicans, over whether any reauthorization should include warrant requirements for searches of Americans' data. A bipartisan group of lawmakers has insisted on attaching such safeguards, repeatedly blocking leadership's efforts to pass a multi-year extension. Supporters of the program as currently structured argue that adding warrant requirements would slow intelligence collection and compromise national security.\n\nThe 45-day window sets up another deadline in mid-June, with the same fault lines expected to resurface. Congressional leadership has so far resisted the warrant-requirement demands, but critics from both the left and right have shown little sign of backing down.",
+      "source": "Axios",
+      "url": "https://www.axios.com/2026/04/30/congress-passes-fisa-extension",
+      "sourceCount": 4,
+      "disposition": "new",
+      "breaking": false,
+      "addedAt": "4:07 PM MT",
+      "addedAtISO": "2026-04-30T16:07:11.291421-06:00"
+    },
+    {
       "category": "world",
       "headline": "Man Sentenced to Death for Murder of Four Toddlers at Ugandan Nursery School",
       "summary": "A Ugandan court sentenced Christopher Okello Onyum, 38, to death by hanging Thursday for the murder of four toddlers at the Ggaba Early Childhood Development Program in Kampala earlier this month. The victims — Eteku Gideon, Keisha Agenorwoth, Sseruyange Ignatius, and Odeke Ryan — were all between one and two years old when Onyum fatally stabbed them on April 2. The verdict was delivered at a makeshift High Court set up in the community where the killings occurred, prompting cheers from the crowd gathered outside.\n\nJustice Alice Komuhangi Khauka ruled that Onyum, who holds both Ugandan and U.S. citizenship, was 'very sane' at the time of the attack, rejecting his defense of mental illness. Prosecutors said Onyum had initially admitted to the crime and described it as a 'human sacrifice' he believed would make him wealthy, though he later pleaded not guilty and claimed he lacked the intent to kill. The judge noted he had 'no fear, no shame, no consideration for human life' and had shown no remorse.\n\nThe prosecution built its case on 18 witnesses and a combination of forensic, digital, and eyewitness evidence, including DNA linking Onyum to the murder weapon's handle, CCTV footage of his movements, and testimony from two nursery staff members who witnessed the attack. Onyum has 14 days to appeal the sentence.\n\nWhile capital punishment remains on the books in Uganda, it is rarely carried out; the last recorded execution took place in 2005. The case drew widespread attention in Uganda and internationally given the ages of the victims and the nature of the crime.",
