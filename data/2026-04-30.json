@@ -4,6 +4,54 @@
   "stories": [
     {
       "category": "business",
+      "headline": "First Trump Tariff Refunds Expected Around May 11, Court Documents Show",
+      "summary": "The federal government is expected to begin issuing the first refunds of President Trump's court-invalidated tariffs on or about May 11, according to newly released court documents. U.S. Court of International Trade Judge Richard Eaton disclosed the timeline following a closed hearing Wednesday.\n\nCustoms and Border Protection has been working for weeks to process approximately $166 billion in tariff refunds stemming from the Supreme Court's ruling striking down the levies. The timeline provides the first concrete date for businesses that have been awaiting reimbursement amid ongoing uncertainty over U.S. trade policy.\n\nThe pending refunds add a new layer of complexity to an already unsettled economic environment, as companies simultaneously face the prospect of new tariffs while awaiting reimbursement for those already paid. Businesses such as toy manufacturer Basic Fun! have been working to document and file claims ahead of the refund process.",
+      "source": "The Hill",
+      "url": "https://thehill.com/business/5856680-first-trump-tariff-refunds-expected-soon/",
+      "sourceCount": 2,
+      "disposition": "new",
+      "breaking": false,
+      "addedAt": "6:22 AM MT",
+      "addedAtISO": "2026-04-30T06:22:21.345787-06:00"
+    },
+    {
+      "category": "politics",
+      "headline": "Becerra, Steyer Battle for Momentum at California Governor's Debate",
+      "summary": "Top Democratic candidates for California governor clashed in a debate this week with less than a week before voters begin receiving mail ballots, as the crowded field adjusts to the recent exit of former Rep. Eric Swalwell. Former California Attorney General Xavier Becerra and billionaire climate activist Tom Steyer emerged as the leading competitors vying for Democratic consolidation.\n\nBecerra, who surged in polling following Swalwell's withdrawal, is leaning on his record as a former U.S. attorney general and longtime California official. Steyer, a major Democratic donor and climate investor, is positioning himself as an outsider willing to challenge entrenched interests, describing himself as a 'class traitor' on economic issues.\n\nThe California governor's race carries national significance as the state's large Democratic electorate and its role as a progressive policy laboratory make it a bellwether for the party's direction. The primary outcome could shape California's approach to issues ranging from housing and homelessness to energy policy and relations with Washington.",
+      "source": "The Hill",
+      "url": "https://thehill.com/homenews/campaign/5855051-becerra-steyer-battle-california-governor-race/",
+      "sourceCount": 2,
+      "disposition": "new",
+      "breaking": false,
+      "addedAt": "6:22 AM MT",
+      "addedAtISO": "2026-04-30T06:22:21.345787-06:00"
+    },
+    {
+      "category": "technology",
+      "headline": "China Bans Drone Sales in Beijing, Requires Permits to Fly",
+      "summary": "China's capital Beijing is implementing sweeping new drone regulations taking effect Friday, prohibiting the sale, rental, or import of drones and requiring permits for all outdoor flights. Drone owners must register devices with police and complete an online training course and regulatory test before operating them.\n\nThe rules represent a significant tightening of an already restrictive framework. Last year Beijing designated its entire airspace a no-drone zone requiring air traffic authority approval for flights. DJI, the world's largest drone manufacturer and a Beijing retailer, is reportedly pulling products from shelves ahead of the new rules.\n\nChina has more than three million registered drones and has identified a 'low-altitude economy' — encompassing drones and flying taxis — as a strategic priority projected to generate over two trillion yuan ($290 billion) by 2035. Authorities say the restrictions aim to balance public safety with continued technological and economic development, with exemptions carved out for counter-terrorism and disaster relief applications.",
+      "source": "BBC News",
+      "url": "https://www.bbc.com/news/articles/c4gv4dvngygo",
+      "sourceCount": 1,
+      "disposition": "new",
+      "breaking": false,
+      "addedAt": "6:22 AM MT",
+      "addedAtISO": "2026-04-30T06:22:21.345787-06:00"
+    },
+    {
+      "category": "world",
+      "headline": "Switzerland to Vote on Proposal Capping National Population at 10 Million",
+      "summary": "Swiss voters are set to weigh a referendum proposal that would constitutionally cap the country's population at 10 million people — a measure that would require dramatic reductions in immigration and could upend Switzerland's relationship with the European Union and international labor markets. The country's current population stands at approximately 8.9 million.\n\nThe vote reflects broader pressure across Europe from rising far-right political parties pushing governments toward stricter immigration controls. Switzerland, which is not an EU member but has bilateral agreements allowing free movement with the bloc, would face significant treaty complications if the cap were adopted and enforced.\n\nProponents argue the cap is necessary to manage housing shortages, infrastructure strain, and cultural cohesion. Critics warn the measure is unworkable, legally incompatible with existing international commitments, and could severely damage the Swiss economy, which relies heavily on foreign skilled workers in sectors including finance, pharmaceuticals, and technology.",
+      "source": "Bloomberg Politics",
+      "url": "https://www.bloomberg.com/news/articles/2026-04-30/switzerland-population-cap-why-swiss-voters-are-weighing-a-10-million-limit",
+      "sourceCount": 1,
+      "disposition": "new",
+      "breaking": false,
+      "addedAt": "6:22 AM MT",
+      "addedAtISO": "2026-04-30T06:22:21.345787-06:00"
+    },
+    {
+      "category": "business",
       "headline": "U.S. Sanctions Major Chinese Refinery and 40 Shippers Over Iranian Oil Trade",
       "summary": "The Trump administration announced sweeping secondary sanctions Wednesday targeting a major China-based oil refinery and approximately 40 shipping companies and tankers involved in transporting Iranian crude oil. The centerpiece of the action is Hengli Petrochemical's facility in Dalian, one of China's largest independent refineries with a processing capacity of roughly 400,000 barrels per day, which Treasury says has received Iranian oil since 2023 and generated hundreds of millions of dollars in revenue for the Iranian military.\n\nTreasury Secretary Scott Bessent said the department 'will continue to constrict the network of vessels, intermediaries and buyers Iran relies on to move its oil to global markets.' The move follows letters sent earlier this month to financial institutions in China, Hong Kong, the UAE and Oman warning of secondary sanctions for facilitating Iranian transactions. China is the destination for an estimated 80–90 percent of Iranian oil exports, often with origin obscured through a shadow fleet.\n\nThe sanctions arrive weeks before a scheduled meeting between President Trump and Chinese President Xi Jinping, adding economic pressure to an already strained bilateral relationship. They also coincide with a U.S. physical blockade of the Strait of Hormuz, which has sent global oil prices sharply higher. Iran has previously said lifting sanctions is a precondition for ending the war with the U.S. and Israel.\n\nThe action marks an escalation in the administration's 'maximum pressure' campaign against Tehran and directly implicates Beijing's state-adjacent energy sector. Analysts note the timing — just before the Trump-Xi summit — suggests Washington is willing to use the Iran conflict as leverage in broader trade and geopolitical negotiations with China.",
       "source": "Associated Press",
