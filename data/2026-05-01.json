@@ -4,6 +4,66 @@
   "stories": [
     {
       "category": "politics",
+      "headline": "Senate Unanimously Bans Members and Staff From Betting on Prediction Markets",
+      "summary": "The Senate passed a bipartisan resolution Thursday by unanimous voice vote prohibiting senators and their staff from participating in prediction markets, platforms where users wager on the outcomes of political, economic, and geopolitical events. The measure takes effect immediately as a change to Senate rules. It was sponsored by Sen. Bernie Moreno (R-Ohio) and broadened by an amendment from Sen. Alex Padilla (D-Calif.) to include staff.\n\nThe vote comes one week after a U.S. special forces soldier was charged with using classified information to bet on prediction markets, specifically on the January capture of Venezuelan then-president Nicolás Maduro. Lawmakers have also raised concerns about who may be profiting from wagers tied to the ongoing U.S.-Iran conflict. Earlier this month, the Associated Press reported that new accounts on the platform Polymarket made suspiciously well-timed bets on a U.S.-Iran ceasefire, generating hundreds of thousands of dollars in profit.\n\nSenate Minority Leader Chuck Schumer called the ban a 'no-brainer,' saying Congress must never become 'a casino where members can gamble on wars or economic crises.' Sen. Todd Young (R-Ind.) called it 'a good first step' and urged the Senate to advance a broader bill he co-introduced that would extend the ban to all federal employees and elected officials.\n\nPrediction markets including Polymarket and Kalshi have expanded rapidly and attracted growing regulatory scrutiny. Donald Trump Jr. serves as an adviser to both platforms, and the Trump administration has supported the industry in legal battles against states seeking to restrict it. Senate Minority Leader Schumer also called on the House and the White House to adopt similar restrictions.",
+      "source": "PBS NewsHour",
+      "url": "https://www.pbs.org/newshour/politics/senate-bans-members-and-staff-from-betting-in-prediction-markets",
+      "sourceCount": 2,
+      "disposition": "new",
+      "breaking": false,
+      "addedAt": "12:44 AM MT",
+      "addedAtISO": "2026-05-01T00:44:15.038267-06:00"
+    },
+    {
+      "category": "other",
+      "headline": "Apparent Epstein Suicide Note Found by Cellmate Weeks Before His 2019 Death",
+      "summary": "A cellmate of Jeffrey Epstein reportedly discovered an apparent suicide note tucked inside a graphic novel in the high-profile inmate's jail cell in late July 2019, weeks before Epstein was found dead on August 10, 2019. Nicholas Tartaglione, the cellmate, told the New York Times he found the note on a piece of yellow paper after Epstein had been found unresponsive with red marks on his neck — an episode that placed Epstein on suicide watch. The note reportedly read: 'What do you want me to do, bust out crying? Time to say goodbye.'\n\nTartaglione's lawyers made two unsuccessful attempts to authenticate the note before it was verified in late 2019 or early 2020. The note itself is now held in a vault at a New York courthouse. The New York Times filed a request Thursday to have the note unsealed. A DOJ spokesperson told the paper the agency had never had the note in its possession, and no copy appears in the publicly available Epstein files on the DOJ's website, though a two-page internal report references its existence.\n\nEpstein's death was ruled a suicide by the New York City medical examiner, a conclusion the DOJ corroborated in July 2025. The case has remained a source of persistent public speculation, and a congressional watchdog recently agreed to open a second review of the DOJ's handling of Epstein file redactions.\n\nThe revelation adds new detail to the timeline surrounding Epstein's final weeks but does not alter the official ruling. The note's existence was known to Tartaglione's attorneys but had not previously been widely reported.",
+      "source": "Washington Examiner",
+      "url": "https://www.washingtonexaminer.com/news/justice/4550569/epstein-suicide-note-found-cellmate/",
+      "sourceCount": 3,
+      "disposition": "new",
+      "breaking": false,
+      "addedAt": "12:44 AM MT",
+      "addedAtISO": "2026-05-01T00:44:15.038267-06:00"
+    },
+    {
+      "category": "world",
+      "headline": "China Scraps Tariffs for 53 African Nations as Trade Rivalry With U.S. Intensifies",
+      "summary": "China will eliminate tariffs for 53 African countries effective Friday, expanding a zero-tariff policy that previously applied only to 33 least-developed nations on the continent. The sole exception is Eswatini, which maintains diplomatic ties with Taiwan. The policy is set to remain in place through April 2028. Beijing has described itself as the first major economy to extend unilateral zero-tariff treatment to Africa.\n\nThe move is widely seen as a soft-power play amid the ongoing global trade disruption caused by U.S. tariff policies. Many African nations were hit with U.S. tariffs of up to 30% before courts struck down a portion of those duties; most now face a 10% U.S. tariff. Analysts say China is deliberately positioning itself as a trade-friendly alternative to Washington.\n\nHowever, experts caution that the practical economic impact may be limited in the near term. Africa runs a growing trade deficit with China — last year that gap rose 65% to roughly $102 billion — and structural constraints including weak logistics, limited industrial capacity, and reliance on raw commodity exports mean tariff reductions alone are unlikely to rebalance trade. More industrialized economies such as South Africa and Morocco are expected to benefit most.\n\nLonger-term, analysts say the policy could meaningfully expand trade if African countries are able to diversify exports and build out production capacity. Chinese consumer demand is also shifting in ways that could open new markets for African agricultural and manufactured goods.",
+      "source": "BBC News",
+      "url": "https://www.bbc.com/news/articles/cwy2v509217o?at_medium=RSS&at_campaign=rss",
+      "sourceCount": 1,
+      "disposition": "new",
+      "breaking": false,
+      "addedAt": "12:44 AM MT",
+      "addedAtISO": "2026-05-01T00:44:15.038267-06:00"
+    },
+    {
+      "category": "other",
+      "headline": "Britney Spears Charged With DUI Following March Arrest in Southern California",
+      "summary": "California prosecutors have filed a misdemeanor driving under the influence charge against pop star Britney Spears stemming from her arrest on March 4 on a Southern California highway. The Ventura County District Attorney's Office filed the single count — driving under the influence of any alcohol or drug — on Thursday. Spears, 44, was arrested after authorities alleged she was driving her BMW erratically at high speed.\n\nSpears reportedly checked herself into a rehabilitation facility following the arrest. Her representatives described the incident as 'completely inexcusable' and said her sons and loved ones would work on a plan to support her well-being. Her arraignment is scheduled for next Monday, though as a misdemeanor charge she is not required to appear in person.\n\nProsecutors said the charge typically carries no jail time when no crash or injury occurred and the defendant has no prior similar offenses. Spears will likely be offered the option to plead guilty to a lesser charge of reckless driving, with a standard outcome of 12 months' probation, completion of a DUI class, and fines.\n\nSpears is one of the best-selling music artists of all time. From 2008 to 2021 she was subject to a court-ordered conservatorship that controlled her finances and personal life before it was terminated following a prolonged public legal battle.",
+      "source": "BBC News",
+      "url": "https://www.bbc.com/news/articles/clyp6r9dzedo?at_medium=RSS&at_campaign=rss",
+      "sourceCount": 2,
+      "disposition": "new",
+      "breaking": false,
+      "addedAt": "12:44 AM MT",
+      "addedAtISO": "2026-05-01T00:44:15.038267-06:00"
+    },
+    {
+      "category": "business",
+      "headline": "Update: Canada Pitches Sub-Arctic Port of Churchill as Gateway to Europe Amid U.S. Trade Tensions",
+      "summary": "Canada is accelerating plans to expand the Port of Churchill, its only Arctic deep-water seaport, as Prime Minister Mark Carney pursues a goal of doubling non-U.S. exports within a decade. Located on Hudson Bay in northern Manitoba, the port offers a shorter shipping route to Europe, Africa, and South America compared to routes through southern Canadian ports. Ottawa has already invested C$320 million in the facility since 2018, when a consortium of Indigenous and community groups took ownership following years of mismanagement under a Denver-based private operator.\n\nCarney has identified the Churchill expansion as a transformational project capable of shipping critical minerals, grain, liquified natural gas, and other goods to global markets. The port is currently operational only four to five months a year due to Arctic conditions, but climate change is expected to extend that window. Rail access through southern Manitoba connects the port to resource-rich western Canada.\n\nThe push reflects a broader Canadian strategy to reduce economic dependence on the United States in the face of escalating U.S. tariff pressure. Churchill's mayor and the Arctic Gateway Group, which now owns the port, see expansion as an opportunity to generate hundreds of jobs in a remote community of roughly 1,000 residents that has historically relied on seasonal tourism.\n\nAnalysts note that while geography favors Churchill, years of underinvestment and questions about commercial viability have historically stalled ambitions for the facility. The current political and trade climate has given the project renewed momentum at both the federal and local level.",
+      "source": "BBC News",
+      "url": "https://www.bbc.com/news/articles/cyv1zdey7pmo?at_medium=RSS&at_campaign=rss",
+      "sourceCount": 1,
+      "disposition": "new",
+      "breaking": false,
+      "addedAt": "12:44 AM MT",
+      "addedAtISO": "2026-05-01T00:44:15.038267-06:00"
+    },
+    {
+      "category": "politics",
       "headline": "House Passes DHS Funding Bill, Ending 76-Day Shutdown",
       "summary": "The House passed legislation Thursday to fund most Department of Homeland Security subagencies, ending a record-breaking 76-day shutdown of the department. Republican leadership used a procedural maneuver to bring the Senate spending bill directly to the floor, relying on Democratic cooperation to secure passage. The bill funds most DHS agencies but excludes Immigration and Customs Enforcement. President Trump signed the measure, ending weeks of financial hardship for federal workers left without pay.\n\nThe shutdown had caused widespread disruption at airports and across federal operations as intra-party Republican disputes over funding for Trump's immigration enforcement agenda stalled action for more than two months. Speaker Mike Johnson was ultimately forced to bypass opposition within his own conference to move the bill forward.\n\nSupporters of the bill framed its passage as a necessary restoration of government function, while conservatives who had held out argued the exclusion of ICE funding represented a failure to fully back the administration's immigration priorities. Democrats who provided key votes said they acted to protect federal workers and restore agency operations, not to endorse the administration's broader immigration agenda.\n\nThe 76-day shutdown was the longest ever experienced by a single cabinet department. The resolution leaves open a separate fight over ICE appropriations, which is expected to resurface in upcoming spending negotiations.",
       "source": "National Review",
