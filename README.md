@@ -6,7 +6,7 @@ Every few hours from 5 AM to 9 PM Denver time, a GitHub Actions workflow gathers
 
 **Live site:** [101news.org](https://101news.org)
 
-**Current version:** v2026.4.30 — see [CHANGELOG.md](./CHANGELOG.md).
+**Current version:** v2026.5.1 — see [CHANGELOG.md](./CHANGELOG.md).
 
 ## How It Works
 
@@ -23,7 +23,8 @@ Every few hours from 5 AM to 9 PM Denver time, a GitHub Actions workflow gathers
 
 ## Features
 
-- **Rolling updates** -- stories accumulate through the day (2-6 new stories per run, capped at 36 stories per day)
+- **Rolling updates** -- 6 pulls per day (slot-based, one per ~3-hour window centered on scheduled times), 4 stories per pull, 24 stories per day max
+- **Ruthless importance prioritization** -- stories are scored against a 3-tier framework (Tier 1: war/casualties/major rulings, Tier 2: policy/major corporate, Tier 3: cultural/sports). Routine earnings, daily market moves, and minor crime stories are explicitly excluded.
 - **Breaking-news siren** -- stories flagged as urgent (mass casualty events, coups, major attacks, etc.) display a 🚨 icon and red highlight on the site
 - **Source balance** -- draws from 20 named publisher RSS feeds plus topic-rotated Brave queries. Lean distribution across feeds is roughly 40% center/wire, 25% left, 35% right. Claude is given explicit lean tags and balance instructions to correct for historical over-indexing on left/center.
 - **Smart deduplication** -- multi-pass similarity + keyword matching; borderline cases classified semantically by Claude Haiku rather than word-list matching

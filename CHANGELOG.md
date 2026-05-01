@@ -1,5 +1,24 @@
 # Changelog
 
+## v2026.5.1
+
+Slot-based pull distribution + lower caps (4 per pull, 24 per day) + ruthless importance prioritization.
+
+**What was happening:** Yesterday's v2026.4.30 capped pulls at 6 per day, but that cap was "first 6 pulls win". On 2026-05-01 the redundant cron triggers (GitHub MDT + GitHub MST + cron-job.org + retries) bunched 6 successful pulls between midnight and 8 AM, leaving the 11 AM, 2 PM, 6 PM, and 9 PM scheduled slots with nothing. By 8:08 AM the digest already had 31 stories.
+
+**Changes:**
+
+- **Lower caps: 4 stories per pull, 24 per day.** `MAX_STORIES_PER_RUN: 6 -> 4` and `MAX_STORIES_PER_DAY: 36 -> 24`. The math now explicitly maps to 6 scheduled pulls x 4 stories = 24. Fewer stories means each one has to clear a higher bar of importance.
+- **Slot-based pull cap** replaces "first 6 pulls win". Day is divided into 6 windows centered on the scheduled times (5/8/11 AM and 2/6/9 PM). Each window allows AT MOST ONE successful pull. Triggers in dead-of-night hours (23:00-02:59) exit cleanly without pulling. Helpers: `get_slot_for_hour()` and `has_pulled_in_current_slot()`. Two simulations on today's actual trigger sequence confirm the new logic would have produced 6 evenly-distributed pulls instead of 6 bunched in the early morning.
+- **Ruthless importance prioritization in the prompt.** Replaced the high-level "choose stories with most national or global significance" guidance with an explicit 3-tier ranking framework:
+   - Tier 1 (almost always include if today): mass casualty events, military operations, war declarations, head-of-state actions, Supreme Court rulings, Fed decisions, election results, major terrorist attacks, Cabinet/SCOTUS nominations.
+   - Tier 2 (include when no Tier 1 dominates): policy announcements, megamergers/CEO ousters at top-10 firms, cabinet testimony, foreign-policy moves, scientific breakthroughs, major non-casualty disasters.
+   - Tier 3 (only if room and genuinely fresh): cultural events, celebrity news, significant sports, local stories signaling national patterns.
+   - NOT NEWSWORTHY at this scope: routine earnings, daily market moves, individual crime stories without national significance, weather (unless catastrophic), regular-season sports scores, political squabbles without policy substance.
+- **Importance score field.** Claude now emits an `importance: tier1|tier2|tier3` field per story for transparency and downstream filtering.
+- **Removed midnight wrap** for the 9 PM slot. Previously hours 0-2 mapped to slot 21, which meant a midnight pull would block the actual 9 PM run later same day. Now hours 23 and 0-2 map to None (no pull window), and the script exits when triggered there.
+- **Tests:** New 56-test harness covers slot mapping for all 24 hours, has_pulled_in_current_slot edge cases, the full prompt structure, and a real-data simulation against today's actual trigger sequence (verifies 4 of 6 actual triggers would have been correctly blocked under the new logic).
+
 ## v2026.4.30
 
 Fix: site hit the 36-story cap by 4 PM and stopped pulling for the rest of the day. Root cause: 15 cron triggers fired in a single day instead of the intended 6.

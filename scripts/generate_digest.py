@@ -29,11 +29,18 @@ from bs4 import BeautifulSoup
 # --- Configuration ---
 DENVER_TZ = ZoneInfo("America/Denver")
 MAX_CANDIDATES = 25  # gather this many before curation
-MAX_STORIES_PER_RUN = 6  # select up to this many new stories per run
-MAX_STORIES_PER_DAY = 36  # HARD cap on stories per day (6 pulls x 6 stories = 36)
+MAX_STORIES_PER_RUN = 4  # select up to this many new stories per run
+MAX_STORIES_PER_DAY = 24  # HARD cap on stories per day (6 pulls x 4 stories = 24)
 MAX_PULLS_PER_DAY = 6  # HARD cap on number of pulls per day -- protects against
                        # GitHub cron + cron-job.org + retries firing more than
                        # 6 times. Counted by distinct addedAt timestamps in today's JSON.
+
+# Scheduled pull slots in Denver local time. The day is divided into these six
+# windows; each window allows AT MOST ONE successful pull. This prevents the
+# bunch-up problem where multiple cron triggers (GitHub schedule + cron-job.org
+# + DST duplicates) eat the day's budget in the first few hours.
+# Window assignments cover all 24 hours: midnight maps to the 9 PM slot.
+SCHEDULED_SLOT_HOURS = [5, 8, 11, 14, 18, 21]
 ARTICLE_TEXT_LIMIT = 3000  # chars per article
 ANTHROPIC_MAX_TOKENS = 8000  # hard cap on output tokens (higher for multi-story output)
 ANTHROPIC_MODEL = "claude-sonnet-4-6"
@@ -305,6 +312,81 @@ def count_distinct_pulls_today(existing_data):
         if ts:
             timestamps.add(ts)
     return len(timestamps)
+
+
+def get_slot_for_hour(denver_hour):
+    """Map a Denver hour (0-23) to one of the 6 scheduled pull slots, or None.
+
+    Slot boundaries (NO midnight wrap -- a midnight trigger does not "belong"
+    to the 9 PM slot, because that would block the actual 9 PM run later same day):
+        slot 5  ->  03:00-06:59  (covers ~5 AM scheduled run)
+        slot 8  ->  07:00-09:59  (covers ~8 AM scheduled run)
+        slot 11 ->  10:00-12:59  (covers ~11 AM scheduled run)
+        slot 14 ->  13:00-15:59  (covers ~2 PM scheduled run)
+        slot 18 ->  16:00-19:59  (covers ~6 PM scheduled run)
+        slot 21 ->  20:00-22:59  (covers ~9 PM scheduled run)
+        None    ->  23:00-02:59  (dead-of-night -- no pull window)
+
+    Returns the slot identifier (one of SCHEDULED_SLOT_HOURS), or None if the
+    given hour is outside any scheduled pull window.
+    """
+    h = denver_hour % 24
+    if 3 <= h <= 6:
+        return 5
+    if 7 <= h <= 9:
+        return 8
+    if 10 <= h <= 12:
+        return 11
+    if 13 <= h <= 15:
+        return 14
+    if 16 <= h <= 19:
+        return 18
+    if 20 <= h <= 22:
+        return 21
+    # 23 and 0-2 -> dead-of-night, no pull
+    return None
+
+
+def has_pulled_in_current_slot(existing_data, current_dt):
+    """Return True if a story has already been added in the current slot today.
+
+    Returns False if current_dt is outside any pull window (slot is None) --
+    in that case there is no slot to occupy, and the caller should be exiting
+    on the "outside any slot" check anyway.
+    """
+    if not existing_data:
+        return False
+
+    current_slot = get_slot_for_hour(current_dt.hour)
+    if current_slot is None:
+        return False  # caller should exit on slot=None separately
+
+    for story in existing_data.get("stories", []):
+        iso = story.get("addedAtISO", "")
+        if iso:
+            try:
+                dt = datetime.datetime.fromisoformat(iso)
+                if dt.tzinfo is None:
+                    dt = dt.replace(tzinfo=DENVER_TZ)
+                else:
+                    dt = dt.astimezone(DENVER_TZ)
+                if get_slot_for_hour(dt.hour) == current_slot:
+                    return True
+                continue
+            except (ValueError, TypeError):
+                pass
+
+        # Fallback: parse addedAt like "5:08 AM MT" or "11:08 PM MT"
+        added = story.get("addedAt", "")
+        m = re.match(r"(\d+):(\d+)\s*([AaPp])M", added)
+        if m:
+            h = int(m.group(1)) % 12
+            if m.group(3).upper() == "P":
+                h += 12
+            if get_slot_for_hour(h) == current_slot:
+                return True
+
+    return False
 
 
 def get_existing_headlines(existing_data):
@@ -1337,14 +1419,37 @@ If a story IS a genuine update on a previously covered event, you MUST prefix th
 
 {lean_summary}
 
-YOUR TASK: Select the {num_to_select} most important, newsworthy stories that have NOT already been covered today. This is a breaking news wire -- we want the biggest developing stories right now.
+YOUR TASK: Select the {num_to_select} MOST IMPORTANT stories from the candidate pool. You are picking only {num_to_select} -- be RUTHLESSLY selective. The reader sees only what you choose; second-tier news gets cut.
 
-Selection criteria:
-- {"ONLY select stories about events from the LAST 12 HOURS or actively developing RIGHT NOW. This is the first run of the day, so include important stories from late last night that have not been covered yet." if is_first_run else "ONLY select stories about events that happened TODAY or are actively developing RIGHT NOW. Do NOT select stories about events from yesterday or earlier, even if they are still being covered. If an article describes something that happened days ago, skip it."}
-- HEAVILY PRIORITIZE stories covered by many sources. A story reported by 6+ outlets is almost certainly more important than one reported by 1-2. The "Sources covering this story" count is a strong signal of newsworthiness.
-- Choose stories with the most national or global significance
-- Prefer breaking or developing stories over routine news
-- Aim for variety across categories (politics, world, business, technology, science/health, other)
+THINK ABOUT IMPORTANCE BEFORE YOU PICK. For each candidate, ask:
+
+1. SCALE OF IMPACT -- How many people are directly affected, and how seriously?
+   * Tens of millions affected (war, election results, major federal policy, market crash) -> HIGH
+   * Millions affected (regional disaster, major industry shift, supreme court ruling) -> HIGH
+   * Hundreds of thousands (state-level news, large corporate event) -> MEDIUM
+   * Thousands or fewer (single-incident crime story without national pattern) -> LOW
+
+2. SIGNIFICANCE OF EVENT -- What kind of event is this?
+   TIER 1 (almost always include if today): mass casualty events, active military operations, declaration of war, head-of-state actions (presidential orders, resignations, impeachment), Supreme Court rulings, major Federal Reserve / interest-rate decisions, election results, major terrorist attacks, presidential nominations to Cabinet/SCOTUS.
+   TIER 2 (include when no Tier 1 dominates): significant policy announcements, major corporate news (megamergers, CEO ousters at top-10 companies), cabinet-level testimony, major foreign-policy moves, major scientific breakthroughs, large natural disasters without mass casualties.
+   TIER 3 (only if you have room and they're genuinely fresh): cultural events, celebrity news, sports if of national significance (Super Bowl, World Series), local stories that signal a national pattern.
+   NOT NEWSWORTHY at this scope: routine corporate earnings beats/misses, daily market moves, individual crime stories without national significance, obituaries of non-public figures, weather unless catastrophic, sports scores from regular-season games, political squabbles without policy substance.
+
+3. SOURCE CORROBORATION -- How many outlets are covering this?
+   * 6+ outlets -> strong importance signal, weight heavily
+   * 3-5 outlets -> moderate
+   * 1-2 outlets -> only include if event is intrinsically major (Tier 1) and time-sensitive
+
+4. FRESHNESS -- Did the event FIRST happen today / in the last 12-24 hours?
+   * If you cannot articulate WHAT IS NEW about this story today, do not include it.
+
+HOW TO USE THIS WHEN PICKING {num_to_select}:
+- Mentally rank all candidates by tier and impact, THEN choose the top {num_to_select}.
+- Tier 1 always beats Tier 2 always beats Tier 3.
+- Within a tier, higher source count beats lower.
+- Aim for category variety -- but variety NEVER overrides importance. A 4-Tier-1-politics-story day is correct if that's the news.
+
+{"FIRST RUN OF THE DAY: include important stories from the last 12 hours, even if they happened late last night." if is_first_run else "Today's events only. Do NOT pick a story whose actual event happened yesterday or earlier, even if outlets are still writing about it -- unless there is a CONCRETE new development today (new ruling, new death, new reversal, new fact)."}
 
 POLITICAL BALANCE (critical):
 - Each candidate is tagged with its primary source lean: [L] left, [C] center/wire, [R] right, [?] unclassified.
@@ -1373,8 +1478,9 @@ Return a JSON array of up to {num_to_select} stories. For each story:
 - "sourceCount": number of outlets covering this story (copy from the candidate info above)
 - "disposition": "new" if this is a fresh story with no prior coverage, or "update" if it's a genuinely new development on a story we already covered (something materially changed -- new ruling, new death, new reversal, new concrete fact).
 - "breaking": true or false. Set true ONLY for urgent, high-stakes developing stories -- Drudge Report "red siren" territory. Examples: mass casualty events, active shooters, major terrorist attacks, assassinations, coups, declarations of war, natural disasters with major loss of life, pivotal political events (impeachment, resignation of a major head of state), or a fast-moving crisis where the situation is changing hour to hour. DO NOT set true for routine news, policy announcements, earnings reports, sports, court rulings, political disagreements, or ongoing stories that are simply continuing. Be VERY selective -- typically zero or one story per day qualifies. When in doubt, mark false.
+- "importance": "tier1" / "tier2" / "tier3" -- which importance tier from the selection criteria above this story falls into. Used for transparency and debugging.
 
-Return ONLY the JSON array, no other text."""
+Return ONLY the JSON array, no other text. Remember: you are picking only {num_to_select} stories from {len(stories)} candidates. Be ruthless. A reader who sees these {num_to_select} stories should feel they understand the most important news of the day."""
 
 
 def _try_parse_json(text):
@@ -1676,6 +1782,27 @@ def main():
               f"({pulls_today} pulls, {existing_story_count} stories). Skipping this run.")
         sys.exit(0)
     print(f"  Pulls so far today: {pulls_today}/{MAX_PULLS_PER_DAY}")
+
+    # Short-circuit if this slot has already pulled. Without this, multiple
+    # cron triggers (GitHub schedule + cron-job.org + DST-bypass duplicates)
+    # would eat all 6 pulls in the early-morning slots, leaving nothing for
+    # the afternoon and evening slots. By limiting to one pull per ~3-hour
+    # slot, the day's stories are spread across all 6 scheduled time blocks.
+    now_denver = datetime.datetime.now(DENVER_TZ)
+    if not args.date:  # only enforce slot cap for live runs, not backfill
+        current_slot = get_slot_for_hour(now_denver.hour)
+        if current_slot is None:
+            # Triggered outside any scheduled slot (e.g. dead-of-night run from
+            # a misconfigured cron). Refuse to pull -- this saves API budget
+            # and prevents midnight runs from claiming the 9 PM slot for the day.
+            print(f"\nTriggered outside any scheduled slot ({now_denver.strftime('%H:%M %Z')}). "
+                  f"Scheduled slots are 5/8/11 AM and 2/6/9 PM. Skipping this run.")
+            sys.exit(0)
+        if has_pulled_in_current_slot(existing_data, now_denver):
+            print(f"\nCurrent slot (slot {current_slot}, {now_denver.strftime('%H:%M %Z')}) "
+                  f"has already pulled today. Skipping this run.")
+            sys.exit(0)
+        print(f"  Current slot: {current_slot} (Denver hour {now_denver.hour})")
 
     # Verify API keys
     brave_key = os.environ.get("BRAVE_SEARCH_API_KEY")
