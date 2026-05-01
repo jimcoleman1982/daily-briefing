@@ -1,5 +1,23 @@
 # Changelog
 
+## v2026.4.30
+
+Fix: site hit the 36-story cap by 4 PM and stopped pulling for the rest of the day. Root cause: 15 cron triggers fired in a single day instead of the intended 6.
+
+**What was happening:**
+
+- GitHub Actions schedule cron has 12 entries (6 MDT + 6 MST -- DST guard) but the workflow uses `--force` which bypasses the DST timezone check, so BOTH timezones' crons fire daily during MDT.
+- cron-job.org adds another ~6 workflow_dispatch triggers per day to the same workflow.
+- Result on 2026-04-30: 15 trigger fires, 10 successful pulls, 36 stories burned by ~11 AM. The 6 PM and 9 PM scheduled slots got nothing.
+
+**Changes:**
+
+- **MAX_PULLS_PER_DAY = 6 hard cap.** New `count_distinct_pulls_today()` helper counts distinct `addedAt` timestamps in today's JSON (each pull writes >=1 story sharing one timestamp). When a trigger fires and 6 pulls have already produced output today, the run exits cleanly without any API calls or cost. This protects against extra cron + cron-job.org triggers + retries.
+- **Simplified `determine_stories_needed`.** Removed the tapering logic (was: 6 stories early, 4 mid-day, 2 near cap). Now strictly returns `min(6, remaining)`. Combined with MAX_PULLS_PER_DAY, the math is exactly 6 pulls x 6 stories = 36 stories, distributed across the first 6 pulls of the day.
+- **Removed unused constants.** `STORIES_SOFT_CAP`, `MIN_STORIES_PER_DAY`, `MIN_STORIES_PER_RUN` deleted.
+
+**Note on remaining cron-fire excess:** This change makes extra triggers harmless (they short-circuit) but doesn't reduce the actual cron fires. Future improvement: either disable GitHub Actions schedule cron and rely solely on cron-job.org, or fix the DST guard so `--force` doesn't bypass it.
+
 ## v2026.4.24
 
 Fix within-day duplicate stories, add daily cap, and introduce a "breaking news" urgency flag with a siren icon on the site.

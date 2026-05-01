@@ -30,10 +30,10 @@ from bs4 import BeautifulSoup
 DENVER_TZ = ZoneInfo("America/Denver")
 MAX_CANDIDATES = 25  # gather this many before curation
 MAX_STORIES_PER_RUN = 6  # select up to this many new stories per run
-MAX_STORIES_PER_DAY = 36  # HARD cap -- once hit, no more stories added that day
-MIN_STORIES_PER_DAY = 12  # aim for at least this many stories per day
-STORIES_SOFT_CAP = 30    # slow down after this many, but don't stop
-MIN_STORIES_PER_RUN = 2  # always try to add at least this many (fresh news doesn't stop)
+MAX_STORIES_PER_DAY = 36  # HARD cap on stories per day (6 pulls x 6 stories = 36)
+MAX_PULLS_PER_DAY = 6  # HARD cap on number of pulls per day -- protects against
+                       # GitHub cron + cron-job.org + retries firing more than
+                       # 6 times. Counted by distinct addedAt timestamps in today's JSON.
 ARTICLE_TEXT_LIMIT = 3000  # chars per article
 ANTHROPIC_MAX_TOKENS = 8000  # hard cap on output tokens (higher for multi-story output)
 ANTHROPIC_MODEL = "claude-sonnet-4-6"
@@ -288,6 +288,23 @@ def load_existing_digest(date_str):
         except (json.JSONDecodeError, IOError):
             return None
     return None
+
+
+def count_distinct_pulls_today(existing_data):
+    """Count the number of distinct pulls that have produced stories today.
+
+    Each pull writes >=1 story sharing an `addedAt` timestamp. Distinct
+    timestamps == distinct pulls. Used to enforce MAX_PULLS_PER_DAY so that
+    extra cron triggers don't cause us to overshoot the intended 6 pulls/day.
+    """
+    if not existing_data:
+        return 0
+    timestamps = set()
+    for story in existing_data.get("stories", []):
+        ts = story.get("addedAt")
+        if ts:
+            timestamps.add(ts)
+    return len(timestamps)
 
 
 def get_existing_headlines(existing_data):
@@ -1399,27 +1416,16 @@ def _try_parse_json(text):
 
 
 def determine_stories_needed(existing_count):
-    """Decide how many new stories to select based on how many we already have today.
+    """Decide how many stories to select on this pull.
 
-    Respects MAX_STORIES_PER_DAY as a hard cap -- returns 0 once hit.
-    With 6 runs/day and cap 36, the target is ~6 per run. Pacing scales down
-    as we approach the cap so the last few runs can still surface breaking news
-    without overshooting.
+    Strict 6 per pull, capped at 36 total. Combined with MAX_PULLS_PER_DAY,
+    this gives exactly 6 pulls x 6 stories = 36. The selection prompt asks
+    Claude to pick the most important stories from the candidate pool.
     """
     remaining = MAX_STORIES_PER_DAY - existing_count
     if remaining <= 0:
-        return 0  # hard cap hit -- stop pulling new stories today
-
-    # Early in the day or behind pace: pick as many as we can, up to per-run max
-    if existing_count < 6:
-        return min(MAX_STORIES_PER_RUN, remaining)
-    if existing_count < MIN_STORIES_PER_DAY:
-        return min(MAX_STORIES_PER_RUN, remaining)
-    # Past the soft cap: slow down but keep breaking news flowing
-    if existing_count >= STORIES_SOFT_CAP:
-        return min(MIN_STORIES_PER_RUN, remaining)  # usually 2
-    # Normal middle-of-day pace
-    return min(max(MIN_STORIES_PER_RUN, 4), remaining)
+        return 0
+    return min(MAX_STORIES_PER_RUN, remaining)
 
 
 def call_anthropic_stories(stories, target_date_str, num_to_select, existing_headlines=None, is_first_run=False):
@@ -1652,12 +1658,24 @@ def main():
     else:
         print("  No existing digest for today -- fresh start")
 
-    # Short-circuit if daily cap already reached
+    # Short-circuit if daily story cap already reached
     existing_story_count = len(existing_data.get("stories", [])) if existing_data else 0
     if existing_story_count >= MAX_STORIES_PER_DAY:
         print(f"\nDaily story cap ({MAX_STORIES_PER_DAY}) already reached "
               f"({existing_story_count} stories). Skipping this run.")
         sys.exit(0)
+
+    # Short-circuit if pull cap already reached. Each pull writes >=1 story
+    # with a unique addedAt timestamp, so distinct timestamps == distinct pulls
+    # that produced output. Triggers that resulted in zero new stories don't
+    # count (they didn't consume budget). This protects against GitHub cron
+    # + cron-job.org + retries firing more than 6 times/day.
+    pulls_today = count_distinct_pulls_today(existing_data)
+    if pulls_today >= MAX_PULLS_PER_DAY:
+        print(f"\nDaily pull cap ({MAX_PULLS_PER_DAY}) already reached "
+              f"({pulls_today} pulls, {existing_story_count} stories). Skipping this run.")
+        sys.exit(0)
+    print(f"  Pulls so far today: {pulls_today}/{MAX_PULLS_PER_DAY}")
 
     # Verify API keys
     brave_key = os.environ.get("BRAVE_SEARCH_API_KEY")
