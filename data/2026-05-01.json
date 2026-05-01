@@ -4,6 +4,54 @@
   "stories": [
     {
       "category": "world",
+      "headline": "Chinese Court Rules AI-Driven Layoff Unlawful in Landmark Labor Case",
+      "summary": "An appeals court in Hangzhou, China, has ruled that a tech company's dismissal of a worker whose job was replaced by artificial intelligence was unlawful, in what legal observers are describing as a significant early precedent for AI-related labor disputes. The worker was let go after the company determined that AI tools could perform his functions, a scenario playing out with increasing frequency across technology sectors worldwide.\n\nThe court's ruling does not prohibit companies from adopting AI, but found that the specific manner of this dismissal violated Chinese labor law protections. The case has drawn attention in China's legal and business communities as employers race to integrate AI systems while workers and regulators struggle to define the boundaries of permissible automation-driven restructuring.\n\nThe decision arrives as governments and courts in multiple countries grapple with how existing labor frameworks apply to AI displacement. China, which has one of the world's largest technology workforces, has yet to enact comprehensive legislation specifically governing AI-related layoffs, making court rulings like this one influential in shaping employer behavior in the interim.\n\nLabor advocates say the case highlights the urgent need for updated worker protections as AI adoption accelerates, while business groups warn that overly restrictive interpretations could slow productivity gains and discourage investment in automation technologies.",
+      "source": "NPR",
+      "url": "https://www.npr.org/2026/05/01/nx-s1-5807131/tech-worker-china-ai",
+      "sourceCount": 1,
+      "disposition": "new",
+      "breaking": false,
+      "addedAt": "6:05 AM MT",
+      "addedAtISO": "2026-05-01T06:05:40.477190-06:00"
+    },
+    {
+      "category": "business",
+      "headline": "NYC Mayoral Candidate Mamdani Proposes Pied-à-Terre Tax, Citing Ken Griffin's $238 Million Penthouse",
+      "summary": "New York City mayoral candidate Zohran Mamdani announced a proposed pied-à-terre tax on non-primary luxury residences, citing hedge fund billionaire Ken Griffin's $238 million Midtown penthouse as a prime example of the wealth the levy would target. The press release naming Griffin sparked a sharp backlash from some of New York's wealthiest residents, who rallied to the Citadel founder's defense.\n\nMamdani, running on a progressive platform, framed the tax as a way to generate city revenue from ultra-luxury properties owned by part-time residents while middle-class New Yorkers face housing costs. Supporters argue that taxing vacant or seldom-used high-end properties could ease budget pressures and fund public services without burdening working residents.\n\nCritics, including wealthy donors and business groups, contend that singling out individuals by name in policy announcements is politically motivated and could deter high-net-worth individuals and investment from the city. Griffin himself has previously clashed with progressive politicians over tax and regulatory proposals in other jurisdictions.\n\nThe proposal adds to a crowded field of policy debates in New York City's mayoral race, where housing affordability and wealth inequality are central issues. Whether such a tax could clear the state legislature, which would likely need to authorize it, remains an open question.",
+      "source": "Bloomberg Politics",
+      "url": "https://www.bloomberg.com/news/articles/2026-05-01/mamdani-s-ken-griffin-comments-anger-nyc-s-wealthiest",
+      "sourceCount": 2,
+      "disposition": "new",
+      "breaking": false,
+      "addedAt": "6:05 AM MT",
+      "addedAtISO": "2026-05-01T06:05:40.477190-06:00"
+    },
+    {
+      "category": "business",
+      "headline": "American Farmers Increasingly Ignoring USDA Surveys as Confidence in Government Data Erodes",
+      "summary": "American farmers are declining to participate in U.S. Department of Agriculture surveys at growing rates, the latest indicator of deepening distrust in federal data collection, according to a Bloomberg report published Friday. The trend threatens the reliability of agricultural statistics that commodity markets, policymakers, and food supply chains depend on.\n\nThe USDA relies heavily on voluntary farmer participation to produce its widely watched crop production, acreage, and inventory estimates. As response rates fall, the agency faces greater difficulty producing accurate assessments, a concern that has grown more acute following recent scrutiny of USDA methodology after significant discrepancies were found in corn acreage estimates.\n\nThe erosion of farmer trust in government institutions has been building for years and spans political affiliations, though it has intensified amid broader rural skepticism of federal agencies. Some farmers cite concerns about how their data is used, while others express general distrust of Washington policymaking on agricultural issues.\n\nInaccurate or incomplete USDA data can cause significant volatility in futures markets and complicate planning for food processors, exporters, and retailers. Agricultural economists warn that without credible, timely data, the U.S. risks undermining one of its most important tools for managing domestic and global food supply transparency.",
+      "source": "Bloomberg Politics",
+      "url": "https://www.bloomberg.com/news/articles/2026-05-01/american-farmers-shun-usda-surveys-as-trust-in-data-erodes",
+      "sourceCount": 1,
+      "disposition": "new",
+      "breaking": false,
+      "addedAt": "6:05 AM MT",
+      "addedAtISO": "2026-05-01T06:05:40.477190-06:00"
+    },
+    {
+      "category": "business",
+      "headline": "Global Economy Faces Dual Pressure as Energy Shock and AI Transformation Collide",
+      "summary": "The global economy is navigating two powerful and opposing forces simultaneously: an energy price shock driven by geopolitical conflict and supply disruptions, and a technology-driven productivity wave fueled by rapid artificial intelligence deployment, Bloomberg reports. Economists warn the combination creates unusually complex crosscurrents that defy straightforward policy responses.\n\nEnergy costs have surged amid ongoing conflict affecting major oil-producing regions, squeezing manufacturers, logistics companies, and consumers worldwide. At the same time, AI-driven automation is beginning to show measurable productivity gains in certain sectors, potentially offsetting some inflationary pressure but also accelerating workforce displacement in others.\n\nCentral banks and finance ministries are struggling to calibrate responses to an environment where traditional inflation and growth signals are being distorted by structural technological change layered on top of a commodity shock. The divergence between sectors benefiting from AI adoption and those hammered by energy costs is widening inequality across and within national economies.\n\nAnalysts say the interaction between these forces could produce sharply different outcomes depending on how quickly AI productivity gains diffuse through the broader economy and whether energy markets stabilize. The uncertainty is complicating investment decisions for businesses and long-term budget planning for governments globally.",
+      "source": "Bloomberg Politics",
+      "url": "https://www.bloomberg.com/news/articles/2026-05-01/economic-crosscurrents-go-global-as-energy-shock-meets-ai-wave",
+      "sourceCount": 1,
+      "disposition": "new",
+      "breaking": false,
+      "addedAt": "6:05 AM MT",
+      "addedAtISO": "2026-05-01T06:05:40.477190-06:00"
+    },
+    {
+      "category": "world",
       "headline": "Brazil's Congress Overrides Lula Veto, Dramatically Reduces Bolsonaro's 27-Year Sentence",
       "summary": "Brazil's Congress voted Thursday to override President Luiz Inácio Lula da Silva's veto of legislation that would sharply reduce former President Jair Bolsonaro's 27-year prison sentence to just over two years. More than two-thirds of the conservative-majority Congress backed the bill, which changes how prison sentences are calculated for individuals convicted of coup-related acts. Bolsonaro, 71, was sentenced last year for his role in attempting to remain in power after losing the 2022 election to Lula.\n\nThe override represents a significant political defeat for Lula and his left-wing government, coming just one day after the Senate rejected his nominee for a Supreme Court seat — the first such rejection in decades. Lawmakers loudly chanted the name of Bolsonaro's eldest son, Senator Flavio Bolsonaro, who called the vote a birthday present and has his own presidential ambitions.\n\nBolsonaro had been temporarily placed under house arrest in March due to health concerns. The Supreme Court found he was aware of plans to assassinate Lula and his vice president, though the conspiracy ultimately failed when senior military leaders withheld support.\n\nThe legislation could still face a challenge before Brazil's Supreme Court. The twin legislative defeats for Lula come as he campaigns for a fourth presidential term and as polls show the younger Bolsonaro running roughly even with him, underscoring the deeply polarized state of Brazilian politics.",
       "source": "BBC News",
