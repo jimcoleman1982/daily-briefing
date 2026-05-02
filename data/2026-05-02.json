@@ -4,6 +4,58 @@
   "stories": [
     {
       "category": "world",
+      "headline": "U.S. Warns Shipping Firms of Sanctions for Paying Iran Strait of Hormuz Tolls",
+      "summary": "The U.S. Office of Foreign Assets Control issued a formal alert Friday warning shipping companies worldwide that paying Iran for safe passage through the Strait of Hormuz could expose them to American sanctions. The warning covers not only U.S. firms but also non-U.S. persons whose payments could draw in American financial institutions or insurers, expanding the potential reach of enforcement. The Treasury Department simultaneously sanctioned three Iranian foreign currency exchange houses, with Secretary Scott Bessent vowing to \"relentlessly target\" Iran's ability to generate and move funds.\n\nThe Strait of Hormuz has seen traffic collapse from roughly 3,000 ships per month to a handful per day since Iran began restricting passage after the U.S.-Israel military strike on Iran in late February. Iran has defended the toll collections as sovereign right, with its parliament claiming initial revenues have been deposited with the Central Bank. The U.S. has also maintained a naval blockade since April 13, with Central Command reporting that 45 commercial vessels have been turned back.\n\nThe strait is a critical chokepoint for global oil, food, medicine, and technology supplies. The UN refugee agency warned Friday that closure of key maritime routes is forcing the use of longer, more dangerous overland corridors. The escalating confrontation raises fears of broader disruption to global energy markets and supply chains, coming on top of existing trade tensions between the U.S. and major economies.",
+      "source": "BBC News",
+      "url": "https://www.bbc.com/news/articles/c3v2l2qq9qlo",
+      "sourceCount": 1,
+      "disposition": "new",
+      "breaking": false,
+      "importance": "tier1",
+      "addedAt": "1:13 PM MT",
+      "addedAtISO": "2026-05-02T13:13:19.176937-06:00"
+    },
+    {
+      "category": "world",
+      "headline": "Taiwan's President Completes Eswatini Visit After China Blocked Earlier Trip",
+      "summary": "Taiwan President Lai Ching-te arrived in Eswatini on Saturday, completing a diplomatic visit that had been postponed after China pressured African nations to deny overflight rights to his aircraft. The trip — unannounced in advance — included a bilateral meeting with King Mswati III and signing of a customs agreement, according to Taiwan's presidential office. Lai said Taiwan \"will never be deterred by external pressures.\"\n\nThe original visit, planned for late April to mark the 40th anniversary of King Mswati III's accession, was suspended after Seychelles, Mauritius, and Madagascar revoked flight permits for Lai's aircraft under what Taiwan described as Chinese diplomatic pressure. Beijing responded to Saturday's completed visit by calling it a \"stowaway-style escape farce\" and urging Eswatini to \"see clearly the general trend of history,\" while also calling Lai \"an international laughing stock.\"\n\nEswatini is Taiwan's only remaining diplomatic ally on the African continent and one of just 12 states globally that maintain formal relations with Taipei. The episode underscores the intensifying pressure China is exerting on Taiwan's shrinking diplomatic footprint. Notably, China announced this week it was scrapping tariffs for all African nations except Eswatini, a pointed economic signal tied directly to the kingdom's relationship with Taiwan.",
+      "source": "BBC News",
+      "url": "https://www.bbc.com/news/articles/c809ln029ldo",
+      "sourceCount": 7,
+      "disposition": "new",
+      "breaking": false,
+      "importance": "tier2",
+      "addedAt": "1:13 PM MT",
+      "addedAtISO": "2026-05-02T13:13:19.176937-06:00"
+    },
+    {
+      "category": "technology",
+      "headline": "Pentagon Signs AI Deals With Google, Microsoft, OpenAI and Four Other Firms for Classified Military Systems",
+      "summary": "The Department of Defense announced Friday it has reached agreements with seven technology companies — Google, Microsoft, Amazon Web Services, Nvidia, OpenAI, Reflection, and SpaceX — to integrate artificial intelligence into classified military networks. The Pentagon said the AI capabilities will \"augment warfighter decision-making in complex operational environments,\" including faster target identification and management of weapons maintenance and supply chains.\n\nNotably absent from the contracts is AI firm Anthropic, which has been in a public dispute and legal fight with the Trump administration over the ethics and safety of deploying AI in warfare. One of the contracting companies said its agreement requires human oversight in certain situations, but the scope and nature of human control across the other contracts was not specified. Defense Department use of AI has accelerated sharply in recent years.\n\nThe deals have drawn scrutiny from civil liberties groups and AI researchers who warn the technology could erode privacy protections or enable machines to select battlefield targets with insufficient human oversight. Concerns intensified following reports that U.S. tech giants quietly provided AI targeting support to Israel during its military campaign in Gaza and Lebanon, where civilian casualties were high. Experts say the fundamental questions about appropriate levels of human involvement, risk tolerance, and operator training remain unresolved even as the military moves rapidly to deploy the tools.",
+      "source": "Associated Press",
+      "url": "https://apnews.com/article/pentagon-artificial-intelligence-military-classified-systems-war-060cecf836c4cebcf012a3ceb5333f2c",
+      "sourceCount": 2,
+      "disposition": "new",
+      "breaking": false,
+      "importance": "tier2",
+      "addedAt": "1:13 PM MT",
+      "addedAtISO": "2026-05-02T13:13:19.176937-06:00"
+    },
+    {
+      "category": "world",
+      "headline": "Somali Pirates Hijack Second Oil Tanker in Two Weeks off Yemen Coast",
+      "summary": "Somali pirates seized the oil tanker MT Eureka in the Gulf of Aden early Saturday, the second successful tanker hijacking in a 10-day period and the fourth in two weeks, according to Yemeni coastguard officials and three Puntland regional security officials who spoke with the BBC. The vessel, sailing under a Togolese flag, was overrun at 5 a.m. local time near the port of Qana and was being steered toward Somali waters. A second incident occurred separately, with armed persons on a skiff approaching a bulk carrier near Al-Mukala, Yemen.\n\nThe surge follows the April 22 hijacking of the Honor 25, which was carrying 18,500 barrels of oil bound for Mogadishu. Security officials say piracy is expanding along Somalia's entire coastline — the longest in mainland Africa — with one official warning that \"the on-going crisis with the pirates is much worse than many realize.\"\n\nSomali piracy, which had declined sharply since 2011, began resurging in late 2023 when Houthi rebel attacks in the Red Sea and Gulf of Aden drew international naval forces away from anti-piracy operations, creating a security vacuum exploited by armed coastal groups. The European Union Naval Force and Somali authorities had not publicly addressed Saturday's hijacking as of the time of reporting.",
+      "source": "BBC News",
+      "url": "https://www.bbc.com/news/articles/cpwprl0v2npo",
+      "sourceCount": 2,
+      "disposition": "new",
+      "breaking": false,
+      "importance": "tier2",
+      "addedAt": "1:13 PM MT",
+      "addedAtISO": "2026-05-02T13:13:19.176937-06:00"
+    },
+    {
+      "category": "world",
       "headline": "Trump Signs Executive Order Imposing New Sanctions on Cuba, Threatens Military Presence",
       "summary": "President Trump signed an executive order Friday targeting Cuban officials in the energy, defense, financial, and security sectors, as well as individuals the administration alleges have committed human rights abuses or corruption. The move represents a further tightening of U.S. foreign policy toward the communist-governed island, which lies roughly 90 miles from Florida.\n\nIn a remark to an audience in Florida Friday night, Trump escalated his rhetoric significantly, saying the U.S. would be \"taking over\" Cuba \"almost immediately\" and suggesting a U.S. aircraft carrier could be deployed offshore as a show of force. Cuban Foreign Minister Bruno Rodriguez condemned the sanctions as \"illegal and abusive,\" saying the measures violated the United Nations Charter and amounted to \"collective punishment against the Cuban people.\"\n\nThe new sanctions come despite Cuban President Miguel Díaz-Canel confirming in March that Havana and Washington were engaged in negotiations over bilateral relations. A U.S. oil blockade has already caused widespread blackouts and fuel shortages across the island, affecting hospitals, public transport, and schools, with only one Russian oil tanker reaching Cuba since the blockade was imposed. Trump has also threatened tariffs on any country that supplies oil to Cuba.\n\nThe announcement coincided with May Day demonstrations outside the U.S. Embassy in Havana, where protesters denounced the blockade. The episode underscores deepening U.S.-Cuba tensions at a moment when diplomatic contacts had appeared to offer a narrow opening.",
       "source": "BBC News",
