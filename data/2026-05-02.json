@@ -4,6 +4,45 @@
   "stories": [
     {
       "category": "world",
+      "headline": "Trump Signs Executive Order Imposing New Sanctions on Cuba, Threatens Military Presence",
+      "summary": "President Trump signed an executive order Friday targeting Cuban officials in the energy, defense, financial, and security sectors, as well as individuals the administration alleges have committed human rights abuses or corruption. The move represents a further tightening of U.S. foreign policy toward the communist-governed island, which lies roughly 90 miles from Florida.\n\nIn a remark to an audience in Florida Friday night, Trump escalated his rhetoric significantly, saying the U.S. would be \"taking over\" Cuba \"almost immediately\" and suggesting a U.S. aircraft carrier could be deployed offshore as a show of force. Cuban Foreign Minister Bruno Rodriguez condemned the sanctions as \"illegal and abusive,\" saying the measures violated the United Nations Charter and amounted to \"collective punishment against the Cuban people.\"\n\nThe new sanctions come despite Cuban President Miguel Díaz-Canel confirming in March that Havana and Washington were engaged in negotiations over bilateral relations. A U.S. oil blockade has already caused widespread blackouts and fuel shortages across the island, affecting hospitals, public transport, and schools, with only one Russian oil tanker reaching Cuba since the blockade was imposed. Trump has also threatened tariffs on any country that supplies oil to Cuba.\n\nThe announcement coincided with May Day demonstrations outside the U.S. Embassy in Havana, where protesters denounced the blockade. The episode underscores deepening U.S.-Cuba tensions at a moment when diplomatic contacts had appeared to offer a narrow opening.",
+      "source": "BBC News",
+      "url": "https://www.bbc.com/news/articles/cwy21n1970vo",
+      "sourceCount": 1,
+      "disposition": "new",
+      "breaking": false,
+      "importance": "tier2",
+      "addedAt": "11:08 AM MT",
+      "addedAtISO": "2026-05-02T11:08:24.853951-06:00"
+    },
+    {
+      "category": "world",
+      "headline": "Ukrainian Drone Strike Hits Russian Oil Terminal at Black Sea Port of Tuapse",
+      "summary": "A fire at a marine oil terminal in the Russian Black Sea port of Tuapse was extinguished Saturday after Ukrainian forces struck the facility with a drone attack on Friday, according to emergency authorities in Russia's Krasnodar region, who posted the update on Telegram. The Tuapse terminal is one of Russia's significant Black Sea energy export hubs.\n\nThe strike is part of an ongoing Ukrainian campaign targeting Russian energy and logistics infrastructure, which Kyiv has pursued as a means of degrading Moscow's revenue base and supply chains. Russia has not publicly announced any casualties or detailed damage assessments.\n\nThe attack comes amid continued active military operations along multiple fronts in the more than two-year conflict. Ukrainian drone and missile strikes on Russian territory, including energy infrastructure, have become a consistent feature of the war's strategic landscape.",
+      "source": "Bloomberg Politics",
+      "url": "https://www.bloomberg.com/news/articles/2026-05-02/russian-tuapse-oil-terminal-fire-extinguished-after-attack",
+      "sourceCount": 1,
+      "disposition": "new",
+      "breaking": false,
+      "importance": "tier2",
+      "addedAt": "11:08 AM MT",
+      "addedAtISO": "2026-05-02T11:08:24.853951-06:00"
+    },
+    {
+      "category": "technology",
+      "headline": "California to Allow Police to Ticket Autonomous Vehicle Manufacturers for Traffic Violations",
+      "summary": "California's Department of Motor Vehicles announced new regulations that will, for the first time, allow police to issue formal citations to autonomous vehicle manufacturers when their driverless cars commit moving violations. The rules take effect July 1 and are described by the DMV as \"the most comprehensive AV regulations in the nation.\"\n\nUnder the new framework, officers can issue a \"notice of AV noncompliance\" directly to the manufacturer rather than a driver. Companies will also be required to respond to calls from police and emergency officials within 30 seconds and face penalties if their vehicles enter active emergency zones. The rules stem from a broader 2024 state law imposing deeper oversight of autonomous vehicle technology.\n\nThe regulations address a gap that had left law enforcement unable to hold driverless vehicles accountable for violations. In one documented incident last September, San Bruno police watched a Waymo vehicle make an illegal U-turn directly in front of them but could not issue a ticket because there was no driver present. A major San Francisco blackout last December left multiple Waymo vehicles stalled in busy intersections, compounding traffic problems, and the San Francisco Fire Department has repeatedly complained about robotaxis obstructing emergency responses.\n\nWaymo is the primary operator of fully autonomous robotaxis in the San Francisco Bay Area and Los Angeles County, though Tesla and other companies also hold permits to test autonomous vehicles in California cities. The state's action comes as questions about AV accountability and public safety grow alongside the rapid expansion of the technology.",
+      "source": "BBC News",
+      "url": "https://www.bbc.com/news/articles/clypjx3rg2go",
+      "sourceCount": 2,
+      "disposition": "new",
+      "breaking": false,
+      "importance": "tier2",
+      "addedAt": "11:08 AM MT",
+      "addedAtISO": "2026-05-02T11:08:24.853951-06:00"
+    },
+    {
+      "category": "world",
       "headline": "Update: Missing Oscar Found in Frankfurt After TSA Forced Anti-Putin Documentary Filmmaker to Check It",
       "summary": "Lufthansa confirmed Saturday that an Academy Award statue belonging to Pavel Talankin, co-director of the Best Feature Documentary winner \"Mr Nobody Against Putin,\" has been located in Frankfurt after going missing during a checked-bag incident at JFK Airport. Talankin had carried the Oscar in his carry-on bag for a flight to Germany, but TSA stopped him at JFK, saying the statuette could be used as a weapon and requiring him to check it. When he landed in Frankfurt, the Oscar was gone.\n\nLufthansa told the BBC: \"The Oscar statue has now been located and is safely in our care in Frankfurt,\" and said the airline was in direct contact with Talankin to arrange its return \"as quickly as possible.\" The airline added that an internal review of the circumstances was ongoing and expressed regret for the inconvenience.\n\nThe documentary's executive producer Robin Hessman said Talankin had flown multiple times previously with both his Oscar and his BAFTA without incident, and disputed the necessity of forcing him to check the award. \"This wouldn't have happened to Leonardo DiCaprio,\" she said. The BBC has contacted the Academy of Motion Picture Arts and Sciences and the TSA for comment.\n\n\"Mr Nobody Against Putin\" documents the intensification of war propaganda in a Russian school following Russia's invasion of Ukraine in February 2022. Talankin is now exiled from Russia for his safety; Russia has banned the documentary from streaming platforms on grounds that it \"propagates extremism and terrorism.\"",
       "source": "BBC News",
