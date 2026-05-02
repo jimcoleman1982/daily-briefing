@@ -1,0 +1,58 @@
+{
+  "date": "2026-05-02",
+  "dateFormatted": "Saturday, May 2, 2026",
+  "stories": [
+    {
+      "category": "politics",
+      "headline": "Update: Suspect in Trump Press Dinner Shooting — Key Details Remain Disputed",
+      "summary": "Nearly a week after Cole Tomas Allen, 31, allegedly attempted to attack President Trump at the White House Correspondents' Association dinner at the Washington Hilton, investigators and prosecutors are still unable to confirm whether Allen actually shot a Secret Service officer. Trump and senior officials initially stated that an officer was shot and survived due to a bulletproof vest, but court documents filed by government attorneys do not explicitly allege the suspect fired the shot that struck the agent.\n\nActing U.S. Attorney General Todd Blanche walked back his own Sunday statement on the matter by Monday, saying ballistics were still being analyzed. Court filings describe Allen charging through a security magnetometer with a long gun and a Secret Service officer being shot once in the chest, but leave open the question of who fired the round. Allen was found armed with a semi-automatic handgun, a pump-action shotgun, and three knives.\n\nLegal analysts warn that contradictory public statements by law enforcement could give defense attorneys grounds to challenge the government's case. The Justice Department, Secret Service, and U.S. Attorney's office have declined to provide further comment. The discrepancy between the president's public assertions and the formal legal record has drawn scrutiny as the investigation continues.",
+      "source": "BBC News",
+      "url": "https://www.bbc.com/news/articles/cm2pmk0r3pjo",
+      "sourceCount": 7,
+      "disposition": "update",
+      "breaking": false,
+      "importance": "tier1",
+      "addedAt": "5:08 AM MT",
+      "addedAtISO": "2026-05-02T05:08:18.274973-06:00"
+    },
+    {
+      "category": "business",
+      "headline": "Trump Announces 25% Tariffs on EU Cars and Trucks, Escalating Trade Tensions",
+      "summary": "President Donald Trump announced Friday that he will raise tariffs on cars and trucks imported from the European Union to 25%, escalating an already strained transatlantic trade relationship. Trump claimed the EU was not adhering to a previously negotiated trade deal struck at his Turnberry golf course in Scotland, though he declined to specify how the EU had failed to comply when pressed by reporters.\n\nThe European Commission pushed back, stating the EU was implementing the agreement in line with standard legislative practice and had kept U.S. officials fully informed. The Commission said it would keep \"all options open\" to protect EU interests if the U.S. took measures inconsistent with the joint statement. The automotive sector is a particularly sensitive target — car manufacturing represents a substantial share of several major European economies, including Germany and France.\n\nThe tariff hike comes after months of stalled negotiations over steel and aluminium and follows European Parliament approval of the broader trade deal in March, which included a clause allowing suspension if the U.S. was deemed to have engaged in economic coercion or threatened member states' territorial integrity. Trump urged European automakers to shift production to the United States, promising no tariff for cars built on American soil. The announcement rattled global markets and signals a potential breakdown of the Turnberry framework that had offered EU exporters temporary relief from steeper \"Liberation Day\" levies.",
+      "source": "BBC News",
+      "url": "https://www.bbc.com/news/articles/c4g8zpylzz9o",
+      "sourceCount": 6,
+      "disposition": "new",
+      "breaking": false,
+      "importance": "tier1",
+      "addedAt": "5:08 AM MT",
+      "addedAtISO": "2026-05-02T05:08:18.274973-06:00"
+    },
+    {
+      "category": "politics",
+      "headline": "Fifth Circuit Restricts Mail-Order Access to Abortion Pill Mifepristone",
+      "summary": "The Fifth Circuit Court of Appeals issued an order Friday temporarily reinstating the requirement that mifepristone — the most commonly used abortion pill in the United States — be obtained in person rather than through mail-order pharmacy or telemedicine. The ruling overrides a lower court decision that had paused the case while the Trump administration conducts an FDA review, and stems from a lawsuit brought by the state of Louisiana.\n\nThe decision effectively suspends a 2023 FDA regulation that had permanently lifted the in-person dispensing requirement first loosened during the COVID-19 pandemic. The appeals court ruled that the FDA's action undermined Louisiana's abortion ban, writing that \"every abortion facilitated by FDA's action cancels Louisiana's ban on medical abortions.\" The order will remain in effect as the underlying case is litigated.\n\nSupporters of the ruling called it a significant victory. Louisiana Attorney General Liz Murrill said the Biden-era rule \"facilitated the deaths of thousands of Louisiana babies,\" and Marjorie Dannenfelser of Susan B Anthony Pro-Life America praised it as a win for \"victims and survivors of Biden's reckless mail-order abortion drug regime.\" Critics were sharply opposed: ACLU attorney Julia Kaye called the decision one that \"defies clear science and settled law,\" and New York Attorney General Letitia James said abortion access — including medication abortion — remains fully legal in her state and that her office will continue to protect it. In 2024, the Supreme Court had unanimously rejected a separate effort to restrict mifepristone access, but left the door open to further legal challenges.",
+      "source": "BBC News",
+      "url": "https://www.bbc.com/news/articles/c2k20z5yj3wo",
+      "sourceCount": 7,
+      "disposition": "new",
+      "breaking": false,
+      "importance": "tier2",
+      "addedAt": "5:08 AM MT",
+      "addedAtISO": "2026-05-02T05:08:18.274973-06:00"
+    },
+    {
+      "category": "world",
+      "headline": "Turkey Arrests More Than 500 at May Day Rallies in Istanbul",
+      "summary": "Turkish police arrested more than 500 people and deployed tear gas and water cannons against demonstrators attempting to march to Taksim Square in Istanbul on International Labour Day. The square has been sealed off to protests since 2013, and police blocked access overnight ahead of Friday's demonstrations. The CHD lawyers' group, which was present at the rallies, confirmed the arrest toll.\n\nAmong those confronted by police was Erkan Bas, president of the Turkish Workers' Party, who was part of a group in the Mecidiyekoy district that breached a police barricade before being dispersed with water cannons. Permitted rallies went ahead in other districts and cities including Kadikoy, Kartal, Izmir, Diyarbakir, and Ankara, where groups gathered at approved locations under heavy security.\n\nPresident Recep Tayyip Erdogan posted a Labor Day greeting on social media, saying he congratulated workers \"who earn their living through their labor.\" The annual crackdown on Taksim Square marches has become a flashpoint in Turkey's ongoing tensions between the government and labor and opposition movements, particularly as the country continues to face political pressure following a series of high-profile arrests of opposition figures earlier this year.",
+      "source": "BBC News",
+      "url": "https://www.bbc.com/news/articles/cwy2x7rq3nqo",
+      "sourceCount": 2,
+      "disposition": "new",
+      "breaking": false,
+      "importance": "tier2",
+      "addedAt": "5:08 AM MT",
+      "addedAtISO": "2026-05-02T05:08:18.274973-06:00"
+    }
+  ]
+}
