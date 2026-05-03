@@ -1,0 +1,58 @@
+{
+  "date": "2026-05-03",
+  "dateFormatted": "Sunday, May 3, 2026",
+  "stories": [
+    {
+      "category": "world",
+      "headline": "Update: Murder Charge Filed in Death of 5-Year-Old Australian Girl; Riots Follow Arrest",
+      "summary": "Jefferson Lewis, 47, has been charged with murder and two counts of sexual assault following the death of a five-year-old Aboriginal girl identified by her family as Kumanjayi Little Baby. Her body was discovered Thursday after a major multi-day police search in Alice Springs, Northern Territory. Northern Territory Police Commissioner Martin Dole announced the charges Sunday morning and urged the community to respect the judicial process. Lewis is scheduled to appear in a Darwin court Tuesday.\n\nThe arrest triggered violent riots outside the Alice Springs hospital where Lewis was being treated for injuries he sustained before being taken into custody. Crowds threw projectiles at police, set at least one police vehicle ablaze, and looted a nearby petrol station and supermarket. Police responded with tear gas and subsequently transferred Lewis roughly 1,500 kilometers north to Darwin for his own safety. Five people have been arrested in connection with the riots, and property damage is estimated at more than A$180,000.\n\nThe girl's grandfather, senior Warlpiri elder Robin Granites, called for calm, saying the community's anger was understandable but that 'this is not our way.' Commissioner Dole described the riot behavior as 'disgusting' and 'abhorrent,' drawing a sharp distinction between genuine grief and criminal conduct. The case has drawn national attention in Australia to both child safety in remote Aboriginal communities and the outbreak of civil unrest that followed.",
+      "source": "BBC News",
+      "url": "https://www.bbc.com/news/articles/cy92qennznjo?at_medium=RSS&at_campaign=rss",
+      "sourceCount": 3,
+      "disposition": "update",
+      "breaking": false,
+      "importance": "tier2",
+      "addedAt": "5:08 AM MT",
+      "addedAtISO": "2026-05-03T05:08:13.475776-06:00"
+    },
+    {
+      "category": "world",
+      "headline": "Austria Arrests Suspect in Rat Poison Baby Food Tampering Case",
+      "summary": "Austrian police have detained a 39-year-old suspect in connection with the discovery of rat poison in HiPP baby food jars sold at SPAR supermarkets in eastern Austria. The Burgenland State Criminal Police Office launched the investigation after a tampered jar was reported by a customer in the city of Eisenstadt on April 18. Five tampered jars were ultimately seized before any were consumed; none of the targeted products were eaten and no injuries have been reported.\n\nThe case spans three countries: HiPP, a German-based organic baby food company, recalled all of its baby food jars from SPAR-affiliated stores in Austria as a precaution, and retailers in Slovakia and the Czech Republic also pulled the brand's jars from shelves. The affected product was a 6.7-ounce jar of carrot-and-potato food formulated for infants as young as five months. HiPP stated the jars left its facility in 'perfect condition' and said it had been a 'victim of extortion,' noting that an unidentified blackmailer had sent a message to a shared mailbox.\n\nThe Burgenland public prosecutor's office has opened an investigation into 'intentional endangerment of the public.' An expert toxicological report on the poison's potency is still pending. HiPP said it was 'greatly relieved' by the arrest and pledged further updates as verified details emerge.",
+      "source": "New York Post",
+      "url": "https://nypost.com/2026/05/03/world-news/austrian-police-detain-suspect-in-case-of-rat-poison-found-in-baby-food-jars-on-supermarket/",
+      "sourceCount": 4,
+      "disposition": "new",
+      "breaking": false,
+      "importance": "tier2",
+      "addedAt": "5:08 AM MT",
+      "addedAtISO": "2026-05-03T05:08:13.475776-06:00"
+    },
+    {
+      "category": "politics",
+      "headline": "Update: Prosecutors Release Video of Suspect Storming White House Correspondents' Dinner",
+      "summary": "Federal prosecutors released video footage Thursday showing the moment Cole Tomas Allen, a California man, ran through a security magnetometer armed with a long gun and knives at the White House Correspondents' Association dinner on April 25. U.S. Attorney Jeanine Pirro posted the video on social media amid ongoing questions about whether a Secret Service officer struck in the melee was hit by Allen's weapon or by friendly fire. Pirro stated there is no evidence the officer was hit by a colleague's bullet.\n\nThe footage appears to show Allen pointing his weapon at a Secret Service agent, who then fired back five times. Allen was injured during the incident but was not shot. He appeared briefly in federal court Thursday, agreed to remain jailed pending trial, and did not enter a plea. The attack disrupted one of the most high-profile annual gatherings in Washington, which was attended by journalists, administration officials, and others.\n\nSecret Service Director Sean Curran defended the agency's security planning for the event and said he would not change the protocols. The release of the video marks a significant new development in the case, providing the first visual account of the attack and partially addressing the disputed question of how the officer was wounded. The suspect faces federal charges related to the alleged assassination attempt on President Trump.",
+      "source": "Associated Press",
+      "url": "https://apnews.com/article/trump-correspondents-dinner-cole-tomas-allen-shooting-5c4d9a26fbcca29ca56f49da34fefc25",
+      "sourceCount": 2,
+      "disposition": "update",
+      "breaking": false,
+      "importance": "tier1",
+      "addedAt": "5:08 AM MT",
+      "addedAtISO": "2026-05-03T05:08:13.475776-06:00"
+    },
+    {
+      "category": "science_health",
+      "headline": "Medicare Portal Inadvertently Published Social Security Numbers of Health Providers",
+      "summary": "The Centers for Medicare and Medicaid Services unintentionally published Social Security numbers for at least 100 health providers on its publicly accessible National Provider Directory, a database used by seniors to locate healthcare professionals. The agency took down the portal after The Washington Post alerted CMS officials to the exposure. The scope of how long the data was publicly visible or whether it was accessed by unauthorized parties has not been disclosed.\n\nThe incident raises fresh concerns about data security practices within federal health agencies at a time when the Department of Government Efficiency has been conducting sweeping reviews of federal IT systems. Privacy advocates and healthcare industry groups have previously warned that government provider databases contain sensitive personal information that, if exposed, could facilitate identity theft or fraud.\n\nCMS has not publicly detailed how the Social Security data came to be included in the directory or what remediation steps are being taken beyond removing the page. The episode adds to a pattern of government data exposure incidents that have drawn scrutiny from both parties in Congress.",
+      "source": "The Hill",
+      "url": "https://thehill.com/policy/healthcare/5860959-cms-publishes-social-security-data/",
+      "sourceCount": 2,
+      "disposition": "new",
+      "breaking": false,
+      "importance": "tier2",
+      "addedAt": "5:08 AM MT",
+      "addedAtISO": "2026-05-03T05:08:13.475776-06:00"
+    }
+  ]
+}
