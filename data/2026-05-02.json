@@ -3,6 +3,45 @@
   "dateFormatted": "Saturday, May 2, 2026",
   "stories": [
     {
+      "category": "politics",
+      "headline": "Update: Trump Defies War Powers Deadline on Iran, Claims Presidential Authority",
+      "summary": "Friday marked the 60th day since President Trump notified Congress of U.S. military strikes against Iran on February 28, triggering a legal deadline under the 1973 War Powers Resolution requiring him to terminate hostilities or seek congressional authorization. Trump declined to seek approval, arguing the law is \"totally unconstitutional\" and that past presidents have routinely ignored it. The administration also contends the clock paused when a ceasefire went into effect, though that interpretation is disputed.\n\nTrump's claim that predecessors uniformly flouted the law is partially accurate but overstated. Presidents Reagan and both Bushes sought or received congressional authorization for major military actions. Presidents Clinton and Obama did exceed the 60-day limit in Kosovo (1999) and Libya (2011), respectively, setting precedents Trump is now citing. Legal scholars note, however, that those precedents do not render Trump's position lawful.\n\nSupporting Trump, Defense Secretary Pete Hegseth has backed the ceasefire-pause interpretation. Critics, including congressional Democrats and some Republicans, argue the situation amounts to an unchecked presidential war commitment that the framers of the Constitution specifically sought to prevent. Political science professor David Schultz told the BBC: \"Just because other presidents haven't invoked it doesn't mean that what Trump is doing here is correct.\"\n\nThe standoff sets up a potential constitutional confrontation between the executive and legislative branches over war-making authority, with no immediate legal mechanism to force compliance. The Senate earlier this week failed to pass a Democratic measure to limit Trump's Iran war authority, leaving the president's position intact for now.",
+      "source": "BBC News",
+      "url": "https://www.bbc.com/news/articles/c794zlx5lx8o",
+      "sourceCount": 18,
+      "disposition": "new",
+      "breaking": false,
+      "importance": "tier1",
+      "addedAt": "9:08 PM MT",
+      "addedAtISO": "2026-05-02T21:08:40.606446-06:00"
+    },
+    {
+      "category": "world",
+      "headline": "U.S. Fast-Tracks $8.6 Billion in Arms Sales to Middle East Allies, Bypassing Congress",
+      "summary": "Secretary of State Marco Rubio approved more than $8.6 billion in expedited arms sales to Israel, the United Arab Emirates, Kuwait and Qatar on Friday, bypassing the standard congressional review process. Approved transfers include an Advanced Precision Kill Weapon System worth $992 million to Israel and $147.6 million to the UAE, along with air defense missiles and laser guidance systems to other Gulf partners. All four recipients have been involved in or affected by the ongoing U.S.-Israeli conflict with Iran.\n\nThe State Department move comes as the Iran war ceasefire is described as \"ever more fragile,\" with peace talks stopping and starting. The Pentagon separately emphasized that a U.S. naval blockade in the Gulf of Oman has denied Iran nearly $5 billion in oil revenue since April 13, redirecting more than 40 vessels — what officials describe as Trump's primary leverage tool in any eventual negotiations.\n\nThe decision to bypass congressional notification drew scrutiny from lawmakers who view arms-sale review as a key oversight function. Supporters of the expedited process argue that allied nations facing active Iranian missile and drone attacks require rapid resupply. Representative Seth Moulton, a Democrat, publicly debated Defense Secretary Hegseth over the Iran war's conduct, reflecting the partisan divide over the conflict's scope and management.\n\nThe arms transfers underscore a broader U.S. strategy of reinforcing Gulf and Israeli defenses while maintaining economic pressure on Tehran — a dual-track approach whose durability depends heavily on whether the ceasefire holds.",
+      "source": "New York Times",
+      "url": "https://www.nytimes.com/2026/05/02/world/middleeast/us-fast-track-arms-deal-middle-east.html",
+      "sourceCount": 4,
+      "disposition": "new",
+      "breaking": false,
+      "importance": "tier1",
+      "addedAt": "9:08 PM MT",
+      "addedAtISO": "2026-05-02T21:08:40.606446-06:00"
+    },
+    {
+      "category": "other",
+      "headline": "Paralympic Champion and Former F1 Driver Alex Zanardi Dies at 59",
+      "summary": "Alex Zanardi, the Italian racing driver and four-time Paralympic gold medalist, died on May 1 at the age of 59. His family announced his passing, saying he \"died peacefully, surrounded by the love of his family and friends.\" Zanardi had been in fragile health since 2020, when he suffered severe traumatic brain injuries after losing control of his handbike during a road race in Tuscany and colliding with an oncoming truck.\n\nZanardi had both legs amputated following a catastrophic crash at Germany's Lausitzring in 2001 during a Champ Car race in the United States. Rather than ending his athletic career, the accident marked a turning point: he took up Paralympic handcycling, won gold medals at London 2012 and Rio 2016, became a 12-time world champion in para-cycling, and won the men's para-cycling race at the New York Marathon in 2011.\n\nFormula 1's governing body, the FIA, called Zanardi's story \"one of sport's most admired\" journeys, and F1 held a minute's silence before Saturday's Miami Grand Prix sprint race in his honor. Mercedes team principal Toto Wolff said Zanardi \"showed that even when life challenges you, it does not have to define you.\" Italian Prime Minister Giorgia Meloni said the country had lost \"a great champion and an extraordinary man.\"",
+      "source": "BBC News",
+      "url": "https://www.bbc.com/sport/formula1/articles/cvgz0kpxjpgo",
+      "sourceCount": 2,
+      "disposition": "new",
+      "breaking": false,
+      "importance": "tier3",
+      "addedAt": "9:08 PM MT",
+      "addedAtISO": "2026-05-02T21:08:40.606446-06:00"
+    },
+    {
       "category": "world",
       "headline": "Update: US Troop Withdrawal from Germany Draws NATO Alarm, Bipartisan Senate Concern",
       "summary": "Germany's Defense Minister Boris Pistorius said Friday that the US decision to withdraw 5,000 troops from Germany was \"foreseeable,\" as NATO sought clarification from Washington on the scope and timeline of the pullback. Trump, when asked about the cuts Saturday night, said the US would cut \"way down\" and \"a lot further than 5,000,\" without providing specifics. The withdrawal follows a public feud between Trump and German Chancellor Friedrich Merz, who had said the US was \"humiliated\" by Iranian negotiators during ongoing war talks.\n\nNATO spokeswoman Allison Hart said the alliance was \"working with the US to understand the details,\" while Polish Prime Minister Donald Tusk warned that \"the greatest threat to the transatlantic community are not its external enemies, but the ongoing disintegration of our alliance.\" Trump has also floated troop reductions in Italy and Spain.\n\nThe announcement drew rare bipartisan pushback from within Trump's own party. Senate Armed Services Committee Chairman Roger Wicker and House Armed Services Committee Chairman Mike Rogers said they were \"very concerned\" and argued it is in the US interest to maintain a strong deterrent in Europe rather than withdraw forces from the continent.\n\nGermany currently hosts more than 36,000 active duty US troops, by far the largest American military presence in Europe. Pistorius noted that Germany has dramatically increased its defense spending under the Merz government, with expenditure projected to reach 3.1% of GDP — well above NATO's 2% target — and said Berlin would work more closely with European allies on continental security going forward.",
