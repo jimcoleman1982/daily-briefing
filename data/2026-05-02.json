@@ -4,6 +4,45 @@
   "stories": [
     {
       "category": "world",
+      "headline": "Update: US Troop Withdrawal from Germany Draws NATO Alarm, Bipartisan Senate Concern",
+      "summary": "Germany's Defense Minister Boris Pistorius said Friday that the US decision to withdraw 5,000 troops from Germany was \"foreseeable,\" as NATO sought clarification from Washington on the scope and timeline of the pullback. Trump, when asked about the cuts Saturday night, said the US would cut \"way down\" and \"a lot further than 5,000,\" without providing specifics. The withdrawal follows a public feud between Trump and German Chancellor Friedrich Merz, who had said the US was \"humiliated\" by Iranian negotiators during ongoing war talks.\n\nNATO spokeswoman Allison Hart said the alliance was \"working with the US to understand the details,\" while Polish Prime Minister Donald Tusk warned that \"the greatest threat to the transatlantic community are not its external enemies, but the ongoing disintegration of our alliance.\" Trump has also floated troop reductions in Italy and Spain.\n\nThe announcement drew rare bipartisan pushback from within Trump's own party. Senate Armed Services Committee Chairman Roger Wicker and House Armed Services Committee Chairman Mike Rogers said they were \"very concerned\" and argued it is in the US interest to maintain a strong deterrent in Europe rather than withdraw forces from the continent.\n\nGermany currently hosts more than 36,000 active duty US troops, by far the largest American military presence in Europe. Pistorius noted that Germany has dramatically increased its defense spending under the Merz government, with expenditure projected to reach 3.1% of GDP — well above NATO's 2% target — and said Berlin would work more closely with European allies on continental security going forward.",
+      "source": "BBC News",
+      "url": "https://www.bbc.com/news/articles/cd9pn541jjlo",
+      "sourceCount": 3,
+      "disposition": "update",
+      "breaking": false,
+      "importance": "tier1",
+      "addedAt": "6:09 PM MT",
+      "addedAtISO": "2026-05-02T18:09:20.931315-06:00"
+    },
+    {
+      "category": "other",
+      "headline": "Golden Tempo Wins Kentucky Derby at 23-1 Odds; Cherie DeVaux Becomes First Woman to Train Derby Winner",
+      "summary": "Golden Tempo captured the 152nd Kentucky Derby on Saturday at Churchill Downs in Louisville, Kentucky, winning at longshot odds of 23-1 and upsetting the favored Renegade. The victory delivered a historic milestone: trainer Cherie DeVaux became the first woman to train the winner of the Kentucky Derby, the opening leg of thoroughbred racing's Triple Crown.\n\nDeVaux's win breaks a barrier in a sport long dominated by male trainers at the sport's highest level. The Derby, held annually on the first Saturday in May, is one of the most-watched sporting events in the United States and the most prestigious race in American thoroughbred history.\n\nGolden Tempo's upset adds to a string of longshot winners in recent Derby history and sets the stage for the Preakness Stakes, the second leg of the Triple Crown, in the coming weeks.",
+      "source": "NPR",
+      "url": "https://www.npr.org/2026/05/02/nx-s1-5808929/golden-tempo-kentucky-derby-winner-cherie-devaux",
+      "sourceCount": 4,
+      "disposition": "new",
+      "breaking": false,
+      "importance": "tier3",
+      "addedAt": "6:09 PM MT",
+      "addedAtISO": "2026-05-02T18:09:20.931315-06:00"
+    },
+    {
+      "category": "world",
+      "headline": "Clandestine Network Smuggles Starlink Terminals into Iran During Two-Month Internet Blackout",
+      "summary": "Iran has been under one of the longest-running national internet shutdowns ever recorded — more than two months — following US and Israeli airstrikes in late February. A clandestine network of activists outside Iran has been smuggling SpaceX Starlink satellite terminals across the border to give Iranians access to uncensored internet, according to a BBC News investigation. One participant, identified only as Sahand, says he has sent a dozen terminals into Iran since January and is actively seeking ways to send more.\n\nThe Iranian government shut down the internet citing security concerns, saying it aims to prevent espionage and cyber-attacks during wartime. Last year, Iran passed legislation making the use, purchase, or sale of Starlink devices punishable by up to two years in prison, with up to ten years for distributing more than ten devices. State media has reported multiple arrests, including four people detained last month for importing satellite internet equipment.\n\nThe human rights organization Witness estimated in January that at least 50,000 Starlink terminals are already inside Iran, a number activists believe has risen since. Multiple people can share a single terminal, making each device a significant resource for communities cut off from outside information. Sahand, who spoke to the BBC outside Iran, said he fears reprisals against family members and contacts inside the country if he is identified by the regime.\n\nThe story underscores the broader humanitarian dimension of Iran's information blackout, which preceded the current shutdown by a previous cutoff in January imposed during a regime crackdown on nationwide protests. US-based human rights monitors report more than 6,500 protesters were killed and 53,000 arrested during that period. SpaceX did not respond to the BBC's request for comment.",
+      "source": "BBC News",
+      "url": "https://www.bbc.com/news/articles/cvgzk91leweo",
+      "sourceCount": 1,
+      "disposition": "new",
+      "breaking": false,
+      "importance": "tier2",
+      "addedAt": "6:09 PM MT",
+      "addedAtISO": "2026-05-02T18:09:20.931315-06:00"
+    },
+    {
+      "category": "world",
       "headline": "U.S. Warns Shipping Firms of Sanctions for Paying Iran Strait of Hormuz Tolls",
       "summary": "The U.S. Office of Foreign Assets Control issued a formal alert Friday warning shipping companies worldwide that paying Iran for safe passage through the Strait of Hormuz could expose them to American sanctions. The warning covers not only U.S. firms but also non-U.S. persons whose payments could draw in American financial institutions or insurers, expanding the potential reach of enforcement. The Treasury Department simultaneously sanctioned three Iranian foreign currency exchange houses, with Secretary Scott Bessent vowing to \"relentlessly target\" Iran's ability to generate and move funds.\n\nThe Strait of Hormuz has seen traffic collapse from roughly 3,000 ships per month to a handful per day since Iran began restricting passage after the U.S.-Israel military strike on Iran in late February. Iran has defended the toll collections as sovereign right, with its parliament claiming initial revenues have been deposited with the Central Bank. The U.S. has also maintained a naval blockade since April 13, with Central Command reporting that 45 commercial vessels have been turned back.\n\nThe strait is a critical chokepoint for global oil, food, medicine, and technology supplies. The UN refugee agency warned Friday that closure of key maritime routes is forcing the use of longer, more dangerous overland corridors. The escalating confrontation raises fears of broader disruption to global energy markets and supply chains, coming on top of existing trade tensions between the U.S. and major economies.",
       "source": "BBC News",
