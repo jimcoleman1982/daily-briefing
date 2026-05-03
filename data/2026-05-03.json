@@ -4,6 +4,58 @@
   "stories": [
     {
       "category": "world",
+      "headline": "Update: Cuba Condemns Trump's New Sanctions as 'Illegal,' Trump Threatens Military Presence",
+      "summary": "Cuban Foreign Minister Bruno Rodriguez condemned a new wave of U.S. sanctions signed Friday by President Trump as \"illegal and abusive,\" saying the measures violated the United Nations Charter and amounted to \"collective punishment against the Cuban people.\" The executive order targets Cuban officials in the energy, defense, financial, and security sectors, as well as those alleged to have committed human rights abuses or corruption.\n\nThe announcement came as protesters marched outside the U.S. Embassy in Havana on International Workers Day, denouncing a U.S. blockade on oil to Cuba that has caused widespread blackouts and fuel shortages affecting hospitals, public transport, and schools. Cuban President Miguel Díaz-Canel, who had confirmed in March that Cuba was negotiating with Washington over bilateral relations, accused the U.S. of \"intimidating and arrogant behaviour.\"\n\nIn a notably escalatory statement Friday evening in Florida, Trump told an audience that the U.S. would be \"taking over\" Cuba \"almost immediately,\" suggesting an aircraft carrier could park offshore as a show of force. The remarks go beyond the previously covered executive order and represent a new public threat of potential military presence.\n\nThe U.S. and Cuba have maintained strained relations since Fidel Castro's 1959 revolution, with American trade and economic embargoes in place since 1960. Trump's latest moves come despite ongoing diplomatic back-channel contacts, raising questions about whether any negotiation track remains viable.",
+      "source": "BBC News",
+      "url": "https://www.bbc.com/news/articles/cwy21n1970vo",
+      "sourceCount": 1,
+      "disposition": "update",
+      "breaking": false,
+      "importance": "tier2",
+      "addedAt": "7:45 AM MT",
+      "addedAtISO": "2026-05-03T07:45:27.394870-06:00"
+    },
+    {
+      "category": "world",
+      "headline": "Nigeria Summons South African Envoy Over Attacks on Nigerian Nationals",
+      "summary": "Nigeria has summoned South Africa's acting High Commissioner following a spate of attacks on foreign nationals in South Africa, the Nigerian foreign ministry announced. The formal meeting, scheduled for Monday, will address anti-immigrant marches and \"documented instances of mistreatment of Nigerian citizens and attacks on their businesses.\"\n\nAt least two Nigerians and four Ethiopians have been killed in recent weeks, with anti-immigrant groups stopping people outside hospitals and schools to demand identity documents. During a march in Pretoria, foreign-owned businesses were urged to close out of fear of violence. South African President Cyril Ramaphosa has condemned the attacks but also cautioned foreigners to respect local laws, framing the issue as one of illegal immigration and alleged links to crime.\n\nNigeria warned that the incidents could affect existing bilateral relations between Africa's most populous nation and its most industrialized economy. Ghana summoned the South African envoy last month under similar circumstances after a video showed a Ghanaian man being challenged over his immigration papers.\n\nSouth Africa is home to approximately 2.4 million documented migrants — less than 4% of the population — though the actual figure is believed to be higher. The tensions reflect long-running debates over immigration, unemployment, and regional solidarity across the African continent.",
+      "source": "BBC News",
+      "url": "https://www.bbc.com/news/articles/c78q6e98878o",
+      "sourceCount": 1,
+      "disposition": "new",
+      "breaking": false,
+      "importance": "tier2",
+      "addedAt": "7:45 AM MT",
+      "addedAtISO": "2026-05-03T07:45:27.394870-06:00"
+    },
+    {
+      "category": "science_health",
+      "headline": "Massive Fire Destroys University of South Florida Marine Science Lab, Declared Total Loss",
+      "summary": "A large fire broke out Saturday afternoon at the Marine Science Laboratory building on the University of South Florida's St. Petersburg campus, destroying the structure entirely. St. Petersburg Fire Chief Michael Lewis said more than 60 units and approximately 200 firefighters responded to the scene, and by approximately 9 p.m. declared the building a \"total loss\" with the entire roof burned off.\n\nThe building was evacuated safely and no injuries were reported. The cause of the fire remains under investigation. University alerts instructed students and staff to avoid the area as large plumes of gray smoke were visible rising from the campus.\n\nThe destruction of a dedicated marine science research facility represents a significant loss for the university's research programs, potentially affecting ongoing scientific work, equipment, data, and specimens housed in the lab. The full extent of research impact has not yet been assessed.",
+      "source": "Fox News Latest",
+      "url": "https://www.foxnews.com/us/massive-fire-destroys-university-south-florida-laboratory-building-total-loss",
+      "sourceCount": 2,
+      "disposition": "new",
+      "breaking": false,
+      "importance": "tier2",
+      "addedAt": "7:45 AM MT",
+      "addedAtISO": "2026-05-03T07:45:27.394870-06:00"
+    },
+    {
+      "category": "politics",
+      "headline": "Democrats Mocked for Applauding King Charles After Participating in 'No Kings' Protests",
+      "summary": "Republican lawmakers and commentators targeted Democratic politicians this week for enthusiastically welcoming Britain's King Charles III during his address to Congress, just weeks after many of the same Democrats had participated in or spoken at nationwide \"No Kings\" protests aimed at criticizing President Trump.\n\nRep. Mike Collins (R-Ga.) singled out Sen. Jon Ossoff (D-Ga.), who spoke at a \"No Kings\" rally in Savannah, for cheering Charles from the congressional floor. Rep. Greg Steube (R-Fla.) noted the absence of protest activity during the royal visit. Former New York City Mayor Rudolph Giuliani and actor Michael Rapaport, among others, circulated photos of Democrats including Rep. Ilhan Omar photographing the king with her phone.\n\nDemocrats and their allies have not broadly responded to the criticism, though the context differs: the \"No Kings\" protests were explicitly directed at what organizers described as executive overreach by President Trump, while the \"No Kings Act\" introduced by Senate Minority Leader Chuck Schumer targeted a Supreme Court ruling on presidential immunity. Supporters of the protests argue the slogan was always directed at Trump's conduct rather than monarchies generally.\n\nKing Charles completed a state visit to the United States that included a White House dinner with President Trump and the address to a joint session of Congress, events seen as an effort to reinforce the U.S.-U.K. special relationship.",
+      "source": "Fox News Politics",
+      "url": "https://www.foxnews.com/politics/democrats-rallied-kings-protests-applaud-king-charles-congress",
+      "sourceCount": 2,
+      "disposition": "new",
+      "breaking": false,
+      "importance": "tier3",
+      "addedAt": "7:45 AM MT",
+      "addedAtISO": "2026-05-03T07:45:27.394870-06:00"
+    },
+    {
+      "category": "world",
       "headline": "Update: Murder Charge Filed in Death of 5-Year-Old Australian Girl; Riots Follow Arrest",
       "summary": "Jefferson Lewis, 47, has been charged with murder and two counts of sexual assault following the death of a five-year-old Aboriginal girl identified by her family as Kumanjayi Little Baby. Her body was discovered Thursday after a major multi-day police search in Alice Springs, Northern Territory. Northern Territory Police Commissioner Martin Dole announced the charges Sunday morning and urged the community to respect the judicial process. Lewis is scheduled to appear in a Darwin court Tuesday.\n\nThe arrest triggered violent riots outside the Alice Springs hospital where Lewis was being treated for injuries he sustained before being taken into custody. Crowds threw projectiles at police, set at least one police vehicle ablaze, and looted a nearby petrol station and supermarket. Police responded with tear gas and subsequently transferred Lewis roughly 1,500 kilometers north to Darwin for his own safety. Five people have been arrested in connection with the riots, and property damage is estimated at more than A$180,000.\n\nThe girl's grandfather, senior Warlpiri elder Robin Granites, called for calm, saying the community's anger was understandable but that 'this is not our way.' Commissioner Dole described the riot behavior as 'disgusting' and 'abhorrent,' drawing a sharp distinction between genuine grief and criminal conduct. The case has drawn national attention in Australia to both child safety in remote Aboriginal communities and the outbreak of civil unrest that followed.",
       "source": "BBC News",
